@@ -2,9 +2,9 @@
 
 ## Getting Started  
 
-Let's start by opening Autodesk Maya 2025 or 2026 on the lab computers. You can navigate to the search menu on the bottom of your screen and search for "Maya."<br><figure> <img src = "/assets/images/Maya_Loading_Screen.png"><figcaption> Maya Loading Screen </figcaption></figure>  
+Let's start by opening Autodesk Maya 2025 or 2026 on the lab computers. You can navigate to the search menu on the bottom of your screen and search for "Maya."<br><figure> <img src = "./assets/images/Maya_Loading_Screen.png"><figcaption> Maya Loading Screen </figcaption></figure>  
 
-This will open you to the Maya homepage where we can create a new project by pressing new. <br><figure> <img src = "/assets/images/Maya_New.png"> </figure>
+This will open you to the Maya homepage where we can create a new project by pressing new. <br><figure> <img src = "./assets/images/Maya_New.png"> </figure>
 
 You might notice that we need to keep tabbing back and forth between our tutorial and our Maya interface. Since in the lab we are only using one monitor, lets use Windows default split screen feature to create a divided screen. 
 
@@ -15,7 +15,7 @@ By click and dragging on the dividing line between the two screens you can chang
 We'll be using this technique for the remainder of this class so refer back to this section if you forget the order of operations.
 
 ## Maya Interface
-<figure> <img src = "/assets/images/Maya_Interface.png"><figcaption> My Maya interface</figcaption> </figure> 
+<figure> <img src = "./assets/images/Maya_Interface.png"><figcaption> My Maya interface</figcaption> </figure> 
 
 Although the Maya interface seems very confusing at first, as we move through the course you will notice that your navigation of buttons and menus will become more intuitive. Our readings for this introductory module will introduce software studies through an examination of Maya's interface.
 
@@ -29,7 +29,7 @@ In the center of our screen we have our [view panel](https://help.autodesk.com/v
 
 _You might see four view panels as shown below:_
 
-<figure> <img src = "/assets/images/maya_four_panels.png"><figcaption> Four view panels</figcaption> </figure>
+<figure> <img src = "./assets/images/maya_four_panels.png"><figcaption> Four view panels</figcaption> </figure>
 
 If you do not see four panels, hover over your main panel and tap the *space* key.
 
@@ -39,23 +39,23 @@ To make things easier, lets create a basic 3D model (called a [polygon primitive
 
 Click on the icon of the cube within the Poly Modeling [Shelf](https://help.autodesk.com/view/MAYAUL/2025/ENU/?guid=GUID-4A21F741-C9AC-4AE5-897E-B6F8C68ADF90) located in the upper right corner of your screen.
 
-<figure> <img src = "/assets/images/maya_cube_polymodelingshelf.png"></figure>
+<figure> <img src = "./assets/images/maya_cube_polymodelingshelf.png"></figure>
 
 In the center of our screen, we should now see our cube four, each time from a slightly different perspective. Each of these view ports represents a different way of viewing our model.
 
-<figure> <img src = "/assets/images/maya_cube_four_viewports.png"><figcaption> Four view with Cube (I have zoomed in on the cube slightly)</figcaption></figure>
+<figure> <img src = "./assets/images/maya_cube_four_viewports.png"><figcaption> Four view with Cube (I have zoomed in on the cube slightly)</figcaption></figure>
 
 We can infer what each of these view panels are displaying based on the name at the bottom of each quadrant. The image below shows the name of the perspective view port (persp). While the other view panels show the cube from the top, front and side position using orthographic projection. We'll learn a bit more about the technology of *projection* later on in the course but what we need to know for now is that these view panels are showing the two-dimensional representation of a three-dimensional object.
 
 
 
-<figure><img src = "/assets/images/maya_cube_persp.png" style = "width: 50%;"></figure>
+<figure><img src = "./assets/images/maya_cube_persp.png" style = "width: 50%;"></figure>
 - Perspective Projection: a method for projecting a 3D object onto a 2D picture plane to approximate how a 3D object might be viewed by a camera IRL.
 
 - Orthographic Projection: a method for projecting an 3D object to make all lines parallel. You might think for now of isometric projection used in many video games.
 
 
-<figure><img src = "/assets/images/rct2.jpg"></figure>
+<figure><img src = "./assets/images/rct2.jpg"></figure>
 
 Orthographic Projection in Roller Coaster Tycoon 2 (original resolution) - [Giant Bomb](https://www.giantbomb.com/rollercoaster-tycoon-2/3030-11178/)
 
