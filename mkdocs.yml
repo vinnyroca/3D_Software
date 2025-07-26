@@ -1,0 +1,23 @@
+site_name: Introduction to 3D Software
+nav:
+  - Syllabus: index.md
+  - Schedule: schedule.md
+theme:
+
+  name: simple-blog
+  sidebar: true
+  navigation_depth: 2
+
+  colors:
+    title: blue
+    text: black
+    background: white
+    primary: blue
+  components:
+    footer: false
+    title: false
+    preview: false
+  
+
+
+
