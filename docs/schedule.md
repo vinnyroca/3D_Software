@@ -55,14 +55,14 @@
 
 | Tuesday | Thursday |
 | --- | --- |
-| Discussion - 50 min <br> Software Tutorial - 1 H 30 M| Lecture - 20 M<br>Software Tutorial - 2 H
+| Discussion - 50 min <br> Software Tutorial - 1 H 30 M| Review of Assignments - 20 M<br>Software Tutorial - 2 H
 
 ## Course Plan
 
 |Session/Module |In-Class | Reading/Watching/Assignment Due |
 |---|---|---|
 |1|<mark>Introduction</mark>||
-|**Tuesday** 8/26|[Introduction(s)](./0_Introduction.md)<br><br>**Tutorial:** [Maya interface and object construction](./1_MayaInterface.md)||
+|**Tuesday** 8/26|Introduction(s)<br><br>**Tutorial:** [Maya interface and object construction](./1_MayaInterface.md)||
 |2|<mark>Modeling Software</mark>||
 |**Thursday** 8/28|Review of Assignment<br><br>**Tutorial:** Object modeling with Maya|**Assignment Due:**<br>- Assignment One<br>- Hardrive for class|
 |**Tuesday** 9/2|||

@@ -1,5 +1,6 @@
 
-  <link rel="stylesheet" type="text/css" href="extra.css">
+ <link rel="stylesheet" type="text/css" href="extra.css">
+ 
 # Syllabus
 
 
@@ -14,7 +15,7 @@ Office hours: By appointment; Tuesday 1:30 - 2:30
 ---
 ## Course Description
 
-This interdisciplinary introductory course examines the history, theory, and techniques of 3D software. Through weekly assignments, critical readings, and projects, students will engage with 3D software as a technical tool, artistic medium, and cultural object. This course introduces foundational skills in modeling, rendering, and animation using Maya and Zbrush, alongside exploration of additional software. Weekly discussions, readings, and presentations will critically engage with 3D software’s cultural, social, economic, and political dimensions. The ideas and skills taught in this course will set a foundation for future coursework in game design, animation, video art, digital fabrication, and media studies.  
+This interdisciplinary introductory course examines the history, theory, and techniques of 3D software. Through weekly assignments, critical readings, and projects, students will engage with 3D software as a technical tool, artistic medium, and cultural object. This course introduces foundational skills in modeling, rendering, and animation using Maya and Zbrush, alongside exploration of additional software. Weekly discussions, readings, and presentations will critically engage with 3D software’s cultural, social, economic, and political dimensions. The ideas and skills taught in this course will set a foundation for future coursework in game design, animation, video art, digital fabrication, and media studies.
 
 ---
 

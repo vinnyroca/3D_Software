@@ -131,6 +131,22 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#cartesian-coordinate-space" class="nav-link">Cartesian Coordinate Space</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#channel-box" class="nav-link">Channel Box</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#navigating-around-our-view-panels" class="nav-link">Navigating around our View Panels</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#pan" class="nav-link">PAN:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -148,47 +164,111 @@
         </header>
         <p><h1 id="maya-interface-object-creation">Maya Interface &amp; Object Creation</h1>
 <h2 id="getting-started">Getting Started</h2>
-<p>Let's start by opening Autodesk Maya 2025 or 2026 on the lab computers. You can navigate to the search menu on the bottom of your screen and search for "Maya."<br><figure> <img src = "./assets/images/Maya_Loading_Screen.png"><figcaption> Maya Loading Screen </figcaption></figure>  </p>
-<p>This will open you to the Maya homepage where we can create a new project by pressing new. <br><figure> <img src = "./assets/images/Maya_New.png"> </figure></p>
+<p>Let's start by opening Autodesk Maya 2025 or 2026 on the lab computers. You can navigate to the search menu on the bottom of your screen and search for "Maya."<br><figure> <img src = "../assets/images/Maya_Loading_Screen.png"><figcaption> Maya Loading Screen </figcaption></figure>  </p>
+<p>This will open you to the Maya homepage where we can create a new project by pressing new. <br><figure> <img src = "../assets/images/Maya_New.png"> </figure></p>
 <p>You might notice that we need to keep tabbing back and forth between our tutorial and our Maya interface. Since in the lab we are only using one monitor, lets use Windows default split screen feature to create a divided screen. </p>
 <p>Click on top bar of your Maya interface and hold the <strong>Windows Key</strong> and then tap the <strong>Left Arrow Key.</strong> Release the <strong>Windows Key</strong> and you should then see the option to click our <strong>Browser</strong> to have the two screens side by side.</p>
 <p>By click and dragging on the dividing line between the two screens you can change the amount of your screen each window takes up. This class website has flexible scaling so feel free to make the <strong>browser</strong> as small as you like.</p>
 <p>We'll be using this technique for the remainder of this class so refer back to this section if you forget the order of operations.</p>
 <h2 id="maya-interface">Maya Interface</h2>
-<figure> <img src = "./assets/images/Maya_Interface.png"><figcaption> My Maya interface</figcaption> </figure>
+<figure> <img src = "../assets/images/Maya_Interface.png"><figcaption> My Maya interface</figcaption> </figure>
 
 <p>Although the Maya interface seems very confusing at first, as we move through the course you will notice that your navigation of buttons and menus will become more intuitive. Our readings for this introductory module will introduce software studies through an examination of Maya's interface.</p>
 <p>To keep things simple, we will cover parts of the interface as needed for different parts of the course. As a continuous reminder, as an experimental arts course we are not looking for technical <em>mastery</em>, we are looking to understand Maya/3D software in general artistically and critically.</p>
+<hr />
 <h2 id="view-panel">View Panel</h2>
 <p>In the center of our screen we have our <a href="https://help.autodesk.com/view/MAYAUL/2025/ENU/?guid=GUID-455539A6-3506-458C-92DA-14F171C14553">view panel</a>. This is where we can view 3D objects and manipulate them in real time.</p>
 <blockquote>
 <p><code>Although we are just starting, begin to consider the relationship between the view panel, which shows a live 3D view, and the various data points around this central portion. How is a 3D model both represented as a real-time image and data?</code></p>
 </blockquote>
 <p><em>You might see four view panels as shown below:</em></p>
-<figure> <img src = "./assets/images/maya_four_panels.png"><figcaption> Four view panels</figcaption> </figure>
+<figure> <img src = "../assets/images/maya_four_panels.png"><figcaption> Four view panels</figcaption> </figure>
 
 <p>If you do not see four panels, hover over your main panel and tap the <em>space</em> key.</p>
 <p>Each of these view panels represents a different way of viewing our model.</p>
 <p>To make things easier, lets create a basic 3D model (called a <a href="https://help.autodesk.com/view/MAYAUL/2025/ENU/?guid=GUID-45D2EAD4-5BCF-42DA-A1AB-EC6EE09FE705">polygon primitive</a>) to see how an object appears in each view port.</p>
 <p>Click on the icon of the cube within the Poly Modeling <a href="https://help.autodesk.com/view/MAYAUL/2025/ENU/?guid=GUID-4A21F741-C9AC-4AE5-897E-B6F8C68ADF90">Shelf</a> located in the upper right corner of your screen.</p>
-<figure> <img src = "./assets/images/maya_cube_polymodelingshelf.png"></figure>
+<figure> <img src = "../assets/images/maya_cube_polymodelingshelf.png"></figure>
 
 <p>In the center of our screen, we should now see our cube four, each time from a slightly different perspective. Each of these view ports represents a different way of viewing our model.</p>
-<figure> <img src = "./assets/images/maya_cube_four_viewports.png"><figcaption> Four view with Cube (I have zoomed in on the cube slightly)</figcaption></figure>
+<figure> <img src = "../assets/images/maya_cube_four_viewports.png"><figcaption> Four view panels with Cube (I have zoomed in on the cube slightly)</figcaption></figure>
 
 <p>We can infer what each of these view panels are displaying based on the name at the bottom of each quadrant. The image below shows the name of the perspective view port (persp). While the other view panels show the cube from the top, front and side position using orthographic projection. We'll learn a bit more about the technology of <em>projection</em> later on in the course but what we need to know for now is that these view panels are showing the two-dimensional representation of a three-dimensional object.</p>
-<figure><img src = "./assets/images/maya_cube_persp.png" style = "width: 50%;"></figure>
+<figure><img src = "../assets/images/maya_cube_persp.png" style = "width: 50%;"></figure>
 <ul>
 <li>
 <p>Perspective Projection: a method for projecting a 3D object onto a 2D picture plane to approximate how a 3D object might be viewed by a camera IRL.</p>
 </li>
 <li>
-<p>Orthographic Projection: a method for projecting an 3D object to make all lines parallel. You might think for now of isometric projection used in many video games.</p>
+<p>Orthographic Projection: a method for projecting an 3D object to make all lines parallel. You might think for now of <em>isometric</em> projection used in many video games or architectural drawings.</p>
 </li>
 </ul>
-<figure><img src = "./assets/images/rct2.jpg"></figure>
+<figure><img src = "../assets/images/rct2.jpg"><figcaption> Isometric Projection in Roller Coaster Tycoon 2 - Image: <a href="https://www.giantbomb.com/rollercoaster-tycoon-2/3030-11178/">Giant Bomb</a></figcaption></figure>
 
-<p>Orthographic Projection in Roller Coaster Tycoon 2 (original resolution) - <a href="https://www.giantbomb.com/rollercoaster-tycoon-2/3030-11178/">Giant Bomb</a></p></p>
+<p>Now that we have a slight understanding of what we are looking at in our view panel, let's begin to dive into the relationship between our object and our scene.</p>
+<hr />
+<h2 id="cartesian-coordinate-space">Cartesian Coordinate Space</h2>
+<p>You might remember from your math classes learning about unit space, or what is more formally known as Cartesian Coordinate space (named after René Descartes). This is a simple coordinate system where, generally, each whole number is marked in a grid structure. You can see a simple example below with some points marked using the common (x,y) notation with x being the horizontal axis and y being the vertical axis.</p>
+<p><a title="Kbolino, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Cartesian-coordinate-system.svg"><img width="512" alt="Cartesian coordinate system" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cartesian-coordinate-system.svg/512px-Cartesian-coordinate-system.svg.png?20240520164627"></a></p>
+<p>The important thing to know here is that Maya, and all 3D programs, make use of this coordinate space to visualize the location of models within our scene. The only difference from the image above is that instead of making use of a 2D x,y space, in Maya we use a 3D (x,y,z) space.</p>
+<p>In our Maya interface, we should see four view panels. Let's hover over our Perspective view panel and tap the <strong>space key</strong> to maximize this panel.</p>
+<p>We should see our cube highlighted with a green outline. If not, we can click on our cube.</p>
+<p>Finally, press the <strong>W Key</strong> on your keyboard. We'll talk more shortly about what this hot key does. This should show the Gizmo on our cube.</p>
+<figure><img src = "../assets/images/maya_cube_gizmo.png" ></figure>
+
+<blockquote>
+<p><strong>UI TIP</strong>: Press the + or - key to change the size of your gizmo</p>
+</blockquote>
+<p>The <strong>Red Arrow</strong> points in the direction of the positive <strong>X Axis</strong>, the <strong>Blue Arrow</strong>, the positive <strong>Z Axis</strong>, and the <strong>Green Arrow</strong>, the positive <strong>Y Axis</strong>.</p>
+<blockquote>
+<p><strong>NOTE:</strong> Different 3D software represent the coordinate space differently. While Maya uses the Y Axis to represent the vertical direction, some software use the Z Axis.</p>
+</blockquote>
+<p>What we can infer is that our cube, being in the center of our grid, is at the (0,0,0) position, also known as the origin point. We can see a numerical representation of our object in the coordinate space by looking at our <strong>Channel Box</strong>.</p>
+<hr />
+<h2 id="channel-box">Channel Box</h2>
+<figure><img src = "../assets/images/maya_cube_channelbox.png" style = "width: 50%" ><figcaption> The Channel Box with our Cube selected. Our cube is named pCube1 (the first polygon cube in our scene!)</figcaption></figure>
+
+<p>The Channel Box is UI panel that allows us to quickly see information about our model. The Channel Box is most commonly used in animation to edit various aspects about our models quickly, but it is also a great descriptor of basic information about our model.</p>
+<p>We can notice that our Channel Box is separated into different values:</p>
+<ul>
+<li>
+<p><strong>Translate</strong>: The position of our object.</p>
+</li>
+<li>
+<p><strong>Rotate</strong>: The rotation of our object.</p>
+</li>
+<li>
+<p><strong>Scale</strong>: The size of our object.</p>
+</li>
+<li>
+<p><strong>Visibility</strong>: Whether or not our object is visible in the scene (we'll touch on this later in the course.)</p>
+</li>
+</ul>
+<p>To start, try inputting some values into of of the <strong>Translate</strong> Channels to see how it affects our Cube.</p>
+<blockquote>
+<p><strong>UI TIP:</strong> If you click on a channel such as <strong>TranslateX</strong> and see it highlight, you can <strong>click and drag</strong> your <strong>middle mouse key</strong> to smoothly change the values of the channel.</p>
+</blockquote>
+<p>Notice how changing the channel values of <strong>Translate</strong> directly affects the position of our object within our scene.</p>
+<p>Now let's try the opposite. Make sure you can still see the translate gizmo on your cube by clicking on your cube and pressing the <strong>W Key</strong>. Then, <strong>click and drag</strong> on one of the arrows to translate your cube in the view panel. Notice how the corresponding channel values change as you translate your cube.</p>
+<blockquote>
+<p><strong>UI TIP:</strong> If you <strong>click and drag</strong> on the plane between two axis, this will move your object along two axes simultaneously. Also notice that our last click axis is highlighted yellow. <figure><img src = "../assets/images/maya_cube_gizmo_plane.png" ><figcaption> By clicking on this highlighted plane, we can move our object along the X Axis and Y Axis </figcaption></figure></p>
+</blockquote>
+<p>Now, that we have moved our object around a bit, we might notice that it is hard to see how our object is exactly moving from our single viewing perspective.</p>
+<p>Let's return our Cube to the origin point by entering in <strong>0</strong> for <strong>Translate X,Y, and Z</strong> in our channel box and begin to discuss view panel.</p>
+<hr />
+<h2 id="navigating-around-our-view-panels">Navigating around our View Panels</h2>
+<p>One of the most important UI interactions with Maya in navigating around the 3D space of our perspective view panel. Luckily, view port navigation in Maya is quite simple and only uses our <strong>Alt Key</strong> and <strong>Mouse Buttons</strong>.</p>
+<h3 id="zoom">ZOOM:</h3>
+<p>First, let's try zooming into our cube. Hold the <strong>Alt Key</strong> and <strong>Right Mouse Button</strong> and begin dragging in the vertical or horizontal direction. You will notice that dragging on the positive Y and positive X zoom us out, while dragging on the negative Y and negative X zoom us in. <figure><img src = "../assets/images/maya_cube_zoom.gif" ><figcaption> Zooming In and Out</figcaption></figure></p>
+<h3 id="rotate">ROTATE:</h3>
+<p>Next, let's try rotating around our cube. Hold the <strong>Alt Key</strong> and <strong>Left Mouse Button</strong> and begin dragging in the vertical or horizontal direction. Notice the different behaviors between dragging vertically and horizontally.<figure><img src = "../assets/images/maya_cube_rotate.gif" ><figcaption> Rotating around our Cube </figcaption> </figure></p>
+<h2 id="pan">PAN:</h2>
+<p>Lastly, let's try panning around our scene. Hold the <strong>Alt Key</strong> and <strong>Middle Mouse Button</strong> and begin dragging in the vertical or horizontal direction. Panning allows us to focus on different parts of our scene.<figure><img src = "../assets/images/maya_cube_pan.gif" ><figcaption>Panning around our Scene</figcaption> </figure></p>
+<blockquote>
+<p><strong>UI TIP:</strong> If you loose track of your object in your scene or if you want to focus on a particular object, you can click on any give object and press the <strong>F Key</strong> to <em>focus</em> on that object. When you focus on an object and then rotate your camera, you will notice that the camera will rotate around the particular focused object.</p>
+<p><strong>NOTE:</strong> What is actually happening behind the scenes when we pan, rotate and zoom, is that we are moving a camera called "persp" (from which our View Panel gets its name) changing the properties of this camera. You can click on this camera in the left side of your screen in the <strong>Outliner</strong> (which we will cover shortly) and edit properties such as the Focal Length of your pesrp camera in the Channel Box.<figure><img src = "../assets/images/maya_cube_camera.png" ><figcaption>persp camera made visible!</figcaption> </figure></p>
+<p><strong>NOTE:</strong> In our orthographic view panels, we are only able to pan and zoom.</p>
+</blockquote></p>
     </article>
 </section>
 <!-- endblock -->
