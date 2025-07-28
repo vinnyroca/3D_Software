@@ -16,7 +16,10 @@ theme:
   components:
     footer: false
     title: false
-    preview: false
+    preview: true
+
+extra_css:
+- extra.css
   
 
 

@@ -59,13 +59,13 @@
 
 ## Course Plan
 
-|Session/Module |In-Class | Reading/Watching/Assignment Due |
+||Class | Due|
 |---|---|---|
 |1|<mark>Introduction</mark>||
-|**Tuesday** 8/26|Introduction(s)<br><br>**Tutorial:** [Maya interface and object construction](./1_MayaInterface.md)||
+|8/26|Introduction(s)<br><br>**Tutorial:** [Maya interface and object construction](./1_MayaInterface.md)||
 |2|<mark>Modeling Software</mark>||
-|**Thursday** 8/28|Review of Assignment<br><br>**Tutorial:** Object modeling with Maya|**Assignment Due:**<br>- Assignment One<br>- Hardrive for class|
-|**Tuesday** 9/2|||
+|8/28|Review of Assignment<br><br>**Tutorial:** Object modeling with Maya|**Assignment Due:**<br>- Assignment One<br>- Hardrive for class|
+|9/2|||
 
 
 
