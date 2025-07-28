@@ -22,6 +22,7 @@
             <link rel="stylesheet" href="../assets/css/main.min.css">
             <link rel="stylesheet" href="../assets/css/media.min.css">
             <link rel="stylesheet" href="../assets/css/mkdocstrings.min.css">
+                <link href="../extra.css" rel="stylesheet">
                 <script src="../search/main.js"></script>
 
             
@@ -143,7 +144,15 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#pan" class="nav-link">PAN:</a>
+            <li class="nav-item" data-bs-level="2"><a href="#essential-object-manipulation" class="nav-link">Essential Object Manipulation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#outliner" class="nav-link">Outliner</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#modeling-a-basic-chair" class="nav-link">Modeling a Basic Chair</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -179,7 +188,7 @@
 <h2 id="view-panel">View Panel</h2>
 <p>In the center of our screen we have our <a href="https://help.autodesk.com/view/MAYAUL/2025/ENU/?guid=GUID-455539A6-3506-458C-92DA-14F171C14553">view panel</a>. This is where we can view 3D objects and manipulate them in real time.</p>
 <blockquote>
-<p><code>Although we are just starting, begin to consider the relationship between the view panel, which shows a live 3D view, and the various data points around this central portion. How is a 3D model both represented as a real-time image and data?</code></p>
+<p><code>Thought:</code> Although we are just starting, begin to consider the relationship between the view panel, which shows a live 3D view, and the various data points around this central portion. How is a 3D model both represented as a real-time image and data?</p>
 </blockquote>
 <p><em>You might see four view panels as shown below:</em></p>
 <figure> <img src = "../assets/images/maya_four_panels.png"><figcaption> Four view panels</figcaption> </figure>
@@ -217,11 +226,11 @@
 <figure><img src = "../assets/images/maya_cube_gizmo.png" ></figure>
 
 <blockquote>
-<p><strong>UI TIP</strong>: Press the + or - key to change the size of your gizmo</p>
+<p><code>UI TIP:</code> Press the + or - key to change the size of your gizmo</p>
 </blockquote>
 <p>The <strong>Red Arrow</strong> points in the direction of the positive <strong>X Axis</strong>, the <strong>Blue Arrow</strong>, the positive <strong>Z Axis</strong>, and the <strong>Green Arrow</strong>, the positive <strong>Y Axis</strong>.</p>
 <blockquote>
-<p><strong>NOTE:</strong> Different 3D software represent the coordinate space differently. While Maya uses the Y Axis to represent the vertical direction, some software use the Z Axis.</p>
+<p><code>NOTE:</code> Different 3D software represent the coordinate space differently. While Maya uses the Y Axis to represent the vertical direction, some software use the Z Axis.</p>
 </blockquote>
 <p>What we can infer is that our cube, being in the center of our grid, is at the (0,0,0) position, also known as the origin point. We can see a numerical representation of our object in the coordinate space by looking at our <strong>Channel Box</strong>.</p>
 <hr />
@@ -246,29 +255,87 @@
 </ul>
 <p>To start, try inputting some values into of of the <strong>Translate</strong> Channels to see how it affects our Cube.</p>
 <blockquote>
-<p><strong>UI TIP:</strong> If you click on a channel such as <strong>TranslateX</strong> and see it highlight, you can <strong>click and drag</strong> your <strong>middle mouse key</strong> to smoothly change the values of the channel.</p>
+<p><code>UI TIP:</code> If you click on a channel such as <strong>TranslateX</strong> and see it highlight, you can <strong>click and drag</strong> your <strong>middle mouse key</strong> to smoothly change the values of the channel.</p>
 </blockquote>
 <p>Notice how changing the channel values of <strong>Translate</strong> directly affects the position of our object within our scene.</p>
-<p>Now let's try the opposite. Make sure you can still see the translate gizmo on your cube by clicking on your cube and pressing the <strong>W Key</strong>. Then, <strong>click and drag</strong> on one of the arrows to translate your cube in the view panel. Notice how the corresponding channel values change as you translate your cube.</p>
+<p>Now let's try the opposite. Make sure you can still see the translate gizmo on your cube by clicking on your cube and pressing the <strong>W Key</strong>. Then, <strong>click and drag</strong> on one of the arrows to translate your cube in the view panel. Notice how the corresponding channel values change as you translate your cube.<figure><img src = "../assets/images/maya_cube_translate.gif" ><figcaption> Translating our Cube</figcaption></figure></p>
 <blockquote>
-<p><strong>UI TIP:</strong> If you <strong>click and drag</strong> on the plane between two axis, this will move your object along two axes simultaneously. Also notice that our last click axis is highlighted yellow. <figure><img src = "../assets/images/maya_cube_gizmo_plane.png" ><figcaption> By clicking on this highlighted plane, we can move our object along the X Axis and Y Axis </figcaption></figure></p>
+<p><code>UI TIP:</code> If you <strong>click and drag</strong> on the plane between two axis, this will move your object along two axes simultaneously. Also notice that our last click axis is highlighted yellow. <figure><img src = "../assets/images/maya_cube_translate_plane.gif" ><figcaption>By clicking on this highlighted plane, we can move our object along multiple axes</figcaption></figure></p>
 </blockquote>
 <p>Now, that we have moved our object around a bit, we might notice that it is hard to see how our object is exactly moving from our single viewing perspective.</p>
-<p>Let's return our Cube to the origin point by entering in <strong>0</strong> for <strong>Translate X,Y, and Z</strong> in our channel box and begin to discuss view panel.</p>
+<p>Let's return our Cube to the origin point by entering in <strong>0</strong> for <strong>Translate X,Y, and Z</strong> in our channel box and begin to discuss view panel navigation.</p>
 <hr />
 <h2 id="navigating-around-our-view-panels">Navigating around our View Panels</h2>
 <p>One of the most important UI interactions with Maya in navigating around the 3D space of our perspective view panel. Luckily, view port navigation in Maya is quite simple and only uses our <strong>Alt Key</strong> and <strong>Mouse Buttons</strong>.</p>
-<h3 id="zoom">ZOOM:</h3>
+<h3 id="zoom-alt-rmb">ZOOM (Alt + RMB):</h3>
 <p>First, let's try zooming into our cube. Hold the <strong>Alt Key</strong> and <strong>Right Mouse Button</strong> and begin dragging in the vertical or horizontal direction. You will notice that dragging on the positive Y and positive X zoom us out, while dragging on the negative Y and negative X zoom us in. <figure><img src = "../assets/images/maya_cube_zoom.gif" ><figcaption> Zooming In and Out</figcaption></figure></p>
-<h3 id="rotate">ROTATE:</h3>
+<h3 id="rotate-alt-lmb">ROTATE (Alt + LMB):</h3>
 <p>Next, let's try rotating around our cube. Hold the <strong>Alt Key</strong> and <strong>Left Mouse Button</strong> and begin dragging in the vertical or horizontal direction. Notice the different behaviors between dragging vertically and horizontally.<figure><img src = "../assets/images/maya_cube_rotate.gif" ><figcaption> Rotating around our Cube </figcaption> </figure></p>
-<h2 id="pan">PAN:</h2>
+<h3 id="pan-alt-mmb">PAN (Alt + MMB):</h3>
 <p>Lastly, let's try panning around our scene. Hold the <strong>Alt Key</strong> and <strong>Middle Mouse Button</strong> and begin dragging in the vertical or horizontal direction. Panning allows us to focus on different parts of our scene.<figure><img src = "../assets/images/maya_cube_pan.gif" ><figcaption>Panning around our Scene</figcaption> </figure></p>
 <blockquote>
-<p><strong>UI TIP:</strong> If you loose track of your object in your scene or if you want to focus on a particular object, you can click on any give object and press the <strong>F Key</strong> to <em>focus</em> on that object. When you focus on an object and then rotate your camera, you will notice that the camera will rotate around the particular focused object.</p>
-<p><strong>NOTE:</strong> What is actually happening behind the scenes when we pan, rotate and zoom, is that we are moving a camera called "persp" (from which our View Panel gets its name) changing the properties of this camera. You can click on this camera in the left side of your screen in the <strong>Outliner</strong> (which we will cover shortly) and edit properties such as the Focal Length of your pesrp camera in the Channel Box.<figure><img src = "../assets/images/maya_cube_camera.png" ><figcaption>persp camera made visible!</figcaption> </figure></p>
-<p><strong>NOTE:</strong> In our orthographic view panels, we are only able to pan and zoom.</p>
-</blockquote></p>
+<p><code>UI TIP:</code> If you loose track of your object in your scene or if you want to focus on a particular object, you can click on any give object and press the <strong>F Key</strong> to <em>focus</em> on that object.</p>
+<p>When you focus on an object and then rotate your camera, you will notice that the camera will rotate around the particular focused object.</p>
+<p><code>NOTE:</code> What is actually happening behind the scenes when we pan, rotate and zoom, is that we are moving a camera called "persp" (from which our View Panel gets its name) changing the properties of this camera. You can click on this camera in the left side of your screen in the <strong>Outliner</strong> (which we will cover shortly) and edit properties such as the Focal Length of your persp camera in the Channel Box.<figure><img src = "../assets/images/maya_cube_camera.png" ><figcaption>persp camera made visible!</figcaption> </figure></p>
+<p><code>NOTE:</code> In our orthographic view panels, we are only able to pan and zoom.</p>
+</blockquote>
+<hr />
+<h2 id="essential-object-manipulation">Essential Object Manipulation</h2>
+<p>Now that we know the relationship between our object, the coordinate system and the channel box, as well as how to navigate around our view port, we can now discuss basic object manipulation using <strong>Translate</strong>, <strong>Rotate</strong> and <strong>Scale</strong>.</p>
+<h3 id="translate-w">Translate (W):</h3>
+<p>We have already covered a bit about translate, but now lets go in a bit deeper to learn what this tool actually does.</p>
+<p>If we click on our cube and again press the <strong>W Key</strong> we can notice that one of the menus on the left highlights. <figure><img src = "../assets/images/maya_translate_tool.png" ><figcaption>Tool bar showing our Selection, Translate, Rotate and Scale Tools</figcaption> </figure></p>
+<p>Although we can click on this button on the left, it is best practice to begin memorizing essential Maya hot keys.</p>
+<p>Try translating using the gizmo while also rotating and panning your camera.</p>
+<figure><img src = "../assets/images/maya_cube_translate_manipulation.gif" > </figure>
+
+<h3 id="rotation-e">Rotation (E):</h3>
+<p>We can also rotate objects in our scene by pressing the <strong>E Key</strong> on our keyboard to bring up our rotation gizmo. By click and dragging on a particular axis, we can rotate our object.</p>
+<p>Notice in our Channel Box we are rotating our object in terms of <em>Degrees</em>. If we enter 45 in RotateY in our channel box, our cube with turn 45 Degrees around its Y Axis.</p>
+<figure><img src = "../assets/images/maya_cube_rotation.gif" > </figure>
+
+<blockquote>
+<p><code>UI TIP:</code> By pressing and holding the <strong>J Key</strong> before rotating, we can precisely rotate our object by 15 Degree increments.</p>
+</blockquote>
+<h3 id="scale-r">Scale (R):</h3>
+<p>Lastly, we have scale. This allows us to change the size of our object. Lets reset all our channel box values by entering zero for all translate and rotate channels.</p>
+<blockquote>
+<p><code>UI TIP:</code> If you want to change the value of more than one channel in your channel box, you can click and then shift click to select all the values your want to change. Then enter the value you want all the channels to have and press enter. Below, I click on TranslateX then shift click on RotateZ and then enter 0 to reset all channel values. <figure><img src = "../assets/images/maya_channelbox_reset.gif" > </figure></p>
+</blockquote>
+<p>Now we can press the <strong>R Key</strong> to bring up our scale tool. We can notice in our Channel Box, the scale values by default are equal to 1. This value works as a multiplier. For example, a scale value of 2 will be twice our original scale.</p>
+<blockquote>
+<p><code>UI TIP:</code> Notice that the Move, Rotate and Scale tool are all next to each other on your keyboard. Allowing easy access between the tools using W, E, and R.</p>
+<p><code>NOTE:</code> By default Maya uses centimeters for its unit of measurement. Thus, our cube is currently 1cm by 1cm by 1cm. By changing a scale channel value to 2, our object would then be 2 cm on the particular axis. Our grid coordinate by default also uses centimeters.</p>
+</blockquote>
+<p>We can scale our object uniformly by <strong>clicking and dragging</strong> on the <strong>yellow cube</strong> in the center of our scale gizmo. Notice all all Scale Channel values change by the same amount. <figure><img src = "../assets/images/maya_cube_scale_uniform.gif" > </figure></p>
+<p>We can also scale our object on each axis by clicking and dragging on an axis of the scale gizmo.<figure><img src = "../assets/images/maya_cube_scale.gif" > </figure></p>
+<blockquote>
+<p><code>UI TIP:</code> If we don't want to see our Move, Rotate, and Scale gizmos, we can press the <strong>Q Key</strong> on our keyboard to change to our selection tool (also right next to our Move, Rotate, and Scale tools on our keyboard).<figure><img src = "../assets/images/maya_cube_selection.gif" > </figure></p>
+</blockquote>
+<hr />
+<h2 id="outliner">Outliner</h2>
+<p>Before we move onto playing around with making some basic models using objects, let's talk about how we can keep track of objects within our scene.</p>
+<p>First, let's clean up our scene by deleting our original cube.</p>
+<p>Click on your Cube and then press the <strong>Delete Key</strong> on your keyboard.</p>
+<p>Then lets add in a new cube using the <strong>Poly Modeling Shelf</strong>.<figure> <img src = "../assets/images/maya_cube_polymodelingshelf.png"></figure></p>
+<p>Notice that when we add in the cube a new object appears in our Outliner on the left side of our screen.<figure><img src = "../assets/images/maya_cube_outliner.gif" > </figure></p>
+<p>The Outliner lists all of our objects within our scene. Notice we have all of our cameras as well as our newly created "pCube1".</p>
+<p>We can also rename our objects within our Outliner by double click on the name of our object. Lets rename our cube to "Base"</p>
+<figure><img src = "../assets/images/maya_cube_rename.gif" > </figure>
+
+<p>The Outliner can be used for finding objects within our scene as well as selecting objects by clicking on them.</p>
+<h2 id="modeling-a-basic-chair">Modeling a Basic Chair</h2>
+<p>Although we are not really diving into the complexities of model today, let's use what we have learned in class so far to build a basic chair.</p>
+<ol>
+<li>Scale and Move the base object of your chair to become a seat.<figure><img src = "../assets/images/maya_chair_base.gif" > </figure></li>
+<li>Let's create a new cube using our <strong>Poly Modeling Shelf</strong> and name it "Leg" within our Outliner.</li>
+<li>Scale and move your new cube to be in the position of a chair leg.<figure><img src = "../assets/images/maya_chair_leg.gif" > </figure></li>
+<li>We can now duplicate this leg. We can do this by clicking on our leg, activating the Transform tool with the <strong>W Key</strong> and then holding <strong>Shift</strong> and dragging on an axis.<img src = "../assets/images/maya_chair_leg_duplication.gif" ></li>
+<li>You might now notice it is hard to see the edges of your different objects. In our view panel, we can display the edges of our model. This is the "wire frame on shaded" view mode.<img src = "../assets/images/maya_chair_edges.gif" ></li>
+<li>Now let's use another method of duplication or cloning for our legs. <strong>Click</strong> and then <strong>Shift+Click</strong> on the other leg. <img src = "../assets/images/maya_chair_multi_select.gif" ></li>
+<li>Then press <strong>Ctrl+D</strong> on your keyboard to duplicate the two models and drag them over to the correct position.<img src = "../assets/images/maya_chair_leg_back.gif" ></li>
+<li>Finally, lets click on our base, press <strong>Ctrl+D</strong> to duplicate it. Than Rotate it while holding the <strong>J Key</strong> to snap it 90 Degrees before moving it to the back of our chair.<img src = "../assets/images/maya_chair_back.gif" ></li>
+</ol></p>
     </article>
 </section>
 <!-- endblock -->
@@ -280,6 +347,8 @@
             </main>
 
             
+                    <!-- block preview -->
+<!-- endblock -->
             
 
             
