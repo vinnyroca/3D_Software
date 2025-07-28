@@ -86,7 +86,7 @@ In this module, we will explore how models in the academy, from protein models t
 |10|Reading Responses|
 
 #### **Evaluation Criteria**
-##### Projects and Assignments
+#### Projects and Assignments
 
 |||
 |:---:|---|

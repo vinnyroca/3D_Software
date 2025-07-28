@@ -66,7 +66,7 @@
 |2|<mark>Modeling Software</mark>||
 |8/28|Review of Assignment<br><br>**Tutorial:** Object modeling with Maya|**Assignment Due:**<br>- Assignment One<br>- Hardrive for class|
 |9/2|||
-
+|3|||
 
 
 

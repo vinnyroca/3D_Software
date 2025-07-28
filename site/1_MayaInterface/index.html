@@ -69,6 +69,27 @@
                             <a class="
                             nav-link text-gray text-decoration-none" href="../schedule/">[Schedule]</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="
+                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Assignments]</a>
+                            <ul class="dropdown-menu">
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../artistpresentations.md" class="dropdown-item text-decoration-none ">Artist Presentations</a>
+    </li>
+<!-- endblock -->
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../projectone.md" class="dropdown-item text-decoration-none ">Project One</a>
+    </li>
+<!-- endblock -->
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../weeklyassignments.md" class="dropdown-item text-decoration-none ">Weekly Assignments</a>
+    </li>
+<!-- endblock -->
+                            </ul>
+                        </li>
             </ul>
         </li>
 <!-- endblock -->
@@ -153,6 +174,10 @@
               </ul>
             </li>
             <li class="nav-item" data-bs-level="2"><a href="#modeling-a-basic-chair" class="nav-link">Modeling a Basic Chair</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#pivot-points-and-snapping" class="nav-link">Pivot Points and Snapping</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -330,11 +355,26 @@
 <li>Scale and Move the base object of your chair to become a seat.<figure><img src = "../assets/images/maya_chair_base.gif" > </figure></li>
 <li>Let's create a new cube using our <strong>Poly Modeling Shelf</strong> and name it "Leg" within our Outliner.</li>
 <li>Scale and move your new cube to be in the position of a chair leg.<figure><img src = "../assets/images/maya_chair_leg.gif" > </figure></li>
-<li>We can now duplicate this leg. We can do this by clicking on our leg, activating the Transform tool with the <strong>W Key</strong> and then holding <strong>Shift</strong> and dragging on an axis.<img src = "../assets/images/maya_chair_leg_duplication.gif" ></li>
+<li>We can now duplicate this leg. We can do this by clicking on our leg, activating the Translate tool with the <strong>W Key</strong> and then holding <strong>Shift</strong> and dragging on an axis.<img src = "../assets/images/maya_chair_leg_duplication.gif" ></li>
 <li>You might now notice it is hard to see the edges of your different objects. In our view panel, we can display the edges of our model. This is the "wire frame on shaded" view mode.<img src = "../assets/images/maya_chair_edges.gif" ></li>
 <li>Now let's use another method of duplication or cloning for our legs. <strong>Click</strong> and then <strong>Shift+Click</strong> on the other leg. <img src = "../assets/images/maya_chair_multi_select.gif" ></li>
 <li>Then press <strong>Ctrl+D</strong> on your keyboard to duplicate the two models and drag them over to the correct position.<img src = "../assets/images/maya_chair_leg_back.gif" ></li>
 <li>Finally, lets click on our base, press <strong>Ctrl+D</strong> to duplicate it. Than Rotate it while holding the <strong>J Key</strong> to snap it 90 Degrees before moving it to the back of our chair.<img src = "../assets/images/maya_chair_back.gif" ></li>
+</ol>
+<hr />
+<h2 id="pivot-points-and-snapping">Pivot Points and Snapping</h2>
+<p>Now that we have made our chair you might notice that things are looking a bit wonky! This is okay, 3D models don't always need to be precise. However, since our focus today is on learning the basics before we break them, lets get a bit more precise with how we are moving our objects in our scene.</p>
+<p>To do this, we will make use of the <strong>pivot point</strong> and <strong>snapping</strong>.</p>
+<p>If we click on one of the legs our our chair and activate our Translate tool, well notice that the pivot point of this object is in the very center. The pivot point is the position where our object translates, rotates and scales. By moving this pivot point we can change how our object behaves.<figure><img src = "../assets/images/maya_chair_leg_pivot.png" ><figcaption>Pivot point at the center of the chair's leg</figcaption></figure></p>
+<p>Our goal is to change our pivot point in such a way that we can align the corner of our chair leg with the corner of our chair base. <figure><img src = "../assets/images/maya_chair_leg_pivot_corner.png" ><figcaption>The Two corners we want to align</figcaption></figure></p>
+<p>To do this, we'll need to move our pivot point to be on the correct corner of our leg, then align that to be at the corner of the base of our chair.</p>
+<h3 id="moving-our-pivot-and-snapping">Moving Our Pivot and Snapping</h3>
+<ol>
+<li>Let's move our chair leg down to make some more space. <img src = "../assets/images/maya_chair_leg_pivot_down.gif" ></li>
+<li>Press the <strong>D Key</strong> on your keyboard to bring up our pivot controls.<img src = "../assets/images/maya_chair_leg_pivot_activate.gif" ></li>
+<li>To snap our pivot to the corner of our leg we can hold down on the <strong>V Key</strong> on our keyboard (short for vertex, which will get to next class). And click and drag on the yellow center of our pivot to move it to the proper corner.<img src = "../assets/images/maya_chair_leg_pivot_corner.gif" ></li>
+<li>We can turn off the pivot tool using the <strong>D Key</strong>, make sure our Translate tool is on and press and hold the <strong>V Key</strong> again to snap our object to the bottom corner of our base by clicking and dragging on the center of our Translate gizmo.<img src = "../assets/images/maya_chair_leg_pivot_snap.gif" ></li>
+<li>Finally, let's repeat these steps with the other parts of our chair.<img src = "../assets/images/maya_chair_leg_pivot_finalchair.gif" ></li>
 </ol></p>
     </article>
 </section>

@@ -210,11 +210,32 @@ Although we are not really diving into the complexities of model today, let's us
 1. Scale and Move the base object of your chair to become a seat.<figure><img src = "../assets/images/maya_chair_base.gif" > </figure>
 2. Let's create a new cube using our **Poly Modeling Shelf** and name it "Leg" within our Outliner.
 3. Scale and move your new cube to be in the position of a chair leg.<figure><img src = "../assets/images/maya_chair_leg.gif" > </figure>
-4. We can now duplicate this leg. We can do this by clicking on our leg, activating the Transform tool with the **W Key** and then holding **Shift** and dragging on an axis.<img src = "../assets/images/maya_chair_leg_duplication.gif" >
+4. We can now duplicate this leg. We can do this by clicking on our leg, activating the Translate tool with the **W Key** and then holding **Shift** and dragging on an axis.<img src = "../assets/images/maya_chair_leg_duplication.gif" >
 5. You might now notice it is hard to see the edges of your different objects. In our view panel, we can display the edges of our model. This is the "wire frame on shaded" view mode.<img src = "../assets/images/maya_chair_edges.gif" >
 6. Now let's use another method of duplication or cloning for our legs. **Click** and then **Shift+Click** on the other leg. <img src = "../assets/images/maya_chair_multi_select.gif" >
 7. Then press **Ctrl+D** on your keyboard to duplicate the two models and drag them over to the correct position.<img src = "../assets/images/maya_chair_leg_back.gif" >
 8. Finally, lets click on our base, press **Ctrl+D** to duplicate it. Than Rotate it while holding the **J Key** to snap it 90 Degrees before moving it to the back of our chair.<img src = "../assets/images/maya_chair_back.gif" >
+___
+
+## Pivot Points and Snapping
+
+Now that we have made our chair you might notice that things are looking a bit wonky! This is okay, 3D models don't always need to be precise. However, since our focus today is on learning the basics before we break them, lets get a bit more precise with how we are moving our objects in our scene.
+
+To do this, we will make use of the **pivot point** and **snapping**.
+
+If we click on one of the legs our our chair and activate our Translate tool, well notice that the pivot point of this object is in the very center. The pivot point is the position where our object translates, rotates and scales. By moving this pivot point we can change how our object behaves.<figure><img src = "../assets/images/maya_chair_leg_pivot.png" ><figcaption>Pivot point at the center of the chair's leg</figcaption></figure>
+
+Our goal is to change our pivot point in such a way that we can align the corner of our chair leg with the corner of our chair base. <figure><img src = "../assets/images/maya_chair_leg_pivot_corner.png" ><figcaption>The Two corners we want to align</figcaption></figure>
+
+To do this, we'll need to move our pivot point to be on the correct corner of our leg, then align that to be at the corner of the base of our chair.
+
+### Moving Our Pivot and Snapping
+
+1. Let's move our chair leg down to make some more space. <img src = "../assets/images/maya_chair_leg_pivot_down.gif" >
+2. Press the **D Key** on your keyboard to bring up our pivot controls.<img src = "../assets/images/maya_chair_leg_pivot_activate.gif" >
+3. To snap our pivot to the corner of our leg we can hold down on the **V Key** on our keyboard (short for vertex, which will get to next class). And click and drag on the yellow center of our pivot to move it to the proper corner.<img src = "../assets/images/maya_chair_leg_pivot_corner.gif" >
+4. We can turn off the pivot tool using the **D Key**, make sure our Translate tool is on and press and hold the **V Key** again to snap our object to the bottom corner of our base by clicking and dragging on the center of our Translate gizmo.<img src = "../assets/images/maya_chair_leg_pivot_snap.gif" >
+5. Finally, let's repeat these steps with the other parts of our chair.<img src = "../assets/images/maya_chair_leg_pivot_finalchair.gif" >
 
 
 
