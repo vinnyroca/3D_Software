@@ -300,12 +300,12 @@ a.dropdown-item{
 }
 
 a{
-    color: rgb(33, 33, 33) !important;
+    color: rgb(64, 81, 181)!important;
     font-size:100% !important;
 }
 
 a:hover{
-    color:darkorange !important;
+    color:lightblue !important;
 }
 
 mark>a{
