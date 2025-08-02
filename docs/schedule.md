@@ -64,7 +64,7 @@
 |1|<mark>Introduction</mark>||
 |8/26|Introduction(s)<br><br>**Tutorial:** [Maya interface and object construction](./1_MayaInterface.md)||
 |2|<mark>Modeling Software</mark>||
-|8/28|Review of Assignment<br><br>**Tutorial:** Object modeling with Maya|**Assignment Due:**<br>- Assignment One<br>- Hardrive for class|
+|8/28|Review of Assignment<br><br>**Tutorial:** [Maya Modeling Essentials](./2_ModellingEssentials.md)|**Assignment Due:**<br>- Assignment One<br>- Hardrive for class|
 |9/2|||
 |3|||
 

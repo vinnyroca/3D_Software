@@ -3,9 +3,12 @@ nav:
   - Syllabus: index.md
   - Schedule: schedule.md
   - Assignments:
-    - Artist Presentations: artistpresentations.md
-    - Project One: projectone.md
-    - Weekly Assignments: weeklyassignments.md
+    - Device For One: deviceforone.md
+    - Portrait as a Chair: chair.md
+    - World of Repetition: repetition.md
+    - Artist Presentations: artist.md
+  - Exercises:
+    - B.N.B.: bnb.md
 
 theme:
 
