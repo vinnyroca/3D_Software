@@ -240,34 +240,92 @@ To do this, we'll need to move our pivot point to be on the correct corner of ou
 ## Artist Spotlight
 
 ### Rebecca Allen
-1974 - [Girl Lifts Skirt](https://www.rebeccaallen.com/projects/lifting-her-skirt)
+
+> American, b. 1953
+
+> [Artist Website](https://www.rebeccaallen.com)
+
+#### *Girl Lifts Skirt*
+
+Video (Digital Animation), 1974
+
+[Website](https://www.rebeccaallen.com/projects/lifting-her-skirt)
+
+##### Images
+
 <figure> <img src = "../assets/images/02_maya_rebeccaallen_GirlLiftSkirt.jpg"><figcaption>Preparatory drawing for Girl Lifts Skirt, Rebecca Allen</figcaption></figure>
 
-1981 - [Swimmer](https://www.rebeccaallen.com/projects/swimmer)
+<figure> <img src = "../assets/images/02_maya_rebeccaallen_GirlLiftSkirt_1.jpg"><figcaption>Stills from Girl Lifts Skirt, Rebecca Allen</figcaption></figure>
+
+> "A series of drawings were used to create one of the earliest computer animated artworks. In 1974, Allen used a computer and punch cards to create her first digital artworks. With an interest in inserting sensuality into the computer, this short animation of a woman seductively lifting her skirt served as a comment on the absence of the female perspective in the development of digital technology."
+
+> Rebecca Allen, www.rebeccaallen.com/projects/lifting-her-skirt
+
+#### *Swimmer*
+
+Video (Digital Animation), 1981
+
+[Website](https://www.rebeccaallen.com/projects/swimmer)
+
+##### Images
+
 <figure> <img src = "../assets/images/02_maya_rebeccaallen_swimmer.jpg"><figcaption>Still from Swimmer, Rebecca Allen</figcaption></figure>
 
-1981 - [Woman Ascending a Staircase](https://www.rebeccaallen.com/projects/steps-still-image)
+#### *Woman Ascending a Staircase*
+
+Digital Image, 1981
+
+[Website](https://www.rebeccaallen.com/projects/steps-still-image)
+
+##### Images
+
 <figure> <img src = "../assets/images/02_maya_rebeccaallen_womanascendingastaircase.jpg"><figcaption>Woman Ascending a Staircase</figcaption></figure>
 
-<figure> <img src = "../assets/images/02_maya_duchamp_nude.jpg"><figcaption>WNude Descending a Staircase, No. 2, Marcel Duchamp, 1912</figcaption></figure>
 
-<figure> <img src = "../assets/images/02_maya_muybridge_nude.jpg"><figcaption>Woman Walking Downstairs, Eadweard Muybridge, 1887</figcaption></figure>
+> References
 
+> <figure> <img src = "../assets/images/02_maya_duchamp_nude.jpg"><figcaption>WNude Descending a Staircase, No. 2, Marcel Duchamp, 1912</figcaption></figure>
 
+> <figure> <img src = "../assets/images/02_maya_muybridge_nude.jpg"><figcaption>Woman Walking Downstairs, Eadweard Muybridge, 1887</figcaption></figure>
 
+#### *Musique Non Stop*
 
-1986 - [Musique Non Stop](https://www.rebeccaallen.com/projects/musique-non-stop) - [Video](https://www.youtube.com/watch?v=O0lIlROWro8&list=RDO0lIlROWro8&start_radio=1)
+Music Video, 1986
+
+[Website](https://www.rebeccaallen.com/projects/musique-non-stop)
+[Video](https://www.youtube.com/watch?v=O0lIlROWro8&list=RDO0lIlROWro8&start_radio=1)
+
+##### Images
 
 <figure> <img src = "../assets/images/02_maya_rebeccaallen_musiquenonstop.jpg"><figcaption>Music video for Krafwerk's Musique Non Stop, Rebecca Allen</figcaption></figure>
 
 ### Karl Sims
 
-1987 - [Locomotion Studies](https://www.youtube.com/watch?v=moRLVMHiTtk)
+> American, b. 1962 
+
+> [Website](https://www.karlsims.com/)
+
+#### *Locomotion Studies*
+
+Computer Animation, 1987
+
+[Video](https://www.youtube.com/watch?v=moRLVMHiTtk)
+
+##### Images
 
 <figure> <img src = "../assets/images/02_maya_karlsims_locomotion.jpg"><figcaption>Still from Locomotion Studies, Karl Sims</figcaption></figure>
 
-1994 - [Evolved Virtual Creatures](https://www.youtube.com/watch?v=JBgG_VSP7f8)
+#### *Evolved Virtual Creatures*
+
+Procedural Animation, 1994
+
+[Website](https://www.youtube.com/watch?v=JBgG_VSP7f8)
+
+##### Images
+
 <figure> <img src = "../assets/images/02_maya_karlsims_evolved.jpg"><figcaption>Still from Evolved Virtual Creatures, Karl Sims</figcaption></figure>
+
+## Independent Exercise
 
 
 
