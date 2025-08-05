@@ -157,11 +157,35 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#polygonal-modelling-with-maya" class="nav-link">Polygonal Modelling with Maya</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#artist-spotlight" class="nav-link">Artist Spotlight</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-bs-level="2"><a href="#components-of-a-polygon-object" class="nav-link">Components of a Polygon Object</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             <li class="nav-item" data-bs-level="2"><a href="#faces" class="nav-link">Faces</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#edges" class="nav-link">Edges</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#vertices" class="nav-link">Vertices</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#space-and-transforms" class="nav-link">Space and Transforms</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#class-exercise-archway" class="nav-link">Class Exercise: Archway</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#independent-exercise-camera" class="nav-link">Independent Exercise: Camera</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -197,6 +221,9 @@
 <li>Modeling a Low Poly Camera Exercise</li>
 </ul>
 </blockquote>
+<h2 id="artist-spotlight">Artist Spotlight</h2>
+<h3 id="char-davies">Char Davies</h3>
+<h3 id="jennifer-steinkamp">Jennifer Steinkamp</h3>
 <h2 id="components-of-a-polygon-object">Components of a Polygon Object</h2>
 <p>We've been talking in class about using Polygon primitives, basic shapes such as cubes and spheres, but what exactly is a <strong>Polygon</strong> objects.</p>
 <p>In short, polygon objects are made up of three components:</p>
@@ -207,6 +234,8 @@
 </ul>
 <p>Before software like Maya, Polygon Models were made by manually entering the location of vertices into a computer. Often modelers and researchers would trace objects and use specialized equipment to find the distance between vertices.</p>
 <figure> <img src = "../assets/images/maya_VWBug.png"><figcaption>Image from Image Objects by Jacob Gaboury</figcaption></figure>
+
+<figure> <img src = "../assets/images/maya_SylvieGourand.png"><figcaption>Image from Image Objects by Jacob Gaboury</figcaption></figure>
 
 <p>Today, <strong>Polygonal Modeling</strong> involves manipulating these three components to create a wide variety of shapes. We are no longer limited to jamming polygon primitives together and now can create objects of our own design.</p>
 <p>Let's start by loading the practice file for today's class. Download Here.</p>
@@ -307,7 +336,68 @@ Extrude all the faces on the cube with <strong>Keep Faces Together</strong> off.
 <li>
 <p>Then, we'll press <strong>Ctrl+Shift+I</strong> to reverse the selection, followed by the <strong>Delete Key</strong> to delete our top and bottom faces.<figure> <img src = "../assets/images/2_maya_faces_selection_cylinderdelete.gif"></figure></p>
 </li>
-</ul></p>
+</ul>
+<h2 id="edges">Edges</h2>
+<p>Each face is typically made you of four edges. A face with four edges is refereed to as a quadrilateral or a "quad", for short. It is best practice when modeling to ensure allow your polygons are quads - in other words, each polygon should have four edges.</p>
+<ul>
+<li>4 Sides, Quad = Great!</li>
+<li>3 Sides, Tri = Okay in some situations. </li>
+<li>5+ Sides, N-Gon = Should rarely appear on model and will often cause errors</li>
+</ul>
+<p>The structuring and flow of edges to create faces on a model is <strong>topology</strong>.</p>
+<figure> <img src = "../assets/images/maya_incredibles.png"><figcaption>Face Topology of Mrs.Incredible from The Incredibles. Notice on her ear we see what appears to be a tri. If we look closely, however, we can see it is actually a quad with four sides </figcaption></figure>
+
+<h3 id="selecting-edges">Selecting Edges</h3>
+<p>To enter edge selection, we can hold the <strong>Right Mouse Button</strong> over our model and navigate up to edge.</p>
+<figure> <img src = "../assets/images/2_maya_edge_selection.gif"></figure>
+
+<p>Edges attached together in an unbroken line are called an <strong>Edge Loop.</strong></p>
+<p>We can select and edge loop by double click on an edge that is part of that loop.</p>
+<figure> <img src = "../assets/images/2_maya_edge_selection_edgeloop.gif"></figure>
+
+<p>Edges adjacent to each other, but not connecting in a loop, are called an <strong>Edge Ring.</strong></p>
+<p>We can select an edge ring by clicking on an edge and then <strong>Shift+Double Click</strong> on an adjacent edge. <figure> <img src = "../assets/images/2_maya_edge_selection_edgering.gif"></figure></p>
+<p>To Delete an edge loop we use the special hotkey, <strong>Ctrl+Backspace</strong>. This hotkey will delete the edge loop and the vertices associated with it. Note in the gif below, we should not delete a single edge, as this will make and N-Gon. Instead, we should delete the whole edge loop.</p>
+<p>Delete the center edge loop to match the image on the right.</p>
+<figure> <img src = "../assets/images/2_maya_edge_delete.gif"></figure>
+
+<h3 id="modify_1">Modify</h3>
+<p>We can modify edges using our Transform, Rotate, Scale and Extrude tools.
+Use the <strong>Shift</strong> Hot Key to extrude with Transform and Scale to create a model similar to the low polygon glass. Make sure to select the full edge loop at start.</p>
+<figure> <img src = "../assets/images/2_maya_edge_modify.gif"></figure>
+
+<p>Notice that our glass is one-sided, meaning, it has no interior. We can use the Extrude tool in Object mode to give some thickness to our glass.</p>
+<p>We'll extrude inward to keep the profile of our glass the same, so we'll need to flip the normals of all our faces to be pointing outwards toward the camera. Make sure when you extrude the glass that the faces on the interior of the stem don't overlap.</p>
+<figure> <img src = "../assets/images/2_maya_edge_extrude.gif"></figure>
+
+<h3 id="insert">Insert</h3>
+<p>We can add edge loops to our model using the <strong>Insert Edge Loop Tool</strong>. Hold <strong>Shift+RMB</strong> over the model and navigate to the Insert Edge Loop Tool. </p>
+<p>Hold Click + Drag on an edge to insert and position an edge loop. Release Left Click to place the edge loop. Insert edge loops to create the model on the right. Press Q to exit the insert edge loop tool.</p>
+<figure> <img src = "../assets/images/2_maya_edge_insert.gif"></figure>
+
+<p>We can also add edge loops to our model that are equally distant from one another. For this object, I want to be able to add in some basic windows and a door.</p>
+<p>Lets start by opening the <strong>Insert Edge Loop Tool</strong> Settings. Hold <strong>Shift+RMB</strong> over the model and navigate to the small box next to the Insert Edge Loop Tool. This will bring up the tools settings.</p>
+<figure> <img src = "../assets/images/2_maya_edge_insert.gif"></figure>
+
+<p>In our settings, we can toggle on <strong>Multiple Edge Loops</strong> to insert a specific number of loops. Let's add 6 vertically and 7 Horizontally.</p>
+<p>We can also extrude our windows and door to match the model on the right.</p>
+<blockquote>
+<p><code>UI TIP</code>: When we turn on a tool such as Insert Edge Loop Tool, that tool stays on until we exit it. The easiest way to exit a tool is by pressing the Q key to activate the selection tool.</p>
+</blockquote>
+<figure> <img src = "../assets/images/2_maya_edge_insert_settings_building.gif"></figure>
+
+<h3 id="bridge">Bridge</h3>
+<p>Lastly, we have the bridge tool. The bridge tool allows us to create a face using two edges.</p>
+<p>To use the bridge tool, we can click on two edges and navigate to <strong>Bridge</strong> holding <strong>Shift+ Right Click</strong></p>
+<figure> <img src = "../assets/images/2_maya_edge_bridge_single.gif"></figure>
+
+<p>We can bridge multiple edges together by selecting an equal number of edges opposite one another. Select the remaining six open edges and bridge them together.</p>
+<figure> <img src = "../assets/images/2_maya_edge_bridge_multiple.gif"></figure>
+
+<h2 id="vertices">Vertices</h2>
+<h2 id="space-and-transforms">Space and Transforms</h2>
+<h2 id="class-exercise-archway">Class Exercise: Archway</h2>
+<h2 id="independent-exercise-camera">Independent Exercise: Camera</h2></p>
     </article>
 </section>
 <!-- endblock -->
