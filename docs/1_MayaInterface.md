@@ -237,6 +237,38 @@ To do this, we'll need to move our pivot point to be on the correct corner of ou
 4. We can turn off the pivot tool using the **D Key**, make sure our Translate tool is on and press and hold the **V Key** again to snap our object to the bottom corner of our base by clicking and dragging on the center of our Translate gizmo.<img src = "../assets/images/maya_chair_leg_pivot_snap.gif" >
 5. Finally, let's repeat these steps with the other parts of our chair.<img src = "../assets/images/maya_chair_leg_pivot_finalchair.gif">
 
+## Artist Spotlight
+
+### Rebecca Allen
+1974 - [Girl Lifts Skirt](https://www.rebeccaallen.com/projects/lifting-her-skirt)
+<figure> <img src = "../assets/images/02_maya_rebeccaallen_GirlLiftSkirt.jpg"><figcaption>Preparatory drawing for Girl Lifts Skirt, Rebecca Allen</figcaption></figure>
+
+1981 - [Swimmer](https://www.rebeccaallen.com/projects/swimmer)
+<figure> <img src = "../assets/images/02_maya_rebeccaallen_swimmer.jpg"><figcaption>Still from Swimmer, Rebecca Allen</figcaption></figure>
+
+1981 - [Woman Ascending a Staircase](https://www.rebeccaallen.com/projects/steps-still-image)
+<figure> <img src = "../assets/images/02_maya_rebeccaallen_womanascendingastaircase.jpg"><figcaption>Woman Ascending a Staircase</figcaption></figure>
+
+<figure> <img src = "../assets/images/02_maya_duchamp_nude.jpg"><figcaption>WNude Descending a Staircase, No. 2, Marcel Duchamp, 1912</figcaption></figure>
+
+<figure> <img src = "../assets/images/02_maya_muybridge_nude.jpg"><figcaption>Woman Walking Downstairs, Eadweard Muybridge, 1887</figcaption></figure>
+
+
+
+
+1986 - [Musique Non Stop](https://www.rebeccaallen.com/projects/musique-non-stop) - [Video](https://www.youtube.com/watch?v=O0lIlROWro8&list=RDO0lIlROWro8&start_radio=1)
+
+<figure> <img src = "../assets/images/02_maya_rebeccaallen_musiquenonstop.jpg"><figcaption>Music video for Krafwerk's Musique Non Stop, Rebecca Allen</figcaption></figure>
+
+### Karl Sims
+
+1987 - [Locomotion Studies](https://www.youtube.com/watch?v=moRLVMHiTtk)
+
+<figure> <img src = "../assets/images/02_maya_karlsims_locomotion.jpg"><figcaption>Still from Locomotion Studies, Karl Sims</figcaption></figure>
+
+1994 - [Evolved Virtual Creatures](https://www.youtube.com/watch?v=JBgG_VSP7f8)
+<figure> <img src = "../assets/images/02_maya_karlsims_evolved.jpg"><figcaption>Still from Evolved Virtual Creatures, Karl Sims</figcaption></figure>
+
 
 
 
