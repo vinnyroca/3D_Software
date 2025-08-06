@@ -128,7 +128,7 @@ Installation, 2004-2005
 
 
 
-# Components of a Polygon Object
+## Components of a Polygon Object
 
 We've been talking in class about using Polygon primitives, basic shapes such as cubes and spheres, but what exactly is a **Polygon** objects.
 
@@ -158,7 +158,7 @@ We can begin by turning on the visibility of our "FACES" layer by pressing the l
 
 <figure> <img src = "../assets/images/maya_layers_on.png"></figure>
 
-# Faces
+## Faces
 
 To navigate to faces, hover over your model and press the **Right Mouse Button**.
 
@@ -170,7 +170,7 @@ You don't click in the marking menu. Instead, however over the tool you want to 
 
 <figure> <img src = "../assets/images/2_maya_facemode.gif"></figure> 
 
-## Modify
+### Modify
 
 We can modify faces using the move, rotate and scale tools.
 
@@ -178,7 +178,7 @@ Use the move, rotate and scale tools to create the object on the right.
 
 <figure> <img src = "../assets/images/2_maya_faces_modify.gif"></figure> 
 
-## Delete
+### Delete
 
 We can also delete faces to allow for interesting shapes.
 
@@ -186,7 +186,7 @@ Use the Move and Delete tools to make the shape on the right.
 
 <figure> <img src = "../assets/images/2_maya_faces_delete.gif"></figure> 
 
-## Normals
+### Normals
 
 Notice that the inside of our box is black, while the outside is gray.
 
@@ -214,7 +214,7 @@ To reverse our normals:
 
 <figure> <img src = "../assets/images/2_maya_faces_normal_reverse.gif"></figure>
 
-## Extrude
+### Extrude
 
 The most important tool associate with faces and for poly-modeling in general, is the **Extrude** tool. The extrude tool allows us to extrude out additional faces from our model to build out geometry.
 
@@ -251,7 +251,7 @@ Hold **Shift** while moving and scaling the top face to make the model on the ri
 
 <figure> <img src = "../assets/images/2_maya_faces_extrude_hotkeys.gif"></figure>
 
-## Face Selection
+### Face Selection
 
 Lastly, let's go over a common face selection technique. This allows us to select a large number of faces next to each other at once. Let's follow the below steps to make the model in the "face selection" area.
 
@@ -269,7 +269,7 @@ Lastly, let's go over a common face selection technique. This allows us to selec
 
 >`UI TIP`: **Shit+Click** to add items to you selection and **Ctrl+Click** to remove items from your selection also works with face, edge and vertex selection.
 
-# Edges
+## Edges
 
 Each face is typically made you of four edges. A face with four edges is refereed to as a quadrilateral or a "quad", for short. It is best practice when modeling to ensure allow your polygons are quads - in other words, each polygon should have four edges.
 
@@ -281,7 +281,7 @@ The structuring and flow of edges to create faces on a model is **topology**.
 
 <figure> <img src = "../assets/images/maya_incredibles.png"><figcaption>Face Topology of Mrs.Incredible from The Incredibles. Notice on her ear we see what appears to be a tri. If we look closely, however, we can see it is actually a quad with four sides </figcaption></figure>
 
-## Selecting Edges
+### Selecting Edges
 
 To enter edge selection, we can hold the **Right Mouse Button** over our model and navigate up to edge.
 
@@ -303,7 +303,7 @@ Delete the center edge loop to match the image on the right.
 
 <figure> <img src = "../assets/images/2_maya_edge_delete.gif"></figure>
 
-## Modify
+### Modify
 
 We can modify edges using our Transform, Rotate, Scale and Extrude tools.
 Use the **Shift** Hot Key to extrude with Transform and Scale to create a model similar to the low polygon glass. Make sure to select the full edge loop at start.
@@ -316,7 +316,7 @@ We'll extrude inward to keep the profile of our glass the same, so we'll need to
 
 <figure> <img src = "../assets/images/2_maya_edge_extrude.gif"></figure>
 
-## Insert
+### Insert
 
 We can add edge loops to our model using the **Insert Edge Loop Tool**. Hold **Shift+RMB** over the model and navigate to the Insert Edge Loop Tool. 
 
@@ -339,7 +339,7 @@ We can also extrude our windows and door to match the model on the right.
 
 <figure> <img src = "../assets/images/2_maya_edge_insert_settings_building.gif"></figure>
 
-## Bridge
+### Bridge
 
 Lastly, we have the bridge tool. The bridge tool allows us to create a face using two edges.
 
@@ -351,7 +351,7 @@ We can bridge multiple edges together by selecting an equal number of edges oppo
 
 <figure> <img src = "../assets/images/2_maya_edge_bridge_multiple.gif"></figure>
 
-# Vertices
+## Vertices
 
 Vertices are an essential part of Polygon Modeling. **Vertices** define the end points of **edges** and the boundaries of **faces**.
 
@@ -395,7 +395,7 @@ Here, our vertices are defines by X,Y,Z coordinates and our faces are defined by
 
 With this in mind, we can do some interesting operations with vertices to create complex 3D models.
 
-## Modify Vertices
+### Modify Vertices
 
 Navigate to the Vertex selection tool using by holding **RMB** over the first model and navigating to **Vertex**.
 
@@ -405,7 +405,7 @@ We can select multiple vertices by **Clicking + Dragging** over a number of vert
 
 <figure> <img src = "../assets/images/02_maya_vertices_selection_box.gif"></figure>
 
-## Weld
+### Weld
 
 The most crucial modification tool we can use with vertices is the Weld tool. This allow to merge two or more vertices together into a single vertex.
 
@@ -440,13 +440,13 @@ Lets put what we've learned so far to a test by using two sides of cube to make 
 2. Enter Vertex mode and use the Merge Vertex tool to merge all the vertices together. We may have forgotten which vertices are not merged, so we can select all of them using box selection.
 >`UI TIP`: Box selection will select all vertices in its range, even that are on the back of our model we can't see.<figure> <img src = "../assets/images/02_maya_vertices_practice_merge.gif"></figure>
 
-# Space and Transforms
+## Space and Transforms
 
 Navigate to the "Additional" layer.
 
 Before we move into our exercise for today, let cover some important information about manipulating objects in 3D Software.
 
-## World vs. Object vs. Component Space
+### World vs. Object vs. Component Space
 
 #### World Space
 
@@ -481,7 +481,7 @@ Object space is similar to component space, but instead of following the specifi
 
 2. Looking at the bottom cylinder to right within Object Space, we can see the gizmo matches the rotation of our object. Use the **V Key** to snap our the bottom cylinder to the top one, moving it in Object Space.<figure> <img src = "../assets/images/02_maya_space_object_cylinder.gif"></figure>
 
-## Combine
+### Combine
 
 Let's say for those two cylinders, we wanted to merge them together. If we tried, we would notice nothing would happen. That is because we can only weld together two or more vertices that are on the same object. To combine two objects together to make one object, we can use the combine tool.
 
@@ -494,11 +494,11 @@ Notice that when we combine our cylinder our Object Space transform matches our 
 
 <figure> <img src = "../assets/images/02_maya_space_combine_world_channel.png"><figcaption>Our Channel Box after combining<figcaption></figure>
 
-## Freeze Transformations
+### Freeze Transformations
 
 We can manually freeze the transformation on an object by navigating to the Freeze Transformation tool. Select the first cylinder in the "Freeze Transformation" section then navigate to **Display** -> **Freeze Transformations**. Notice how the Channel Box values reset to 0.<figure> <img src = "../assets/images/02_maya_space_freeze.gif"></figure>
 
-## History
+### History
 
 The last helpful thing to know about Maya before moving onto our exercise is **History**.
 
@@ -527,7 +527,7 @@ Let's combine the two cubes and delete their history.
 
 `NOTE`: If something starts going wrong with your model, or tools begin acting strange, it could be because the history of your model is influencing your current actions. It is good practice in Maya to occasionally delete the history of your model if you no longer need it!
 
-# Class Exercise: Archway
+## Class Exercise: Archway
 
 To combine all the skills we learned today, we are going to be making this archway!
 
@@ -593,7 +593,117 @@ To Delete History - **Edit** -> **Delete by Type** -> **History**.<br><br>To Fre
 
 
 
-# Independent Exercise: Camera
+## Independent Exercise: Tree
+
+Inspired by the work of Char Davies and Jennifer Steinkamp, your exercise is to make 3D model of a tree. This exercise will be due at the start of next class session. To complete this exercise you'll need to learn some new tools on your own! Follow the below tutorial to get started!
+
+*This tutorial will only demonstrate the fundamentals of creating a simple tree. Use what you learn in this tutorial to make a tree with a number of primary, secondary and tertiary branches.*
+
+You can use a tree on campus for inspiration!
+
+**Submit 3 screen shots and your Maya file on Canvas by the start of our next class session.**
+
+### Getting Started
+
+- Start by creating a cylinder with 24 sides. The reason we are starting with 24 sides is so we have enough room to create branches. 
+
+<figure> <img src = "../assets/images/02_maya_tree_01.gif"></figure>
+
+- This will be our trunk. Let's delete the top and bottom faces. 
+
+<figure> <img src = "../assets/images/02_maya_tree_02.gif"></figure>
+
+- Select the top edge loop and begin to extrude your model upward - scaling and rotating to give it some interesting shapes. 
+
+<figure> <img src = "../assets/images/02_maya_tree_03.gif"></figure>
+
+### Making Primary Branches
+- Extrude 2 segments that around the same size and will be equal to the diameter of your new branch. Extrude once more to continue the trunk. 
+
+<figure> <img src = "../assets/images/02_maya_tree_04.gif"></figure>
+
+- In the 2 segments we extruded, we want to extrude a new branch that has 16 sides. To do this we will select 12 faces. 6 on the top and 6 on the bottom. You can notice that the border of these selected faces has 16 sides. 
+
+<figure> <img src = "../assets/images/02_maya_tree_05.gif"></figure>
+
+- Use the extrude tool to offset the faces by around **.1**.
+
+<figure> <img src = "../assets/images/02_maya_tree_06.gif"></figure>
+
+### Circularize Components
+
+Circularize components is a very helpful tool with Maya. It allows us to take any components and average their shape into a circle. This is especially helpful for making our tree branches.
+
+- With the offset faces selected, navigate holding **Shift+RMB** to **Circularize Components**.
+
+<figure> <img src = "../assets/images/02_maya_tree_07.gif"></figure>
+
+- You'll notice this will make somewhat of a mess. However, don't worry, we have learned the tools to clean it up! <br><br>Begin by opening up the Scale tool, and scaling the faces down using the center Gizmo.
+<br><br> Then use the Rotate tool to match the edges beyond the circle to flow with the rest of our topology.<br><br>Finally, use the Move tool, to pull out the circle slightly.
+
+> `NOTE`: You may need to be in **Component Space** for the Move, Rotate, and Scale tool to have the intended effects.
+
+<figure> <img src = "../assets/images/02_maya_tree_08.gif"></figure>
+
+- Delete the faces and begin extruding out the edge loop to make a new branch. You may notice you need to adjust the scale of your edge loops.
+
+<figure> <img src = "../assets/images/02_maya_tree_09.gif"></figure>
+
+### Making Secondary Branches
+
+- To make secondary branches, we can repeat the same process of using primary branches. However, instead of selecting 12 faces to make a branch with 16 sides, we will instead select 8 polygons to make a branch with 12 Sides.
+
+<figure> <img src = "../assets/images/02_maya_tree_10.gif"></figure>
+
+### Making Tertiary Branches
+
+- To make tertiary branches, we'll repeat the same process expect we will only select 6 faces to make branches with 8 sides.
+
+<figure> <img src = "../assets/images/02_maya_tree_11.gif"></figure>
+
+### Duplicating Branches
+
+Since we doing all this work to make a single branch, it would be great to learn how to duplicate this work to other parts of our model.
+
+- Begin by creating a new hole in our model, similar to the size of the branch we want to duplicate.
+
+<figure> <img src = "../assets/images/02_maya_tree_12.gif"></figure>
+
+- Select all the faces of the branch we want to duplicate.
+
+<figure> <img src = "../assets/images/02_maya_tree_13.gif"></figure>
+
+- With the faces selected, navigate holding **Shift+RMB** to Duplicate Face. This will make a new object based on the faces we selected.
+
+<figure> <img src = "../assets/images/02_maya_tree_14.gif"></figure>
+
+- Select our new object and move it up. If you select our original model first, double click on the model to select our new object. Double clicking will swap between models that are on top of each other. 
+
+<figure> <img src = "../assets/images/02_maya_tree_15.gif"></figure>
+
+-  Snap the pivot point of our new model to be on a vertex on the base of our branch.
+
+<figure> <img src = "../assets/images/02_maya_tree_16.gif"></figure>
+
+- Move our new branch to be aligned with the new hole we created.
+
+<figure> <img src = "../assets/images/02_maya_tree_17.gif"></figure>
+
+- Combine the two objects together.
+
+<figure> <img src = "../assets/images/02_maya_tree_18.gif"></figure>
+
+- Either using the bridge tool or the move vertices tool, join the two branches together.
+
+<figure> <img src = "../assets/images/02_maya_tree_19.gif"></figure>
+
+### Smooth Shading
+
+You might notice that we can see all the edges of our model. This makes our model look less like a tree. We can make our model appear smoother by softening the edges on our model. This will smooth the transition between different faces of our model.
+
+- To Soften our edges, in object mode navigate holding **Shift + RMB** to **Soften/Harden Edges** -> **Soften Edge.**
+
+<figure> <img src = "../assets/images/02_maya_tree_20.gif"></figure>
 
 
 

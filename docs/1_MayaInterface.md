@@ -44,7 +44,7 @@ By click and dragging on the dividing line between the two screens you can chang
 
 We'll be using this technique for the remainder of this class so refer back to this section if you forget the order of operations.
 
-# Maya Interface
+## Maya Interface
 <figure> <img src = "../assets/images/Maya_Interface.png"><figcaption> My Maya interface</figcaption> </figure> 
 
 Although the Maya interface seems very confusing at first, as we move through the course you will notice that your navigation of buttons and menus will become more intuitive. Our readings for this introductory module will introduce software studies through an examination of Maya's interface.
@@ -52,7 +52,7 @@ Although the Maya interface seems very confusing at first, as we move through th
 To keep things simple, we will cover parts of the interface as needed for different parts of the course. As a continuous reminder, as an experimental arts course we are not looking for technical *mastery*, we are looking to understand Maya/3D software in general artistically and critically.
 ___
 
-# View Panel
+## View Panel
 
 In the center of our screen we have our [view panel](https://help.autodesk.com/view/MAYAUL/2025/ENU/?guid=GUID-455539A6-3506-458C-92DA-14F171C14553). This is where we can view 3D objects and manipulate them in real time.
 
@@ -91,7 +91,7 @@ We can infer what each of these view panels are displaying based on the name at 
 Now that we have a slight understanding of what we are looking at in our view panel, let's begin to dive into the relationship between our object and our scene.
 ___
 
-# Cartesian Coordinate Space
+## Cartesian Coordinate Space
 
 You might remember from your math classes learning about unit space, or what is more formally known as Cartesian Coordinate space (named after René Descartes). This is a simple coordinate system where, generally, each whole number is marked in a grid structure. You can see a simple example below with some points marked using the common (x,y) notation with x being the horizontal axis and y being the vertical axis.
 
@@ -116,7 +116,7 @@ The **Red Arrow** points in the direction of the positive **X Axis**, the **Blue
 What we can infer is that our cube, being in the center of our grid, is at the (0,0,0) position, also known as the origin point. We can see a numerical representation of our object in the coordinate space by looking at our **Channel Box**.
 ___
 
-# Channel Box
+## Channel Box
 
 <figure><img src = "../assets/images/maya_cube_channelbox.png" style = "width: 50%" ><figcaption> The Channel Box with our Cube selected. Our cube is named pCube1 (the first polygon cube in our scene!)</figcaption></figure>
 
@@ -147,17 +147,17 @@ Now, that we have moved our object around a bit, we might notice that it is hard
 Let's return our Cube to the origin point by entering in **0** for **Translate X,Y, and Z** in our channel box and begin to discuss view panel navigation.
 ___
 
-# Navigating around our View Panels
+## Navigating around our View Panels
 
 One of the most important UI interactions with Maya in navigating around the 3D space of our perspective view panel. Luckily, view port navigation in Maya is quite simple and only uses our **Alt Key** and **Mouse Buttons**.
 
-## ZOOM (Alt + RMB):
+### ZOOM (Alt + RMB):
 First, let's try zooming into our cube. Hold the **Alt Key** and **Right Mouse Button** and begin dragging in the vertical or horizontal direction. You will notice that dragging on the positive Y and positive X zoom us out, while dragging on the negative Y and negative X zoom us in. <figure><img src = "../assets/images/maya_cube_zoom.gif" ><figcaption> Zooming In and Out</figcaption></figure>
 
-## ROTATE (Alt + LMB):
+### ROTATE (Alt + LMB):
 Next, let's try rotating around our cube. Hold the **Alt Key** and **Left Mouse Button** and begin dragging in the vertical or horizontal direction. Notice the different behaviors between dragging vertically and horizontally.<figure><img src = "../assets/images/maya_cube_rotate.gif" ><figcaption> Rotating around our Cube </figcaption> </figure>
 
-## PAN (Alt + MMB):
+### PAN (Alt + MMB):
 Lastly, let's try panning around our scene. Hold the **Alt Key** and **Middle Mouse Button** and begin dragging in the vertical or horizontal direction. Panning allows us to focus on different parts of our scene.<figure><img src = "../assets/images/maya_cube_pan.gif" ><figcaption>Panning around our Scene</figcaption> </figure>
 
 > `UI TIP:` If you loose track of your object in your scene or if you want to focus on a particular object, you can click on any give object and press the **F Key** to *focus* on that object.
@@ -168,11 +168,11 @@ Lastly, let's try panning around our scene. Hold the **Alt Key** and **Middle Mo
 
 > `NOTE:` In our orthographic view panels, we are only able to pan and zoom.
 ___
-# Essential Object Manipulation
+## Essential Object Manipulation
 
 Now that we know the relationship between our object, the coordinate system and the channel box, as well as how to navigate around our view port, we can now discuss basic object manipulation using **Move**, **Rotate** and **Scale**.
 
-## Move (W):
+### Move (W):
 
 We have already covered a bit about move, but now lets go in a bit deeper to learn what this tool actually does.
 
@@ -183,7 +183,7 @@ Although we can click on this button on the left, it is best practice to begin m
 Try translating using the gizmo while also rotating and panning your camera.
 <figure><img src = "../assets/images/maya_cube_translate_manipulation.gif" > </figure>
 
-## Rotation (E):
+### Rotation (E):
 
 We can also rotate objects in our scene by pressing the **E Key** on our keyboard to bring up our rotation gizmo. By click and dragging on a particular axis, we can rotate our object.
 
@@ -193,7 +193,7 @@ Notice in our Channel Box we are rotating our object in terms of *Degrees*. If w
 
 > `UI TIP:` By pressing and holding the **J Key** before rotating, we can precisely rotate our object by 15 Degree increments.
 
-## Scale (R):
+### Scale (R):
 
 Lastly, we have scale. This allows us to change the size of our object. Lets reset all our channel box values by entering zero for all translate and rotate channels.
 
@@ -212,7 +212,7 @@ We can also scale our object on each axis by clicking and dragging on an axis of
 > `UI TIP:` If we don't want to see our Move, Rotate, and Scale gizmos, we can press the **Q Key** on our keyboard to change to our selection tool (also right next to our Move, Rotate, and Scale tools on our keyboard).<figure><img src = "../assets/images/maya_cube_selection.gif" > </figure>
 ___
 
-# Outliner
+## Outliner
 
 Before we move onto playing around with making some basic models using objects, let's talk about how we can keep track of objects within our scene.
 
@@ -231,7 +231,7 @@ We can also rename our objects within our Outliner by double click on the name o
 
 The Outliner can be used for finding objects within our scene as well as selecting objects by clicking on them.
 
-# Modeling a Basic Chair
+## Modeling a Basic Chair
 
 Although we are not really diving into the complexities of model today, let's use what we have learned in class so far to build a basic chair.
 
@@ -246,7 +246,7 @@ Although we are not really diving into the complexities of model today, let's us
 8. Finally, lets click on our base, press **Ctrl+D** to duplicate it. Than Rotate it while holding the **J Key** to snap it 90 Degrees before moving it to the back of our chair.<img src = "../assets/images/maya_chair_back.gif" >
 ___
 
-# Pivot Points and Snapping
+## Pivot Points and Snapping
 
 Now that we have made our chair you might notice that things are looking a bit wonky! This is okay, 3D models don't always need to be precise. However, since our focus today is on learning the basics before we break them, lets get a bit more precise with how we are moving our objects in our scene.
 
@@ -258,7 +258,7 @@ Our goal is to change our pivot point in such a way that we can align the corner
 
 To do this, we'll need to move our pivot point to be on the correct corner of our leg, then align that to be at the corner of the base of our chair.
 
-## Moving Our Pivot and Snapping
+### Moving Our Pivot and Snapping
 
 1. Let's move our chair leg down to make some more space. <img src = "../assets/images/maya_chair_leg_pivot_down.gif" >
 2. Press the **D Key** on your keyboard to bring up our pivot controls.<img src = "../assets/images/maya_chair_leg_pivot_activate.gif" >
@@ -266,7 +266,7 @@ To do this, we'll need to move our pivot point to be on the correct corner of ou
 4. We can turn off the pivot tool using the **D Key**, make sure our Move tool is on and press and hold the **V Key** again to snap our object to the bottom corner of our base by clicking and dragging on the center of our Move gizmo.<img src = "../assets/images/maya_chair_leg_pivot_snap.gif" >
 5. Finally, let's repeat these steps with the other parts of our chair.<img src = "../assets/images/maya_chair_leg_pivot_finalchair.gif">
 
-# Artist Spotlight
+## Artist Spotlight
 
 ### Rebecca Allen
 
@@ -288,7 +288,7 @@ Video (Digital Animation), 1974
 
 > "A series of drawings were used to create one of the earliest computer animated artworks. In 1974, Allen used a computer and punch cards to create her first digital artworks. With an interest in inserting sensuality into the computer, this short animation of a woman seductively lifting her skirt served as a comment on the absence of the female perspective in the development of digital technology."
 
-> Rebecca Allen, www.rebeccaallen.com/projects/lifting-her-skirt
+> www.rebeccaallen.com/projects/lifting-her-skirt
 
 #### *Swimmer*
 
@@ -354,7 +354,30 @@ Procedural Animation, 1994
 
 <figure> <img src = "../assets/images/02_maya_karlsims_evolved.jpg"><figcaption>Still from Evolved Virtual Creatures, Karl Sims</figcaption></figure>
 
-## Independent Exercise
+## Independent Exercise: Creature
+
+### Simple Creature
+
+Based on the Low Resolution styles of early 3D Artist. Model the below creature as exact as possible for next class.
+
+Pay attention to where the different objects snap together and make sure to use all parts of your gizmo when snapping.
+
+Keep in mind the follow hot keys:
+
+- **W** - Move Tool
+- **E** - Rotate Tool
+- **R** - Scale Tool
+- **Q** - Select Tool
+- **D** - Activate Pivot Mode
+- **Holding V** - Activate Vertex snapping
+- **Holding Shift will Moving** - Duplicate object
+
+<figure> <img src = "../assets/images/01_maya_exercise_01.png"><figcaption>Perspective View of Creature</figcaption></figure>
+
+<figure> <img src = "../assets/images/01_maya_exercise_02.png"><figcaption>Side View of Creature</figcaption></figure>
+
+***Submit a perspective and side screen shot of your model to Canvas.***
+
 
 
 
