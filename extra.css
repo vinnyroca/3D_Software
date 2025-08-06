@@ -282,10 +282,11 @@ ol>li{
 
 ul>li.nav-item, ul.dropdown-menu>li{
     list-style-type: none;
+    margin: 0 !important;
     margin-top:0;
     margin-bottom:0;
      font-size:1em !important;
-     line-height:1.25em !important;
+     line-height:1.1em !important;
 }
 ul.dropdown-menu>li{
     padding:0;

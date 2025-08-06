@@ -1,7 +1,7 @@
 <!doctype html>
 <html data-bs-theme="">
     <head>
-                <title>Polygonal Modelling with Maya - Introduction to 3D Software</title>
+                <title>2 ModellingEssentials - Introduction to 3D Software</title>
 
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -161,34 +161,101 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#components-of-a-polygon-object" class="nav-link">Components of a Polygon Object</a>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#components-of-a-polygon-object" class="nav-link">Components of a Polygon Object</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#faces" class="nav-link">Faces</a>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#faces" class="nav-link">Faces</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#modify" class="nav-link">Modify</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#edges" class="nav-link">Edges</a>
+            <li class="nav-item" data-bs-level="2"><a href="#delete" class="nav-link">Delete</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#vertices" class="nav-link">Vertices</a>
+            <li class="nav-item" data-bs-level="2"><a href="#normals" class="nav-link">Normals</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#space-and-transforms" class="nav-link">Space and Transforms</a>
+            <li class="nav-item" data-bs-level="2"><a href="#extrude" class="nav-link">Extrude</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#class-exercise-archway" class="nav-link">Class Exercise: Archway</a>
+            <li class="nav-item" data-bs-level="2"><a href="#face-selection" class="nav-link">Face Selection</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#independent-exercise-camera" class="nav-link">Independent Exercise: Camera</a>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#edges" class="nav-link">Edges</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#selecting-edges" class="nav-link">Selecting Edges</a>
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#modify_1" class="nav-link">Modify</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#insert" class="nav-link">Insert</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#bridge" class="nav-link">Bridge</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#vertices" class="nav-link">Vertices</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#modify-vertices" class="nav-link">Modify Vertices</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#weld" class="nav-link">Weld</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#space-and-transforms" class="nav-link">Space and Transforms</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#world-vs-object-vs-component-space" class="nav-link">World vs. Object vs. Component Space</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#combine" class="nav-link">Combine</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#freeze-transformations" class="nav-link">Freeze Transformations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#history" class="nav-link">History</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#class-exercise-archway" class="nav-link">Class Exercise: Archway</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#independent-exercise-camera" class="nav-link">Independent Exercise: Camera</a>
+              <ul class="nav flex-column">
               </ul>
             </li>
         </ul>
@@ -204,13 +271,45 @@
             
             
         </header>
-        <p><h1 id="polygonal-modelling-with-maya">Polygonal Modelling with Maya</h1>
+        <p><script>
+// Get the header element
+let header = document.querySelector('header');
+
+// Get the height of the header
+document.querySelectorAll('a[href^="#"]')
+.forEach(function (anchor) {
+    anchor.addEventListener('click', 
+    function (event) {
+        event.preventDefault();
+
+        // Get the target element that 
+        // the anchor link points to
+        let target = document.querySelector(
+            this.getAttribute('href')
+        );
+
+        let headerHeight = header.offsetHeight*2;
+
+        let targetPosition = target
+            .getBoundingClientRect().top - headerHeight;
+
+        window.scrollTo({
+            top: targetPosition + window.scrollY,
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+<script>hljs.highlightAll();</script>
+
+<h1 id="polygonal-modelling-with-maya">Polygonal Modelling with Maya</h1>
 <blockquote>
 <p><code>RECAP:</code> What we learned last class:</p>
 <ul>
 <li>How to Navigate Around the UI of Maya</li>
 <li>How to <strong>Create</strong> basic Polygon objects in Maya (called Polygon Primitives!)</li>
-<li>How to <strong>Translate</strong>, <strong>Rotate</strong> and <strong>Scale</strong> Objects</li>
+<li>How to <strong>Move</strong>, <strong>Rotate</strong> and <strong>Scale</strong> Objects</li>
 <li>How to move and object's <strong>pivot</strong></li>
 <li>How to <strong>snap</strong> objects together</li>
 </ul>
@@ -277,7 +376,7 @@
 
 <figure> <img src = "../assets/images/02_maya_steinkamp_dervish_2.png"><figcaption>Dervish, Jennifer Steinkamp</figcaption></figure>
 
-<h2 id="components-of-a-polygon-object">Components of a Polygon Object</h2>
+<h1 id="components-of-a-polygon-object">Components of a Polygon Object</h1>
 <p>We've been talking in class about using Polygon primitives, basic shapes such as cubes and spheres, but what exactly is a <strong>Polygon</strong> objects.</p>
 <p>In short, polygon objects are made up of three components:</p>
 <ul>
@@ -299,7 +398,7 @@
 <p>We can begin by turning on the visibility of our "FACES" layer by pressing the left-most button on the layer.</p>
 <figure> <img src = "../assets/images/maya_layers_on.png"></figure>
 
-<h2 id="faces">Faces</h2>
+<h1 id="faces">Faces</h1>
 <p>To navigate to faces, hover over your model and press the <strong>Right Mouse Button</strong>.</p>
 <p>This will bring up our <a href="https://help.autodesk.com/view/MAYAUL/2024/ENU/?guid=GUID-8BA1A3AA-4C44-4779-8B22-0AAE3627E8EB"><strong>Marking Menu</strong></a>. Marking Menus are context specific and allow us to get easy access to all the functionality of Maya.</p>
 <p>You don't click in the marking menu. Instead, however over the tool you want to access and release the right mouse button.</p>
@@ -308,17 +407,17 @@
 </blockquote>
 <figure> <img src = "../assets/images/2_maya_facemode.gif"></figure>
 
-<h3 id="modify">Modify</h3>
-<p>We can modify faces using the translate, rotate and scale tools.</p>
-<p>Use the translate, rotate and scale tools to create the object on the right.</p>
+<h2 id="modify">Modify</h2>
+<p>We can modify faces using the move, rotate and scale tools.</p>
+<p>Use the move, rotate and scale tools to create the object on the right.</p>
 <figure> <img src = "../assets/images/2_maya_faces_modify.gif"></figure>
 
-<h3 id="delete">Delete</h3>
+<h2 id="delete">Delete</h2>
 <p>We can also delete faces to allow for interesting shapes.</p>
-<p>Use the Translate and Delete tools to make the shape on the right.</p>
+<p>Use the Move and Delete tools to make the shape on the right.</p>
 <figure> <img src = "../assets/images/2_maya_faces_delete.gif"></figure>
 
-<h3 id="normals">Normals</h3>
+<h2 id="normals">Normals</h2>
 <p>Notice that the inside of our box is black, while the outside is gray.</p>
 <p>This is because faces have not thickness to them, they are infinitely thin!
 The direction the face is facing is the normal direction. We always want the normal direction to be facing outwards towards our camera.</p>
@@ -341,7 +440,7 @@ let's reverse the normals this model so that the inside of model is correctly fa
 </ol>
 <figure> <img src = "../assets/images/2_maya_faces_normal_reverse.gif"></figure>
 
-<h3 id="extrude">Extrude</h3>
+<h2 id="extrude">Extrude</h2>
 <p>The most important tool associate with faces and for poly-modeling in general, is the <strong>Extrude</strong> tool. The extrude tool allows us to extrude out additional faces from our model to build out geometry.</p>
 <p>We can open the extrude tool by using the <strong>Shift+RightClick</strong> marking menu and then navigating to <strong>Extrude Face</strong>.</p>
 <h4 id="thickness">Thickness</h4>
@@ -361,14 +460,14 @@ Extrude all the faces on the cube with <strong>Keep Faces Together</strong> off.
 <figure> <img src = "../assets/images/2_maya_faces_extrude_together.gif"></figure>
 
 <h4 id="hot-keys">Hot Keys</h4>
-<p>Lastly, we can use the <strong>Shift</strong> Hot Key with our Translate, Rotate and Scale tools to quickly extrude.</p>
+<p>Lastly, we can use the <strong>Shift</strong> Hot Key with our Move, Rotate and Scale tools to quickly extrude.</p>
 <p>Hold <strong>Shift</strong> while moving and scaling the top face to make the model on the right.</p>
 <blockquote>
 <p><code>UI TIP:</code> If you have trouble rotating around face or seeing a face clearly, press the <strong>F Key</strong> on your keyboard to focus on a particular face. The clip below shows what happens when you zoom in on a face.</p>
 </blockquote>
 <figure> <img src = "../assets/images/2_maya_faces_extrude_hotkeys.gif"></figure>
 
-<h4 id="face-selection">Face Selection</h4>
+<h2 id="face-selection">Face Selection</h2>
 <p>Lastly, let's go over a common face selection technique. This allows us to select a large number of faces next to each other at once. Let's follow the below steps to make the model in the "face selection" area.</p>
 <ul>
 <li>
@@ -390,7 +489,10 @@ Extrude all the faces on the cube with <strong>Keep Faces Together</strong> off.
 <p>Then, we'll press <strong>Ctrl+Shift+I</strong> to reverse the selection, followed by the <strong>Delete Key</strong> to delete our top and bottom faces.<figure> <img src = "../assets/images/2_maya_faces_selection_cylinderdelete.gif"></figure></p>
 </li>
 </ul>
-<h2 id="edges">Edges</h2>
+<blockquote>
+<p><code>UI TIP</code>: <strong>Shit+Click</strong> to add items to you selection and <strong>Ctrl+Click</strong> to remove items from your selection also works with face, edge and vertex selection.</p>
+</blockquote>
+<h1 id="edges">Edges</h1>
 <p>Each face is typically made you of four edges. A face with four edges is refereed to as a quadrilateral or a "quad", for short. It is best practice when modeling to ensure allow your polygons are quads - in other words, each polygon should have four edges.</p>
 <ul>
 <li>4 Sides, Quad = Great!</li>
@@ -400,7 +502,7 @@ Extrude all the faces on the cube with <strong>Keep Faces Together</strong> off.
 <p>The structuring and flow of edges to create faces on a model is <strong>topology</strong>.</p>
 <figure> <img src = "../assets/images/maya_incredibles.png"><figcaption>Face Topology of Mrs.Incredible from The Incredibles. Notice on her ear we see what appears to be a tri. If we look closely, however, we can see it is actually a quad with four sides </figcaption></figure>
 
-<h3 id="selecting-edges">Selecting Edges</h3>
+<h2 id="selecting-edges">Selecting Edges</h2>
 <p>To enter edge selection, we can hold the <strong>Right Mouse Button</strong> over our model and navigate up to edge.</p>
 <figure> <img src = "../assets/images/2_maya_edge_selection.gif"></figure>
 
@@ -414,7 +516,7 @@ Extrude all the faces on the cube with <strong>Keep Faces Together</strong> off.
 <p>Delete the center edge loop to match the image on the right.</p>
 <figure> <img src = "../assets/images/2_maya_edge_delete.gif"></figure>
 
-<h3 id="modify_1">Modify</h3>
+<h2 id="modify_1">Modify</h2>
 <p>We can modify edges using our Transform, Rotate, Scale and Extrude tools.
 Use the <strong>Shift</strong> Hot Key to extrude with Transform and Scale to create a model similar to the low polygon glass. Make sure to select the full edge loop at start.</p>
 <figure> <img src = "../assets/images/2_maya_edge_modify.gif"></figure>
@@ -423,7 +525,7 @@ Use the <strong>Shift</strong> Hot Key to extrude with Transform and Scale to cr
 <p>We'll extrude inward to keep the profile of our glass the same, so we'll need to flip the normals of all our faces to be pointing outwards toward the camera. Make sure when you extrude the glass that the faces on the interior of the stem don't overlap.</p>
 <figure> <img src = "../assets/images/2_maya_edge_extrude.gif"></figure>
 
-<h3 id="insert">Insert</h3>
+<h2 id="insert">Insert</h2>
 <p>We can add edge loops to our model using the <strong>Insert Edge Loop Tool</strong>. Hold <strong>Shift+RMB</strong> over the model and navigate to the Insert Edge Loop Tool. </p>
 <p>Hold Click + Drag on an edge to insert and position an edge loop. Release Left Click to place the edge loop. Insert edge loops to create the model on the right. Press Q to exit the insert edge loop tool.</p>
 <figure> <img src = "../assets/images/2_maya_edge_insert.gif"></figure>
@@ -439,7 +541,7 @@ Use the <strong>Shift</strong> Hot Key to extrude with Transform and Scale to cr
 </blockquote>
 <figure> <img src = "../assets/images/2_maya_edge_insert_settings_building.gif"></figure>
 
-<h3 id="bridge">Bridge</h3>
+<h2 id="bridge">Bridge</h2>
 <p>Lastly, we have the bridge tool. The bridge tool allows us to create a face using two edges.</p>
 <p>To use the bridge tool, we can click on two edges and navigate to <strong>Bridge</strong> holding <strong>Shift+ Right Click</strong></p>
 <figure> <img src = "../assets/images/2_maya_edge_bridge_single.gif"></figure>
@@ -447,10 +549,162 @@ Use the <strong>Shift</strong> Hot Key to extrude with Transform and Scale to cr
 <p>We can bridge multiple edges together by selecting an equal number of edges opposite one another. Select the remaining six open edges and bridge them together.</p>
 <figure> <img src = "../assets/images/2_maya_edge_bridge_multiple.gif"></figure>
 
-<h2 id="vertices">Vertices</h2>
-<h2 id="space-and-transforms">Space and Transforms</h2>
-<h2 id="class-exercise-archway">Class Exercise: Archway</h2>
-<h2 id="independent-exercise-camera">Independent Exercise: Camera</h2></p>
+<h1 id="vertices">Vertices</h1>
+<p>Vertices are an essential part of Polygon Modeling. <strong>Vertices</strong> define the end points of <strong>edges</strong> and the boundaries of <strong>faces</strong>.</p>
+<p>In simple terms, vertices define our model. Take for instance the simple example of a cube. Each vertex of this cube is defined by it position in X,Y,Z space.</p>
+<p>This is what our cube would look like if its back left corner was on the origin point.</p>
+<figure> <img src = "../assets/images/02_maya_verticies_cube.png"></figure>
+
+<p>Behind the scenes, in the code of the 3D modeling software, the cube might look something a bit more like this:</p>
+<pre><code class="language-python"> vertices = [
+    (0, 0, 0),  # 0: origin (bottom-back-left)
+    (1, 0, 0),  # 1: bottom-back-right
+    (1, 1, 0),  # 2: top-back-right
+    (0, 1, 0),  # 3: top-back-left
+    (0, 0, 1),  # 4: bottom-front-left
+    (1, 0, 1),  # 5: bottom-front-right
+    (1, 1, 1),  # 6: top-front-right
+    (0, 1, 1)   # 7: top-front-left
+]
+
+faces = [
+    (0, 1, 2, 3),  # back face (Z = 0)
+    (4, 5, 6, 7),  # front face (Z = 1)
+    (0, 1, 5, 4),  # bottom face (Y = 0)
+    (3, 2, 6, 7),  # top face (Y = 1)
+    (1, 2, 6, 5),  # right face (X = 1)
+    (0, 3, 7, 4)   # left face (X = 0)
+]
+</code></pre>
+<blockquote>
+<p><code>THOUGHT</code>: Think back to the earlier image of the VW Bug being digitized. They entered in all of these X,Y,Z coordinates manually.</p>
+</blockquote>
+<p>Here, our vertices are defines by X,Y,Z coordinates and our faces are defined by grouping together those different vertices.</p>
+<p><code>When we manipulate our 3D model, we change how this model looks in code.</code></p>
+<p>With this in mind, we can do some interesting operations with vertices to create complex 3D models.</p>
+<h2 id="modify-vertices">Modify Vertices</h2>
+<p>Navigate to the Vertex selection tool using by holding <strong>RMB</strong> over the first model and navigating to <strong>Vertex</strong>.</p>
+<figure> <img src = "../assets/images/02_maya_vertices_selection.gif"></figure>
+
+<p>We can select multiple vertices by <strong>Clicking + Dragging</strong> over a number of vertices. Us this tool to select multiple vertices and manipulate them to match the model on the right. Make sure to hold <strong>Shift</strong> when selecting the second set of vertices.</p>
+<figure> <img src = "../assets/images/02_maya_vertices_selection_box.gif"></figure>
+
+<h2 id="weld">Weld</h2>
+<p>The most crucial modification tool we can use with vertices is the Weld tool. This allow to merge two or more vertices together into a single vertex.</p>
+<p>This operation allows to create "water tight" geometry so our edges and faces are connected.</p>
+<p>Let's use some weld tools to make the model on the right.</p>
+<h4 id="merge-vertices-tool">Merge Vertices Tool</h4>
+<ol>
+<li>Begin by snapping the top open vertex of our cylinder to the top back vertex. Remember to use the <strong>V Key</strong> to activate Vertex snap. <figure> <img src = "../assets/images/02_maya_vertices_weld_snap.gif"></figure><blockquote>
+<p><code>NOTE</code>: Even though the vertex are snapped together they are still two separate vertices!</p>
+</blockquote>
+</li>
+<li>Let keep track of how many vertices there are by turning on our Poly Count. Navigate to <strong>Display</strong> -&gt; <strong>Heads Up Display</strong> -&gt; <strong>Poly Count</strong>. This shows us how many Vertices, Edges, and Faces there are in our scene.<figure> <img src = "../assets/images/02_maya_vertices_weld_polycount.gif"></figure> <blockquote>
+<p><code>UI TIP</code>: The first number column shows the number of total components in our scene, the second shows the object we have selected, and the third shows us our current selection. You can see if we select the area where we snapped our vertices together, there are <strong>2</strong> vertices. <figure> <img src = "../assets/images/02_maya_vertices_weld_polycount_selection.gif"></figure></p>
+</blockquote>
+</li>
+<li>Lets merge these vertices into a single vertex using the the <strong>Merge Vertex</strong> tool. Select the two vertices using the selection box, and use <strong>Shift + RMB</strong> to navigate to <strong>Merge Vertices</strong> -&gt; <strong>Merge Vertices</strong>. For vertices that are right on top of each other, a safe <strong>Distance Threshold</strong> is <strong>.001</strong>. The <strong>Distance Threshold</strong> is how close the vertices need to be to each other to merge together. Most of the time <strong>.01</strong> is fine, you'll mostly be changing this number when merge vertices leads to unintended effects. <figure> <img src = "../assets/images/02_maya_vertices_weld_mergevertices.gif"></figure><blockquote>
+<p><code>UI TIP</code>: When entering data into a dialog box in Maya, use the <strong>Enter Key</strong> on your keyboard to confirm the selection.</p>
+</blockquote>
+</li>
+<li>If we enter face selection and move one of our back top faces, we can see all of our faces are now properly connected. The below gif shows the difference between having our vertices merged versus not merged. <figure> <img src = "../assets/images/02_maya_vertices_weld_mergevertices_test.gif"></figure></li>
+</ol>
+<h4 id="target-weld-tool">Target Weld Tool</h4>
+<p>The other tool that we can use when we want to move a vertex to merge with another is the <strong>Target Weld Tool</strong>. The target weld tool allows us to grab a vertex and snap it to another to weld them together.</p>
+<ol>
+<li>Hold <strong>Shift+RMB</strong> on your model in Object selection mode and navigate to Target Weld Tool.<figure> <img src = "../assets/images/02_maya_vertices_weld_targetweldtool.gif"></figure></li>
+<li><strong>Click + Drag</strong> the bottom open vertex to the bottom center vertex to merge them together.<figure> <img src = "../assets/images/02_maya_vertices_weld_targetweldtool_merge.gif"></figure></li>
+<li>Press <strong>Q</strong> to activate the selection tool and exit the Target Weld tool.</li>
+</ol>
+<h3 id="practice">Practice</h3>
+<p>Lets put what we've learned so far to a test by using two sides of cube to make a complete cube.</p>
+<ol>
+<li>Enter Edge selection mode and extrude and snap edges to make a full cube.<blockquote>
+<p><code>UI TIP</code>: When extruding using the <strong>Shift</strong> hot key, you can also hold a snapping too, such as <strong>V</strong> for vertex to extrude and snap.<figure> <img src = "../assets/images/02_maya_vertices_practice_edges.gif"></figure></p>
+</blockquote>
+</li>
+<li>Enter Vertex mode and use the Merge Vertex tool to merge all the vertices together. We may have forgotten which vertices are not merged, so we can select all of them using box selection.<blockquote>
+<p><code>UI TIP</code>: Box selection will select all vertices in its range, even that are on the back of our model we can't see.<figure> <img src = "../assets/images/02_maya_vertices_practice_merge.gif"></figure></p>
+</blockquote>
+</li>
+</ol>
+<h1 id="space-and-transforms">Space and Transforms</h1>
+<p>Navigate to the "Additional" layer.</p>
+<p>Before we move into our exercise for today, let cover some important information about manipulating objects in 3D Software.</p>
+<h2 id="world-vs-object-vs-component-space">World vs. Object vs. Component Space</h2>
+<h4 id="world-space">World Space</h4>
+<p>You might have noticed that when we enter our Move tool, our gizmo always aligns with the direction of our world coordinates. Meaning Y is always Up, X is always Right, and Z is always forward. If, for example, I rotate my sphere slightly, and then switch to the Move tool, my gizmo doesn't follow the rotation of my object, it instead follows the world.</p>
+<p>This is know as <strong>World Space</strong></p>
+<figure> <img src = "../assets/images/02_maya_space_world.gif"></figure>
+
+<h4 id="component-space">Component Space</h4>
+<p>Component Space, instead, will match my gizmo to the <em>Normal Direction</em> of my component. Remember, normals are direction a component faces forward.</p>
+<p>For example, the normal direction of the vertices on a low poly sphere will look something like this:</p>
+<figure> <img src = "../assets/images/02_maya_space_normals.jpg"></figure>
+<p>Lets test out switching to component space and moving our vertices:</p>
+<ol>
+<li>Select a vertex on the first sphere within the "Component Space" section and move it upward. Notice how it moves in world space. Press <strong>Ctrl + Z</strong> to undo the movement.<figure> <img src = "../assets/images/02_maya_space_sphere_world.gif"></figure></li>
+<li>Make sure the Move tool is active and hold <strong>Ctrl+Shift+RMB</strong> to open the settings for our move tool. Notice how world is selected and navigate to "Component".<figure> <img src = "../assets/images/02_maya_space_sphere_component_on.gif"></figure></li>
+<li>Now Move a vertex and note how it moves along the vertex's normal. Press <strong>Ctrl + Z</strong> to undo the movement.<figure> <img src = "../assets/images/02_maya_space_sphere_component_vertex.gif"></figure></li>
+<li>Move the Vertices on the sphere to make the model on the right.<figure> <img src = "../assets/images/02_maya_space_sphere_component_test.gif"></figure></li>
+</ol>
+<blockquote>
+<p><code>UI TIP</code>: Component space can also be used with faces and edges!</p>
+</blockquote>
+<h4 id="object-space">Object Space</h4>
+<p>Object space is similar to component space, but instead of following the specific normals, it instead follows the rotation of an object.</p>
+<ol>
+<li>
+<p>Navigate to the first cylinder in the "Object Space" section. Switch back to World Space and test the movement of your object. Then switch to Object Space and see its effects. Remember to hold <strong>Ctrl+Shift+RMB</strong> to switch between different spaces.<figure> <img src = "../assets/images/02_maya_space_object_test.gif"></figure></p>
+<blockquote>
+<p><code>NOTE</code>: It appears that our gizmo doesn't change. However, on closer inspection we can see it rotates 90 Degrees, matching the the RotateY value in our Channel Box.</p>
+</blockquote>
+</li>
+<li>
+<p>Looking at the bottom cylinder to right within Object Space, we can see the gizmo matches the rotation of our object. Use the <strong>V Key</strong> to snap our the bottom cylinder to the top one, moving it in Object Space.<figure> <img src = "../assets/images/02_maya_space_object_cylinder.gif"></figure></p>
+</li>
+</ol>
+<h2 id="combine">Combine</h2>
+<p>Let's say for those two cylinders, we wanted to merge them together. If we tried, we would notice nothing would happen. That is because we can only weld together two or more vertices that are on the same object. To combine two objects together to make one object, we can use the combine tool.</p>
+<ul>
+<li>Snap the two cylinders together, select them both, and the hold <strong>Shift+RMB</strong> to open our object tools, then navigate to <strong>Combine</strong>.<figure> <img src = "../assets/images/02_maya_space_combine.gif"></figure></li>
+<li>Now weld all the vertices together using the <strong>Marge Vertices</strong> tool. Navigate to the tool using <strong>Shift+RMB</strong> in vertex selection mode.<figure> <img src = "../assets/images/02_maya_space_combine_merge.gif"></figure></li>
+</ul>
+<p>Notice that when we combine our cylinder our Object Space transform matches our world coordinates. The Combine tool freezes our transformations, in other words, sets all of our channel box values to 0. Our object now has a rotation of 0 so the object space gizmo now matches perfectly with world space.</p>
+<figure> <img src = "../assets/images/02_maya_space_combine_world.png"><figcaption>Our Object Space after combining<figcaption></figure>
+
+<figure> <img src = "../assets/images/02_maya_space_combine_world_channel.png"><figcaption>Our Channel Box after combining<figcaption></figure>
+
+<h2 id="freeze-transformations">Freeze Transformations</h2>
+<p>We can manually freeze the transformation on an object by navigating to the Freeze Transformation tool. Select the first cylinder in the "Freeze Transformation" section then navigate to <strong>Display</strong> -&gt; <strong>Freeze Transformations</strong>. Notice how the Channel Box values reset to 0.<figure> <img src = "../assets/images/02_maya_space_freeze.gif"></figure></p>
+<h2 id="history">History</h2>
+<p>The last helpful thing to know about Maya before moving onto our exercise is <strong>History</strong>.</p>
+<p>Everything in Maya is connected! Behind the scene, ever tool we used on our model connected through nodes and stored in our objects history. </p>
+<p>We can see this in our Channel Box:</p>
+<figure> <img src = "../assets/images/02_maya_space_history_channel.png"></figure>
+
+<p>Or we can see it in our node editor.</p>
+<p>We don't need to worry too much about the node editor for this class, but just to show you a bit of the back end of what is happening in Maya:</p>
+<p>I made a new cube, and deleted one face. You can see this in the node editor below:</p>
+<figure> <img src = "../assets/images/02_maya_space_history_node.png"></figure>
+<p>I then combined the two cubes together, and made a mess like this, showing the two cubes combining:</p>
+<figure> <img src = "../assets/images/02_maya_space_history_node_combine.png"></figure>
+<p>Finally, I deleted the History on my new model, essentially, all the past nodes so that now only my new object remains:</p>
+<figure> <img src = "../assets/images/02_maya_space_history_node_history.png"></figure>
+
+<p>Let's combine the two cubes and delete their history.</p>
+<ol>
+<li>Select both Cubes and combine them together.</li>
+</ol>
+<figure> <img src = "../assets/images/02_maya_space_history_combine.gif"></figure>
+<ol>
+<li>Select the new object and navigate to <strong>Edit</strong> -&gt; <strong>Delete by Type</strong> -&gt; <strong>History</strong> </li>
+</ol>
+<figure> <img src = "../assets/images/02_maya_space_history_delete.gif"></figure>
+
+<p><code>NOTE</code>: If something starts going wrong with your model, or tools begin acting strange, it could be because the history of your model is influencing your current actions. It is good practice in Maya to occasionally delete the history of your model if you no longer need it!</p>
+<h1 id="class-exercise-archway">Class Exercise: Archway</h1>
+<h1 id="independent-exercise-camera">Independent Exercise: Camera</h1></p>
     </article>
 </section>
 <!-- endblock -->
