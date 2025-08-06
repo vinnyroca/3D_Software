@@ -111,3 +111,7 @@ As reading responses are essential to the discussion section of the course, late
 #### Artist Presentations
 
 Artist presentations will be evaluated on the group’s research, comprehensiveness, and clarity of the oral presentation. Does the research demonstrate that the students carried out extensive research practices when exploring the artist’s biography and practice? Does the student use the themes of the course to contextualize the artist’s work within 3D software? Do the students include citations for the sources of their presentation?
+
+## Resources
+
+[Maya Hotkeys](https://www.autodesk.com/shortcuts/maya)

@@ -1,3 +1,35 @@
+<script>
+// Get the header element
+let header = document.querySelector('header');
+
+// Get the height of the header
+document.querySelectorAll('a[href^="#"]')
+.forEach(function (anchor) {
+    anchor.addEventListener('click', 
+    function (event) {
+        event.preventDefault();
+
+        // Get the target element that 
+        // the anchor link points to
+        let target = document.querySelector(
+            this.getAttribute('href')
+        );
+        
+        let headerHeight = header.offsetHeight*2;
+        
+        let targetPosition = target
+            .getBoundingClientRect().top - headerHeight;
+
+        window.scrollTo({
+            top: targetPosition + window.scrollY,
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+<script>hljs.highlightAll();</script>
+
 # Polygonal Modelling with Maya
 
 
@@ -5,7 +37,7 @@
 
 > - How to Navigate Around the UI of Maya
 > - How to **Create** basic Polygon objects in Maya (called Polygon Primitives!)
-> - How to **Translate**, **Rotate** and **Scale** Objects
+> - How to **Move**, **Rotate** and **Scale** Objects
 > - How to move and object's **pivot**
 > - How to **snap** objects together
 
@@ -96,7 +128,7 @@ Installation, 2004-2005
 
 
 
-## Components of a Polygon Object
+# Components of a Polygon Object
 
 We've been talking in class about using Polygon primitives, basic shapes such as cubes and spheres, but what exactly is a **Polygon** objects.
 
@@ -126,7 +158,7 @@ We can begin by turning on the visibility of our "FACES" layer by pressing the l
 
 <figure> <img src = "../assets/images/maya_layers_on.png"></figure>
 
-## Faces
+# Faces
 
 To navigate to faces, hover over your model and press the **Right Mouse Button**.
 
@@ -138,23 +170,23 @@ You don't click in the marking menu. Instead, however over the tool you want to 
 
 <figure> <img src = "../assets/images/2_maya_facemode.gif"></figure> 
 
-### Modify
+## Modify
 
-We can modify faces using the translate, rotate and scale tools.
+We can modify faces using the move, rotate and scale tools.
 
-Use the translate, rotate and scale tools to create the object on the right.
+Use the move, rotate and scale tools to create the object on the right.
 
 <figure> <img src = "../assets/images/2_maya_faces_modify.gif"></figure> 
 
-### Delete
+## Delete
 
 We can also delete faces to allow for interesting shapes.
 
-Use the Translate and Delete tools to make the shape on the right.
+Use the Move and Delete tools to make the shape on the right.
 
 <figure> <img src = "../assets/images/2_maya_faces_delete.gif"></figure> 
 
-### Normals
+## Normals
 
 Notice that the inside of our box is black, while the outside is gray.
 
@@ -182,7 +214,7 @@ To reverse our normals:
 
 <figure> <img src = "../assets/images/2_maya_faces_normal_reverse.gif"></figure>
 
-### Extrude
+## Extrude
 
 The most important tool associate with faces and for poly-modeling in general, is the **Extrude** tool. The extrude tool allows us to extrude out additional faces from our model to build out geometry.
 
@@ -211,7 +243,7 @@ Extrude all the faces on the cube with **Keep Faces Together** off.
 
 #### Hot Keys
 
-Lastly, we can use the **Shift** Hot Key with our Translate, Rotate and Scale tools to quickly extrude.
+Lastly, we can use the **Shift** Hot Key with our Move, Rotate and Scale tools to quickly extrude.
 
 Hold **Shift** while moving and scaling the top face to make the model on the right.
 
@@ -219,7 +251,7 @@ Hold **Shift** while moving and scaling the top face to make the model on the ri
 
 <figure> <img src = "../assets/images/2_maya_faces_extrude_hotkeys.gif"></figure>
 
-#### Face Selection
+## Face Selection
 
 Lastly, let's go over a common face selection technique. This allows us to select a large number of faces next to each other at once. Let's follow the below steps to make the model in the "face selection" area.
 
@@ -235,7 +267,9 @@ Lastly, let's go over a common face selection technique. This allows us to selec
 
 - Then, we'll press **Ctrl+Shift+I** to reverse the selection, followed by the **Delete Key** to delete our top and bottom faces.<figure> <img src = "../assets/images/2_maya_faces_selection_cylinderdelete.gif"></figure>
 
-## Edges
+>`UI TIP`: **Shit+Click** to add items to you selection and **Ctrl+Click** to remove items from your selection also works with face, edge and vertex selection.
+
+# Edges
 
 Each face is typically made you of four edges. A face with four edges is refereed to as a quadrilateral or a "quad", for short. It is best practice when modeling to ensure allow your polygons are quads - in other words, each polygon should have four edges.
 
@@ -247,7 +281,7 @@ The structuring and flow of edges to create faces on a model is **topology**.
 
 <figure> <img src = "../assets/images/maya_incredibles.png"><figcaption>Face Topology of Mrs.Incredible from The Incredibles. Notice on her ear we see what appears to be a tri. If we look closely, however, we can see it is actually a quad with four sides </figcaption></figure>
 
-### Selecting Edges
+## Selecting Edges
 
 To enter edge selection, we can hold the **Right Mouse Button** over our model and navigate up to edge.
 
@@ -269,7 +303,7 @@ Delete the center edge loop to match the image on the right.
 
 <figure> <img src = "../assets/images/2_maya_edge_delete.gif"></figure>
 
-### Modify
+## Modify
 
 We can modify edges using our Transform, Rotate, Scale and Extrude tools.
 Use the **Shift** Hot Key to extrude with Transform and Scale to create a model similar to the low polygon glass. Make sure to select the full edge loop at start.
@@ -282,7 +316,7 @@ We'll extrude inward to keep the profile of our glass the same, so we'll need to
 
 <figure> <img src = "../assets/images/2_maya_edge_extrude.gif"></figure>
 
-### Insert
+## Insert
 
 We can add edge loops to our model using the **Insert Edge Loop Tool**. Hold **Shift+RMB** over the model and navigate to the Insert Edge Loop Tool. 
 
@@ -305,7 +339,7 @@ We can also extrude our windows and door to match the model on the right.
 
 <figure> <img src = "../assets/images/2_maya_edge_insert_settings_building.gif"></figure>
 
-### Bridge
+## Bridge
 
 Lastly, we have the bridge tool. The bridge tool allows us to create a face using two edges.
 
@@ -317,13 +351,189 @@ We can bridge multiple edges together by selecting an equal number of edges oppo
 
 <figure> <img src = "../assets/images/2_maya_edge_bridge_multiple.gif"></figure>
 
-## Vertices
+# Vertices
 
-## Space and Transforms
+Vertices are an essential part of Polygon Modeling. **Vertices** define the end points of **edges** and the boundaries of **faces**.
 
-## Class Exercise: Archway
+In simple terms, vertices define our model. Take for instance the simple example of a cube. Each vertex of this cube is defined by it position in X,Y,Z space.
 
-## Independent Exercise: Camera
+
+This is what our cube would look like if its back left corner was on the origin point.
+
+<figure> <img src = "../assets/images/02_maya_verticies_cube.png"></figure>
+
+Behind the scenes, in the code of the 3D modeling software, the cube might look something a bit more like this:
+
+``` python
+ vertices = [
+    (0, 0, 0),  # 0: origin (bottom-back-left)
+    (1, 0, 0),  # 1: bottom-back-right
+    (1, 1, 0),  # 2: top-back-right
+    (0, 1, 0),  # 3: top-back-left
+    (0, 0, 1),  # 4: bottom-front-left
+    (1, 0, 1),  # 5: bottom-front-right
+    (1, 1, 1),  # 6: top-front-right
+    (0, 1, 1)   # 7: top-front-left
+]
+
+faces = [
+    (0, 1, 2, 3),  # back face (Z = 0)
+    (4, 5, 6, 7),  # front face (Z = 1)
+    (0, 1, 5, 4),  # bottom face (Y = 0)
+    (3, 2, 6, 7),  # top face (Y = 1)
+    (1, 2, 6, 5),  # right face (X = 1)
+    (0, 3, 7, 4)   # left face (X = 0)
+]
+```
+
+> `THOUGHT`: Think back to the earlier image of the VW Bug being digitized. They entered in all of these X,Y,Z coordinates manually.
+
+
+Here, our vertices are defines by X,Y,Z coordinates and our faces are defined by grouping together those different vertices.
+
+`When we manipulate our 3D model, we change how this model looks in code.`
+
+With this in mind, we can do some interesting operations with vertices to create complex 3D models.
+
+## Modify Vertices
+
+Navigate to the Vertex selection tool using by holding **RMB** over the first model and navigating to **Vertex**.
+
+<figure> <img src = "../assets/images/02_maya_vertices_selection.gif"></figure>
+
+We can select multiple vertices by **Clicking + Dragging** over a number of vertices. Us this tool to select multiple vertices and manipulate them to match the model on the right. Make sure to hold **Shift** when selecting the second set of vertices.
+
+<figure> <img src = "../assets/images/02_maya_vertices_selection_box.gif"></figure>
+
+## Weld
+
+The most crucial modification tool we can use with vertices is the Weld tool. This allow to merge two or more vertices together into a single vertex.
+
+This operation allows to create "water tight" geometry so our edges and faces are connected.
+
+Let's use some weld tools to make the model on the right.
+
+#### Merge Vertices Tool
+
+1. Begin by snapping the top open vertex of our cylinder to the top back vertex. Remember to use the **V Key** to activate Vertex snap. <figure> <img src = "../assets/images/02_maya_vertices_weld_snap.gif"></figure>
+> `NOTE`: Even though the vertex are snapped together they are still two separate vertices!
+2. Let keep track of how many vertices there are by turning on our Poly Count. Navigate to **Display** -> **Heads Up Display** -> **Poly Count**. This shows us how many Vertices, Edges, and Faces there are in our scene.<figure> <img src = "../assets/images/02_maya_vertices_weld_polycount.gif"></figure> 
+> `UI TIP`: The first number column shows the number of total components in our scene, the second shows the object we have selected, and the third shows us our current selection. You can see if we select the area where we snapped our vertices together, there are **2** vertices. <figure> <img src = "../assets/images/02_maya_vertices_weld_polycount_selection.gif"></figure>
+3. Lets merge these vertices into a single vertex using the the **Merge Vertex** tool. Select the two vertices using the selection box, and use **Shift + RMB** to navigate to **Merge Vertices** -> **Merge Vertices**. For vertices that are right on top of each other, a safe **Distance Threshold** is **.001**. The **Distance Threshold** is how close the vertices need to be to each other to merge together. Most of the time **.01** is fine, you'll mostly be changing this number when merge vertices leads to unintended effects. <figure> <img src = "../assets/images/02_maya_vertices_weld_mergevertices.gif"></figure>
+>`UI TIP`: When entering data into a dialog box in Maya, use the **Enter Key** on your keyboard to confirm the selection.
+4. If we enter face selection and move one of our back top faces, we can see all of our faces are now properly connected. The below gif shows the difference between having our vertices merged versus not merged. <figure> <img src = "../assets/images/02_maya_vertices_weld_mergevertices_test.gif"></figure>
+
+#### Target Weld Tool
+
+The other tool that we can use when we want to move a vertex to merge with another is the **Target Weld Tool**. The target weld tool allows us to grab a vertex and snap it to another to weld them together.
+
+1. Hold **Shift+RMB** on your model in Object selection mode and navigate to Target Weld Tool.<figure> <img src = "../assets/images/02_maya_vertices_weld_targetweldtool.gif"></figure>
+2. **Click + Drag** the bottom open vertex to the bottom center vertex to merge them together.<figure> <img src = "../assets/images/02_maya_vertices_weld_targetweldtool_merge.gif"></figure>
+3. Press **Q** to activate the selection tool and exit the Target Weld tool.
+
+### Practice
+
+Lets put what we've learned so far to a test by using two sides of cube to make a complete cube.
+
+1. Enter Edge selection mode and extrude and snap edges to make a full cube.
+>`UI TIP`: When extruding using the **Shift** hot key, you can also hold a snapping too, such as **V** for vertex to extrude and snap.<figure> <img src = "../assets/images/02_maya_vertices_practice_edges.gif"></figure>
+2. Enter Vertex mode and use the Merge Vertex tool to merge all the vertices together. We may have forgotten which vertices are not merged, so we can select all of them using box selection.
+>`UI TIP`: Box selection will select all vertices in its range, even that are on the back of our model we can't see.<figure> <img src = "../assets/images/02_maya_vertices_practice_merge.gif"></figure>
+
+# Space and Transforms
+
+Navigate to the "Additional" layer.
+
+Before we move into our exercise for today, let cover some important information about manipulating objects in 3D Software.
+
+## World vs. Object vs. Component Space
+
+#### World Space
+
+You might have noticed that when we enter our Move tool, our gizmo always aligns with the direction of our world coordinates. Meaning Y is always Up, X is always Right, and Z is always forward. If, for example, I rotate my sphere slightly, and then switch to the Move tool, my gizmo doesn't follow the rotation of my object, it instead follows the world.
+
+This is know as **World Space**
+
+<figure> <img src = "../assets/images/02_maya_space_world.gif"></figure>
+
+#### Component Space
+
+Component Space, instead, will match my gizmo to the *Normal Direction* of my component. Remember, normals are direction a component faces forward.
+
+For example, the normal direction of the vertices on a low poly sphere will look something like this:
+
+<figure> <img src = "../assets/images/02_maya_space_normals.jpg"></figure>
+Lets test out switching to component space and moving our vertices:
+
+1. Select a vertex on the first sphere within the "Component Space" section and move it upward. Notice how it moves in world space. Press **Ctrl + Z** to undo the movement.<figure> <img src = "../assets/images/02_maya_space_sphere_world.gif"></figure>
+2. Make sure the Move tool is active and hold **Ctrl+Shift+RMB** to open the settings for our move tool. Notice how world is selected and navigate to "Component".<figure> <img src = "../assets/images/02_maya_space_sphere_component_on.gif"></figure>
+3. Now Move a vertex and note how it moves along the vertex's normal. Press **Ctrl + Z** to undo the movement.<figure> <img src = "../assets/images/02_maya_space_sphere_component_vertex.gif"></figure>
+4. Move the Vertices on the sphere to make the model on the right.<figure> <img src = "../assets/images/02_maya_space_sphere_component_test.gif"></figure>
+
+>`UI TIP`: Component space can also be used with faces and edges!
+
+#### Object Space
+
+Object space is similar to component space, but instead of following the specific normals, it instead follows the rotation of an object.
+
+1. Navigate to the first cylinder in the "Object Space" section. Switch back to World Space and test the movement of your object. Then switch to Object Space and see its effects. Remember to hold **Ctrl+Shift+RMB** to switch between different spaces.<figure> <img src = "../assets/images/02_maya_space_object_test.gif"></figure>
+> `NOTE`: It appears that our gizmo doesn't change. However, on closer inspection we can see it rotates 90 Degrees, matching the the RotateY value in our Channel Box.
+
+2. Looking at the bottom cylinder to right within Object Space, we can see the gizmo matches the rotation of our object. Use the **V Key** to snap our the bottom cylinder to the top one, moving it in Object Space.<figure> <img src = "../assets/images/02_maya_space_object_cylinder.gif"></figure>
+
+## Combine
+
+Let's say for those two cylinders, we wanted to merge them together. If we tried, we would notice nothing would happen. That is because we can only weld together two or more vertices that are on the same object. To combine two objects together to make one object, we can use the combine tool.
+
+- Snap the two cylinders together, select them both, and the hold **Shift+RMB** to open our object tools, then navigate to **Combine**.<figure> <img src = "../assets/images/02_maya_space_combine.gif"></figure>
+- Now weld all the vertices together using the **Marge Vertices** tool. Navigate to the tool using **Shift+RMB** in vertex selection mode.<figure> <img src = "../assets/images/02_maya_space_combine_merge.gif"></figure>
+
+Notice that when we combine our cylinder our Object Space transform matches our world coordinates. The Combine tool freezes our transformations, in other words, sets all of our channel box values to 0. Our object now has a rotation of 0 so the object space gizmo now matches perfectly with world space.
+
+<figure> <img src = "../assets/images/02_maya_space_combine_world.png"><figcaption>Our Object Space after combining<figcaption></figure>
+
+<figure> <img src = "../assets/images/02_maya_space_combine_world_channel.png"><figcaption>Our Channel Box after combining<figcaption></figure>
+
+## Freeze Transformations
+
+We can manually freeze the transformation on an object by navigating to the Freeze Transformation tool. Select the first cylinder in the "Freeze Transformation" section then navigate to **Display** -> **Freeze Transformations**. Notice how the Channel Box values reset to 0.<figure> <img src = "../assets/images/02_maya_space_freeze.gif"></figure>
+
+## History
+
+The last helpful thing to know about Maya before moving onto our exercise is **History**.
+
+Everything in Maya is connected! Behind the scene, ever tool we used on our model connected through nodes and stored in our objects history. 
+
+We can see this in our Channel Box:
+<figure> <img src = "../assets/images/02_maya_space_history_channel.png"></figure>
+
+Or we can see it in our node editor.
+
+We don't need to worry too much about the node editor for this class, but just to show you a bit of the back end of what is happening in Maya:
+
+I made a new cube, and deleted one face. You can see this in the node editor below:
+<figure> <img src = "../assets/images/02_maya_space_history_node.png"></figure>
+I then combined the two cubes together, and made a mess like this, showing the two cubes combining:
+<figure> <img src = "../assets/images/02_maya_space_history_node_combine.png"></figure>
+Finally, I deleted the History on my new model, essentially, all the past nodes so that now only my new object remains:
+<figure> <img src = "../assets/images/02_maya_space_history_node_history.png"></figure>
+
+Let's combine the two cubes and delete their history.
+
+1. Select both Cubes and combine them together.
+<figure> <img src = "../assets/images/02_maya_space_history_combine.gif"></figure>
+2. Select the new object and navigate to **Edit** -> **Delete by Type** -> **History** 
+<figure> <img src = "../assets/images/02_maya_space_history_delete.gif"></figure>
+
+`NOTE`: If something starts going wrong with your model, or tools begin acting strange, it could be because the history of your model is influencing your current actions. It is good practice in Maya to occasionally delete the history of your model if you no longer need it!
+
+
+
+
+
+# Class Exercise: Archway
+
+# Independent Exercise: Camera
 
 
 
