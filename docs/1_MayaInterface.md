@@ -34,27 +34,27 @@ document.querySelectorAll('a[href^="#"]')
 
 Let's start by opening Autodesk Maya 2025 or 2026 on the lab computers. You can navigate to the search menu on the bottom of your screen and search for "Maya."<br><figure> <img src = "../assets/images/Maya_Loading_Screen.png"><figcaption> Maya Loading Screen </figcaption></figure>  
 
-This will open you to the Maya homepage where we can create a new project by pressing new. <br><figure> <img src = "../assets/images/Maya_New.png"> </figure>
+This will open you to the Maya homepage, where we can create a new project by pressing new. <br><figure> <img src = "../assets/images/Maya_New.png"> </figure>
 
-You might notice that we need to keep tabbing back and forth between our tutorial and our Maya interface. Since in the lab we are only using one monitor, lets use Windows default split screen feature to create a divided screen. 
+You might notice that we need to keep tabbing back and forth between our tutorial and our Maya interface. Since in the lab we are only using one monitor, let's use Windows' default split screen feature to create a divided screen. 
 
-Click on top bar of your Maya interface and hold the **Windows Key** and then tap the **Left Arrow Key.** Release the **Windows Key** and you should then see the option to click our **Browser** to have the two screens side by side.
+Click on the top bar of your Maya interface and hold the **Windows Key** and then tap the **Left Arrow Key.** Release the **Windows Key** and you should then see the option to click our **Browser** to have the two screens side by side.
 
-By click and dragging on the dividing line between the two screens you can change the amount of your screen each window takes up. This class website has flexible scaling so feel free to make the **browser** as small as you like.
+By clicking and dragging on the dividing line between the two screens you can change the amount of your screen each window takes up. This class website has flexible scaling so feel free to make the **browser** as small as you like. I recommended you scale the browser to still see the left navigation bar.
 
-We'll be using this technique for the remainder of this class so refer back to this section if you forget the order of operations.
+We'll be using this technique for the remainder of this class, so refer back to this section if you forget the order of operations.
 
 ## Maya Interface
 <figure> <img src = "../assets/images/Maya_Interface.png"><figcaption> My Maya interface</figcaption> </figure> 
 
-Although the Maya interface seems very confusing at first, as we move through the course you will notice that your navigation of buttons and menus will become more intuitive. Our readings for this introductory module will introduce software studies through an examination of Maya's interface.
+Although the Maya interface seems very confusing at first, as we move through the course, you will notice that your navigation of buttons and menus will become more intuitive. Our readings for this introductory module will introduce software studies through an examination of Maya's interface.
 
-To keep things simple, we will cover parts of the interface as needed for different parts of the course. As a continuous reminder, as an experimental arts course we are not looking for technical *mastery*, we are looking to understand Maya/3D software in general artistically and critically.
+To keep things simple, we will cover parts of the interface as needed for different parts of the course. As a continuous reminder, as an experimental arts course, we are not looking for technical *mastery*, we are looking to understand Maya/3D software in general artistically and critically.
 ___
 
 ## View Panel
 
-In the center of our screen we have our [view panel](https://help.autodesk.com/view/MAYAUL/2025/ENU/?guid=GUID-455539A6-3506-458C-92DA-14F171C14553). This is where we can view 3D objects and manipulate them in real time.
+In the center of our screen, we have our [view panel](https://help.autodesk.com/view/MAYAUL/2025/ENU/?guid=GUID-455539A6-3506-458C-92DA-14F171C14553). This is where we can view 3D objects and manipulate them in real time.
 
 > `Thought:` Although we are just starting, begin to consider the relationship between the view panel, which shows a live 3D view, and the various data points around this central portion. How is a 3D model both represented as a real-time image and data?
 

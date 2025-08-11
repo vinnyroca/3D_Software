@@ -11,11 +11,11 @@
 **INSTRUCTOR**  
 Vinny Roca, Scripps College  
 Email: vroca@scrippscollege.edu  
-Office hours: By appointment; Tuesday 1:30 - 2:30
+Office Hours: Lang 227. By appointment; Tuesday 1:30 - 2:30
 ---
 ## Course Description
 
-This interdisciplinary introductory course examines the history, theory, and techniques of 3D software. Through weekly assignments, critical readings, and projects, students will engage with 3D software as a technical tool, artistic medium, and cultural object. This course introduces foundational skills in modeling, rendering, and animation using Maya and Zbrush, alongside exploration of additional software. Weekly discussions, readings, and presentations will critically engage with 3D software’s cultural, social, economic, and political dimensions. The ideas and skills taught in this course will set a foundation for future coursework in game design, animation, video art, digital fabrication, and media studies.
+This interdisciplinary introductory course examines the history, theory, and techniques of 3D software. Through weekly assignments, critical readings, and projects, students will engage with 3D software as a technical tool, artistic medium, and cultural object. This course introduces foundational skills in modeling, rendering, and animation using various software. Weekly discussions, readings, and presentations will critically engage with 3D software’s cultural, social, economic, and political dimensions. The ideas and skills taught in this course will set a foundation for future coursework in game design, animation, video art, digital fabrication, and media studies.
 
 ---
 
@@ -28,48 +28,6 @@ The objective of this course is to introduce foundational technical skills in 3D
 - Ability to analyze software as cultural, historical, and technical objects.
 - Gain critical knowledge of history, theory, and cultural impact of 3D software.
 - Ability to craft expansive media art projects using 3D software.
-
----
-## Course Outline
-
-#### 1. Introduction  
-
-#### 2. Modeling Software 
-
-In this module, students will be introduced to the fundamentals of Autodesk Maya. Additionally, students will be provided an overview of the field of software studies, with a particular focus on the study of media production software.  
-
-#### 3. Modeling History  
-
-In this module, we will look at the origins of 3D modeling research and software. We will explore how this early history continues to shape 3D modeling and our understanding of digital objects. Further, we will continue our exploration of the techniques of modeling by looking at how we can manipulate components to create more complex 3D models.
-
-#### 4. Modeling Vision  
-
-In this module, we will explore how space, materials, and objects are understood by processes of computation and software. We will compare this computational process to our experiences of the world to consider the drawbacks and affordances of the imperfect simulation of 3D software for artists. We will develop technical and critical knowledge for discussing how this historically situated and imperfect simulation continues to impact our culture in the present. Additionally, we will make use of historical technical standardizations within Maya to learn about texturing and image-based modeling.  
-
-
-#### 5. Modeling Objects  
-
-In this module, we will explore how the history of modeling objects has shaped both further computer graphics research as well as our contemporary understanding of digital objects. We will explore the disconnect in 3D modeling between geometry and material to explore 3D modeling as an imperfect simulation. Additionally, we will continue to develop our technical skills by learning the fundamentals of creating materials and producing rendered images of our 3D scenes.  
-
-#### 6. Modeling Artists  
-
-#### <mark>7. PROJECT ONE CRIT</mark>  
-
-#### 8. Modeling Knowledge  
-
-In this module, we will explore how models in the academy, from protein models to detailed models of Rome, have changed how knowledge is formed and produced. We will consider how we can use models to generate knowledge, as well as explore the limitations and criticisms of conducting knowledge experiments with software. We will also consider how 3D modeling has been used as a tool of resistance to protect vulnerable communities. Additionally, we will begin experimenting with ZBrush to explore the potential of organic modeling to create abstract and representational models. 
-  
-
-9. Modeling Gender and Race
-10. Modeling Motion
-11. Modeling Rest
-12. Modeling Environment(s)
-13. Modeling Possibilities
-14. Modeling Artists
-15. FINAL PROJECT CRIT
-
-
-
 
 ---
 ## Grading & Assignments
@@ -115,3 +73,14 @@ Artist presentations will be evaluated on the group’s research, comprehensiven
 ## Resources
 
 [Maya Hotkeys](https://www.autodesk.com/shortcuts/maya)
+
+## Course Materials
+
+Although ample time will provided to work in class and the lab with be open during non-class hours when other classes are not in session, you might still find you want to work on your projects outside the lab.
+
+For working outside the lab on your personal computer, the following hardware is recommended:
+
+1. Entry Level Wacom Drawing Tablet ~ $60
+2. A 500Gb+ SSD ~ $50-100
+3. A three button mouse ~ $20-50
+4. Maxon One Student Subscription ~ $60

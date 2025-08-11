@@ -1,14 +1,12 @@
 site_name: Introduction to 3D Software
+site_url: https://3dsoftware.vinnyroca.info/
+
 nav:
   - Syllabus: index.md
   - Schedule: schedule.md
   - Assignments:
-    - Device For One: deviceforone.md
-    - Portrait as a Chair: chair.md
-    - World of Repetition: repetition.md
-    - Artist Presentations: artist.md
-  - Exercises:
-    - B.N.B.: bnb.md
+    - Dream Object: dreamobject.md
+    - Memory Palace: memorypalace.md
 
 theme:
 

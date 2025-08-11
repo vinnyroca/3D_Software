@@ -38,14 +38,18 @@ document.querySelectorAll('a[href^="#"]')
 > - How to Navigate Around the UI of Maya
 > - How to **Create** basic Polygon objects in Maya (called Polygon Primitives!)
 > - How to **Move**, **Rotate** and **Scale** Objects
-> - How to move and object's **pivot**
+> - How to move an object's **pivot**
 > - How to **snap** objects together
 
 > `PLAN:`
 
 > - Aspects of Polygonal Modeling with Maya
-> - Making an Arch Way Follow Along
-> - Modeling a Low Poly Camera Exercise
+> - Faces
+> - Edges
+> - Vertices
+> - Space and Transforms
+> - Class Exercise
+> - Independent Exercise
 
 ## Artist Spotlight
 
@@ -130,7 +134,7 @@ Installation, 2004-2005
 
 ## Components of a Polygon Object
 
-We've been talking in class about using Polygon primitives, basic shapes such as cubes and spheres, but what exactly is a **Polygon** objects.
+We've been talking in class about using Polygon primitives, basic shapes such as cubes and spheres, but what exactly is a **Polygon** object.
 
 In short, polygon objects are made up of three components:
 
@@ -138,7 +142,9 @@ In short, polygon objects are made up of three components:
 - Edges
 - Faces (sometimes called Polygons or Polys)
 
-Before software like Maya, Polygon Models were made by manually entering the location of vertices into a computer. Often modelers and researchers would trace objects and use specialized equipment to find the distance between vertices.
+<figure> <img src = "../assets/images/02_maya_01.png"><figcaption>Face, Edge and Vertex</figcaption></figure>
+
+Before software like Maya, Polygon Models were made by manually entering the location of vertices into a computer. Often, modelers and researchers would trace objects and use specialized equipment to find the distance between vertices.
 
 <figure> <img src = "../assets/images/maya_VWBug.png"><figcaption>Image from Image Objects by Jacob Gaboury</figcaption></figure>
 
@@ -148,9 +154,9 @@ Today, **Polygonal Modeling** involves manipulating these three components to cr
 
 Let's start by loading the practice file for today's class. Download Here.
 
-After the file is open, you'll notice on the right side of the screen there are a variety of layers.
+After the file is open, you'll notice on the right side of the screen that there are a variety of layers.
 
-Layers all us to store different models on different layers of our scene.
+Layers allow us to store different models on different layers of our scene.
 
 <figure> <img src = "../assets/images/maya_layers.png"></figure>
 
@@ -162,9 +168,9 @@ We can begin by turning on the visibility of our "FACES" layer by pressing the l
 
 To navigate to faces, hover over your model and press the **Right Mouse Button**.
 
-This will bring up our [**Marking Menu**](https://help.autodesk.com/view/MAYAUL/2024/ENU/?guid=GUID-8BA1A3AA-4C44-4779-8B22-0AAE3627E8EB). Marking Menus are context specific and allow us to get easy access to all the functionality of Maya.
+This will bring up our [**Marking Menu**](https://help.autodesk.com/view/MAYAUL/2024/ENU/?guid=GUID-8BA1A3AA-4C44-4779-8B22-0AAE3627E8EB). Marking Menus are context-specific and allow us to get easy access to all the functionality of Maya.
 
-You don't click in the marking menu. Instead, however over the tool you want to access and release the right mouse button.
+You don't click in the marking menu. Instead, however, over the tool you want to access and release the right mouse button.
 
 > `UI TIP`: You can use the same marking menu to return to **Object Mode** when you are done selecting on faces.
 
@@ -172,9 +178,9 @@ You don't click in the marking menu. Instead, however over the tool you want to 
 
 ### Modify
 
-We can modify faces using the move, rotate and scale tools.
+We can modify faces using the Move, Rotate and Scale tools.
 
-Use the move, rotate and scale tools to create the object on the right.
+Use the Move, Rotate and Scale tools to create the object on the right.
 
 <figure> <img src = "../assets/images/2_maya_faces_modify.gif"></figure> 
 
@@ -190,11 +196,11 @@ Use the Move and Delete tools to make the shape on the right.
 
 Notice that the inside of our box is black, while the outside is gray.
 
-This is because faces have not thickness to them, they are infinitely thin!
+This is because faces have no thickness to them, they are infinitely thin!
 The direction the face is facing is the normal direction. We always want the normal direction to be facing outwards towards our camera.
 
-We'll learn more about the complication of normals as the course progresses, but for now,
-let's reverse the normals this model so that the inside of model is correctly facing the camera.
+We'll learn more about the complications of normals as the course progresses, but for now,
+let's reverse the normals this model so that the inside of the model is correctly facing the camera.
 
 To select all the faces on our model:
 
@@ -216,7 +222,7 @@ To reverse our normals:
 
 ### Extrude
 
-The most important tool associate with faces and for poly-modeling in general, is the **Extrude** tool. The extrude tool allows us to extrude out additional faces from our model to build out geometry.
+The most important tool associated with faces and for poly-modeling in general, is the **Extrude** tool. The extrude tool allows us to extrude additional faces from our model to build out geometry.
 
 We can open the extrude tool by using the **Shift+RightClick** marking menu and then navigating to **Extrude Face**.
 
@@ -247,7 +253,7 @@ Lastly, we can use the **Shift** Hot Key with our Move, Rotate and Scale tools t
 
 Hold **Shift** while moving and scaling the top face to make the model on the right.
 
-> `UI TIP:` If you have trouble rotating around face or seeing a face clearly, press the **F Key** on your keyboard to focus on a particular face. The clip below shows what happens when you zoom in on a face.
+> `UI TIP:` If you have trouble rotating around a face or seeing a face clearly, press the **F Key** on your keyboard to focus on a particular face. The clip below shows what happens when you zoom in on a face.
 
 <figure> <img src = "../assets/images/2_maya_faces_extrude_hotkeys.gif"></figure>
 
@@ -260,18 +266,18 @@ Lastly, let's go over a common face selection technique. This allows us to selec
 
 
 - Change the number of sides on your cylinder to 16 to match the object on the right.<figure> <img src = "../assets/images/2_maya_faces_selection_cylindersides.gif"></figure>
->`UI TIP`: We can change the amount of sides our cylinder has in the **Channel Box**.
+>`UI TIP`: We can change the number of sides our cylinder has in the **Channel Box**.
 
 
 - Next let's select everything but the top and bottom of our cylinder. We'll do this by selecting on face and then, hold **Shift**, double click on one of the faces next to our selected face. <figure> <img src = "../assets/images/2_maya_faces_selection_cylinderselect.gif"></figure>
 
 - Then, we'll press **Ctrl+Shift+I** to reverse the selection, followed by the **Delete Key** to delete our top and bottom faces.<figure> <img src = "../assets/images/2_maya_faces_selection_cylinderdelete.gif"></figure>
 
->`UI TIP`: **Shit+Click** to add items to you selection and **Ctrl+Click** to remove items from your selection also works with face, edge and vertex selection.
+>`UI TIP`: **Shit+Click** to add items to your selection and **Ctrl+Click** to remove items from your selection, also works with face, edge and vertex selection.
 
 ## Edges
 
-Each face is typically made you of four edges. A face with four edges is refereed to as a quadrilateral or a "quad", for short. It is best practice when modeling to ensure allow your polygons are quads - in other words, each polygon should have four edges.
+Each face is typically made you of four edges. A face with four edges is referred to as a quadrilateral or a "quad", for short. It is best practice when modeling to ensure allow your polygons are quads - in other words, each polygon should have four edges.
 
 - 4 Sides, Quad = Great!
 - 3 Sides, Tri = Okay in some situations. 
@@ -283,13 +289,13 @@ The structuring and flow of edges to create faces on a model is **topology**.
 
 ### Selecting Edges
 
-To enter edge selection, we can hold the **Right Mouse Button** over our model and navigate up to edge.
+To enter edge selection, we can hold the **Right Mouse Button** over our model and navigate up to **Edge**.
 
 <figure> <img src = "../assets/images/2_maya_edge_selection.gif"></figure>
 
 Edges attached together in an unbroken line are called an **Edge Loop.**
 
-We can select and edge loop by double click on an edge that is part of that loop.
+We can select an edge loop by double clicking on an edge that is part of that loop.
 
 <figure> <img src = "../assets/images/2_maya_edge_selection_edgeloop.gif"></figure>
 
@@ -297,7 +303,7 @@ Edges adjacent to each other, but not connecting in a loop, are called an **Edge
 
 We can select an edge ring by clicking on an edge and then **Shift+Double Click** on an adjacent edge. <figure> <img src = "../assets/images/2_maya_edge_selection_edgering.gif"></figure>
 
-To Delete an edge loop we use the special hotkey, **Ctrl+Backspace**. This hotkey will delete the edge loop and the vertices associated with it. Note in the gif below, we should not delete a single edge, as this will make and N-Gon. Instead, we should delete the whole edge loop.
+To Delete an edge loop, we use the special hotkey, **Ctrl+Backspace**. This hotkey will delete the edge loop and the vertices associated with it. Note in the gif below, we should not delete a single edge, as this will make an N-Gon. Instead, we should delete the whole edge loop.
 
 Delete the center edge loop to match the image on the right.
 
@@ -306,7 +312,7 @@ Delete the center edge loop to match the image on the right.
 ### Modify
 
 We can modify edges using our Transform, Rotate, Scale and Extrude tools.
-Use the **Shift** Hot Key to extrude with Transform and Scale to create a model similar to the low polygon glass. Make sure to select the full edge loop at start.
+Use the **Shift** Hot Key to extrude with Transform and Scale to create a model similar to the low polygon glass. Make sure to select the full edge loop at the start.
 
 <figure> <img src = "../assets/images/2_maya_edge_modify.gif"></figure>
 
@@ -327,15 +333,15 @@ Hold Click + Drag on an edge to insert and position an edge loop. Release Left C
 
 We can also add edge loops to our model that are equally distant from one another. For this object, I want to be able to add in some basic windows and a door.
 
-Lets start by opening the **Insert Edge Loop Tool** Settings. Hold **Shift+RMB** over the model and navigate to the small box next to the Insert Edge Loop Tool. This will bring up the tools settings.
+Let's start by opening the **Insert Edge Loop Tool** Settings. Hold **Shift+RMB** over the model and navigate to the small box next to the Insert Edge Loop Tool. This will bring up the tools settings.
 
-<figure> <img src = "../assets/images/2_maya_edge_insert.gif"></figure>
+<figure> <img src = "../assets/images/2_maya_edge_insert_settings.gif"></figure>
 
-In our settings, we can toggle on **Multiple Edge Loops** to insert a specific number of loops. Let's add 6 vertically and 7 Horizontally.
+In our settings, we can toggle on **Multiple Edge Loops** to insert a specific number of loops. Let's add 6 vertically and 7 horizontally.
 
 We can also extrude our windows and door to match the model on the right.
 
-> `UI TIP`: When we turn on a tool such as Insert Edge Loop Tool, that tool stays on until we exit it. The easiest way to exit a tool is by pressing the Q key to activate the selection tool.
+> `UI TIP`: When we turn on a tool such as the Insert Edge Loop Tool, that tool stays on until we exit it. The easiest way to exit a tool is by pressing the **Q** key to activate the selection tool.
 
 <figure> <img src = "../assets/images/2_maya_edge_insert_settings_building.gif"></figure>
 
@@ -355,10 +361,10 @@ We can bridge multiple edges together by selecting an equal number of edges oppo
 
 Vertices are an essential part of Polygon Modeling. **Vertices** define the end points of **edges** and the boundaries of **faces**.
 
-In simple terms, vertices define our model. Take for instance the simple example of a cube. Each vertex of this cube is defined by it position in X,Y,Z space.
+In simple terms, vertices define our model. Take, for instance, the simple example of a cube. Each vertex of this cube is defined by its position in X,Y,Z space.
 
 
-This is what our cube would look like if its back left corner was on the origin point.
+This is what our cube would look like if its back left corner were on the origin point.
 
 <figure> <img src = "../assets/images/02_maya_verticies_cube.png"></figure>
 
@@ -389,7 +395,7 @@ faces = [
 > `THOUGHT`: Think back to the earlier image of the VW Bug being digitized. They entered in all of these X,Y,Z coordinates manually.
 
 
-Here, our vertices are defines by X,Y,Z coordinates and our faces are defined by grouping together those different vertices.
+Here, our vertices are defined by X,Y,Z coordinates, and our faces are defined by grouping together those different vertices.
 
 `When we manipulate our 3D model, we change how this model looks in code.`
 
@@ -397,29 +403,29 @@ With this in mind, we can do some interesting operations with vertices to create
 
 ### Modify Vertices
 
-Navigate to the Vertex selection tool using by holding **RMB** over the first model and navigating to **Vertex**.
+Navigate to the Vertex selection tool by holding **RMB** over the first model and navigating to **Vertex**.
 
 <figure> <img src = "../assets/images/02_maya_vertices_selection.gif"></figure>
 
-We can select multiple vertices by **Clicking + Dragging** over a number of vertices. Us this tool to select multiple vertices and manipulate them to match the model on the right. Make sure to hold **Shift** when selecting the second set of vertices.
+We can select multiple vertices by **Clicking + Dragging** over a number of vertices. Use this tool to select multiple vertices and manipulate them to match the model on the right. Make sure to hold **Shift** when selecting the second set of vertices.
 
 <figure> <img src = "../assets/images/02_maya_vertices_selection_box.gif"></figure>
 
 ### Weld
 
-The most crucial modification tool we can use with vertices is the Weld tool. This allow to merge two or more vertices together into a single vertex.
+The most crucial modification tool we can use with vertices is the Weld tool. This allows us to merge two or more vertices together into a single vertex.
 
-This operation allows to create "water tight" geometry so our edges and faces are connected.
+This operation allows us to create "water-tight" geometry so our edges and faces are connected.
 
 Let's use some weld tools to make the model on the right.
 
 #### Merge Vertices Tool
 
 1. Begin by snapping the top open vertex of our cylinder to the top back vertex. Remember to use the **V Key** to activate Vertex snap. <figure> <img src = "../assets/images/02_maya_vertices_weld_snap.gif"></figure>
-> `NOTE`: Even though the vertex are snapped together they are still two separate vertices!
-2. Let keep track of how many vertices there are by turning on our Poly Count. Navigate to **Display** -> **Heads Up Display** -> **Poly Count**. This shows us how many Vertices, Edges, and Faces there are in our scene.<figure> <img src = "../assets/images/02_maya_vertices_weld_polycount.gif"></figure> 
-> `UI TIP`: The first number column shows the number of total components in our scene, the second shows the object we have selected, and the third shows us our current selection. You can see if we select the area where we snapped our vertices together, there are **2** vertices. <figure> <img src = "../assets/images/02_maya_vertices_weld_polycount_selection.gif"></figure>
-3. Lets merge these vertices into a single vertex using the the **Merge Vertex** tool. Select the two vertices using the selection box, and use **Shift + RMB** to navigate to **Merge Vertices** -> **Merge Vertices**. For vertices that are right on top of each other, a safe **Distance Threshold** is **.001**. The **Distance Threshold** is how close the vertices need to be to each other to merge together. Most of the time **.01** is fine, you'll mostly be changing this number when merge vertices leads to unintended effects. <figure> <img src = "../assets/images/02_maya_vertices_weld_mergevertices.gif"></figure>
+> `NOTE`: Even though the vertices are snapped together, they are still two separate vertices!
+2. Let's keep track of how many vertices there are by turning on our Poly Count. Navigate to **Display** -> **Heads Up Display** -> **Poly Count**. This shows us how many Vertices, Edges, and Faces there are in our scene.<figure> <img src = "../assets/images/02_maya_vertices_weld_polycount.gif"></figure> 
+> `UI TIP`: The first number column shows the number of total components in our scene, the second column shows the object we have selected, and the third column shows us our current selection. You can see that if we select the area where we snapped our vertices together, there are **2** vertices. <figure> <img src = "../assets/images/02_maya_vertices_weld_polycount_selection.gif"></figure>
+3. Let's merge these vertices into a single vertex using the **Merge Vertex** tool. Select the two vertices using the selection box, and use **Shift + RMB** to navigate to **Merge Vertices** -> **Merge Vertices**. For vertices that are right on top of each other, a safe **Distance Threshold** is **.001**. The **Distance Threshold** is how close the vertices need to be to each other to merge together. Most of the time **.01** is fine, you'll mostly be changing this number when merge vertices leads to unintended effects. <figure> <img src = "../assets/images/02_maya_vertices_weld_mergevertices.gif"></figure>
 >`UI TIP`: When entering data into a dialog box in Maya, use the **Enter Key** on your keyboard to confirm the selection.
 4. If we enter face selection and move one of our back top faces, we can see all of our faces are now properly connected. The below gif shows the difference between having our vertices merged versus not merged. <figure> <img src = "../assets/images/02_maya_vertices_weld_mergevertices_test.gif"></figure>
 
@@ -433,32 +439,32 @@ The other tool that we can use when we want to move a vertex to merge with anoth
 
 ### Practice
 
-Lets put what we've learned so far to a test by using two sides of cube to make a complete cube.
+Let's put what we've learned so far to the test by using two sides of a cube to make a complete cube.
 
 1. Enter Edge selection mode and extrude and snap edges to make a full cube.
 >`UI TIP`: When extruding using the **Shift** hot key, you can also hold a snapping too, such as **V** for vertex to extrude and snap.<figure> <img src = "../assets/images/02_maya_vertices_practice_edges.gif"></figure>
 2. Enter Vertex mode and use the Merge Vertex tool to merge all the vertices together. We may have forgotten which vertices are not merged, so we can select all of them using box selection.
->`UI TIP`: Box selection will select all vertices in its range, even that are on the back of our model we can't see.<figure> <img src = "../assets/images/02_maya_vertices_practice_merge.gif"></figure>
+>`UI TIP`: Box selection will select all vertices in its range, even those that are on the back of our model we can't see.<figure> <img src = "../assets/images/02_maya_vertices_practice_merge.gif"></figure>
 
 ## Space and Transforms
 
 Navigate to the "Additional" layer.
 
-Before we move into our exercise for today, let cover some important information about manipulating objects in 3D Software.
+Before we move into our exercise for today, let's cover some important information about manipulating objects in 3D Software.
 
 ### World vs. Object vs. Component Space
 
 #### World Space
 
-You might have noticed that when we enter our Move tool, our gizmo always aligns with the direction of our world coordinates. Meaning Y is always Up, X is always Right, and Z is always forward. If, for example, I rotate my sphere slightly, and then switch to the Move tool, my gizmo doesn't follow the rotation of my object, it instead follows the world.
+You might have noticed that when we enter our Move tool, our gizmo always aligns with the direction of our world coordinates. Meaning Y is always Up, X is always Right, and Z is always forward. If, for example, I rotate my sphere slightly and then switch to the Move tool, my gizmo doesn't follow the rotation of my object; it instead follows the world.
 
-This is know as **World Space**
+This is known as **World Space**
 
 <figure> <img src = "../assets/images/02_maya_space_world.gif"></figure>
 
 #### Component Space
 
-Component Space, instead, will match my gizmo to the *Normal Direction* of my component. Remember, normals are direction a component faces forward.
+Component Space, instead, will match my gizmo to the *Normal Direction* of my component. Remember, normals are the direction a component faces forward.
 
 For example, the normal direction of the vertices on a low poly sphere will look something like this:
 
@@ -467,28 +473,28 @@ Lets test out switching to component space and moving our vertices:
 
 1. Select a vertex on the first sphere within the "Component Space" section and move it upward. Notice how it moves in world space. Press **Ctrl + Z** to undo the movement.<figure> <img src = "../assets/images/02_maya_space_sphere_world.gif"></figure>
 2. Make sure the Move tool is active and hold **Ctrl+Shift+RMB** to open the settings for our move tool. Notice how world is selected and navigate to "Component".<figure> <img src = "../assets/images/02_maya_space_sphere_component_on.gif"></figure>
-3. Now Move a vertex and note how it moves along the vertex's normal. Press **Ctrl + Z** to undo the movement.<figure> <img src = "../assets/images/02_maya_space_sphere_component_vertex.gif"></figure>
+3. Now, move a vertex and note how it moves along the vertex's normal. Press **Ctrl + Z** to undo the movement.<figure> <img src = "../assets/images/02_maya_space_sphere_component_vertex.gif"></figure>
 4. Move the Vertices on the sphere to make the model on the right.<figure> <img src = "../assets/images/02_maya_space_sphere_component_test.gif"></figure>
 
 >`UI TIP`: Component space can also be used with faces and edges!
 
 #### Object Space
 
-Object space is similar to component space, but instead of following the specific normals, it instead follows the rotation of an object.
+Object space is similar to component space, but instead of following the specific normals, it follows the rotation of an object.
 
 1. Navigate to the first cylinder in the "Object Space" section. Switch back to World Space and test the movement of your object. Then switch to Object Space and see its effects. Remember to hold **Ctrl+Shift+RMB** to switch between different spaces.<figure> <img src = "../assets/images/02_maya_space_object_test.gif"></figure>
-> `NOTE`: It appears that our gizmo doesn't change. However, on closer inspection we can see it rotates 90 Degrees, matching the the RotateY value in our Channel Box.
+> `NOTE`: It appears that our gizmo doesn't change. However, on closer inspection, we can see it rotates 90 Degrees, matching the RotateY value in our Channel Box.
 
-2. Looking at the bottom cylinder to right within Object Space, we can see the gizmo matches the rotation of our object. Use the **V Key** to snap our the bottom cylinder to the top one, moving it in Object Space.<figure> <img src = "../assets/images/02_maya_space_object_cylinder.gif"></figure>
+2. Looking at the bottom cylinder to the right within Object Space, we can see the gizmo matches the rotation of our object. Use the **V Key** to snap our the bottom cylinder to the top one, moving it in Object Space.<figure> <img src = "../assets/images/02_maya_space_object_cylinder.gif"></figure>
 
 ### Combine
 
-Let's say for those two cylinders, we wanted to merge them together. If we tried, we would notice nothing would happen. That is because we can only weld together two or more vertices that are on the same object. To combine two objects together to make one object, we can use the combine tool.
+Let's say for those two cylinders, we wanted to merge them. If we tried, we would notice that nothing would happen. That is because we can only weld together two or more vertices that are on the same object. To combine two objects together to make one object, we can use the **Combine** tool.
 
-- Snap the two cylinders together, select them both, and the hold **Shift+RMB** to open our object tools, then navigate to **Combine**.<figure> <img src = "../assets/images/02_maya_space_combine.gif"></figure>
-- Now weld all the vertices together using the **Marge Vertices** tool. Navigate to the tool using **Shift+RMB** in vertex selection mode.<figure> <img src = "../assets/images/02_maya_space_combine_merge.gif"></figure>
+- Snap the two cylinders together, select them both, and then hold **Shift+RMB** to open our object tools, then navigate to **Combine**.<figure> <img src = "../assets/images/02_maya_space_combine.gif"></figure>
+- Now, weld all the vertices together using the **Marge Vertices** tool. Navigate to the tool using **Shift+RMB** in vertex selection mode.<figure> <img src = "../assets/images/02_maya_space_combine_merge.gif"></figure>
 
-Notice that when we combine our cylinder our Object Space transform matches our world coordinates. The Combine tool freezes our transformations, in other words, sets all of our channel box values to 0. Our object now has a rotation of 0 so the object space gizmo now matches perfectly with world space.
+Notice that when we combine our cylinder, our Object Space transform matches our world coordinates. The Combine tool freezes our transformations, in other words, sets all of our channel box values to 0. Our object now has a rotation of 0, so the object space gizmo now matches perfectly with world space.
 
 <figure> <img src = "../assets/images/02_maya_space_combine_world.png"><figcaption>Our Object Space after combining<figcaption></figure>
 
@@ -500,9 +506,9 @@ We can manually freeze the transformation on an object by navigating to the Free
 
 ### History
 
-The last helpful thing to know about Maya before moving onto our exercise is **History**.
+The last helpful thing to know about Maya before moving on to our exercise is **History**.
 
-Everything in Maya is connected! Behind the scene, ever tool we used on our model connected through nodes and stored in our objects history. 
+Everything in Maya is connected! Behind the scenes, every tool we used on our model connected through nodes and stored in our object's history. 
 
 We can see this in our Channel Box:
 <figure> <img src = "../assets/images/02_maya_space_history_channel.png"></figure>
@@ -511,7 +517,7 @@ Or we can see it in our node editor.
 
 We don't need to worry too much about the node editor for this class, but just to show you a bit of the back end of what is happening in Maya:
 
-I made a new cube, and deleted one face. You can see this in the node editor below:
+I made a new cube and deleted one face. You can see this in the node editor below:
 <figure> <img src = "../assets/images/02_maya_space_history_node.png"></figure>
 I then combined the two cubes together, and made a mess like this, showing the two cubes combining:
 <figure> <img src = "../assets/images/02_maya_space_history_node_combine.png"></figure>
@@ -525,7 +531,7 @@ Let's combine the two cubes and delete their history.
 2. Select the new object and navigate to **Edit** -> **Delete by Type** -> **History** 
 <figure> <img src = "../assets/images/02_maya_space_history_delete.gif"></figure>
 
-`NOTE`: If something starts going wrong with your model, or tools begin acting strange, it could be because the history of your model is influencing your current actions. It is good practice in Maya to occasionally delete the history of your model if you no longer need it!
+`NOTE`: If something starts going wrong with your model, or tools begin acting strangely, it could be because the history of your model is influencing your current actions. It is good practice in Maya to occasionally delete the history of your model if you no longer need it!
 
 ## Class Exercise: Archway
 
@@ -553,18 +559,18 @@ You can preview the final model by turning on the visibility of the "ARCH" layer
 >Symmetry (activates our Symmetry tool)
 >
 > <figure> <img src = "../assets/images/02_maya_arch_8.gif"></figure>
-> `UI TIP`: On the top of your View Panel, you can see if symmetry is active.
+> `UI TIP`: At the top of your View Panel, you can see if symmetry is active.
 ><figure> <img src = "../assets/images/02_maya_arch_1.png"></figure>
 
 1. Extrude the side edges of our arch along the X Axis.<br><br><figure> <img src = "../assets/images/02_maya_arch_9.gif"></figure>
 1. Scale the sides along the X Axis to make the level <br><br><figure> <img src = "../assets/images/02_maya_arch_10.gif"></figure>
-1. Select the top edges on one of our newly extruded sides.<br><br>Extrude the along the Y Axis and snap them to the top vertices of our model.<br><br><figure> <img src = "../assets/images/02_maya_arch_11.gif"></figure>
+1. Select the top edges on one of our newly extruded sides.<br><br>Extrude along the Y Axis and snap them to the top vertices of our model.<br><br><figure> <img src = "../assets/images/02_maya_arch_11.gif"></figure>
 1. Select all the vertices of our model using **Ctrl+Shift+A**<br><br>Use the **Merge Vertices** tool to merge them together.<br><br><figure> <img src = "../assets/images/02_maya_arch_12.gif"></figure>
 1. Using the **Bridge** tool, bridge the sides of our arch together.<br><br><figure> <img src = "../assets/images/02_maya_arch_13.gif"></figure>
-1. Double click an edge part of the top edge loop.<br><br>Deselect the the two edges on the side.<br><br>Using the **Bridge** tool, bridge the top of our arch together.<br><br><figure> <img src = "../assets/images/02_maya_arch_14.gif"></figure>
+1. Double click an edge part of the top edge loop.<br><br>Deselect the two edges on the side.<br><br>Using the **Bridge** tool, bridge the top of our arch together.<br><br><figure> <img src = "../assets/images/02_maya_arch_14.gif"></figure>
 1. Select the edge loop on the bottom of our arch.<br><br>Extrude along the Y Axis.<br><br><figure> <img src = "../assets/images/02_maya_arch_15.gif"></figure>
 1. Bridge the bottom of our arch. <br><br> <figure> <img src = "../assets/images/02_maya_arch_16.gif"></figure>
-1. Snap the Pivot point of our model to the bottom most vertices.<br><br>Place on model on the origin point of our world.<br><br><figure> <img src = "../assets/images/02_maya_arch_17.gif"></figure>
+1. Snap the Pivot point of our model to the bottom-most vertices.<br><br>Place on model on the origin point of our world.<br><br><figure> <img src = "../assets/images/02_maya_arch_17.gif"></figure>
 1. Duplicate our arch by dragging the move tool on the Z Axis while holding **Shift**<br><br>Move the pivot point of this new model to be on the front left bottom corner (see gif below)<br><br><figure> <img src = "../assets/images/02_maya_arch_18.gif"></figure>
 1. Rotate the new arch by 90 degrees along the Y Axis.<br><br>Snap it to the bottom corner of our original arch.<br><br><figure> <img src = "../assets/images/02_maya_arch_19.gif"></figure>
 1. Duplicate the new arch and snap it to our original arch.<br><br><figure> <img src = "../assets/images/02_maya_arch_20.gif"></figure>
@@ -575,18 +581,18 @@ You can preview the final model by turning on the visibility of the "ARCH" layer
 1. Bridge the front of our model. <br><br> <figure> <img src = "../assets/images/02_maya_arch_25.gif"></figure>
 1. Bridge the top and bottom of our model.<br><br><figure> <img src = "../assets/images/02_maya_arch_26.gif"></figure>
 1. We are going to use a new tool, the **Mirror** tool, to complete our model.<br><br>start by deleting the unedited half of our archway.<br><br><figure> <img src = "../assets/images/02_maya_arch_27.gif"></figure>
-1. Snap our pivot to the back most vertices of our model.<br><br>Then snap the pivot to the bottom most vertices.<br><br>Finally, snap the model to the center of our grid.<figure> <img src = "../assets/images/02_maya_arch_28.gif"></figure>
-1. Lets prepare our model for the **Mirror** tool by deleting its history.<br><br>Select our model and navigate to **Edit** -> **Delete by Type** -> **History**<br><br><figure> <img src = "../assets/images/02_maya_arch_29.gif"></figure>
-1. Select on our model in Object mode.<br><br>Holding **Shift+RMB** activate the **Mirror** tool. This tool allows us to reflect an weld our model along a certain axis.<br><br>
+1. Snap our pivot to the back-most vertices of our model.<br><br>Then snap the pivot to the bottom-most vertices.<br><br>Finally, snap the model to the center of our grid.<figure> <img src = "../assets/images/02_maya_arch_28.gif"></figure>
+1. Let's prepare our model for the **Mirror** tool by deleting its history.<br><br>Select our model and navigate to **Edit** -> **Delete by Type** -> **History**<br><br><figure> <img src = "../assets/images/02_maya_arch_29.gif"></figure>
+1. Select our model in Object mode.<br><br>Holding **Shift+RMB** activate the **Mirror** tool. This tool allows us to reflect and weld our model along a certain axis.<br><br>
 Make sure you change the following parameters:
 >Axis Position = World (changes the space in which of model reflects).
 >
-> Axis = Z (changes the Axis over which our model reflect)
+> Axis = Z (changes the Axis over which our model reflects)
 >
 > Merge Threshold = .01 (minimum distance for our vertices to marge together)
 >
 ><figure> <img src = "../assets/images/02_maya_arch_30.gif"></figure>
-1. Final lets clean up our model by deleting its history and freezing its transformations.<br><br>
+1. Finally, let's clean up our model by deleting its history and freezing its transformations.<br><br>
 To Delete History - **Edit** -> **Delete by Type** -> **History**.<br><br>To Freeze Transformations - **Modify** -> **Freeze Transformations**<br><br><figure> <img src = "../assets/images/02_maya_arch_31.gif"></figure>
 
 
@@ -595,13 +601,14 @@ To Delete History - **Edit** -> **Delete by Type** -> **History**.<br><br>To Fre
 
 ## Independent Exercise: Tree
 
-Inspired by the work of Char Davies and Jennifer Steinkamp, your exercise is to make 3D model of a tree. This exercise will be due at the start of next class session. To complete this exercise you'll need to learn some new tools on your own! Follow the below tutorial to get started!
+Inspired by the work of Char Davies and Jennifer Steinkamp, your exercise is to make 3D model of a tree. This exercise will be due at the start of the next class session. To complete this exercise, you'll need to learn some new tools on your own! Follow the tutorial below to get started!
 
 *This tutorial will only demonstrate the fundamentals of creating a simple tree. Use what you learn in this tutorial to make a tree with a number of primary, secondary and tertiary branches.*
 
 You can use a tree on campus for inspiration!
 
-**Submit 3 screen shots and your Maya file on Canvas by the start of our next class session.**
+**Submit 3 screenshots and your Maya file on Canvas by the start of our next class session.**
+
 
 ### Getting Started
 
@@ -618,11 +625,11 @@ You can use a tree on campus for inspiration!
 <figure> <img src = "../assets/images/02_maya_tree_03.gif"></figure>
 
 ### Making Primary Branches
-- Extrude 2 segments that around the same size and will be equal to the diameter of your new branch. Extrude once more to continue the trunk. 
+- Extrude 2 segments that are around the same size and will be equal to the diameter of your new branch. Extrude once more to continue the trunk. 
 
 <figure> <img src = "../assets/images/02_maya_tree_04.gif"></figure>
 
-- In the 2 segments we extruded, we want to extrude a new branch that has 16 sides. To do this we will select 12 faces. 6 on the top and 6 on the bottom. You can notice that the border of these selected faces has 16 sides. 
+- In the 2 segments we extruded, we want to extrude a new branch that has 16 sides. To do this we will select 12 faces: 6 on the top and 6 on the bottom. You can notice that the border of these selected faces has 16 sides. 
 
 <figure> <img src = "../assets/images/02_maya_tree_05.gif"></figure>
 
@@ -639,7 +646,7 @@ Circularize components is a very helpful tool with Maya. It allows us to take an
 <figure> <img src = "../assets/images/02_maya_tree_07.gif"></figure>
 
 - You'll notice this will make somewhat of a mess. However, don't worry, we have learned the tools to clean it up! <br><br>Begin by opening up the Scale tool, and scaling the faces down using the center Gizmo.
-<br><br> Then use the Rotate tool to match the edges beyond the circle to flow with the rest of our topology.<br><br>Finally, use the Move tool, to pull out the circle slightly.
+<br><br> Then use the Rotate tool to match the edges beyond the circle to flow with the rest of our topology.<br><br>Finally, use the Move tool to pull out the circle slightly.
 
 > `NOTE`: You may need to be in **Component Space** for the Move, Rotate, and Scale tool to have the intended effects.
 
@@ -657,13 +664,13 @@ Circularize components is a very helpful tool with Maya. It allows us to take an
 
 ### Making Tertiary Branches
 
-- To make tertiary branches, we'll repeat the same process expect we will only select 6 faces to make branches with 8 sides.
+- To make tertiary branches, we'll repeat the same process, except we will only select 6 faces to make branches with 8 sides.
 
 <figure> <img src = "../assets/images/02_maya_tree_11.gif"></figure>
 
 ### Duplicating Branches
 
-Since we doing all this work to make a single branch, it would be great to learn how to duplicate this work to other parts of our model.
+Since we are doing all this work to make a single branch, it would be great to learn how to duplicate this work to other parts of our model.
 
 - Begin by creating a new hole in our model, similar to the size of the branch we want to duplicate.
 
@@ -701,9 +708,11 @@ Since we doing all this work to make a single branch, it would be great to learn
 
 You might notice that we can see all the edges of our model. This makes our model look less like a tree. We can make our model appear smoother by softening the edges on our model. This will smooth the transition between different faces of our model.
 
-- To Soften our edges, in object mode navigate holding **Shift + RMB** to **Soften/Harden Edges** -> **Soften Edge.**
+- To soften our edges, in object mode navigate holding **Shift + RMB** to **Soften/Harden Edges** -> **Soften Edge.**
 
 <figure> <img src = "../assets/images/02_maya_tree_20.gif"></figure>
+
+## Required Reading
 
 
 
