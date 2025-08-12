@@ -11,7 +11,7 @@
 **INSTRUCTOR**  
 Vinny Roca, Scripps College  
 Email: vroca@scrippscollege.edu  
-Office Hours: Lang 227. By appointment; Tuesday 1:30 - 2:30
+Office Hours: Lang 227. By appointment; Tuesday & Thursday 1:30 - 2:30
 ---
 ## Course Description
 
