@@ -30,21 +30,26 @@ The objective of this course is to introduce foundational technical skills in 3D
 - Ability to craft expansive media art projects using 3D software.
 
 ---
-## Grading & Assignments
+## Grading, Assignments, Course Policy
 ---
 #### **Course Breakdown**
 
 |%||
 |:---:|---|
-|25| Final Project|
-|20|Participation|
-|20|Assignments|
-|15|Project One|
-|10|Artist Presentations|
+|35|Memory Chambre|
+|35|Dream Object|
+|10|Participation|
 |10|Reading Responses|
+|10|Exercises|
 
 #### **Evaluation Criteria**
-#### Projects and Assignments
+#### Projects & Exercises
+
+Projects are separated into a variety of project pieces.
+
+Project pieces and exercises will be graded on their level of completion in regards to the particular project piece or exercise.
+
+Completed projects will be graded using the following criteria:
 
 |||
 |:---:|---|
@@ -54,7 +59,7 @@ The objective of this course is to introduce foundational technical skills in 3D
 
 #### Participation
 
-As this course includes in-person discussions and critiques, active participation and attendance make up 20 percent of students’ final grade. All students are required to participate actively during the discussion periods, which will be facilitated using each student’s reading responses.
+As this course includes in-person discussions and critiques, active participation and attendance make up 10 percent of students’ final grade. All students are required to participate actively during the discussion periods, which will be facilitated using each student’s reading responses.
 
 Students more than ten minutes late for class will be marked as late. Three late marks will result in an unexcused absence. More than two unexcused absences may, at the instructor’s discretion, affect the final participation grade.
 
@@ -62,15 +67,34 @@ All critique and presentation classes are mandatory. If you anticipate missing a
 
 #### Reading Responses
 
+Reading responses are due by 5 p.m. the day before discussions.
+
 Reading responses will be graded on the level of engagement the student has with the text. Is the student connecting the text to other readings or experiences? Is the student engaging with the text through questions, disagreements, or new lines of thought?
 
 As reading responses are essential to the discussion section of the course, late reading responses will not be accepted.
 
-#### Artist Presentations
+#### Late Work and Extensions
 
-Artist presentations will be evaluated on the group’s research, comprehensiveness, and clarity of the oral presentation. Does the research demonstrate that the students carried out extensive research practices when exploring the artist’s biography and practice? Does the student use the themes of the course to contextualize the artist’s work within 3D software? Do the students include citations for the sources of their presentation?
+For all exercises, late work will not be accepted. Completing exercises on time is essential to the progression of the course. Not completing exercises will result in a student falling behind. In the situation that extra time is need to complete exercises and project pieces, student's must reach out to the instructor as soon as possible.
+
+Late projects not ready by their assigned crit day will automatically loose one letter grade. If the project in late by more than one week, the project will lose another letter grade. Projects that have missed the due date by more than two weeks cannot receive more than 50 percent credit.
 
 ## Resources
+
+### Discord
+
+For this class, we will be sharing our exercises, reading responses and project pieces through Discord. Students will be invited to join the class discord server on the first day of class.
+
+### Canvas
+
+Submissions for the class will be made through Box links, links to Box submissions will be on the class website.
+
+### Readings
+
+All readings are provided by the Instructor using this [link](https://scrippscollege.box.com/s/yjzmo42f7mg85bpzs9tpyvmzxprs9zlv).
+
+Password for readings will be provided in the class discord.
+
 
 [Maya Hotkeys](https://www.autodesk.com/shortcuts/maya)
 

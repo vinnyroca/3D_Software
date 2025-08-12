@@ -596,7 +596,9 @@ Make sure you change the following parameters:
 To Delete History - **Edit** -> **Delete by Type** -> **History**.<br><br>To Freeze Transformations - **Modify** -> **Freeze Transformations**<br><br><figure> <img src = "../assets/images/02_maya_arch_31.gif"></figure>
 
 
+## Readings For Discussion
 
+For our discussion on Thursday September 4th, we will be readings selections from Chapter 1 of Aylish Wood.
 
 
 ## Independent Exercise: Tree
@@ -712,7 +714,7 @@ You might notice that we can see all the edges of our model. This makes our mode
 
 <figure> <img src = "../assets/images/02_maya_tree_20.gif"></figure>
 
-## Required Reading
+
 
 
 
