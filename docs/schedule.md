@@ -75,7 +75,7 @@ tbody td:first-child {
 |---|---|---|---|
 |1|TUES<br>8/26| **- Introduction(s)**<br>**- Tutorial:** [Maya interface and object construction](./1_MayaInterface.md)|
 ||THUR<br>8/28|**- Tutorial:** [Maya Modeling Essentials](./2_ModellingEssentials.md)|**Due:**<br>- Creature Exercise<br>- Hard drive for class|
-|2|TUES<br>9/2|**- Tutorial:** [Subdivision Modeling](./3_SubivisionModeling)|**Due:**<br>- Tree Exercise|
+|2|TUES<br>9/2|**- Tutorial:** [Subdivision Modeling](./3_SubdivisionModeling.md)|**Due:**<br>- Tree Exercise|
 ||THUR<br>9/4|- **Discussion**<br>**- Tutorial:** [Advanced Modeling]|**Due:**<br>|
 |3|TUES<br>9/9|- **Studio Time:** Dream Object|**Due:**<br>|
 ||THUR<br>9/11|**- Discussion** <br> - **Studio Time:** Dream Object|**Due:**<br>|
