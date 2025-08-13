@@ -88,7 +88,7 @@ Virtual Reality Installation, 1998
 
 ## Subdivision Basics
 
-Start by downloading the practice file for today's class.
+Start by downloading the [practice file](https://scrippscollege.app.box.com/s/bfml0momr6a558ocr2gdiukk83o43ecf) for today's class. The folder 02_Subdivision Modeling.
 
 You'll notice for this class, the practice file is stored in a zip folder.
 

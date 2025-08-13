@@ -152,7 +152,7 @@ Before software like Maya, Polygon Models were made by manually entering the loc
 
 Today, **Polygonal Modeling** involves manipulating these three components to create a wide variety of shapes. We are no longer limited to jamming polygon primitives together and now can create objects of our own design.
 
-Let's start by loading the practice file for today's class. Download Here.
+Let's start by loading the [practice file](https://scrippscollege.app.box.com/s/bfml0momr6a558ocr2gdiukk83o43ecf) for today's class. File is in the folder 01_Modeling_Essentials.
 
 After the file is open, you'll notice on the right side of the screen that there are a variety of layers.
 
