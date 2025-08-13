@@ -67,25 +67,25 @@ All critique and presentation classes are mandatory. If you anticipate missing a
 
 #### Reading Responses
 
-Reading responses are due by 5 p.m. the day before discussions.
+Reading responses are due by 5 p.m. the day before discussions. Reading responses should be posted in proper Discord channel.
 
 Reading responses will be graded on the level of engagement the student has with the text. Is the student connecting the text to other readings or experiences? Is the student engaging with the text through questions, disagreements, or new lines of thought?
 
 As reading responses are essential to the discussion section of the course, late reading responses will not be accepted.
 
-#### Late Work and Extensions
+### Late Work and Extensions
 
-For all exercises, late work will not be accepted. Completing exercises on time is essential to the progression of the course. Not completing exercises will result in a student falling behind. In the situation that extra time is need to complete exercises and project pieces, student's must reach out to the instructor as soon as possible.
+For all exercises, late work will not be accepted. Completing exercises on time is essential to the progression of the course. Not completing exercises will result in a student falling behind. In the situation that extra time is need to complete exercises and project pieces, students must reach out to the instructor as soon as possible.
 
-Late projects not ready by their assigned crit day will automatically loose one letter grade. If the project in late by more than one week, the project will lose another letter grade. Projects that have missed the due date by more than two weeks cannot receive more than 50 percent credit.
+Late projects not ready by their assigned crit day will automatically loose one letter grade. Each day the project is late, it will loose one more letter grade. After three days, the project will not be accepted.
 
-## Resources
+### Discord and Email
 
-### Discord
+For this class, we will be sharing our exercises, reading responses and project pieces through Discord. Students will be invited to join the class Discord server on the first day of class.
 
-For this class, we will be sharing our exercises, reading responses and project pieces through Discord. Students will be invited to join the class discord server on the first day of class.
+I will respond to Discord messages and email within 24 hrs of receipt. I will respond to messages sent over the weekend on the following Monday.
 
-### Canvas
+### Box Submissions
 
 Submissions for the class will be made through Box links, links to Box submissions will be on the class website.
 
@@ -93,10 +93,9 @@ Submissions for the class will be made through Box links, links to Box submissio
 
 All readings are provided by the Instructor using this [link](https://scrippscollege.box.com/s/yjzmo42f7mg85bpzs9tpyvmzxprs9zlv).
 
-Password for readings will be provided in the class discord.
+Password for readings will be provided in the class Discord.
 
 
-[Maya Hotkeys](https://www.autodesk.com/shortcuts/maya)
 
 ## Course Materials
 
@@ -107,4 +106,55 @@ For working outside the lab on your personal computer, the following hardware is
 1. Entry Level Wacom Drawing Tablet ~ $60
 2. A 500Gb+ SSD ~ $50-100
 3. A three button mouse ~ $20-50
-4. Maxon One Student Subscription ~ $60
+4. Maxon One Student Subscription (This will be needed to run ZBrush) ~ $60
+5. Autodesk Maya ~ Free with student login
+
+## Scripps College Land Acknowledgement
+
+We would like to respectfully acknowledge that Scripps College sits within the historic homeland of the Tongva people. We acknowledge the painful history of genocide and colonization in our area. We acknowledge the strength and resilience of the Tongva people of the past, present, and future as the original caretakers of the land, water, and air, and we recognize our responsibility to be respectful stewards of the Scripps College campus. Today, this area and this campus are home to many Indigenous people from across the globe and we are proud that they are part of our community and institution.
+
+## Statement on Inclusion
+
+We understand the classroom as a space for practicing freedom; where one may challenge
+psychic, social, and cultural borders and create meaningful artistic expressions. To do so we must
+acknowledge and embrace the different identities and backgrounds we inhabit. This means that
+we will use preferred pronouns, respect self-identifications, and be mindful of special needs.
+Disagreement is encouraged and supported, however, our differences affect our
+conceptualization and experience of reality, and it is extremely important to remember that
+certain gender, race, sex, and class identities are more privileged while others are undermined
+and marginalized. Consequently, this makes some people feel more protected or vulnerable
+during debates and discussions. A collaborative effort between the students and Instructor is
+needed to create a supportive learning environment. While everyone should feel free to
+experiment creatively and conceptually, if a class member points out that something you have
+said or shared with the group is offensive, avoid being defensive; instead approach the discussion
+as a valuable opportunity for us to grow and learn from one another. Alternatively, if you feel
+that something said in discussion or included in a piece of work is harmful, you are encouraged
+to speak with the Instructor.
+
+Statement adopted from voidLab at https://github.com/voidlab/diversity-statement.
+
+
+## Resources
+
+### Class Resources
+
+- [Maya Hotkeys](https://www.autodesk.com/shortcuts/maya)
+
+### 7C Student Resources
+
+- [Campus Safety](https://services.claremont.edu/campus-safety/)
+- [Chaplains](https://services.claremont.edu/chaplains/)
+- [Chicano Latino Student Affairs (CLSA)](https://services.claremont.edu/clsa/)
+- [Claremont Colleges Library](https://library.claremont.edu/)
+- [The Claremont Colleges Services (TCCS)](https://services.claremont.edu/)
+- [EmPOWER Center](https://inside.scrippscollege.edu/studentaffairs/empower-center)
+- [Health Education Outreach (HEO)](https://services.claremont.edu/heo/)
+- [Huntley Bookstore](https://www.bkstr.com/claremontstore/home)
+- [LiveSafe App](http://colleges.claremont.edu/livesafe/)
+- [Monsour Counseling and Psychological Services (MCAPS)](https://services.claremont.edu/mcaps/)
+- [Office of Black Student Affairs (OBSA)](https://services.claremont.edu/obsa/)
+- [Student Disability Resource Center](https://services.claremont.edu/sdrc/)
+- [Student Health Insurance Plan](https://www.scrippscollege.edu/offices/officesservices/treasurer/student-accounts/student-health-insurance)
+- [Student Health Services](https://services.claremont.edu/student-health-services/)
+- [Queer Resource Center (QRC)](https://colleges.claremont.edu/qrc/)
+
