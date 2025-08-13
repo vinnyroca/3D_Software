@@ -133,6 +133,39 @@
     
     <div class="sidebar navbar-collapse collapse card">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#subdivision-modeling" class="nav-link">Subdivision Modeling</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#artist-spotlight" class="nav-link">Artist Spotlight</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#subdivision-basics" class="nav-link">Subdivision Basics</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#modeling-a-die" class="nav-link">Modeling a Die</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#class-exercise-dice" class="nav-link">Class Exercise - Dice</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#utah-teapot" class="nav-link">Utah Teapot</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#modeling-the-utah-teapot" class="nav-link">Modeling the Utah Teapot</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#independent-exercise-teapot-handle" class="nav-link">Independent Exercise: Teapot Handle</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div>
@@ -146,7 +179,216 @@
             
             
         </header>
-        <p></p>
+        <p><script>
+// Get the header element
+let header = document.querySelector('header');
+
+// Get the height of the header
+document.querySelectorAll('a[href^="#"]')
+.forEach(function (anchor) {
+    anchor.addEventListener('click', 
+    function (event) {
+        event.preventDefault();
+
+        // Get the target element that 
+        // the anchor link points to
+        let target = document.querySelector(
+            this.getAttribute('href')
+        );
+
+        let headerHeight = header.offsetHeight*2;
+
+        let targetPosition = target
+            .getBoundingClientRect().top - headerHeight;
+
+        window.scrollTo({
+            top: targetPosition + window.scrollY,
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+<h1 id="subdivision-modeling">Subdivision Modeling</h1>
+<blockquote>
+<p><code>RECAP:</code> What we learned last class:</p>
+<ul>
+<li>Aspects of Polygonal Modeling with Maya</li>
+<li>Faces</li>
+<li>Edges</li>
+<li>Vertices</li>
+<li>Space and Transforms</li>
+<li>Arch Exercise</li>
+<li>Tree Exercise</li>
+</ul>
+<p><code>PLAN:</code></p>
+<ul>
+<li>What is subdivision modeling and how to we use it to make more complex models?</li>
+<li>How to use Edge Loops to change the shape of subdivided models</li>
+<li>Using subdivision to make a die.</li>
+<li>History of the Utah Teapot</li>
+<li>Using subdivision to model the Utah Teapot</li>
+</ul>
+</blockquote>
+<h2 id="artist-spotlight">Artist Spotlight</h2>
+<h3 id="char-davies">Char Davies</h3>
+<blockquote>
+<p>Canadian, b. 1954</p>
+<p><a href="https://wwwimmersence.com">Artist Website</a></p>
+<p><a href="https://www.youtube.com/watch?v=cucworlX8wU&amp;t=1s">Arist Talk with Char Davies and Jakob Kudsk Steensen</a></p>
+</blockquote>
+<h4 id="osmose"><em>Osmose</em></h4>
+<p>Virtual Reality Installation, 1995</p>
+<p><a href="https://www.immersence.com/osmose">Website</a> - <a href="https://www.youtube.com/watch?v=54O4VP3tCoY">Video</a></p>
+<h5 id="images">Images</h5>
+<figure> <img src = "../assets/images/2_maya_chardavies_osmose.jpg"><figcaption>Still from Osmose, Char Davies</figcaption></figure>
+
+<blockquote>
+<p>LOREM</p>
+<p>Char Davies, immersence.com/osmose</p>
+</blockquote>
+<h4 id="ephemere"><em>Ephémère</em></h4>
+<p>Virtual Reality Installation, 1998</p>
+<p><a href="https://www.immersence.com/ephemere">Website</a> - <a href="https://www.youtube.com/watch?v=XCWaMll0leI">Video</a></p>
+<h5 id="images_1">Images</h5>
+<figure> <img src = "../assets/images/2_maya_chardavies_ephemere_1.jpg"><figcaption>Still from Ephémère, Char Davies</figcaption></figure>
+
+<figure> <img src = "../assets/images/2_maya_chardavies_ephemere_2.jpg"><figcaption>Still from Ephémère, Char Davies</figcaption></figure>
+
+<figure> <img src = "../assets/images/2_maya_chardavies_ephemere_3.jpg"><figcaption>Still from Ephémère, Char Davies</figcaption></figure>
+
+<figure> <img src = "../assets/images/2_maya_chardavies_ephemere_4.jpg"><figcaption>Installation view of Ephémère, Char Davies</figcaption></figure>
+
+<h2 id="subdivision-basics">Subdivision Basics</h2>
+<p>Start by downloading the practice file for today's class.</p>
+<p>You'll notice for this class, the practice file is stored in a zip folder.</p>
+<p>We'll talk about project structure more in a bit, but, for now, unzip the file on your computer.</p>
+<p>Navigate to the scenes folder and open the .mb file.</p>
+<figure> <img src = "../assets/images/maya_03_subdivision.jpg"><figcaption>Subdivided Models</figcaption></figure>
+
+<p>Subdivision modeling is the process of using lower resolution geometry to create complex objects with clean topology. Subdivision modeling is the most common form of poly modeling, being used in games, animation, visual effects, and art practices.</p>
+<p>Subdivision, divides each each loop and averages the positions of the new vertices.</p>
+<figure> <img src = "../assets/images/maya_03_subdivision_01.jpg"><figcaption>Edge loops divided and vertices averaged</figcaption></figure>
+
+<p>There are many different algorithms for subdivided a model. Maya by default uses an adapted version of the Catmull–Clark Subdivision algorithm (more on this in the coming weeks). Other algorithms include OpenSubdiv, developed by Pixar.</p>
+<h3 id="smooth-preview-vs-smooth">Smooth Preview vs. Smooth</h3>
+<p>We can preview what our mesh will look like subdivided using the <strong>3</strong> Key.</p>
+<p>We can return turn off the <strong>Smooth Preview</strong> by pressing the <strong>1</strong> Key.</p>
+<figure> <img src = "../assets/images/maya_03_smooth_01.gif"><figcaption></figcaption></figure>
+
+<p>The <strong>2</strong> Key will show us our model in smooth preview as well as the <strong>cage</strong> of our original mesh.</p>
+<p>You can see the cage as an outline of the edges of your model. This is called the <strong>wireframe</strong></p>
+<blockquote>
+<p><code>UI TIP:</code> You can switch between a global wireframe mode by pressing the <strong>4</strong> key. Switch back to <strong>Shaded</strong> mode using the <strong>5</strong> key.</p>
+</blockquote>
+<figure> <img src = "../assets/images/maya_03_smooth_02.gif"><figcaption></figcaption></figure>
+
+<p>To actually change the geometry of our model we can navigate holding <strong>Shit+RMB</strong> to Smooth.
+This will bring up a dialog box asking us how many divisions we want to make.</p>
+<figure> <img src = "../assets/images/maya_03_smooth_03.gif"><figcaption></figcaption></figure>
+
+<p>We can subdivide our model as many times as we want. However, over dividing our model, and creating a model with too many faces can cause our Maya scene to run drastically slower and even crash. Subdivision modeling is a balance between getting the right amount of smoothness for our scene, and making sure out computer can still run!</p>
+<p>With this in mind, the end result of our model, or how smooth our model should be, depends on its final destination. In an animation, were everything is calculated before hand and we only see the final result, a fairly high poly model is okay.</p>
+<p>In games, however, where everything is being calculated in real time, we want our model to be as low resolution as possible while still describing the shape or form that we want to convey.</p>
+<figure> <img src = "../assets/images/maya_03_smooth_04.gif"><figcaption></figcaption></figure>
+
+<p>We also move our geometry in smooth preview to see the different effects of smoothing.</p>
+<figure> <img src = "../assets/images/maya_03_smooth.jpg"><figcaption></figcaption></figure>
+
+<h3 id="multi-cut-tool-for-subdivision">Multi-Cut Tool for Subdivision</h3>
+<p>We can change the shape of our subdivided model by placing edges loops at specific locations on our model.</p>
+<p>Since subdivision divides edge loops and averages the position of vertices, placing edge loops close together will result in less drastic change of position and the appearance of a harder edge.</p>
+<p>The easiest way to add edge loops quickly in Maya is by using the <strong>Multi-cut tool</strong>.</p>
+<p>To activate the <strong>Multi-cut tool</strong>, in object mode, use the <strong>Shift + RMB</strong> menu and navigate to <strong>Multi-cut</strong>.</p>
+<p>The <strong>Multi Cut tool</strong> can be used for a variety of different operations, including adding new edges to our model through cutting.</p>
+<p>We will be using it to add edge loops.</p>
+<p>Hold <strong>Ctrl</strong> with the Multi-cut tool active and click on your model to add an edge loop.</p>
+<figure> <img src = "../assets/images/maya_03_multicut_01.gif"><figcaption></figcaption></figure>
+
+<p>We see that when we smooth our model with two levels of subdivision, the top of the model appears to be a harder edge.</p>
+<figure> <img src = "../assets/images/maya_03_multicut_02.gif"><figcaption></figcaption></figure>
+
+<h3 id="effects-of-edges-on-smoothing">Effects of Edges on Smoothing</h3>
+<p>If we use the multi cut on two sides our model, we get a different result.</p>
+<figure> <img src = "../assets/images/maya_03_edges_01.gif"><figcaption></figcaption></figure>
+<figure> <img src = "../assets/images/maya_03_edges_02.gif"><figcaption></figcaption></figure>
+
+<p>We can also use the Multi-cut tool to add two edge loops on either side of an existing edge loop to create hard edges. This is sometime called <strong>Triple Fencing.</strong></p>
+<p>Let's try fencing in some edges on this model of a pawn to give it some harder edges when subdivided.</p>
+<figure> <img src = "../assets/images/maya_03_edges.jpg"><figcaption></figcaption></figure>
+
+<h3 id="deleting-faces-for-different-results">Deleting Faces for Different Results</h3>
+<p>Having an open face, by deleting a part of our geometry is a great technique for keeping parts our model undivided as we build out more complex geometry. </p>
+<figure> <img src = "../assets/images/maya_03_delete_01.gif"><figcaption></figcaption></figure>
+
+<h2 id="modeling-a-die">Modeling a Die</h2>
+<h3 id="bevel-tool">Bevel Tool</h3>
+<p>An easy way to add edges around all parts of our existing edge loops is to use the <strong>Bevel tool.</strong></p>
+<p>The bevel tool will <strong>bevel</strong> or, in other words, soften the edges of our model.</p>
+<p>Begin by selecting all the edges of our die.</p>
+<figure> <img src = "../assets/images/maya_03_dice_01.gif"><figcaption></figcaption></figure>
+
+<p>Next, use Shift+RMB to navigate to bevel.</p>
+<p>Lets set our fraction to .01 and our segments to 2.</p>
+<figure> <img src = "../assets/images/maya_03_dice_02.gif"><figcaption></figcaption></figure>
+
+<p>Next, Lets add in edge loops for the number indicators for our die.</p>
+<p>Use the insert edge loop tool to add two additional edge loops on all sides of our die.</p>
+<p>Make sure to click on the setting box to change the number of edge loops we are inserting.</p>
+<figure> <img src = "../assets/images/maya_03_dice_03.gif"><figcaption></figcaption></figure>
+
+<p>Next, let's start by making the 1-Side and 6-Side of our die by selecting the appropriate faces.</p>
+<p>The 1-Side and 6-Side are opposite each other.</p>
+<figure> <img src = "../assets/images/maya_03_dice_04.gif"><figcaption></figcaption></figure>
+
+<p>We can the indentation for our die to have a hard edge. Lets add one edge loop to be around our extruded area by using the offset tool in our extrude settings.</p>
+<p>Make sure <strong>Keep Faces Together</strong> is set to off.</p>
+<p><code>UI TIP:</code> Hold <strong>Ctrl+Shift</strong> while dragging on a parameter in a dialog box to make it change values slower.</p>
+<figure> <img src = "../assets/images/maya_03_dice_05.gif"><figcaption></figcaption></figure>
+
+<p>Next, let's extrude in slight, to fully fence in the edge loop of our inset area.</p>
+<figure> <img src = "../assets/images/maya_03_dice_06.gif"><figcaption></figcaption></figure>
+
+<p>Let's extrude in to make the full inset.</p>
+<figure> <img src = "../assets/images/maya_03_dice_07.gif"><figcaption></figcaption></figure>
+
+<p>We'll be using this model for our independent exercise. Let's duplicate it so we have a clean copy before smoothing.</p>
+<figure> <img src = "../assets/images/maya_03_dice_08.gif"><figcaption></figcaption></figure>
+
+<p>Finally, lets give our model 2 levels of subdivision and see how it looks!</p>
+<figure> <img src = "../assets/images/maya_03_dice_09.gif"><figcaption></figcaption></figure>
+
+<h2 id="class-exercise-dice">Class Exercise - Dice</h2>
+<p>Use the below model from <strong>Sketchfab</strong> to see which sides of the die are next to and opposite each other.
+Use the steps in the Modeling a Die section to make a die with two levels of subdivision.</p>
+<p>Press play to start the model and use <strong>click+drag</strong> to rotate the model.</p>
+<div class="sketchfab-embed-wrapper"> <iframe title="Dice d6 low-poly PBR" frameborder="0"  height = "400px" width = "400px" src="https://sketchfab.com/models/7c7c839a76c44f36be942b1c87b040d7/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/dice-d6-low-poly-pbr-7c7c839a76c44f36be942b1c87b040d7?utm_medium=embed&utm_campaign=share-popup&utm_content=7c7c839a76c44f36be942b1c87b040d7" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Dice d6 low-poly PBR </a> by <a href="https://sketchfab.com/ArmorAndRum?utm_medium=embed&utm_campaign=share-popup&utm_content=7c7c839a76c44f36be942b1c87b040d7" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Armor and Rum </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=7c7c839a76c44f36be942b1c87b040d7" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+
+<h2 id="utah-teapot">Utah Teapot</h2>
+<p><a href="https://graphics.cs.utah.edu/teapot/">Reference</a></p>
+<p>The Utah teapot was developed by Martin Newell at the University of Utah in 1975. For much of computer graphics history, it was the standard model for testing modeling, lighting, texturing and rendering algorithms.</p>
+<p>We'll be reading more about the Utah teapot and understanding its cultural and political impact in chapter 3 of Jacob Gaboury's book <em>Image Objects.</em></p>
+<p>Although the original teapot was used using an earlier modeling method called Bezier splines, we'll be modeling our teapot using subdivision modeling techniques.</p>
+<figure> <img src = "../assets/images/maya_03_utahteapot.jpg"><figcaption><p>Original drawing of the Utah Teapot by Martin Newell <a href= "https://graphics.cs.utah.edu/teapot/">Link</a></p></figcaption></figure>
+
+<p><a ><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Utah_teapot_simple_2.png" alt="Utah teapot simple 2.png"  width="800"></a><br>Rendering of the Utah Teapot by <a href="//commons.wikimedia.org/wiki/User:Dhatfield" title="User:Dhatfield">Dhatfield</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=4303243">Link</a></p>
+
+<p><a><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Original_Utah_Teapot.jpg" alt="Original Utah Teapot.jpg" width="800"></a><br>The Original Teapot used to make the Utah Teapot Model. Photo by Marshall Astor (<a rel="nofollow" class="external free" href="http://www.marshallastor.com/">http://www.marshallastor.com/</a>) - <a rel="nofollow" class="external free" href="https://www.flickr.com/photo_zoom.gne?id=352811902&amp;size=o">https://www.flickr.com/photo_zoom.gne?id=352811902&amp;size=o</a> (<a rel="nofollow" class="external free" href="https://www.flickr.com/photos/lifeontheedge/352811902/">https://www.flickr.com/photos/lifeontheedge/352811902/</a>), <a href="https://creativecommons.org/licenses/by-sa/2.0" title="Creative Commons Attribution-Share Alike 2.0">CC BY-SA 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=1743696">Link</a></p>
+
+<h2 id="modeling-the-utah-teapot">Modeling the Utah Teapot</h2>
+<p>Let's use this <a href="../Teapot/">tutorial</a> to learn more about subdivision by modeling the Utah Teapot.</p>
+<p>New things will learn in this tutorial:</p>
+<ul>
+<li>Edge sliding</li>
+<li><a href="https://help.autodesk.com/view/MAYACRE/ENU/?guid=GUID-EBF1E652-4DDD-423F-B42E-3BF85AE46A5D">Live Objects</a></li>
+<li>Vertex Sliding</li>
+<li>Hiding and un-hiding objects</li>
+</ul>
+<h2 id="independent-exercise-teapot-handle">Independent Exercise: Teapot Handle</h2>
+<p>Use what you learned through the <a href="../Teapot/">tutorial</a> to model the handle for the teapot.</p>
+<p>As a starting point, the handle should attach using the below Faces. Count how many edges are on the border of the selected faces.</p>
+<p>As an extra challenge, try starting with only a plane!</p>
+<figure> <img src = "../assets/images/maya_03_teapothandle.jpg"><figcaption>Faces where the handles should attach</figcaption></figure></p>
     </article>
 </section>
 <!-- endblock -->
