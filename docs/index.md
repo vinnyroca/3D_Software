@@ -6,7 +6,7 @@
 
 ---
 **LOCATION:** Scripps College, Steele 229  
-**TIME:** Tuesday and Thursdays 10:00 - 12:30
+**TIME:** Tuesday and Thursday 10:00 - 12:30, August 25th - December 3rd
 
 **INSTRUCTOR**  
 Vinny Roca, Scripps College  
@@ -47,7 +47,7 @@ The objective of this course is to introduce foundational technical skills in 3D
 
 Projects are separated into a variety of project pieces.
 
-Project pieces and exercises will be graded on their level of completion in regards to the particular project piece or exercise.
+Project pieces and exercises will be graded on their level of completion in regard to the particular project piece or exercise.
 
 Completed projects will be graded using the following criteria:
 
@@ -75,9 +75,9 @@ As reading responses are essential to the discussion section of the course, late
 
 ### Late Work and Extensions
 
-For all exercises, late work will not be accepted. Completing exercises on time is essential to the progression of the course. Not completing exercises will result in a student falling behind. In the situation that extra time is need to complete exercises and project pieces, students must reach out to the instructor as soon as possible.
+For all exercises, late work will not be accepted. Completing exercises on time is essential to the progression of the course. Not completing exercises will result in a student falling behind. In the situation that extra time is needed to complete exercises and project pieces, students must reach out to the instructor as soon as possible.
 
-Late projects not ready by their assigned crit day will automatically loose one letter grade. Each day the project is late, it will loose one more letter grade. After three days, the project will not be accepted.
+Late projects not ready by their assigned crit day will automatically lose one letter grade. Each day the project is late, it will lose one more letter grade. After three days, the project will not be accepted.
 
 ### Discord and Email
 
@@ -87,7 +87,7 @@ I will respond to Discord messages and email within 24 hrs of receipt. I will re
 
 ### Box Submissions
 
-Submissions for the class will be made through Box links, links to Box submissions will be on the class website.
+Submissions for the class will be made through Box links Links to Box submissions will be on the class website.
 
 ### Readings
 
@@ -99,7 +99,7 @@ Password for readings will be provided in the class Discord.
 
 ## Course Materials
 
-Although ample time will provided to work in class and the lab with be open during non-class hours when other classes are not in session, you might still find you want to work on your projects outside the lab.
+Although ample time will be provided to work in class and the lab will be open during non-class hours when other classes are not in session, you might still find you want to work on your projects outside the lab.
 
 For working outside the lab on your personal computer, the following hardware is recommended:
 

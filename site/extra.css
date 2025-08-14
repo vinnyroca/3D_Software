@@ -308,7 +308,7 @@ a{
 }
 
 a:hover{
-    color:lightblue !important;
+    color:rgb(215, 164, 61) !important;
 }
 
 mark>a{

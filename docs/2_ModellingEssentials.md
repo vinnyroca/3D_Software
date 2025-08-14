@@ -56,9 +56,9 @@ document.querySelectorAll('a[href^="#"]')
 ### Char Davies
 > Canadian, b. 1954
 
-> [Artist Website](https://wwwimmersence.com)
+> [Artist Website](https://www.immersence.com)
 
->[Arist Talk with Char Davies and Jakob Kudsk Steensen](https://www.youtube.com/watch?v=cucworlX8wU&t=1s)
+>[Artist Talk with Char Davies and Jakob Kudsk Steensen](https://www.youtube.com/watch?v=cucworlX8wU&t=1s)
 
 #### *Osmose*
 
@@ -144,7 +144,7 @@ In short, polygon objects are made up of three components:
 
 <figure> <img src = "../assets/images/02_maya_01.png"><figcaption>Face, Edge and Vertex</figcaption></figure>
 
-Before software like Maya, Polygon Models were made by manually entering the location of vertices into a computer. Often, modelers and researchers would trace objects and use specialized equipment to find the distance between vertices.
+Before software like Maya, polygon models were made by manually entering the location of vertices into a computer. Often, modelers and researchers would trace objects and use specialized equipment to find the distance between vertices.
 
 <figure> <img src = "../assets/images/maya_VWBug.png"><figcaption>Image from Image Objects by Jacob Gaboury</figcaption></figure>
 
@@ -200,7 +200,7 @@ This is because faces have no thickness to them, they are infinitely thin!
 The direction the face is facing is the normal direction. We always want the normal direction to be facing outwards towards our camera.
 
 We'll learn more about the complications of normals as the course progresses, but for now,
-let's reverse the normals this model so that the inside of the model is correctly facing the camera.
+let's reverse the normals of this model so that the inside of the model is correctly facing the camera.
 
 To select all the faces on our model:
 
@@ -269,15 +269,15 @@ Lastly, let's go over a common face selection technique. This allows us to selec
 >`UI TIP`: We can change the number of sides our cylinder has in the **Channel Box**.
 
 
-- Next let's select everything but the top and bottom of our cylinder. We'll do this by selecting on face and then, hold **Shift**, double click on one of the faces next to our selected face. <figure> <img src = "../assets/images/2_maya_faces_selection_cylinderselect.gif"></figure>
+- Next, let's select everything but the top and bottom of our cylinder. We'll do this by selecting on face and then, hold **Shift**, double click on one of the faces next to our selected face. <figure> <img src = "../assets/images/2_maya_faces_selection_cylinderselect.gif"></figure>
 
 - Then, we'll press **Ctrl+Shift+I** to reverse the selection, followed by the **Delete Key** to delete our top and bottom faces.<figure> <img src = "../assets/images/2_maya_faces_selection_cylinderdelete.gif"></figure>
 
->`UI TIP`: **Shit+Click** to add items to your selection and **Ctrl+Click** to remove items from your selection, also works with face, edge and vertex selection.
+>`UI TIP`: **Shift+Click** to add items to your selection and **Ctrl+Click** to remove items from your selection, also works with face, edge and vertex selection.
 
 ## Edges
 
-Each face is typically made you of four edges. A face with four edges is referred to as a quadrilateral or a "quad", for short. It is best practice when modeling to ensure allow your polygons are quads - in other words, each polygon should have four edges.
+Each face is typically made up of four edges. A face with four edges is referred to as a quadrilateral or a "quad", for short. It is best practice when modeling to ensure your polygons are quads - in other words, each polygon should have four edges.
 
 - 4 Sides, Quad = Great!
 - 3 Sides, Tri = Okay in some situations. 
@@ -392,7 +392,7 @@ faces = [
 ]
 ```
 
-> `THOUGHT`: Think back to the earlier image of the VW Bug being digitized. They entered in all of these X,Y,Z coordinates manually.
+> `THOUGHT`: Think back to the earlier image of the VW Bug being digitized. They entered all of these X,Y,Z coordinates manually.
 
 
 Here, our vertices are defined by X,Y,Z coordinates, and our faces are defined by grouping together those different vertices.

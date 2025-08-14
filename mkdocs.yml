@@ -4,9 +4,9 @@ site_url: https://3dsoftware.vinnyroca.info/
 nav:
   - Syllabus: index.md
   - Schedule: schedule.md
-  - Assignments:
+  - Projects:
     - Dream Object: dreamobject.md
-    - Memory Palace: memorypalace.md
+    - Memory Chambre: memorypalace.md
 
 theme:
 

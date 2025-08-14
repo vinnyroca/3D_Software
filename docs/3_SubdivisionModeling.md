@@ -41,7 +41,7 @@ document.querySelectorAll('a[href^="#"]')
 
 > `PLAN:`
 
-> - What is subdivision modeling and how to we use it to make more complex models?
+> - What is subdivision modeling and how do we use it to make more complex models?
 > - How to use Edge Loops to change the shape of subdivided models
 > - Using subdivision to make a die.
 > - History of the Utah Teapot
@@ -110,7 +110,7 @@ There are many different algorithms for subdivided a model. Maya by default uses
 
 We can preview what our mesh will look like subdivided using the **3** Key.
 
-We can return turn off the **Smooth Preview** by pressing the **1** Key.
+We can turn off the **Smooth Preview** by pressing the **1** Key.
 
 <figure> <img src = "../assets/images/maya_03_smooth_01.gif"><figcaption></figcaption></figure>
 
@@ -193,11 +193,11 @@ Begin by selecting all the edges of our die.
 
 Next, use Shift+RMB to navigate to bevel.
 
-Lets set our fraction to .01 and our segments to 2.
+Let's set our fraction to .01 and our segments to 2.
 
 <figure> <img src = "../assets/images/maya_03_dice_02.gif"><figcaption></figcaption></figure>
 
-Next, Lets add in edge loops for the number indicators for our die.
+Next, Let's add in edge loops for the number indicators for our die.
 
 Use the insert edge loop tool to add two additional edge loops on all sides of our die.
 
@@ -211,7 +211,7 @@ The 1-Side and 6-Side are opposite each other.
 
 <figure> <img src = "../assets/images/maya_03_dice_04.gif"><figcaption></figcaption></figure>
 
-We can the indentation for our die to have a hard edge. Lets add one edge loop to be around our extruded area by using the offset tool in our extrude settings.
+We want the indentation for our die to have a hard edge. Let's add one edge loop to be around our extruded area by using the offset tool in our extrude settings.
 
 Make sure **Keep Faces Together** is set to off.
 
@@ -231,7 +231,7 @@ We'll be using this model for our independent exercise. Let's duplicate it so we
 
 <figure> <img src = "../assets/images/maya_03_dice_08.gif"><figcaption></figcaption></figure>
 
-Finally, lets give our model 2 levels of subdivision and see how it looks!
+Finally, let's give our model 2 levels of subdivision and see how it looks!
 
 <figure> <img src = "../assets/images/maya_03_dice_09.gif"><figcaption></figcaption></figure>
 

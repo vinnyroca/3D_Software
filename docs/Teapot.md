@@ -70,11 +70,11 @@ Begin by turning on the visibility for the "Teapot_images" layer. We will use th
 
 1. Start by creating a cylinder with **8** sides. <br><figure> <img src = "../assets/images/maya_03_teapot_01.gif"><figcaption></figcaption></figure>
 1. Delete the top and bottom faces. <br><figure> <img src = "../assets/images/maya_03_teapot_02.gif"><figcaption></figcaption></figure>
-1. Exit the perspective view by tapping Space. However over the front view and tap Space to enter the front view.<br><figure> <img src = "../assets/images/maya_03_teapot_03.gif"><figcaption></figcaption></figure>
+1. Exit the perspective view by tapping Space. Hover over the front view and tap Space to enter the front view.<br><figure> <img src = "../assets/images/maya_03_teapot_03.gif"><figcaption></figcaption></figure>
 1. Scale out cylinder to be the size of the base of our teapot.<br><figure> <img src = "../assets/images/maya_03_teapot_04.gif"><figcaption></figcaption></figure>
 1. To see things better, let's turn on X-Ray mode which allows use to see through our model.<br><figure> <img src = "../assets/images/maya_03_teapot_05.gif"><figcaption></figcaption></figure>
 1. In Smooth Preview mode, let's scale our cylinder to be the height of our base.<br><figure> <img src = "../assets/images/maya_03_teapot_06.gif"><figcaption></figcaption></figure>
-1. Double Click our edge loop to select it, and extrude it up to begin forming the teapot. We know we want a hard edge on the base of our model, so lets add in some edge loops. <br><figure> <img src = "../assets/images/maya_03_teapot_07.gif"><figcaption></figcaption></figure>
+1. Double Click our edge loop to select it, and extrude it up to begin forming the teapot. We know we want a hard edge on the base of our model, so let's add in some edge loops. <br><figure> <img src = "../assets/images/maya_03_teapot_07.gif"><figcaption></figcaption></figure>
 1. Continue extruding our model up to key points including the base of our spout, the center of our spout, the top of our spot, the bottom of the top handle and the top of the top handle.<br><figure> <img src = "../assets/images/maya_03_teapot_08.gif"><figcaption></figcaption></figure>
 1. Scale these edges in smooth preview mode to match the shape of our teapot.<br><figure> <img src = "../assets/images/maya_03_teapot_09.gif"><figcaption></figcaption></figure>
 1. Smooth our Model with 1 level of subdivision<br><figure> <img src = "../assets/images/maya_03_teapot_10.gif"><figcaption></figcaption></figure>
@@ -94,7 +94,7 @@ Begin by turning on the visibility for the "Teapot_images" layer. We will use th
 1. Scale and position your cylinder to be the size of the spout opening. <br><figure> <img src = "../assets/images/maya_03_teapot_24.gif"><figcaption></figcaption></figure>
 1. Begin extruding our the edge loop of our spout to form the spout shape. Use move, rotate and scale tools while toggling on smooth preview to get the correct shape. The rotation of the edge loops should follow the flow of the spout.<br><figure> <img src = "../assets/images/maya_03_teapot_25.gif"><figcaption></figcaption></figure>
 1. Continue extruding out the spout making sure the edge loops follow the flow of the spout. We can use the scale tool on the y-axis of the last edge loop to make sure it is perfectly straight. <br><figure> <img src = "../assets/images/maya_03_teapot_26.gif"><figcaption></figcaption></figure>
-1. Lets enter the top view. Its hard to see our spout with the teapot in the way. Before we hide our teapot, let's rename it so we know where to find it later. <br><figure> <img src = "../assets/images/maya_03_teapot_27.gif"><figcaption></figcaption></figure>
+1. Let's enter the top view. Its hard to see our spout with the teapot in the way. Before we hide our teapot, let's rename it so we know where to find it later. <br><figure> <img src = "../assets/images/maya_03_teapot_27.gif"><figcaption></figcaption></figure>
 1. Click on your teapot and press **Ctrl+H** to hide your teapot<br><figure> <img src = "../assets/images/maya_03_teapot_28.gif"><figcaption></figcaption></figure>
 1. We can toggle on Wireframe mode to get a better view of our model by pressing the **4** key. With wireframe on, scale the edge loops on your spout along the x axis to match them to the image. <br><figure> <img src = "../assets/images/maya_03_teapot_29.gif"><figcaption></figcaption></figure>
 1. Check the Left view to make sure everything looks lined up. <br><figure> <img src = "../assets/images/maya_03_teapot_30.gif"><figcaption></figcaption></figure>
@@ -111,5 +111,5 @@ Begin by turning on the visibility for the "Teapot_images" layer. We will use th
 1. Extrude the full model inward. <br><figure> <img src = "../assets/images/maya_03_teapot_41.gif"><figcaption></figcaption></figure>
 1. Reverse the normals. <br><figure> <img src = "../assets/images/maya_03_teapot_42.gif"><figcaption></figcaption></figure>
 1. Let's clean of the bottom. First using the Shift + Double Click method to select a ring of faces towards the bottom of our model. Delete those faces. Double click on the *Island* of faces we created to select them. Delete those faces.<br><figure> <img src = "../assets/images/maya_03_teapot_43.gif"><figcaption></figcaption></figure>
-1. Use the same method we used to bridge the bottom of our teapot to close up our teapot.<br><figure> <img src = "../assets/images/maya_03_teapot_43.gif"><figcaption></figcaption></figure>
+1. Use the same method we used to bridge the bottom of our teapot to close up our teapot.<br><figure> <img src = "../assets/images/maya_03_teapot_44.gif"><figcaption></figcaption></figure>
 1. Snap the inner top edge loop to the top edge loop of the teapot along the Y Axis. Scale the top inner edge loop of the spout along the Y Axis to make it level. Snap it in place. <br><figure> <img src = "../assets/images/maya_03_teapot_45.gif"><figcaption></figcaption></figure>
