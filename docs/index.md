@@ -6,12 +6,13 @@
 
 ---
 **LOCATION:** Scripps College, Steele 229  
-**TIME:** Tuesday and Thursday 10:00 - 12:30, August 25th - December 3rd
+**TIME:** Tuesday and Thursday 10:00-12:30, 8/25-12/3
 
 **INSTRUCTOR**  
 Vinny Roca, Scripps College  
 Email: vroca@scrippscollege.edu  
-Office Hours: Lang 227. By appointment; Tuesday & Thursday 1:30 - 2:30
+Office Hours: Lang 227. By appointment; Tuesday & Thursday 1:30-2:30
+[Schedule office hours](https://outlook.office.com/bookwithme/user/14e2aa0a493c4a659e608aab96b46635@scrippscollege.edu/meetingtype/ex7sQIfLLkiMdKnIgITX3w2?anonymous&ismsaljsauthenabled&ep=mlink)
 ---
 ## Course Description
 
@@ -59,11 +60,11 @@ Completed projects will be graded using the following criteria:
 
 #### Participation
 
-As this course includes in-person discussions and critiques, active participation and attendance make up 10 percent of students’ final grade. All students are required to participate actively during the discussion periods, which will be facilitated using each student’s reading responses.
+As this course includes in-person discussions,critiques, tutorials, and exercises active participation and attendance make up 10 percent of students’ final grade. All students are required to participate actively during the discussion periods, which will be facilitated using each student’s reading responses.
 
 Students more than ten minutes late for class will be marked as late. Three late marks will result in an unexcused absence. More than two unexcused absences may, at the instructor’s discretion, affect the final participation grade.
 
-All critique and presentation classes are mandatory. If you anticipate missing a critique or presentation class or expect to have more than two absences during the course, inform the instructor as soon as possible.
+All critique classes are mandatory. If you anticipate missing a critique class or expect to have more than two absences during the course, inform the instructor as soon as possible.
 
 #### Reading Responses
 
@@ -87,7 +88,7 @@ I will respond to Discord messages and email within 24 hrs of receipt. I will re
 
 ### Box Submissions
 
-Submissions for the class will be made through Box links Links to Box submissions will be on the class website.
+Submissions for the class will be made through Box links. Links to Box submissions will be on the class website.
 
 ### Readings
 
