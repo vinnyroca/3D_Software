@@ -10,7 +10,7 @@
   }
 
   tbody td{
-  border: .01em solid !important;
+  border: .15em solid !important;
     }
     td:nth-child(1){
         border: none !important;
