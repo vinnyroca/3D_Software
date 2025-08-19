@@ -75,7 +75,7 @@ Points:
 
 Late project pieces will no be accepted as completing them is fundamental to completing the entire project.
 
-## Initial Drawings (9/4)
+## Initial Drawings (9/11)
 
 5 points
 
@@ -83,45 +83,44 @@ An initial drawings of the assignment in due on September 4th at the start of cl
 
 **These drawings are not quick sketches, or quick jottings of ideas. These drawings should be the final result of many rounds of thinking and sketching.**
 
-These drawings should depict you device from many different angles. They should, at minimum, show your object from a perspective, side and front view. We are sketching in preparation for modeling. You should be as precise as possible even though our ideas will develop. Additionally, the drawings should describe the materials you imagine for your object. Lastly, the should begin to think of the environment, although minimal, the object will be rendered in. Our renders will be be mostly of our object, however, the space around our object should provide additional context.
+These drawings should depict you device from many different angles. They should, at minimum, show your object from a perspective, side and front view. We are sketching in preparation for modeling. You should be as precise as possible even though our ideas will develop. In your drawings, sketch the topology of your model: follow the edge loops, think of which part of your object will be separate meshes, consider the primitive geometry you will begin with. 
+
+Additionally, the drawings should describe the materials you imagine for your object.
+
+Lastly, the should begin to think of the environment, although minimal, the object will be rendered in. Our renders will be be mostly of our object, however, the space around our object should provide additional context.
 
 
-## Completed Object Model (9/16)
+## Completed Object Model (9/18)
 
 5 Points
 
-You will have two in-class studio sessions to get help with modeling your object. Although your object need not be finished at the end of class on September 11th, it must be completed by September 16th.
+You will have two in-class studio sessions to get help with modeling your object.
 
 This completed model will have clean topology including even edge loops and quad topology.
 
 A screenshot of your completed model should be posted to Discord before the class it is due.
 
-## Unwrapped Object (9/18)
+## Unwrapped Object (9/23)
 
 5 points
 
 You will have one in-class short studio session to work with the instructor to UV Unwrap your model.
 
-Your completed unwrapped object is due on September 23rd.
-
 A screenshot of your UV Editor should be posted to Discord before the class it is due.
 
-## Textured Object (9/23)
+## Textured Object (9/25)
 
 5 points
 
-Your completed painted model is due on September 23rd.
-
 A screenshot of your painted model in Substance Painter should be posted to Discord before the class it is due.
 
-## Final Project (10/9)
+## Final Project (10/2)
 
 80 points
 
 Following a brief Discussion, you will have one in-class of studio time to work on your final project.
 
-The following are to be uploaded before September 30th:
-
+The following are to be uploaded before class:
 [Upload Link]()
 
 Within a zipped folder include:

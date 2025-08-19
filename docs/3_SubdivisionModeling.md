@@ -100,15 +100,15 @@ Navigate to the scenes folder and open the .mb file.
 
 Subdivision modeling is the process of using lower resolution geometry to create complex objects with clean topology. Subdivision modeling is the most common form of poly modeling, being used in games, animation, visual effects, and art practices.
 
-Subdivision, divides each each loop and averages the positions of the new vertices.
+Subdivision divides each each loop and averages the positions of the new vertices.
 
 <figure> <img src = "../assets/images/maya_03_subdivision_01.jpg"><figcaption>Edge loops divided and vertices averaged</figcaption></figure>
 
-There are many different algorithms for subdivided a model. Maya by default uses an adapted version of the Catmull–Clark Subdivision algorithm (more on this in the coming weeks). Other algorithms include OpenSubdiv, developed by Pixar.
+There are many different algorithms for subdiving a model. Maya by default uses an adapted version of the Catmull–Clark Subdivision algorithm (more on this in the coming weeks). Other algorithms include OpenSubdiv, developed by Pixar.
 
 ### Smooth Preview vs. Smooth
 
-We can preview what our mesh will look like subdivided using the **3** Key.
+We can preview what our mesh will look like subdivided using the **3** Key. This turns on **Smooth Preview**
 
 We can turn off the **Smooth Preview** by pressing the **1** Key.
 
@@ -126,29 +126,29 @@ This will bring up a dialog box asking us how many divisions we want to make.
 
 <figure> <img src = "../assets/images/maya_03_smooth_03.gif"><figcaption></figcaption></figure>
 
-We can subdivide our model as many times as we want. However, over dividing our model, and creating a model with too many faces can cause our Maya scene to run drastically slower and even crash. Subdivision modeling is a balance between getting the right amount of smoothness for our scene, and making sure out computer can still run!
+We can subdivide our model as many times as we want. However, over dividing our model, and creating a model with too many faces, can cause our Maya scene to run drastically slower or even crash. Subdivision modeling is a balance between getting the right amount of smoothness for our scene, and making sure out computer can still run!
 
-With this in mind, the end result of our model, or how smooth our model should be, depends on its final destination. In an animation, were everything is calculated before hand and we only see the final result, a fairly high poly model is okay.
+With this in mind, the end result of our model, or how smooth our model should be, depends on its final destination. In an animation, where all rendering is calculated before hand and we only see the final result, a fairly high poly model is okay.
 
-In games, however, where everything is being calculated in real time, we want our model to be as low resolution as possible while still describing the shape or form that we want to convey.
+In games, however, where rendering is being calculated in real time, we want our model to be as low resolution as possible while still describing the shape or form that we want to convey.
 
 <figure> <img src = "../assets/images/maya_03_smooth_04.gif"><figcaption></figcaption></figure>
 
-We also move our geometry in smooth preview to see the different effects of smoothing.
+We can also move our geometry in smooth preview to see the different effects of smoothing.
 
 <figure> <img src = "../assets/images/maya_03_smooth.jpg"><figcaption></figcaption></figure>
 
 ### Multi-Cut Tool for Subdivision
 
-We can change the shape of our subdivided model by placing edges loops at specific locations on our model.
+We can change the shape of our subdivided model by placing edge loops at specific locations on our model.
 
 Since subdivision divides edge loops and averages the position of vertices, placing edge loops close together will result in less drastic change of position and the appearance of a harder edge.
 
 The easiest way to add edge loops quickly in Maya is by using the **Multi-cut tool**.
 
-To activate the **Multi-cut tool**, in object mode, use the **Shift + RMB** menu and navigate to **Multi-cut**.
+To activate the **Multi-cut tool**, head to object mode and use the **Shift + RMB** menu to navigate to **Multi-cut**.
 
-The **Multi Cut tool** can be used for a variety of different operations, including adding new edges to our model through cutting.
+The **Multi Cut tool** can be used for a variety of different operations including adding new edges to our model through cutting.
 
 We will be using it to add edge loops.
 
@@ -156,7 +156,7 @@ Hold **Ctrl** with the Multi-cut tool active and click on your model to add an e
 
 <figure> <img src = "../assets/images/maya_03_multicut_01.gif"><figcaption></figcaption></figure>
 
-We see that when we smooth our model with two levels of subdivision, the top of the model appears to be a harder edge.
+When we smooth our model with two levels of subdivision, the top of the model appears to be a harder edge.
 
 <figure> <img src = "../assets/images/maya_03_multicut_02.gif"><figcaption></figcaption></figure>
 
@@ -175,7 +175,7 @@ Let's try fencing in some edges on this model of a pawn to give it some harder e
 
 ### Deleting Faces for Different Results
 
-Having an open face, by deleting a part of our geometry is a great technique for keeping parts our model undivided as we build out more complex geometry. 
+Having an open face, by deleting a part of our geometry, is a great technique for keeping parts our model undivided as we build out more complex geometry. 
 
 <figure> <img src = "../assets/images/maya_03_delete_01.gif"><figcaption></figcaption></figure>
 
@@ -185,13 +185,13 @@ Having an open face, by deleting a part of our geometry is a great technique for
 
 An easy way to add edges around all parts of our existing edge loops is to use the **Bevel tool.**
 
-The bevel tool will **bevel** or, in other words, soften the edges of our model.
+The bevel tool will **bevel** our model, or, in other words, soften the edges of our model.
 
 Begin by selecting all the edges of our die.
 
 <figure> <img src = "../assets/images/maya_03_dice_01.gif"><figcaption></figcaption></figure>
 
-Next, use Shift+RMB to navigate to bevel.
+Next, use **Shift+RMB** to navigate to bevel.
 
 Let's set our fraction to .01 and our segments to 2.
 
@@ -211,7 +211,7 @@ The 1-Side and 6-Side are opposite each other.
 
 <figure> <img src = "../assets/images/maya_03_dice_04.gif"><figcaption></figcaption></figure>
 
-We want the indentation for our die to have a hard edge. Let's add one edge loop to be around our extruded area by using the offset tool in our extrude settings.
+We want the indentation for our die to have a hard edge. Let's add one edge loop inside our selected faces by using the offset tool in our extrude settings.
 
 Make sure **Keep Faces Together** is set to off.
 
@@ -219,7 +219,7 @@ Make sure **Keep Faces Together** is set to off.
 
 <figure> <img src = "../assets/images/maya_03_dice_05.gif"><figcaption></figcaption></figure>
 
-Next, let's extrude in slight, to fully fence in the edge loop of our inset area.
+Next, let's extrude in slightly, to fully fence in the edge loop of our inset area.
 
 <figure> <img src = "../assets/images/maya_03_dice_06.gif"><figcaption></figcaption></figure>
 
