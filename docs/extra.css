@@ -66,9 +66,9 @@ md-footer__inner { display: none !important; }
 
     .div-container>div{
         width:100% !important;
-        margin-left:0;
-        margin-right:0;
-         max-width: 2000px !important;
+        margin-left:0!important;
+        margin-right:0!important;
+        
     }
 
     div.post-thumbnail>h4{
@@ -111,12 +111,15 @@ md-footer__inner { display: none !important; }
 
 @media only screen and (min-width: 768px) {
     #component-content{
-        margin-left:15%;
+        margin-left:15% !important;
+       
     }
 
     .col-md-3 {
-        max-width: 250px;
+        max-width: 250px !important;
     }  
+
+   
 }
 
 .img-wrapper{

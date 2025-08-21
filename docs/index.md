@@ -1,9 +1,116 @@
+<style>
+/* Button styling */
+#focusToggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 0.5em 1em;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
- <link rel="stylesheet" type="text/css" href="extra.css">
+/* Hide button on small screens */
+@media (max-width: 767.9px) {
+  #focusToggle {
+    display: none;
+  }
+}
+
+/* Focus mode styles */
+.focus-mode .section-content,
+.focus-mode h2 {
+  display: none; /* hide all by default in focus mode */
+}
+
+.focus-mode .section-content.active,
+.focus-mode h2.active {
+  display: block; /* show only active section */
+}
+</style>
+
+<button id="focusToggle">F</button>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("focusToggle");
+  let focusEnabled = false;
+
+  // Wrap content after each h2
+  const headings = document.querySelectorAll("h2");
+  headings.forEach(h2 => {
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("section-content");
+
+    let sibling = h2.nextElementSibling;
+    while (sibling && sibling.tagName !== "H2") {
+      const next = sibling.nextElementSibling;
+      wrapper.appendChild(sibling);
+      sibling = next;
+    }
+    h2.insertAdjacentElement("afterend", wrapper);
+  });
+
+  const sections = document.querySelectorAll(".section-content");
+
+  function showSectionById(id) {
+    sections.forEach(wrapper => {
+      const h2 = wrapper.previousElementSibling;
+      if (h2.id === id) {
+        wrapper.classList.add("active");
+        h2.classList.add("active");
+      } else {
+        wrapper.classList.remove("active");
+        h2.classList.remove("active");
+      }
+    });
+  }
+
+  // Default section
+  if (location.hash) {
+    showSectionById(location.hash.substring(1));
+  } else if (headings.length) {
+    showSectionById(headings[0].id);
+  }
+
+  window.addEventListener("hashchange", () => {
+    showSectionById(location.hash.substring(1));
+  });
+
+  // Toggle focus mode
+  function toggleFocusMode(enable) {
+    focusEnabled = enable;
+    document.body.classList.toggle("focus-mode", focusEnabled);
+    button.textContent = focusEnabled ? "X" : "F";
+  }
+
+  button.addEventListener("click", () => {
+    toggleFocusMode(!focusEnabled);
+  });
+
+  // Disable focus mode on small screens
+  function checkScreenWidth() {
+    if (window.innerWidth <= 767.9) {
+      toggleFocusMode(false); // automatically turn off
+      button.style.display = "none"; // hide button
+    } else {
+      button.style.display = "block"; // show button
+    }
+  }
+
+  window.addEventListener("resize", checkScreenWidth);
+  checkScreenWidth(); // initial check
+});
+</script>
+
+<link rel="stylesheet" type="text/css" href="extra.css">
  
 # Syllabus
 
-
+## Course Information
 ---
 **LOCATION:** Scripps College, Steele 229  
 **TIME:** Tuesday and Thursday 10:00-12:30, 8/25-12/3
@@ -11,8 +118,7 @@
 **INSTRUCTOR**  
 Vinny Roca, Scripps College  
 Email: vroca@scrippscollege.edu  
-Office Hours: Lang 227. By appointment; Tuesday & Thursday 1:30-2:30
-[Schedule office hours](https://outlook.office.com/bookwithme/user/14e2aa0a493c4a659e608aab96b46635@scrippscollege.edu/meetingtype/ex7sQIfLLkiMdKnIgITX3w2?anonymous&ismsaljsauthenabled&ep=mlink)
+Office Hours: Lang 227. By appointment; Tuesday & Thursday 1:30-2:30 [Schedule office hours](https://outlook.office.com/bookwithme/user/14e2aa0a493c4a659e608aab96b46635@scrippscollege.edu/meetingtype/ex7sQIfLLkiMdKnIgITX3w2?anonymous&ismsaljsauthenabled&ep=mlink)
 ---
 ## Course Description
 
@@ -58,19 +164,23 @@ Completed projects will be graded using the following criteria:
 |Concept|Does the student comprehend the scope of the assignment? Is the student able to communicate their ideas clearly? Does the student demonstrate comprehension of the concepts covered in class? Is the student able to articulate the concepts behind their work?|
 |Generosity|Does the student exhibit insight, criticality, and risk-taking in their work? How much sensitivity and critical insight does the student display towards personal assignments and in critiquing their peers’ work?|
 
-#### Participation
+#### Participation & Attendance
 
-As this course includes in-person discussions,critiques, tutorials, and exercises active participation and attendance make up 10 percent of students’ final grade. All students are required to participate actively during the discussion periods, which will be facilitated using each student’s reading responses.
+All students are expected to participate actively during the discussion periods and critiques.
 
 Students more than ten minutes late for class will be marked as late. Three late marks will result in an unexcused absence. More than two unexcused absences may, at the instructor’s discretion, affect the final participation grade.
 
-All critique classes are mandatory. If you anticipate missing a critique class or expect to have more than two absences during the course, inform the instructor as soon as possible.
+All classes are mandatory. If you anticipate missing a class or expect to have more than two absences during the course, inform the instructor as soon as possible.
 
 #### Reading Responses
 
 Reading responses are due by 5 p.m. the day before discussions. Reading responses should be posted in proper Discord channel.
 
 Reading responses will be graded on the level of engagement the student has with the text. Is the student connecting the text to other readings or experiences? Is the student engaging with the text through questions, disagreements, or new lines of thought?
+
+Discussion questions to guide reading responses will be provided for each reading.
+
+Reading responses should be either a 500 word written response or uploaded as 3 minute video of your response to the reading.
 
 As reading responses are essential to the discussion section of the course, late reading responses will not be accepted.
 
@@ -94,10 +204,6 @@ Submissions for the class will be made through Box links. Links to Box submissio
 
 All readings are provided by the Instructor using this [link](https://scrippscollege.box.com/s/yjzmo42f7mg85bpzs9tpyvmzxprs9zlv).
 
-Password for readings will be provided in the class Discord.
-
-
-
 ## Course Materials
 
 Although ample time will be provided to work in class and the lab will be open during non-class hours when other classes are not in session, you might still find you want to work on your projects outside the lab.
@@ -119,7 +225,7 @@ We would like to respectfully acknowledge that Scripps College sits within the h
 We understand the classroom as a space for practicing freedom; where one may challenge
 psychic, social, and cultural borders and create meaningful artistic expressions. To do so we must
 acknowledge and embrace the different identities and backgrounds we inhabit. This means that
-we will use preferred pronouns, respect self-identifications, and be mindful of special needs.
+we will use pronouns, respect self-identifications, and be mindful of special needs.
 Disagreement is encouraged and supported, however, our differences affect our
 conceptualization and experience of reality, and it is extremely important to remember that
 certain gender, race, sex, and class identities are more privileged while others are undermined
@@ -133,6 +239,22 @@ that something said in discussion or included in a piece of work is harmful, you
 to speak with the Instructor.
 
 Statement adopted from voidLab at https://github.com/voidlab/diversity-statement.
+
+## Accommodations
+
+The instructor will work individually with each student on reasonable accommodations.
+
+If you have questions about accommodations for the course, please do not hesitate to contact me.
+
+Campus Disability Coordinators
+
+- [Pomona](http://www.pomona.edu/administration/dean-of-students/disability-accommodations/)
+- [Claremont Graduate University](http://www.cgu.edu/disabilityservices)
+- [Scripps College](http://www.scrippscollege.edu/academics/students-with-disabilities)
+- [Claremont McKenna College](http://www.claremontmckenna.edu/dos/DSS/)
+- [Harvey Mudd College](https://www.hmc.edu/student-life/health-wellness/disability-services/)
+- [Pitzer College](http://pitweb.pitzer.edu/student-life/academic-support-services/)
+- [Keck Graduate Institute](http://www.kgi.edu/current-students/student-services/disabilities-accommodations.html)
 
 
 ## Resources

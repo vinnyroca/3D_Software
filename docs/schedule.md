@@ -106,8 +106,8 @@ body{
 
 |W|Day|Class| Due |
 |---|---|---|---|
-|1|TUES<br>8/26| **- Introduction(s)**| |
-||THUR<br>8/28| **- Tutorial:** [Maya interface and object construction](./1_MayaInterface.md)|**Due:**<br>- Sign Up for Maya Student Account |
+|1|TUES<br>8/26| - **[Introduction(s)](./0_Introduction.md)**| |
+||THUR<br>8/28| **- Tutorial:** [Maya interface and object construction](./1_MayaInterface.md)|**Due:**<br>- Sign Up for Maya Student Account<br>- Join the Class Discord and introduce yourself!|
 |2|TUES<br>9/2|**- Tutorial:** [Maya Modeling Essentials](./2_ModellingEssentials.md)|**Due:**<br>- Creature Exercise<br>- Hard drive for class|
 ||THUR<br>9/4|**- Tutorial:** [Subdivision Modeling](./3_SubdivisionModeling.md)<br>**- Assign:** [Dream Object](./dreamobject.md)|**Due:**<br>- Tree Exercise|
 |3|TUES<br>9/9|**- Tutorial:** [Advanced Modeling]|**Due:**<br>- Teapot Handle|
