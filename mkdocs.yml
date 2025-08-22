@@ -13,25 +13,49 @@ nav:
     - Media Archaeology 2: MediaArchaeology2.md
     - Media Archaeology 3: MediaArchaeology3.md
     - Cultural Studies: CulturalStudies.md
+  
+
+  
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - toc:
+      title: On this page
+      toc_depth: 2
 
 theme:
+  icon:
+    logo: material/cube
+  name: material
+  highlightjs: true
+  palette:
+    scheme: default
+    primary: white
+    accent: black
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+  font:
+    text: Noto Sans
+plugins:
+  - search:
+      enabled: false
 
-  name: simple-blog
-  sidebar: true
-  navigation_depth: 2
-
-  colors:
-    title: blue
-    text: black
-    background: white
-    primary: blue
-  components:
-    footer: false
-    title: false
-    preview: true
 
 extra_css:
 - extra.css
+
+
+  
+
+
+
   
 
 

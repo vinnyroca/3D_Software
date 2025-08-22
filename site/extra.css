@@ -2,7 +2,15 @@
 md-footer__inner { display: none !important; }
 .nav-link[rel="next"] {display: none;}
 .nav-link[rel="prev"] {display: none;}
-
+body{
+    background-color: rgb(240, 240, 240);
+}
+nav{
+    background-color: rgb(240, 240, 240);
+}
+.nav-item{
+     background-color: rgb(240, 240, 240);
+}
 @media only screen and (max-width: 767.9px) {
 
     .site-name{
