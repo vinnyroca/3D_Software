@@ -109,12 +109,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-<link rel="stylesheet" type="text/css" href="extra.css">
- 
+
 # Syllabus
 
 ## Course Information
----
+
 **LOCATION:** Scripps College, Steele 229  
 **TIME:** Tuesday and Thursday 10:00-12:30, 8/25-12/3
 

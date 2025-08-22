@@ -2,6 +2,20 @@
 md-footer__inner { display: none !important; }
 .nav-link[rel="next"] {display: none;}
 .nav-link[rel="prev"] {display: none;}
+body{
+    background-color: rgb(220, 220, 220);
+}
+nav{
+    background-color: rgb(220, 220, 220);
+}
+.nav-item{
+     background-color: rgb(220, 220, 220);
+}
+article a{
+    color: rgb(64, 81, 181)!important;
+    font-size:100% !important;
+}
+
 
 @media only screen and (max-width: 767.9px) {
 
@@ -311,7 +325,7 @@ a{
 }
 
 a:hover{
-    color:rgb(215, 164, 61) !important;
+    color:rgb(23, 43, 98) !important;
 }
 
 mark>a{

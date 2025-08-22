@@ -19,7 +19,7 @@ theme:
   name: simple-blog
   sidebar: true
   navigation_depth: 2
-
+ 
   colors:
     title: blue
     text: black
