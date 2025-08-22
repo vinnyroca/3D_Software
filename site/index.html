@@ -85,6 +85,37 @@
 <!-- endblock -->
                             </ul>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="
+                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Responses]</a>
+                            <ul class="dropdown-menu">
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="SoftwareStudies/" class="dropdown-item text-decoration-none ">Software Studies</a>
+    </li>
+<!-- endblock -->
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="MediaArchaeology1/" class="dropdown-item text-decoration-none ">Media Archaeology 1</a>
+    </li>
+<!-- endblock -->
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="MediaArchaeology2/" class="dropdown-item text-decoration-none ">Media Archaeology 2</a>
+    </li>
+<!-- endblock -->
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="MediaArchaeology3/" class="dropdown-item text-decoration-none ">Media Archaeology 3</a>
+    </li>
+<!-- endblock -->
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="CulturalStudies/" class="dropdown-item text-decoration-none ">Cultural Studies</a>
+    </li>
+<!-- endblock -->
+                            </ul>
+                        </li>
             </ul>
         </li>
 <!-- endblock -->
@@ -194,12 +225,13 @@
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  padding: 0.5em 1em;
+  padding: 0.2em .5em;
   background: #333;
   color: #fff;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  opacity: .5;
 }
 
 /* Hide button on small screens */
@@ -221,7 +253,7 @@
 }
 </style>
 
-<p><button id="focusToggle">F</button></p>
+<p><button id="focusToggle">Focus</button></p>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("focusToggle");
@@ -272,7 +304,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function toggleFocusMode(enable) {
     focusEnabled = enable;
     document.body.classList.toggle("focus-mode", focusEnabled);
-    button.textContent = focusEnabled ? "X" : "F";
+    button.textContent = focusEnabled ? "Exit Focus" : "Focus";
   }
 
   button.addEventListener("click", () => {
@@ -330,11 +362,11 @@ Office Hours: Lang 227. By appointment; Tuesday &amp; Thursday 1:30-2:30 <a href
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">35</td>
+<td style="text-align: center;">30</td>
 <td>Memory Chambre</td>
 </tr>
 <tr>
-<td style="text-align: center;">35</td>
+<td style="text-align: center;">30</td>
 <td>Dream Object</td>
 </tr>
 <tr>
@@ -342,7 +374,7 @@ Office Hours: Lang 227. By appointment; Tuesday &amp; Thursday 1:30-2:30 <a href
 <td>Participation</td>
 </tr>
 <tr>
-<td style="text-align: center;">10</td>
+<td style="text-align: center;">20</td>
 <td>Reading Responses</td>
 </tr>
 <tr>

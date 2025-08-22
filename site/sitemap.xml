@@ -2,42 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://3dsoftware.vinnyroca.info/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://3dsoftware.vinnyroca.info/04_AdvancedModeling/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://3dsoftware.vinnyroca.info/0_Introduction/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://3dsoftware.vinnyroca.info/1_MayaInterface/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://3dsoftware.vinnyroca.info/2_ModellingEssentials/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://3dsoftware.vinnyroca.info/3_SubdivisionModeling/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
+    </url>
+    <url>
+         <loc>https://3dsoftware.vinnyroca.info/CulturalStudies/</loc>
+         <lastmod>2025-08-22</lastmod>
+    </url>
+    <url>
+         <loc>https://3dsoftware.vinnyroca.info/MediaArchaeology1/</loc>
+         <lastmod>2025-08-22</lastmod>
+    </url>
+    <url>
+         <loc>https://3dsoftware.vinnyroca.info/MediaArchaeology2/</loc>
+         <lastmod>2025-08-22</lastmod>
+    </url>
+    <url>
+         <loc>https://3dsoftware.vinnyroca.info/MediaArchaeology3/</loc>
+         <lastmod>2025-08-22</lastmod>
+    </url>
+    <url>
+         <loc>https://3dsoftware.vinnyroca.info/SoftwareStudies/</loc>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://3dsoftware.vinnyroca.info/Teapot/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://3dsoftware.vinnyroca.info/dreamobject/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://3dsoftware.vinnyroca.info/memorypalace/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
+    </url>
+    <url>
+         <loc>https://3dsoftware.vinnyroca.info/responses/</loc>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://3dsoftware.vinnyroca.info/schedule/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
 </urlset>

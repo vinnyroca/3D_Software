@@ -1,3 +1,5 @@
+
+
 <style>
 /* Button styling */
 #focusToggle {
@@ -5,12 +7,13 @@
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  padding: 0.5em 1em;
+  padding: 0.2em .5em;
   background: #333;
   color: #fff;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  opacity: .5;
 }
 
 /* Hide button on small screens */
@@ -32,7 +35,7 @@
 }
 </style>
 
-<button id="focusToggle">F</button>
+<button id="focusToggle">Focus</button>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -84,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function toggleFocusMode(enable) {
     focusEnabled = enable;
     document.body.classList.toggle("focus-mode", focusEnabled);
-    button.textContent = focusEnabled ? "X" : "F";
+    button.textContent = focusEnabled ? "Exit Focus" : "Focus";
   }
 
   button.addEventListener("click", () => {
@@ -143,10 +146,10 @@ The objective of this course is to introduce foundational technical skills in 3D
 
 |%||
 |:---:|---|
-|35|Memory Chambre|
-|35|Dream Object|
+|30|Memory Chambre|
+|30|Dream Object|
 |10|Participation|
-|10|Reading Responses|
+|20|Reading Responses|
 |10|Exercises|
 
 #### **Evaluation Criteria**

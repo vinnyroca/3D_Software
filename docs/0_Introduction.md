@@ -7,12 +7,13 @@
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  padding: 0.5em 1em;
+  padding: 0.2em .5em;
   background: #333;
   color: #fff;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  opacity: .5;
 }
 
 /* Hide button on small screens */
@@ -34,7 +35,7 @@
 }
 </style>
 
-<button id="focusToggle">F</button>
+<button id="focusToggle">Focus</button>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -86,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function toggleFocusMode(enable) {
     focusEnabled = enable;
     document.body.classList.toggle("focus-mode", focusEnabled);
-    button.textContent = focusEnabled ? "X" : "F";
+    button.textContent = focusEnabled ? "Exit Focus" : "Focus";
   }
 
   button.addEventListener("click", () => {
@@ -107,11 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
   checkScreenWidth(); // initial check
 });
 </script>
-
-
-
-
-
 
 
 # HELLO!
@@ -152,29 +148,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
 [Class Syllabus](./index.md)
 
-## Schedule and Class Website
-
-[Schedule](./schedule.md)
+## Class Website and Schedule
 
 Class Website: 3DSoftware.vinnyroca.info
 
+If you see an error or typo, please send me an email or Discord message.
+
+[Schedule](./schedule.md)
+
+
 ## Class Discord
 
-[Join the Class Discord](https://discord.gg/D7wfJDQ3QJ)
+[Join the Class Discord](https://discord.gg/DV4HeM27)
 
+Please change your nickname on the server to match your name in the classroom.
 
-
-
-
+[How to change your server nickname](https://support.discord.com/hc/en-us/articles/219070107-Server-Nicknames)
 
 
 ## Course Goals
 
-To learn the practice, theory, and history of 3D Software
+To learn the fundamentals of the practice, theory, and history of 3D Software.
 
 ## Practice
 
-Autodesk Maya - Hardsurface 3D models, Animation, and Simulation
+Autodesk Maya - Hard-surface 3D models, Animation, and Simulation
 
 - Maya Interface
 - Basic modeling
@@ -208,37 +206,70 @@ What does this mean?
 
 It means that all parts of our life, from our cars, homes, classrooms, social life, and leisure are dominated by the culture of computation, AKA computers and computer programming.
 
-**We live in a society of software.**
 
-How we interface with these computational devices is often through software with a graphical user interface. Think of the interface of your iPhone, consider the levels of computation that this elaborately designed interface hides away.
+How we interface with these computational devices is often through computer graphics with a graphical user interface. Think of the interface of your iPhone, consider the levels of computation that this elaborately designed interface hides away.
 
 In the early history of computing, people didn’t interact with software. Engineers, programmers, and artists interacted with computers through physical punch cards or other physical inputs and outputs.
 
+This course asks, how did the invention of computer graphics and particularly 3D computer graphics, change our relationship to computation as well as how we understand objects and motion in our world.
+
+We'll approach this question through 3 different academic fields:
+
+- Software Studies
+- Media Archeology
+- Cultural Studies
+
 <p><a href="https://commons.wikimedia.org/wiki/File:Two_women_operating_ENIAC_(full_resolution).jpg#/media/File:Two_women_operating_ENIAC_(full_resolution).jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Two_women_operating_ENIAC_%28full_resolution%29.jpg" alt="Two women programming ENIAC."  width="800"></a><br>By Unidentified U.S. Army photographer - Image from <a rel="nofollow" class="external text" href="https://ftp.arl.army.mil/ftp/historic-computers/">Historic Computer Images</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=26253297">Link</a></p>
 
-## Software
+## Software Studies
 
 Software and computer graphics mediate our experience with the computer. In other words, they provide an interface that translates the work being done by the computer and the work being done by the artist, designer, engineer, or even the consumer.
 
-The field of software studies looks to understand the impact of software on culture.
+The field of software studies looks to understand the impact of software.
 
 In this class, we’ll be studying 3D computer graphics software, looking to understand its cultural, political, and economic effects.
 
 Where we’ll start:
 
-- Software Takes Command - Lev Manovich (2013)
+- *Getting to Know Software: A Study of Autodesk Maya* - Aylish Wood (2015)
+- *RGBFAQ* - Alan Warburton
 
-- Getting to Know Software: A Study of Autodesk Maya - Aylish Wood (2015)
+## Media Archaeology
 
-From this starting point, we’ll continue to Image Objects: An Archaeology of Computer Graphics - Jacob Gaboury (2021)
+Media Archaeology as field explores the history of media and looks to understand the impact of this history on our present. In particular, media archaeology looks to counter the main narrative that technology moves in a linear fashion by some invisible force of *progress*.
+
+- *What is Media Archaeology* - Jussi Parikka (2012)
+- *Image Objects: An Archaeology of Computer Graphics* - Jacob Gaboury (2021)
 
 Image Objects will guide us through the history of computer graphics that leads to the software we will be using in class: Maya and ZBrush. Focusing particularly on the early research in computer graphics at the University of Utah, Image Objects will demonstrate how many of the objects we use today, from our phones to our books, can trace their origins back to the beginnings of computer graphics.
 
-From there, we’ll consider further readings on the continued impact of 3D models and computer graphics.
+## Cultural Studies
 
-**All readings will have a reading response assignment. These reading response assignments can either be done in writing (min 500 words) or submitted as a video response (min 3 minutes). Prompt questions will be provided.**
+Cultural studies work in media studies asks how contemporary and historic media shape culture and are shaped by culture.
 
-**All readings besides our first reading assignment on Software Takes Command will be accompanied by a 30-minute - 1-hour class discussion.**
+- *Where the Model Ends* - Alenda Chang (2024)
+- *3D Media In The Transversal Era* - DB Bauer (2024)
+- *Open Source Afro Hair Library* - AM Darke (Ongoing)
+
+## A Note on Overlap
+
+Although the readings for this class are separated into these different sections, many of they pull from all these fields and more to draw their conclusions.
+
+Media studies is an overlapping field the pulls not only from the above mentioned fields, but also:
+
+- Science and Technology Studies
+- Game Studies
+- Critical Code Studies
+- Gender and Feminist Studies
+- Critical Race Studies
+- Environmental Studies
+- Post-colonial Studies
+
+## Responses and Discussion
+
+**All readings/watching will have a  response assignment. These reading response assignments can either be done in writing (min 500 words) or submitted as a video response (min 3 minutes). Prompt questions will be provided.**
+
+**All readings will be accompanied by a 30 minute to 1 hour class discussion.**
 
 ## 3D Exercise - 3D Shapes
 

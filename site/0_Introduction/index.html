@@ -85,6 +85,37 @@
 <!-- endblock -->
                             </ul>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="
+                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Responses]</a>
+                            <ul class="dropdown-menu">
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../SoftwareStudies/" class="dropdown-item text-decoration-none ">Software Studies</a>
+    </li>
+<!-- endblock -->
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../MediaArchaeology1/" class="dropdown-item text-decoration-none ">Media Archaeology 1</a>
+    </li>
+<!-- endblock -->
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../MediaArchaeology2/" class="dropdown-item text-decoration-none ">Media Archaeology 2</a>
+    </li>
+<!-- endblock -->
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../MediaArchaeology3/" class="dropdown-item text-decoration-none ">Media Archaeology 3</a>
+    </li>
+<!-- endblock -->
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../CulturalStudies/" class="dropdown-item text-decoration-none ">Cultural Studies</a>
+    </li>
+<!-- endblock -->
+                            </ul>
+                        </li>
             </ul>
         </li>
 <!-- endblock -->
@@ -152,7 +183,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#schedule-and-class-website" class="nav-link">Schedule and Class Website</a>
+            <li class="nav-item" data-bs-level="2"><a href="#class-website-and-schedule" class="nav-link">Class Website and Schedule</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -176,7 +207,23 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#software" class="nav-link">Software</a>
+            <li class="nav-item" data-bs-level="2"><a href="#software-studies" class="nav-link">Software Studies</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#media-archaeology" class="nav-link">Media Archaeology</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#cultural-studies" class="nav-link">Cultural Studies</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#a-note-on-overlap" class="nav-link">A Note on Overlap</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#responses-and-discussion" class="nav-link">Responses and Discussion</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -210,12 +257,13 @@
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  padding: 0.5em 1em;
+  padding: 0.2em .5em;
   background: #333;
   color: #fff;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  opacity: .5;
 }
 
 /* Hide button on small screens */
@@ -237,7 +285,7 @@
 }
 </style>
 
-<p><button id="focusToggle">F</button></p>
+<p><button id="focusToggle">Focus</button></p>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("focusToggle");
@@ -288,7 +336,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function toggleFocusMode(enable) {
     focusEnabled = enable;
     document.body.classList.toggle("focus-mode", focusEnabled);
-    button.textContent = focusEnabled ? "X" : "F";
+    button.textContent = focusEnabled ? "Exit Focus" : "Focus";
   }
 
   button.addEventListener("click", () => {
@@ -340,15 +388,18 @@ document.addEventListener("DOMContentLoaded", () => {
 </ul>
 <h2 id="syllabus">Syllabus</h2>
 <p><a href="../">Class Syllabus</a></p>
-<h2 id="schedule-and-class-website">Schedule and Class Website</h2>
-<p><a href="../schedule/">Schedule</a></p>
+<h2 id="class-website-and-schedule">Class Website and Schedule</h2>
 <p>Class Website: 3DSoftware.vinnyroca.info</p>
+<p>If you see an error or typo, please send me an email or Discord message.</p>
+<p><a href="../schedule/">Schedule</a></p>
 <h2 id="class-discord">Class Discord</h2>
-<p><a href="https://discord.gg/D7wfJDQ3QJ">Join the Class Discord</a></p>
+<p><a href="https://discord.gg/DV4HeM27">Join the Class Discord</a></p>
+<p>Please change your nickname on the server to match your name in the classroom.</p>
+<p><a href="https://support.discord.com/hc/en-us/articles/219070107-Server-Nicknames">How to change your server nickname</a></p>
 <h2 id="course-goals">Course Goals</h2>
-<p>To learn the practice, theory, and history of 3D Software</p>
+<p>To learn the fundamentals of the practice, theory, and history of 3D Software.</p>
 <h2 id="practice">Practice</h2>
-<p>Autodesk Maya - Hardsurface 3D models, Animation, and Simulation</p>
+<p>Autodesk Maya - Hard-surface 3D models, Animation, and Simulation</p>
 <ul>
 <li>Maya Interface</li>
 <li>Basic modeling</li>
@@ -382,29 +433,55 @@ document.addEventListener("DOMContentLoaded", () => {
 <p><strong>We live in a society of computation.</strong></p>
 <p>What does this mean?</p>
 <p>It means that all parts of our life, from our cars, homes, classrooms, social life, and leisure are dominated by the culture of computation, AKA computers and computer programming.</p>
-<p><strong>We live in a society of software.</strong></p>
-<p>How we interface with these computational devices is often through software with a graphical user interface. Think of the interface of your iPhone, consider the levels of computation that this elaborately designed interface hides away.</p>
+<p>How we interface with these computational devices is often through computer graphics with a graphical user interface. Think of the interface of your iPhone, consider the levels of computation that this elaborately designed interface hides away.</p>
 <p>In the early history of computing, people didn’t interact with software. Engineers, programmers, and artists interacted with computers through physical punch cards or other physical inputs and outputs.</p>
+<p>This course asks, how did the invention of computer graphics and particularly 3D computer graphics, change our relationship to computation as well as how we understand objects and motion in our world.</p>
+<p>We'll approach this question through 3 different academic fields:</p>
+<ul>
+<li>Software Studies</li>
+<li>Media Archeology</li>
+<li>Cultural Studies</li>
+</ul>
 <p><a href="https://commons.wikimedia.org/wiki/File:Two_women_operating_ENIAC_(full_resolution).jpg#/media/File:Two_women_operating_ENIAC_(full_resolution).jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Two_women_operating_ENIAC_%28full_resolution%29.jpg" alt="Two women programming ENIAC."  width="800"></a><br>By Unidentified U.S. Army photographer - Image from <a rel="nofollow" class="external text" href="https://ftp.arl.army.mil/ftp/historic-computers/">Historic Computer Images</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=26253297">Link</a></p>
 
-<h2 id="software">Software</h2>
+<h2 id="software-studies">Software Studies</h2>
 <p>Software and computer graphics mediate our experience with the computer. In other words, they provide an interface that translates the work being done by the computer and the work being done by the artist, designer, engineer, or even the consumer.</p>
-<p>The field of software studies looks to understand the impact of software on culture.</p>
+<p>The field of software studies looks to understand the impact of software.</p>
 <p>In this class, we’ll be studying 3D computer graphics software, looking to understand its cultural, political, and economic effects.</p>
 <p>Where we’ll start:</p>
 <ul>
-<li>
-<p>Software Takes Command - Lev Manovich (2013)</p>
-</li>
-<li>
-<p>Getting to Know Software: A Study of Autodesk Maya - Aylish Wood (2015)</p>
-</li>
+<li><em>Getting to Know Software: A Study of Autodesk Maya</em> - Aylish Wood (2015)</li>
+<li><em>RGBFAQ</em> - Alan Warburton</li>
 </ul>
-<p>From this starting point, we’ll continue to Image Objects: An Archaeology of Computer Graphics - Jacob Gaboury (2021)</p>
+<h2 id="media-archaeology">Media Archaeology</h2>
+<p>Media Archaeology as field explores the history of media and looks to understand the impact of this history on our present. In particular, media archaeology looks to counter the main narrative that technology moves in a linear fashion by some invisible force of <em>progress</em>.</p>
+<ul>
+<li><em>What is Media Archaeology</em> - Jussi Parikka (2012)</li>
+<li><em>Image Objects: An Archaeology of Computer Graphics</em> - Jacob Gaboury (2021)</li>
+</ul>
 <p>Image Objects will guide us through the history of computer graphics that leads to the software we will be using in class: Maya and ZBrush. Focusing particularly on the early research in computer graphics at the University of Utah, Image Objects will demonstrate how many of the objects we use today, from our phones to our books, can trace their origins back to the beginnings of computer graphics.</p>
-<p>From there, we’ll consider further readings on the continued impact of 3D models and computer graphics.</p>
-<p><strong>All readings will have a reading response assignment. These reading response assignments can either be done in writing (min 500 words) or submitted as a video response (min 3 minutes). Prompt questions will be provided.</strong></p>
-<p><strong>All readings besides our first reading assignment on Software Takes Command will be accompanied by a 30-minute - 1-hour class discussion.</strong></p>
+<h2 id="cultural-studies">Cultural Studies</h2>
+<p>Cultural studies work in media studies asks how contemporary and historic media shape culture and are shaped by culture.</p>
+<ul>
+<li><em>Where the Model Ends</em> - Alenda Chang (2024)</li>
+<li><em>3D Media In The Transversal Era</em> - DB Bauer (2024)</li>
+<li><em>Open Source Afro Hair Library</em> - AM Darke (Ongoing)</li>
+</ul>
+<h2 id="a-note-on-overlap">A Note on Overlap</h2>
+<p>Although the readings for this class are separated into these different sections, many of they pull from all these fields and more to draw their conclusions.</p>
+<p>Media studies is an overlapping field the pulls not only from the above mentioned fields, but also:</p>
+<ul>
+<li>Science and Technology Studies</li>
+<li>Game Studies</li>
+<li>Critical Code Studies</li>
+<li>Gender and Feminist Studies</li>
+<li>Critical Race Studies</li>
+<li>Environmental Studies</li>
+<li>Post-colonial Studies</li>
+</ul>
+<h2 id="responses-and-discussion">Responses and Discussion</h2>
+<p><strong>All readings/watching will have a  response assignment. These reading response assignments can either be done in writing (min 500 words) or submitted as a video response (min 3 minutes). Prompt questions will be provided.</strong></p>
+<p><strong>All readings will be accompanied by a 30 minute to 1 hour class discussion.</strong></p>
 <h2 id="3d-exercise-3d-shapes">3D Exercise - 3D Shapes</h2>
 <p>Basic Shape Drawing - 10 min</p>
 <p>Using only cubes, rectangular prisms, cylinders and spheres, draw simplified versions of the objects on the table</p>

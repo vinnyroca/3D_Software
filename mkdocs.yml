@@ -7,6 +7,12 @@ nav:
   - Projects:
     - Dream Object: dreamobject.md
     - Memory Chambre: memorypalace.md
+  - Responses:
+    - Software Studies: SoftwareStudies.md
+    - Media Archaeology 1: MediaArchaeology1.md
+    - Media Archaeology 2: MediaArchaeology2.md
+    - Media Archaeology 3: MediaArchaeology3.md
+    - Cultural Studies: CulturalStudies.md
 
 theme:
 
