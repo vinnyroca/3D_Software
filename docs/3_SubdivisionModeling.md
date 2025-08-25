@@ -31,60 +31,24 @@ document.querySelectorAll('a[href^="#"]')
 # Subdivision Modeling
 > `RECAP:` What we learned last class:
 
-> - Aspects of Polygonal Modeling with Maya
-> - Faces
-> - Edges
-> - Vertices
-> - Space and Transforms
-> - Arch Exercise
-> - Tree Exercise
+- Aspects of Polygonal Modeling with Maya
+- Faces
+- Edges
+- Vertices
+- Space and Transforms
+- Combine
+- Freeze
+- History
+- Circularize
+- Duplicate components
 
 > `PLAN:`
 
-> - What is subdivision modeling and how do we use it to make more complex models?
-> - How to use Edge Loops to change the shape of subdivided models
-> - Using subdivision to make a die.
-> - History of the Utah Teapot
-> - Using subdivision to model the Utah Teapot
-
-## Artist Spotlight
-
-### Char Davies
-> Canadian, b. 1954
-
-> [Artist Website](https://wwwimmersence.com)
-
->[Arist Talk with Char Davies and Jakob Kudsk Steensen](https://www.youtube.com/watch?v=cucworlX8wU&t=1s)
-
-#### *Osmose*
-
-Virtual Reality Installation, 1995
-
-[Website](https://www.immersence.com/osmose) - [Video](https://www.youtube.com/watch?v=54O4VP3tCoY)
-
-##### Images
-
-<figure> <img src = "../assets/images/2_maya_chardavies_osmose.jpg"><figcaption>Still from Osmose, Char Davies</figcaption></figure>
-
-> LOREM
-
-> Char Davies, immersence.com/osmose
-
-#### *Ephémère*
-
-Virtual Reality Installation, 1998
-
-[Website](https://www.immersence.com/ephemere) - [Video](https://www.youtube.com/watch?v=XCWaMll0leI)
-
-##### Images
-
-<figure> <img src = "../assets/images/2_maya_chardavies_ephemere_1.jpg"><figcaption>Still from Ephémère, Char Davies</figcaption></figure>
-
-<figure> <img src = "../assets/images/2_maya_chardavies_ephemere_2.jpg"><figcaption>Still from Ephémère, Char Davies</figcaption></figure>
-
-<figure> <img src = "../assets/images/2_maya_chardavies_ephemere_3.jpg"><figcaption>Still from Ephémère, Char Davies</figcaption></figure>
-
-<figure> <img src = "../assets/images/2_maya_chardavies_ephemere_4.jpg"><figcaption>Installation view of Ephémère, Char Davies</figcaption></figure>
+- What is subdivision modeling and how do we use it to make more complex models?
+- How to use Edge Loops to change the shape of subdivided models
+- Using subdivision to make a die.
+- History of the Utah Teapot
+- Using subdivision to model the Utah Teapot
 
 ## Subdivision Basics
 

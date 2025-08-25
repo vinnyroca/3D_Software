@@ -111,7 +111,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-# Syllabus
 
 ## Course Information
 
@@ -122,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
 Vinny Roca, Scripps College  
 Email: vroca@scrippscollege.edu  
 Office Hours: Lang 227. By appointment; Tuesday & Thursday 1:30-2:30 [Schedule office hours](https://outlook.office.com/bookwithme/user/14e2aa0a493c4a659e608aab96b46635@scrippscollege.edu/meetingtype/ex7sQIfLLkiMdKnIgITX3w2?anonymous&ismsaljsauthenabled&ep=mlink)
----
+
 ## Course Description
 
 This interdisciplinary introductory course examines the history, theory, and techniques of 3D software. Through weekly assignments, critical readings, and projects, students will engage with 3D software as a technical tool, artistic medium, and cultural object. This course introduces foundational skills in modeling, rendering, and animation using various software. Weekly discussions, readings, and presentations will critically engage with 3D software’s cultural, social, economic, and political dimensions. The ideas and skills taught in this course will set a foundation for future coursework in game design, animation, video art, digital fabrication, and media studies.
@@ -139,10 +138,10 @@ The objective of this course is to introduce foundational technical skills in 3D
 - Gain critical knowledge of history, theory, and cultural impact of 3D software.
 - Ability to craft expansive media art projects using 3D software.
 
----
+
 ## Grading, Assignments, Course Policy
----
-#### **Course Breakdown**
+
+### **Course Breakdown**
 
 |%||
 |:---:|---|
@@ -152,7 +151,7 @@ The objective of this course is to introduce foundational technical skills in 3D
 |20|Reading Responses|
 |10|Exercises|
 
-#### **Evaluation Criteria**
+### **Evaluation Criteria**
 #### Projects & Exercises
 
 Projects are separated into a variety of project pieces.
@@ -166,7 +165,7 @@ Completed projects will be graded using the following criteria:
 |Technique| Is the assignment well-crafted? Is the conceptual idea behind the assignment supported by the technical and artistic decisions made by the student?|
 |Concept|Does the student comprehend the scope of the assignment? Is the student able to communicate their ideas clearly? Does the student demonstrate comprehension of the concepts covered in class? Is the student able to articulate the concepts behind their work?|
 |Generosity|Does the student exhibit insight, criticality, and risk-taking in their work? How much sensitivity and critical insight does the student display towards personal assignments and in critiquing their peers’ work?|
-
+---
 #### Participation & Attendance
 
 All students are expected to participate actively during the discussion periods and critiques.
@@ -174,6 +173,8 @@ All students are expected to participate actively during the discussion periods 
 Students more than ten minutes late for class will be marked as late. Three late marks will result in an unexcused absence. More than two unexcused absences may, at the instructor’s discretion, affect the final participation grade.
 
 All classes are mandatory. If you anticipate missing a class or expect to have more than two absences during the course, inform the instructor as soon as possible.
+
+---
 
 #### Reading Responses
 
@@ -187,11 +188,15 @@ Reading responses should be either a 500 word written response or uploaded as 3 
 
 As reading responses are essential to the discussion section of the course, late reading responses will not be accepted.
 
+---
+
 ### Late Work and Extensions
 
 For all exercises, late work will not be accepted. Completing exercises on time is essential to the progression of the course. Not completing exercises will result in a student falling behind. In the situation that extra time is needed to complete exercises and project pieces, students must reach out to the instructor as soon as possible.
 
 Late projects not ready by their assigned crit day will automatically lose one letter grade. Each day the project is late, it will lose one more letter grade. After three days, the project will not be accepted.
+
+---
 
 ### Discord and Email
 
@@ -199,24 +204,32 @@ For this class, we will be sharing our exercises, reading responses and project 
 
 I will respond to Discord messages and email within 24 hrs of receipt. I will respond to messages sent over the weekend on the following Monday.
 
+---
+
 ### Box Submissions
 
 Submissions for the class will be made through Box links. Links to Box submissions will be on the class website.
 
+---
+
 ### Readings
 
-All readings are provided by the Instructor using this [link](https://scrippscollege.box.com/s/yjzmo42f7mg85bpzs9tpyvmzxprs9zlv).
+All readings are provided by the Instructor using this [link](https://scrippscollege.box.com/s/zubwhth84uolstqulviwra2e8a4vyo7h).
 
-## Course Materials
+## Course Materials & Lab Hours
 
-Although ample time will be provided to work in class and the lab will be open during non-class hours when other classes are not in session, you might still find you want to work on your projects outside the lab.
+Ample class time will be provided to work on projects and the lab will be open during non-class hours.
+
+The lab will be open to students 24/7 when another class is not in session.
+
+**Unavailable times: MW: 11:00AM - 2:30 AM; TR: 4:15-6:45.**
 
 For working outside the lab on your personal computer, the following hardware is recommended:
 
 1. Entry Level Wacom Drawing Tablet ~ $60
 2. A 500Gb+ SSD ~ $50-100
 3. A three button mouse ~ $20-50
-4. Maxon One Student Subscription (This will be needed to run ZBrush) ~ $60
+4. Maxon One Student Subscription (This will be needed to run ZBrush on your personal computer) ~ $60
 5. Autodesk Maya ~ Free with student login
 
 ## Scripps College Land Acknowledgement
@@ -265,6 +278,10 @@ Campus Disability Coordinators
 ### Class Resources
 
 - [Maya Hotkeys](https://www.autodesk.com/shortcuts/maya)
+- [Maya Learning Channel](https://www.youtube.com/user/MayaHowTos/playlists)
+- [Flipped Normals Youtube Channel](https://www.youtube.com/flippednormals)
+- [Michael Pavlovich](https://www.youtube.com/channel/UCWiZI2dglzpaCYNnjcejS-Q)
+- [Zbrush Youtube](https://www.youtube.com/@MaxonZBrush)
 
 ### 7C Student Resources
 

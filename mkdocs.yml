@@ -1,19 +1,43 @@
-site_name: Introduction to 3D Software
+site_name: 🫖 Introduction to 3D Software  
 site_url: https://3dsoftware.vinnyroca.info/
 
 nav:
-  - Syllabus: index.md
-  - Schedule: schedule.md
-  - Projects:
+  - 📋Syllabus : index.md
+  - 📆Schedule : schedule.md
+  - 💻Notes :
+    - Notes Index: Notes/notes.md
+    - 1. Maya Interface and Objects: 1_MayaInterface.md
+    # - 2. Polygonal Modeling: 2_ModellingEssentials.md
+    # - 3. Subdivision Modeling: 3_SubdivisionModeling.md
+  - 📚Exercises:
+    - Exercise Index: Exercises/exerciseindex.md
+    - In-class:
+      - 1a.Simple Chair: Exercises/01_simplechair.md
+      - 1b.Snapping Chair: Exercises/01_snappingchair.md
+      # - 2a.Complete a Cube: Exercises/02_completeacube.md
+      # - 2b.Archway: Exercises/02_archway.md
+      # - 3a.Dice: Exercises/03_dice.md
+      # - 3b.Teapot: Exercises/03_teapot.md
+    - Independent:
+      - 0. Computer Dreams: Exercises/00_computerdreams.md
+      - 1.Creature: Exercises/01_creature.md
+      # - 2.Tree: Exercises/02_tree.md
+  - 🌞Projects :
     - Dream Object: dreamobject.md
     - Memory Chambre: memorypalace.md
-  - Responses:
-    - Software Studies: SoftwareStudies.md
-    - Media Archaeology 1: MediaArchaeology1.md
-    - Media Archaeology 2: MediaArchaeology2.md
-    - Media Archaeology 3: MediaArchaeology3.md
-    - Cultural Studies: CulturalStudies.md
+  - 📖Responses :
+    - Software Studies: Responses/SoftwareStudies.md
+    - Media Archaeology 1: Responses/MediaArchaeology1.md
+    - Media Archaeology 2: Responses/MediaArchaeology2.md
+    - Media Archaeology 3: Responses/MediaArchaeology3.md
+    - Cultural Studies: Responses/CulturalStudies.md
+  - 🖍️Artists : 
+    - Rebecca Allen: Artists/allen.md
+    - Karl Sims: Artists/sims.md
+    - Char Davies: Artists/davies.md
+    - Jennifer Steinkamp: Artists/steinkamp.md
   
+
 
   
 
@@ -41,11 +65,13 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.instant: false
   font:
-    text: Noto Sans
+    text: Funnel Sans
+    code: Inconsolata monospace
 plugins:
   - search:
-      enabled: false
+      enabled: true
 
 
 extra_css:
