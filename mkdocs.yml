@@ -54,6 +54,7 @@ markdown_extensions:
       toc_depth: 2
 
 theme:
+  favicon: cube.svg
   icon:
     logo: material/cube
   name: material
