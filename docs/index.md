@@ -165,7 +165,7 @@ Completed projects will be graded using the following criteria:
 |Technique| Is the assignment well-crafted? Is the conceptual idea behind the assignment supported by the technical and artistic decisions made by the student?|
 |Concept|Does the student comprehend the scope of the assignment? Is the student able to communicate their ideas clearly? Does the student demonstrate comprehension of the concepts covered in class? Is the student able to articulate the concepts behind their work?|
 |Generosity|Does the student exhibit insight, criticality, and risk-taking in their work? How much sensitivity and critical insight does the student display towards personal assignments and in critiquing their peers’ work?|
----
+
 #### Participation & Attendance
 
 All students are expected to participate actively during the discussion periods and critiques.
