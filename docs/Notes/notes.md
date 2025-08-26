@@ -4,4 +4,4 @@
 
 Notes listed in course order. Notes will be added as course progresses.
 
-<p><a><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Original_Utah_Teapot.jpg" alt="Original Utah Teapot.jpg" width="600"></a><br>The Original Teapot used to make the Utah Teapot Model. Photo by Marshall Astor <a href="https://creativecommons.org/licenses/by-sa/2.0" title="Creative Commons Attribution-Share Alike 2.0">CC BY-SA 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=1743696">Link</a></p>
+<figures><iframe width="560" height="315" src="https://www.youtube.com/embed/jlPc2Ginj94?si=vka0k3YUzmOhqwYv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><figcaption>How do we think about 3D software today?</figcaption></figure>

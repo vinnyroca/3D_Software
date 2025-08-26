@@ -109,9 +109,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-
-
-
 ## Course Information
 
 **LOCATION:** Scripps College, Steele 229  
