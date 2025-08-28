@@ -220,11 +220,13 @@ By toggling the **D** key, we can enter and exit the pivot point editing mode. I
 
 ### Snapping
 
-Snapping is one of the core features of Maya and many 3D applications. By using snapping, we can precisely place objects. Snapping in many is controlled by holding different hot keys:
+Snapping is one of the core features of Maya and many 3D applications. By using snapping, we can precisely place objects. Snapping in Maya is controlled by holding different hot keys:
 
 - `v` - vertex snapping
 - `x` - grid snapping
 - `c` - edge snapping
+
+You can either use the center of the gizmo to snap on all Axes or you can snap along one particular Axis.
 
 Examples:
 
