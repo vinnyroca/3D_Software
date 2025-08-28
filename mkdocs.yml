@@ -7,21 +7,21 @@ nav:
   - 💻Notes :
     - Notes Index: Notes/notes.md
     - 1. Maya Interface and Objects: 1_MayaInterface.md
-    # - 2. Polygonal Modeling: 2_ModellingEssentials.md
-    # - 3. Subdivision Modeling: 3_SubdivisionModeling.md
+    - 2. Polygonal Modeling: 2_ModellingEssentials.md
+    - 3. Subdivision Modeling: 3_SubdivisionModeling.md
   - 📚Exercises:
     - Exercise Index: Exercises/exerciseindex.md
     - In-class:
       - 1a.Simple Chair: Exercises/01_simplechair.md
       - 1b.Snapping Chair: Exercises/01_snappingchair.md
-      # - 2a.Complete a Cube: Exercises/02_completeacube.md
-      # - 2b.Archway: Exercises/02_archway.md
-      # - 3a.Dice: Exercises/03_dice.md
-      # - 3b.Teapot: Exercises/03_teapot.md
+      - 2a.Complete a Cube: Exercises/02_completeacube.md
+      - 2b.Archway: Exercises/02_archway.md
+      - 3a.Dice: Exercises/03_dice.md
+      - 3b.Teapot: Exercises/03_teapot.md
     - Independent:
       - 0. Computer Dreams: Exercises/00_computerdreams.md
       - 1.Creature: Exercises/01_creature.md
-      # - 2.Tree: Exercises/02_tree.md
+      - 2.Tree: Exercises/02_tree.md
   - 🌞Projects :
     - Dream Object: dreamobject.md
     - Memory Chambre: memorypalace.md

@@ -1,33 +1,3 @@
-<script>
-// Get the header element
-let header = document.querySelector('header');
-
-// Get the height of the header
-document.querySelectorAll('a[href^="#"]')
-.forEach(function (anchor) {
-    anchor.addEventListener('click', 
-    function (event) {
-        event.preventDefault();
-
-        // Get the target element that 
-        // the anchor link points to
-        let target = document.querySelector(
-            this.getAttribute('href')
-        );
-        
-        let headerHeight = header.offsetHeight*2;
-        
-        let targetPosition = target
-            .getBoundingClientRect().top - headerHeight;
-
-        window.scrollTo({
-            top: targetPosition + window.scrollY,
-            behavior: 'smooth'
-        });
-    });
-});
-</script>
-
 # Subdivision Modeling
 > `RECAP:` What we learned last class:
 
@@ -49,6 +19,13 @@ document.querySelectorAll('a[href^="#"]')
 - Using subdivision to make a die.
 - History of the Utah Teapot
 - Using subdivision to model the Utah Teapot
+
+## Practice File
+
+---
+Download [Practice File](https://scrippscollege.app.box.com/s/bfml0momr6a558ocr2gdiukk83o43ecf)
+
+---
 
 ## Subdivision Basics
 

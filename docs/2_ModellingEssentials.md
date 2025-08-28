@@ -328,6 +328,31 @@ The other tool that we can use when we want to move a vertex to merge with anoth
 2. **Click + Drag** the bottom open vertex to the bottom center vertex to merge them together.<figure> <img src = "../assets/images/02_maya_vertices_weld_targetweldtool_merge.gif"></figure>
 3. Press **Q** to activate the selection tool and exit the Target Weld tool.
 
+## Circularize Components
+
+Circularize components is a very helpful tool with Maya. It allows us to take any components and average their shape into a circle. This is especially helpful for making our tree branches.
+
+- With faces selected, navigate holding **Shift+RMB** to **Circularize Components**.
+
+<figure> <img src = "/assets/images/02_maya_tree_07.gif"></figure>
+
+- You'll notice this will make somewhat of a mess. However, don't worry, we have learned the tools to clean it up! <br><br>Begin by opening up the Scale tool, and scaling the faces down using the center Gizmo.
+<br><br> Then use the Rotate tool to match the edges beyond the circle to flow with the rest of our topology.<br><br>Finally, use the Move tool to pull out the circle slightly.
+
+> `NOTE`: You may need to be in **Component Space** for the Move, Rotate, and Scale tool to have the intended effects.
+
+<figure> <img src = "/assets/images/02_maya_tree_08.gif"></figure>
+
+- Delete the faces and begin extruding out the edge loop to make a new branch. You may notice you need to adjust the scale of your edge loops.
+
+<figure> <img src = "/assets/images/02_maya_tree_09.gif"></figure>
+
+## Soften Edges
+
+ To soften our edges, in object mode navigate holding **Shift + RMB** to **Soften/Harden Edges** -> **Soften Edge.**
+
+<figure> <img src = "/assets/images/02_maya_tree_20.gif"></figure>
+
 ## World vs. Object vs. Component Space
 ---
 
@@ -425,30 +450,63 @@ Finally, I deleted the History on my new model, essentially, all the past nodes 
 1. Select both Cubes and combine them together.<figure> <img src = "../assets/images/02_maya_space_history_combine.gif"></figure>
 1. Select the new object and navigate to **Edit** -> **Delete by Type** -> **History**<figure> <img src = "../assets/images/02_maya_space_history_delete.gif"></figure>
 
-## Circularize Components
+## Mirror Tool
 
-Circularize components is a very helpful tool with Maya. It allows us to take any components and average their shape into a circle. This is especially helpful for making our tree branches.
+The Mirror Tool is a modeling function in 3D software that creates a symmetrical copy of an object or geometry across a specified axis. 
 
-- With faces selected, navigate holding **Shift+RMB** to **Circularize Components**.
+To use the mirror tool most effectively, the pivot of your model should:
 
-<figure> <img src = "/assets/images/02_maya_tree_07.gif"></figure>
+1. Be at the world origin (0,0,0).
+2. Be at the point over which you want to mirror your model
 
-- You'll notice this will make somewhat of a mess. However, don't worry, we have learned the tools to clean it up! <br><br>Begin by opening up the Scale tool, and scaling the faces down using the center Gizmo.
-<br><br> Then use the Rotate tool to match the edges beyond the circle to flow with the rest of our topology.<br><br>Finally, use the Move tool to pull out the circle slightly.
+**To begin mirroring you object:**
 
-> `NOTE`: You may need to be in **Component Space** for the Move, Rotate, and Scale tool to have the intended effects.
+1. Select Your Object
 
-<figure> <img src = "/assets/images/02_maya_tree_08.gif"></figure>
+2. Hold Shift + Right-Click over the object to bring up the Modeling Marking Menu.
 
-- Delete the faces and begin extruding out the edge loop to make a new branch. You may notice you need to adjust the scale of your edge loops.
+3. In the marking menu, hover and release over **Mirror**
 
-<figure> <img src = "/assets/images/02_maya_tree_09.gif"></figure>
+**Set Axis and Options**:
 
-## Soften Edges
+1. Choose the axis (X, Y, or Z) and direction (+ or -) you want to mirror across.
+2. Use **Border** if you want to merge to mirror together
 
- To soften our edges, in object mode navigate holding **Shift + RMB** to **Soften/Harden Edges** -> **Soften Edge.**
+Example:
 
-<figure> <img src = "/assets/images/02_maya_tree_20.gif"></figure>
+<figure> <img src = "/assets/images/02_maya_arch_30.gif"></figure>
+
+## Symmetry
+
+Symmetry allows for easier modeling. On symmetrical models, any change you make on one end of your model, will be replicated on the other side.
+
+To use symmetry most effectively:
+
+1. Place your pivot point in the center of your model.
+2. Place you model at the world's origin (0,0,0).
+
+To activate symmetry:
+
+1. Hold Ctrl+Shit+RMB in the view port
+    - The top option will activate symmetry
+    - You can decide if you want to use World or Object space
+    - Choose which Axis you want your symmetry to be across.
+
+You may have to enter the marking menu multiple times to change options.
+
+`UI TIP:` Using symmetry in Object mode,  will use your pivot point as the reference for symmetry
+
+Example:
+
+In this example, symmetry is turned on for World, X Axis:
+
+<figure> <img src = "/assets/images/02_maya_arch_8.gif"></figure>
+
+When symmetry is activate, it displays at the top of your view port:
+
+<figure> <img src = "/assets/images/02_maya_arch_1.png"></figure>
+
+
 
 
 
