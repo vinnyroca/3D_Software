@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://3dsoftware.vinnyroca.info/2_ModellingEssentials/">
       
       
+        <link rel="prev" href="../1_MayaInterface/">
+      
+      
+        <link rel="next" href="../3_SubdivisionModeling/">
       
       
       <link rel="icon" href="../3D.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Polygonal Modeling with Maya - 🫖 Introduction to 3D Software</title>
+        <title>2. Polygonal Modeling - 🫖 Introduction to 3D Software</title>
       
     
     
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Polygonal Modeling with Maya
+              2. Polygonal Modeling
             
           </span>
         </div>
@@ -209,10 +213,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../Notes/notes/" class="md-tabs__link">
           
   
@@ -392,24 +398,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -422,7 +433,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             💻Notes
@@ -465,6 +476,285 @@
   
   <span class="md-ellipsis">
     1. Maya Interface and Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    2. Polygonal Modeling
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    2. Polygonal Modeling
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#practice-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice File
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#components-of-a-polygon-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components of a Polygon Object
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#poly-count" class="md-nav__link">
+    <span class="md-ellipsis">
+      Poly Count
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marking-menus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marking Menus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Faces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extrude" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extrude
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#face-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Face Selection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edges
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insert-edge-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Insert Edge Loop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bridge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bridge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vertices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weld-vertices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weld Vertices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circularize-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Circularize Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soften-edges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soften Edges
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#world-vs-object-vs-component-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      World vs. Object vs. Component Space
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Combine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#freeze-transformations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Freeze Transformations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historydelete-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      History/Delete History
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mirror-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mirror Tool
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#symmetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symmetry
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_SubdivisionModeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3. Subdivision Modeling
     
   </span>
   
@@ -633,6 +923,98 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_completeacube/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2a.Complete a Cube
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_archway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2b.Archway
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_dice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3a.Dice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_teapot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3b.Teapot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -718,6 +1100,29 @@
   
   <span class="md-ellipsis">
     1.Creature
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.Tree
     
   </span>
   
@@ -1286,6 +1691,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#circularize-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Circularize Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soften-edges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soften Edges
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#world-vs-object-vs-component-space" class="md-nav__link">
     <span class="md-ellipsis">
       World vs. Object vs. Component Space
@@ -1322,18 +1745,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#circularize-components" class="md-nav__link">
+  <a href="#mirror-tool" class="md-nav__link">
     <span class="md-ellipsis">
-      Circularize Components
+      Mirror Tool
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#soften-edges" class="md-nav__link">
+  <a href="#symmetry" class="md-nav__link">
     <span class="md-ellipsis">
-      Soften Edges
+      Symmetry
     </span>
   </a>
   
@@ -1618,6 +2041,31 @@ The direction the face is facing is the normal direction. We always want the <st
 <li><strong>Click + Drag</strong> the bottom open vertex to the bottom center vertex to merge them together.<figure> <img src = "../assets/images/02_maya_vertices_weld_targetweldtool_merge.gif"></figure></li>
 <li>Press <strong>Q</strong> to activate the selection tool and exit the Target Weld tool.</li>
 </ol>
+<h2 id="circularize-components">Circularize Components</h2>
+<p>Circularize components is a very helpful tool with Maya. It allows us to take any components and average their shape into a circle. This is especially helpful for making our tree branches.</p>
+<ul>
+<li>With faces selected, navigate holding <strong>Shift+RMB</strong> to <strong>Circularize Components</strong>.</li>
+</ul>
+<figure> <img src = "/assets/images/02_maya_tree_07.gif"></figure>
+
+<ul>
+<li>You'll notice this will make somewhat of a mess. However, don't worry, we have learned the tools to clean it up! <br><br>Begin by opening up the Scale tool, and scaling the faces down using the center Gizmo.
+<br><br> Then use the Rotate tool to match the edges beyond the circle to flow with the rest of our topology.<br><br>Finally, use the Move tool to pull out the circle slightly.</li>
+</ul>
+<blockquote>
+<p><code>NOTE</code>: You may need to be in <strong>Component Space</strong> for the Move, Rotate, and Scale tool to have the intended effects.</p>
+</blockquote>
+<figure> <img src = "/assets/images/02_maya_tree_08.gif"></figure>
+
+<ul>
+<li>Delete the faces and begin extruding out the edge loop to make a new branch. You may notice you need to adjust the scale of your edge loops.</li>
+</ul>
+<figure> <img src = "/assets/images/02_maya_tree_09.gif"></figure>
+
+<h2 id="soften-edges">Soften Edges</h2>
+<p>To soften our edges, in object mode navigate holding <strong>Shift + RMB</strong> to <strong>Soften/Harden Edges</strong> -&gt; <strong>Soften Edge.</strong></p>
+<figure> <img src = "/assets/images/02_maya_tree_20.gif"></figure>
+
 <h2 id="world-vs-object-vs-component-space">World vs. Object vs. Component Space</h2>
 <hr />
 <h3 id="world-space">World Space</h3>
@@ -1694,30 +2142,57 @@ The direction the face is facing is the normal direction. We always want the <st
 <li>Select both Cubes and combine them together.<figure> <img src = "../assets/images/02_maya_space_history_combine.gif"></figure></li>
 <li>Select the new object and navigate to <strong>Edit</strong> -&gt; <strong>Delete by Type</strong> -&gt; <strong>History</strong><figure> <img src = "../assets/images/02_maya_space_history_delete.gif"></figure></li>
 </ol>
-<h2 id="circularize-components">Circularize Components</h2>
-<p>Circularize components is a very helpful tool with Maya. It allows us to take any components and average their shape into a circle. This is especially helpful for making our tree branches.</p>
-<ul>
-<li>With faces selected, navigate holding <strong>Shift+RMB</strong> to <strong>Circularize Components</strong>.</li>
-</ul>
-<figure> <img src = "/assets/images/02_maya_tree_07.gif"></figure>
+<h2 id="mirror-tool">Mirror Tool</h2>
+<p>The Mirror Tool is a modeling function in 3D software that creates a symmetrical copy of an object or geometry across a specified axis. </p>
+<p>To use the mirror tool most effectively, the pivot of your model should:</p>
+<ol>
+<li>Be at the world origin (0,0,0).</li>
+<li>Be at the point over which you want to mirror your model</li>
+</ol>
+<p><strong>To begin mirroring you object:</strong></p>
+<ol>
+<li>
+<p>Select Your Object</p>
+</li>
+<li>
+<p>Hold Shift + Right-Click over the object to bring up the Modeling Marking Menu.</p>
+</li>
+<li>
+<p>In the marking menu, hover and release over <strong>Mirror</strong></p>
+</li>
+</ol>
+<p><strong>Set Axis and Options</strong>:</p>
+<ol>
+<li>Choose the axis (X, Y, or Z) and direction (+ or -) you want to mirror across.</li>
+<li>Use <strong>Border</strong> if you want to merge to mirror together</li>
+</ol>
+<p>Example:</p>
+<figure> <img src = "/assets/images/02_maya_arch_30.gif"></figure>
 
-<ul>
-<li>You'll notice this will make somewhat of a mess. However, don't worry, we have learned the tools to clean it up! <br><br>Begin by opening up the Scale tool, and scaling the faces down using the center Gizmo.
-<br><br> Then use the Rotate tool to match the edges beyond the circle to flow with the rest of our topology.<br><br>Finally, use the Move tool to pull out the circle slightly.</li>
+<h2 id="symmetry">Symmetry</h2>
+<p>Symmetry allows for easier modeling. On symmetrical models, any change you make on one end of your model, will be replicated on the other side.</p>
+<p>To use symmetry most effectively:</p>
+<ol>
+<li>Place your pivot point in the center of your model.</li>
+<li>Place you model at the world's origin (0,0,0).</li>
+</ol>
+<p>To activate symmetry:</p>
+<ol>
+<li>Hold Ctrl+Shit+RMB in the view port<ul>
+<li>The top option will activate symmetry</li>
+<li>You can decide if you want to use World or Object space</li>
+<li>Choose which Axis you want your symmetry to be across.</li>
 </ul>
-<blockquote>
-<p><code>NOTE</code>: You may need to be in <strong>Component Space</strong> for the Move, Rotate, and Scale tool to have the intended effects.</p>
-</blockquote>
-<figure> <img src = "/assets/images/02_maya_tree_08.gif"></figure>
+</li>
+</ol>
+<p>You may have to enter the marking menu multiple times to change options.</p>
+<p><code>UI TIP:</code> Using symmetry in Object mode,  will use your pivot point as the reference for symmetry</p>
+<p>Example:</p>
+<p>In this example, symmetry is turned on for World, X Axis:</p>
+<figure> <img src = "/assets/images/02_maya_arch_8.gif"></figure>
 
-<ul>
-<li>Delete the faces and begin extruding out the edge loop to make a new branch. You may notice you need to adjust the scale of your edge loops.</li>
-</ul>
-<figure> <img src = "/assets/images/02_maya_tree_09.gif"></figure>
-
-<h2 id="soften-edges">Soften Edges</h2>
-<p>To soften our edges, in object mode navigate holding <strong>Shift + RMB</strong> to <strong>Soften/Harden Edges</strong> -&gt; <strong>Soften Edge.</strong></p>
-<figure> <img src = "/assets/images/02_maya_tree_20.gif"></figure>
+<p>When symmetry is activate, it displays at the top of your view port:</p>
+<figure> <img src = "/assets/images/02_maya_arch_1.png"></figure>
 
 
 
