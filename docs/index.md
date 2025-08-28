@@ -219,7 +219,7 @@ Ample class time will be provided to work on projects and the lab will be open d
 
 The lab will be open to students 24/7 when another class is not in session.
 
-**Unavailable times: MW: 11:00AM - 2:30 AM; TR: 4:15-6:45.**
+**Unavailable times: M: 1:15AM - 5:30 PM; W:11:00AM - 2:30PM; T/R: 4:15-6:45.**
 
 For working outside the lab on your personal computer, the following hardware is recommended:
 
