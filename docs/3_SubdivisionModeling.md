@@ -29,25 +29,17 @@ Download [Practice File](https://scrippscollege.app.box.com/s/bfml0momr6a558ocr2
 
 ## Subdivision Basics
 
-Start by downloading the [practice file](https://scrippscollege.app.box.com/s/bfml0momr6a558ocr2gdiukk83o43ecf) for today's class. The folder 02_Subdivision Modeling.
-
-You'll notice for this class, the practice file is stored in a zip folder.
-
-We'll talk about project structure more in a bit, but, for now, unzip the file on your computer.
-
-Navigate to the scenes folder and open the .mb file.
-
 <figure> <img src = "../assets/images/maya_03_subdivision.jpg"><figcaption>Subdivided Models</figcaption></figure>
 
 Subdivision modeling is the process of using lower resolution geometry to create complex objects with clean topology. Subdivision modeling is the most common form of poly modeling, being used in games, animation, visual effects, and art practices.
 
-Subdivision divides each each loop and averages the positions of the new vertices.
+Subdivision divides each face by four and averages the positions of the new vertices.
 
 <figure> <img src = "../assets/images/maya_03_subdivision_01.jpg"><figcaption>Edge loops divided and vertices averaged</figcaption></figure>
 
 There are many different algorithms for subdiving a model. Maya by default uses an adapted version of the Catmull–Clark Subdivision algorithm (more on this in the coming weeks). Other algorithms include OpenSubdiv, developed by Pixar.
 
-### Smooth Preview vs. Smooth
+## Smooth Preview
 
 We can preview what our mesh will look like subdivided using the **3** Key. This turns on **Smooth Preview**
 
@@ -58,11 +50,20 @@ We can turn off the **Smooth Preview** by pressing the **1** Key.
 The **2** Key will show us our model in smooth preview as well as the **cage** of our original mesh.
 
 You can see the cage as an outline of the edges of your model. This is called the **wireframe**
->`UI TIP:` You can switch between a global wireframe mode by pressing the **4** key. Switch back to **Shaded** mode using the **5** key.
 
 <figure> <img src = "../assets/images/maya_03_smooth_02.gif"><figcaption></figcaption></figure>
 
-To actually change the geometry of our model we can navigate holding **Shit+RMB** to Smooth.
+
+`UI TIP:` You can switch between a global wireframe mode by pressing the **4** key. Switch back to **Shaded** mode using the **5** key.
+
+We can also move our geometry in Smooth preview to see the different effects of smoothing.
+
+<figure> <img src = "../assets/images/maya_03_smooth.jpg"><figcaption></figcaption></figure>
+
+## Smooth
+
+To actually change the geometry of our model we can navigate holding **Shift+RMB** to **Smooth**.
+
 This will bring up a dialog box asking us how many divisions we want to make.
 
 <figure> <img src = "../assets/images/maya_03_smooth_03.gif"><figcaption></figcaption></figure>
@@ -75,25 +76,22 @@ In games, however, where rendering is being calculated in real time, we want our
 
 <figure> <img src = "../assets/images/maya_03_smooth_04.gif"><figcaption></figcaption></figure>
 
-We can also move our geometry in smooth preview to see the different effects of smoothing.
-
-<figure> <img src = "../assets/images/maya_03_smooth.jpg"><figcaption></figcaption></figure>
-
 ### Multi-Cut Tool for Subdivision
 
 We can change the shape of our subdivided model by placing edge loops at specific locations on our model.
 
-Since subdivision divides edge loops and averages the position of vertices, placing edge loops close together will result in less drastic change of position and the appearance of a harder edge.
+Since subdivision divides edge loops and averages the position of vertices, placing edge loops close together will result in less drastic changes in position and the appearance of a harder edge.
 
 The easiest way to add edge loops quickly in Maya is by using the **Multi-cut tool**.
 
 To activate the **Multi-cut tool**, head to object mode and use the **Shift + RMB** menu to navigate to **Multi-cut**.
 
-The **Multi Cut tool** can be used for a variety of different operations including adding new edges to our model through cutting.
+The **Multi Cut tool** can be used for a variety of different operations.
 
-We will be using it to add edge loops.
-
-Hold **Ctrl** with the Multi-cut tool active and click on your model to add an edge loop.
+- Click on your model to cut in new edges (press **Right-Click** to finish a cut)
+- Hold the **Ctrl** Key to add in new edge loops
+    - **Click** to add and edge loop
+    - **Middle Mouse Click** to add the edge loop at the center.
 
 <figure> <img src = "../assets/images/maya_03_multicut_01.gif"><figcaption></figcaption></figure>
 
@@ -101,16 +99,14 @@ When we smooth our model with two levels of subdivision, the top of the model ap
 
 <figure> <img src = "../assets/images/maya_03_multicut_02.gif"><figcaption></figcaption></figure>
 
-### Effects of Edges on Smoothing
+### Edges, Smoothing, and Triple Fencing
 
 If we use the multi cut on two sides our model, we get a different result.
 
 <figure> <img src = "../assets/images/maya_03_edges_01.gif"><figcaption></figcaption></figure>
 <figure> <img src = "../assets/images/maya_03_edges_02.gif"><figcaption></figcaption></figure>
 
-We can also use the Multi-cut tool to add two edge loops on either side of an existing edge loop to create hard edges. This is sometime called **Triple Fencing.**
-
-Let's try fencing in some edges on this model of a pawn to give it some harder edges when subdivided.
+We can also use the Multi-cut tool to add two edge loops on either side of an existing edge loop to create hard edges. This is sometimes called **Triple Fencing.**
 
 <figure> <img src = "../assets/images/maya_03_edges.jpg"><figcaption></figcaption></figure>
 
@@ -120,70 +116,6 @@ Having an open face, by deleting a part of our geometry, is a great technique fo
 
 <figure> <img src = "../assets/images/maya_03_delete_01.gif"><figcaption></figcaption></figure>
 
-## Modeling a Die
-
-### Bevel Tool
-
-An easy way to add edges around all parts of our existing edge loops is to use the **Bevel tool.**
-
-The bevel tool will **bevel** our model, or, in other words, soften the edges of our model.
-
-Begin by selecting all the edges of our die.
-
-<figure> <img src = "../assets/images/maya_03_dice_01.gif"><figcaption></figcaption></figure>
-
-Next, use **Shift+RMB** to navigate to bevel.
-
-Let's set our fraction to .01 and our segments to 2.
-
-<figure> <img src = "../assets/images/maya_03_dice_02.gif"><figcaption></figcaption></figure>
-
-Next, Let's add in edge loops for the number indicators for our die.
-
-Use the insert edge loop tool to add two additional edge loops on all sides of our die.
-
-Make sure to click on the setting box to change the number of edge loops we are inserting.
-
-<figure> <img src = "../assets/images/maya_03_dice_03.gif"><figcaption></figcaption></figure>
-
-Next, let's start by making the 1-Side and 6-Side of our die by selecting the appropriate faces.
-
-The 1-Side and 6-Side are opposite each other.
-
-<figure> <img src = "../assets/images/maya_03_dice_04.gif"><figcaption></figcaption></figure>
-
-We want the indentation for our die to have a hard edge. Let's add one edge loop inside our selected faces by using the offset tool in our extrude settings.
-
-Make sure **Keep Faces Together** is set to off.
-
-`UI TIP:` Hold **Ctrl+Shift** while dragging on a parameter in a dialog box to make it change values slower.
-
-<figure> <img src = "../assets/images/maya_03_dice_05.gif"><figcaption></figcaption></figure>
-
-Next, let's extrude in slightly, to fully fence in the edge loop of our inset area.
-
-<figure> <img src = "../assets/images/maya_03_dice_06.gif"><figcaption></figcaption></figure>
-
-Let's extrude in to make the full inset.
-
-<figure> <img src = "../assets/images/maya_03_dice_07.gif"><figcaption></figcaption></figure>
-
-We'll be using this model for our independent exercise. Let's duplicate it so we have a clean copy before smoothing.
-
-<figure> <img src = "../assets/images/maya_03_dice_08.gif"><figcaption></figcaption></figure>
-
-Finally, let's give our model 2 levels of subdivision and see how it looks!
-
-<figure> <img src = "../assets/images/maya_03_dice_09.gif"><figcaption></figcaption></figure>
-
-## Class Exercise - Dice
-
-Use the below model from **Sketchfab** to see which sides of the die are next to and opposite each other.
-Use the steps in the Modeling a Die section to make a die with two levels of subdivision.
-
-Press play to start the model and use **click+drag** to rotate the model.
-
-<div class="sketchfab-embed-wrapper"> <iframe title="Dice d6 low-poly PBR" frameborder="0"  height = "400px" width = "400px" src="https://sketchfab.com/models/7c7c839a76c44f36be942b1c87b040d7/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/dice-d6-low-poly-pbr-7c7c839a76c44f36be942b1c87b040d7?utm_medium=embed&utm_campaign=share-popup&utm_content=7c7c839a76c44f36be942b1c87b040d7" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Dice d6 low-poly PBR </a> by <a href="https://sketchfab.com/ArmorAndRum?utm_medium=embed&utm_campaign=share-popup&utm_content=7c7c839a76c44f36be942b1c87b040d7" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Armor and Rum </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=7c7c839a76c44f36be942b1c87b040d7" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
 
 ## Utah Teapot
 
@@ -193,31 +125,8 @@ The Utah teapot was developed by Martin Newell at the University of Utah in 1975
 
 We'll be reading more about the Utah teapot and understanding its cultural and political impact in chapter 3 of Jacob Gaboury's book *Image Objects.*
 
-Although the original teapot was used using an earlier modeling method called Bezier splines, we'll be modeling our teapot using subdivision modeling techniques.
-
 <figure> <img src = "../assets/images/maya_03_utahteapot.jpg"><figcaption><p>Original drawing of the Utah Teapot by Martin Newell <a href= "https://graphics.cs.utah.edu/teapot/">Link</a></p></figcaption></figure>
 
 <p><a ><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Utah_teapot_simple_2.png" alt="Utah teapot simple 2.png"  width="800"></a><br>Rendering of the Utah Teapot by <a href="//commons.wikimedia.org/wiki/User:Dhatfield" title="User:Dhatfield">Dhatfield</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=4303243">Link</a></p>
 
 <p><a><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Original_Utah_Teapot.jpg" alt="Original Utah Teapot.jpg" width="800"></a><br>The Original Teapot used to make the Utah Teapot Model. Photo by Marshall Astor (<a rel="nofollow" class="external free" href="http://www.marshallastor.com/">http://www.marshallastor.com/</a>) - <a rel="nofollow" class="external free" href="https://www.flickr.com/photo_zoom.gne?id=352811902&amp;size=o">https://www.flickr.com/photo_zoom.gne?id=352811902&amp;size=o</a> (<a rel="nofollow" class="external free" href="https://www.flickr.com/photos/lifeontheedge/352811902/">https://www.flickr.com/photos/lifeontheedge/352811902/</a>), <a href="https://creativecommons.org/licenses/by-sa/2.0" title="Creative Commons Attribution-Share Alike 2.0">CC BY-SA 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=1743696">Link</a></p>
-
-## Modeling the Utah Teapot
-
-Let's use this [tutorial](./Teapot.md) to learn more about subdivision by modeling the Utah Teapot.
-
-New things will learn in this tutorial:
-
-- Edge sliding
-- [Live Objects](https://help.autodesk.com/view/MAYACRE/ENU/?guid=GUID-EBF1E652-4DDD-423F-B42E-3BF85AE46A5D)
-- Vertex Sliding
-- Hiding and un-hiding objects
-
-## Independent Exercise: Teapot Handle
-
-Use what you learned through the [tutorial](./Teapot.md) to model the handle for the teapot.
-
-As a starting point, the handle should attach using the below Faces. Count how many edges are on the border of the selected faces.
-
-As an extra challenge, try starting with only a plane!
-
-<figure> <img src = "../assets/images/maya_03_teapothandle.jpg"><figcaption>Faces where the handles should attach</figcaption></figure>

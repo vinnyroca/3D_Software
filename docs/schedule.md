@@ -20,8 +20,8 @@
 |TUES<br>8/26| - [Introduction(s)](./0_Introduction.md)| |
 |THUR<br>8/28| **- Tutorial:** [Maya interface and object construction]|**Due:**<br>- Join the class Discord! <br> - Computer Dreams Exercise|
 |TUES<br>9/2|**- Tutorial:** [Maya Modeling Essentials]|**Due:**<br>- Creature Exercise|
-|THUR<br>9/4|**- Tutorial:** [Subdivision Modeling]<br>**- Assign:** [Dream Object]|**Due:**<br>- Tree Exercise|
-|TUES<br>9/9|**- Tutorial:** [Advanced Modeling]|**Due:**<br>- Subdivision Exercise|
+|THUR<br>9/4|**- Tutorial:** [Subdivision Modeling]<br>**- Assign:** [Dream Object]|**Due:**<br>- Tree Exercise <br>- Read Dream Object Project description|
+|TUES<br>9/9|**- Tutorial:** [Advanced Modeling]|**Due:**<br>- Getting a Handle on Object Modeling Exercise|
 |THUR<br>9/11|- **Studio Time:** Dream Object|**Due:**<br>- [Initial Dream Object Drawings]|
 |TUES<br>9/16|<span style = "background-color: lightskyblue;">**- Discussion 📖**</span><br> - **Studio Time:** Dream Object|**Due Monday by 5pm:**<br>- Reading Response: [Software Studies]|
 |THUR<br>9/18|**- Tutorial:** [UV Unwrapping]|**Due:**<br>- [Completed Dream Object Model]|
@@ -30,7 +30,7 @@
 |TUES<br>9/30|<span style = "background-color: lightskyblue;">**- Discussion 📖**</span><br>**- Studio Time:** Dream Object|**Due Monday by 5pm:**<br> - Reading Response: [Media Archaeology 1]|
 |THUR<br>10/2|<p style="background-color: lightgreen;">CRIT 🌞: Dream Object</p>|**Due:**<br>- [Dream Object Project]|
 |TUES<br>10/7|**- Tutorial:** [ZBrush Essentials]|**Due:**<br> - Watch ZBrush Tutorial|
-|THUR<br>10/9|**- Tutorial:** [ZBrush Continued] **- Assign:** Memory Chambre|**Due:**<br> - Exercise|
+|THUR<br>10/9|**- Tutorial:** [ZBrush Continued] <br>**- Assign:** Memory Chambre|**Due:**<br> - Exercise<br>- Read Memory Chambre Project Description|
 |TUES<br>10/14|<p style="background-color: pink;">No Class 🌝: Break </p>|<p style="background-color: pink;">Break </p>|
 |THUR<br>10/16|<span style = "background-color: lightskyblue;">**- Discussion 📖**</span><br>**- Studio Time:** Memory Chambre|**Due Monday by 5pm:**<br> - Reading Response: [Media Archaeology 2]|
 |TUES<br>10/21|**- Tutorial:** [Retopology]|**Due:**<br> - Familiar Model with Secondary Details|

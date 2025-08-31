@@ -22,6 +22,7 @@ nav:
       - 0. Computer Dreams: Exercises/00_computerdreams.md
       - 1.Creature: Exercises/01_creature.md
       - 2.Tree: Exercises/02_tree.md
+      - 3.Getting a Handle: Exercises/03_handleandobject.md
   - 🌞Projects :
     - Dream Object: dreamobject.md
     - Memory Chambre: memorypalace.md
@@ -36,11 +37,8 @@ nav:
     - Karl Sims: Artists/sims.md
     - Char Davies: Artists/davies.md
     - Jennifer Steinkamp: Artists/steinkamp.md
-  
-
-
-  
-
+    - Tamiko Thiel: Artists/thiel.md
+    - Total Refusal: Artists/totalrefusal.md
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true

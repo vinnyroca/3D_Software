@@ -1,5 +1,12 @@
 # Modeling the Utah Teapot
 
+New techniques we will learn in this tutorial:
+
+- Edge sliding
+- [Live Objects](https://help.autodesk.com/view/MAYACRE/ENU/?guid=GUID-EBF1E652-4DDD-423F-B42E-3BF85AE46A5D)
+- Vertex Sliding
+- Hiding and un-hiding objects
+
 Begin by turning on the visibility for the "Teapot_images" layer. We will use these images for reference while modeling.
 
 1. Start by creating a cylinder with **8** sides. <br><figure> <img src = "/assets/images/maya_03_teapot_01.gif"><figcaption></figcaption></figure>

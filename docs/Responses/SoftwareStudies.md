@@ -4,7 +4,7 @@ For this reading response, we will be considering 3D Software through the lens o
 
 For this response:
 
-1. Read pages 1 - 33 of *Getting to Know Software: A Study of Autodesk Maya*(2015)  by Aylish Wood
+1. Read pages 1 - 33 of *Getting to Know Software: A Study of Autodesk Maya*(2015)  by Aylish Wood ([Readings](https://scrippscollege.box.com/s/zubwhth84uolstqulviwra2e8a4vyo7h), password in class Discord)
 2. Watch *[RGBFAQ](https://alanwarburton.co.uk/rgbfaq)* by Alan Warburton
 
 Discussion prompts:
