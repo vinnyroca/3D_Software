@@ -22,8 +22,8 @@
 ### Concept and Story Artist
 
 ![luca story board](/assets/images/4/04_luca_00.gif)
-
-![Luca sketch](../assets/images/4/04_luca_01.jpg)
+Photo Test
+![Luca sketch](../assets/images/4/04_luca_01.jpeg)
 
 ---
 
@@ -39,8 +39,8 @@
 ---
 
 ### Technical Artist - Surfaces
-![Luca surfaces](/assets/images/4/04_luca_04.png)
-![Luca textures](/assets/images/4/04_luca_05.png)
+![Luca surfaces](../assets/images/4/04_luca_04.png)
+![Luca textures](../assets/images/4/04_luca_05.png)
 
 ---
 
