@@ -1,6 +1,6 @@
 # Advanced Modeling
 
-**Recap:**
+`Recap:`
 
 - What is subdivision modeling and how do we use it to make more complex models?
 - How to use Edge Loops to change the shape of subdivided models
@@ -8,7 +8,7 @@
 - History of the Utah Teapot
 - Using subdivision to model the Utah Teapot
 
-**Plan:**
+`Plan:`
 
 - The 3D Process Large Scale, Indie and Individual
 - Boolean Modeling
@@ -17,53 +17,60 @@
 - Importing Images
 - Modeling complex models from Images
 
+## Practice File
+
+---
+Download [Practice File](https://scrippscollege.app.box.com/s/bfml0momr6a558ocr2gdiukk83o43ecf)
+
+---
+
+
 ## The 3D Process - Disney/Pixar (Luca)
 
 ### Concept and Story Artist
 
-![luca story board](/assets/images/4/04_luca_00.gif)
-Photo Test
-![Luca sketch](../assets/images/4/04_luca_01.jpeg)
+![luca story board](../assets/images/4/04_luca_00.gif)
+![Luca sketch](../assets/images/4/04_Luca_01.jpg)
 
 ---
 
 ### Modeling Artist
 
-![Luca rotating model](/assets/images/4/04_luca_02.gif)
+![Luca rotating model](../assets/images/4/04_luca_02.gif)
 
 ---
 
 ### Technical Artist - Rigging
-![Luca rigging](/assets/images/4/04_luca_03.gif)
+![Luca rigging](../assets/images/4/04_luca_03.gif)
 
 ---
 
 ### Technical Artist - Surfaces
-![Luca surfaces](../assets/images/4/04_luca_04.png)
-![Luca textures](../assets/images/4/04_luca_05.png)
+![Luca surfaces](../assets/images/4/04_luca_04.gif)
+![Luca textures](../assets/images/4/04_luca_05.gif)
 
 ---
 
 ### Camera Artist
 
-![Luca camera placement](/assets/images/4/04_luca_06.gif)
+![Luca camera placement](../assets/images/4/04_luca_06.gif)
 
 ---
 
 ### Animator
-![Luca animation](/assets/images/4/04_luca_07.gif)
+![Luca animation](../assets/images/4/04_luca_07.gif)
 
 ---
 
 ### Lighting Artist
 
-![Luca lighting](/assets/images/4/04_luca_08.gif)
+![Luca lighting](../assets/images/4/04_luca_08.gif)
 
 ---
 
 ### Technical Artist - Rendering
 
-![Luca lighting](/assets/images/4/04_luca_09.gif)
+![Luca lighting](../assets/images/4/04_luca_09.gif)
 
 ---
 
@@ -86,7 +93,7 @@ Photo Test
 
 ### Concept Artist
 
-![Nyx Concept](/assets/images/4/04_Nyx_01.png)
+![Nyx Concept](../assets/images/4/04_Nyx_01.png)
 
 ---
 
@@ -94,21 +101,21 @@ Photo Test
 
 Sculpting
 
-![Nyx ](/assets/images/4/04_Nyx_02.png)
+![Nyx ](../assets/images/4/04_Nyx_02.png)
 
 Modeling - Retopology
-![Nyx ](/assets/images/4/04_Nyx_03.png)
+![Nyx ](../assets/images/4/04_Nyx_03.png)
 
 Texturing
-![Nyx ](/assets/images/4/04_Nyx_04.png)
+![Nyx ](../assets/images/4/04_Nyx_04.png)
 
 Rigging
-![Nyx ](/assets/images/4/04_Nyx_05.png)
+![Nyx ](../assets/images/4/04_Nyx_05.png)
 
 ---
 ### Animator
 
-![Nyx ](/assets/images/4/04_Nyx_06.gif)
+![Nyx ](../assets/images/4/04_Nyx_06.gif)
 
 ---
 
@@ -124,13 +131,13 @@ Rigging
 
 ## The 3D Process - Individual (Real Things, Everywhere)
 
-1. Concept ![Lie ](/assets/images/4/04_lie_01.png)
-2. Initial Sculpting ![Lie ](/assets/images/4/04_lie_02.png)
-3. Refined Sculpting ![Lie ](/assets/images/4/04_lie_03.png)
+1. Concept ![Lie ](../assets/images/4/04_lie_01.png)
+2. Initial Sculpting ![Lie ](../assets/images/4/04_lie_02.png)
+3. Refined Sculpting ![Lie ](../assets/images/4/04_lie_03.png)
 4. Retopology (Not Pictured)
-5. Textures ![Lie ](/assets/images/4/04_lie_04.png)
-6. Rigging ![Lie ](/assets/images/4/04_lie_05.png)
-7. Animations ![Lie ](/assets/images/4/04_lie_06.gif)
+5. Textures ![Lie ](../assets/images/4/04_lie_04.png)
+6. Rigging ![Lie ](../assets/images/4/04_lie_05.png)
+7. Animations ![Lie ](../assets/images/4/04_lie_06.gif)
 8. [Final Game](https://lie.vinnyroca.info/)
 
 
