@@ -56,9 +56,10 @@ span.md-ellipsis{
 }
 
 .md-content__inner hr {
-    border: .1em rgb(64, 81, 181) !important;
+    border: rgb(64, 81, 181) !important;
     background-color: rgb(64, 81, 181) !important;
-   
+    height: 5px !important;
+
 }
 h3{
     font-weight: bold !important;
