@@ -23,7 +23,7 @@
 
 ![luca story board](/assets/images/4/04_luca_00.gif)
 
-![Luca sketch](/assets/images/4/04_luca_01.jpg)
+![Luca sketch](../assets/images/4/04_luca_01.jpg)
 
 ---
 
