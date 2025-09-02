@@ -9,6 +9,7 @@ nav:
     - 1. Maya Interface and Objects: 1_MayaInterface.md
     - 2. Polygonal Modeling: 2_ModellingEssentials.md
     - 3. Subdivision Modeling: 3_SubdivisionModeling.md
+    - 4. Advanced Modeling: 04_AdvancedModeling.md
   - 📚Exercises:
     - Exercise Index: Exercises/exerciseindex.md
     - In-class:
@@ -18,6 +19,8 @@ nav:
       - 2b.Archway: Exercises/02_archway.md
       - 3a.Dice: Exercises/03_dice.md
       - 3b.Teapot: Exercises/03_teapot.md
+      - 4a. Polaroid Boolean: Exercises/04_polaroidboolean.md
+      - 4b. Polaroid Cylinder: Exercises/04_polaroidcylinder.md
     - Independent:
       - 0. Computer Dreams: Exercises/00_computerdreams.md
       - 1.Creature: Exercises/01_creature.md
