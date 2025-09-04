@@ -11,6 +11,7 @@ You can use a tree on campus for inspiration!
 ## Submit
 
 1. Submit three screen shots of you tree to Discord
+2. Upload a new Tree project to your folder on the Server
 
 
 ## Getting Started

@@ -68,7 +68,7 @@ This completed model will have clean topology including even edge loops and quad
 
 A screenshot of your completed model should be posted to Discord before the class it is due.
 
-Additionally, you should have your completed model on the class server to continue work in class.
+Additionally, you should have your completed model in a new scene in your Dream Object project folder on the class server to continue work in class.
 
 ## Unwrapped Object
 
@@ -78,7 +78,7 @@ You will have one in-class short studio session to work with the instructor to U
 
 A screenshot of your UV Editor should be posted to Discord before the class it is due.
 
-Additionally, you should have your unwrapped model on the class server to continue work in class.
+Additionally, you should have your unwrapped model in a new scene in your Dream Object project folder on the class server to continue work in class.
 
 ## Textured Object
 
