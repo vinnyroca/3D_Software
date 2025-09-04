@@ -1,6 +1,6 @@
 # Getting a Handle on Object Modeling
 
-## Part 1:
+## Part 1: Handle
 
 Use what you learned through the teapot tutorial to model the handle for the teapot.
 
@@ -10,7 +10,13 @@ As an extra challenge, try starting with only a plane!
 
 <figure> <img src = "/assets/images/maya_03_teapothandle.jpg"><figcaption>Faces where the handles should attach</figcaption></figure>
 
-## Part 2:
+## Part 2: Object
+
+Check out this video by Flipped Normals (a great modeling resource):
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BAxUMjHdS84?si=8M5KC2WKQI8TVPb3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
 
 Use subdivision modeling techniques to make a simple object. Use what we learned in the teapot example for reference. Perhaps you model a cup, or a bottle, a shovel? Keep it simple, but feel free to challenge yourself.
 
