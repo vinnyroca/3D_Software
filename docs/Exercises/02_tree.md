@@ -10,8 +10,7 @@ You can use a tree on campus for inspiration!
 
 ## Submit
 
-1. Submit your .mb Maya file to this drop box link:
-2. Submit three screen shots of you tree to Discord
+1. Submit three screen shots of you tree to Discord
 
 
 ## Getting Started
