@@ -11,6 +11,11 @@
     background-color: pink;
 }
 
+@media print{
+  .md-typeset__scrollwrap::-webkit-scrollbar{
+    display: none !important;
+  }
+}
 </style>
 
  Please note that is this is a live schedule and is ever evolving as the course (/world) changes. Please check back frequently for due dates of assignments and course proceedings.
@@ -41,7 +46,7 @@
 |THUR<br>11/6|**- Tutorial:** [3D Scanning]|**Due:**<br> - 3D Scanning Exercise|
 |TUES<br>11/11|**- Tutorial:** [Camera Animation]|**Due:**<br> - Block out of Memory Chambre|
 |THUR<br>11/13|**- Tutorial:** [Basic Animation]**<br>- Studio Time:** Memory Chambre|**Due:**<br> - Memory Chambre Objects|
-|TUES<br>11/18|<span style = "background-color: lightskyblue;">**- GUEST LECTURE: ELLIOT BEAR YU, "Digital Skeletons: A Gesture Towards Critical 3D Rigging"**</span><br>**- Studio Time:** Memory Chambre|**Due Monday by 5pm:**<br>- Reading Response: [Cultural Studies]|
+|TUES<br>11/18|<span style = "background-color: lightskyblue;">**- Guest Lecture**</span><br>**- Studio Time:** Memory Chambre|**Due Monday by 5pm:**<br>- Reading Response: [Cultural Studies]|
 |THUR<br>11/20|**- Studio Time:** Memory Chambre|**Due:**<br> - Continue Progress on Memory Chambre|
 |TUES<br>11/25|**- Studio Time:** Memory Chambre|**Due:**<br>- Continue Progress on Memory Chambre|
 |THUR<br>11/27|<p style="background-color: pink;">No Class 🌝: Break</p>|<p style="background-color: pink;">Break </p>|

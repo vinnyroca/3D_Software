@@ -1,6 +1,6 @@
 
 
-<style>
+<!-- <style>
 /* Button styling */
 #focusToggle {
   position: fixed;
@@ -106,8 +106,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("resize", checkScreenWidth);
   checkScreenWidth(); // initial check
-});
-</script>
+}); -->
+<!-- </script> -->
+
+# MS 055: Introduction to 3D Software
 
 ## Course Information
 
@@ -122,8 +124,6 @@ Office Hours: Lang 227. By appointment; Tuesday & Thursday 1:30-2:30 [Schedule o
 ## Course Description
 
 This interdisciplinary introductory course examines the history, theory, and techniques of 3D software. Through weekly assignments, critical readings, and projects, students will engage with 3D software as a technical tool, artistic medium, and cultural object. This course introduces foundational skills in modeling, rendering, and animation using various software. Weekly discussions, readings, and presentations will critically engage with 3D software’s cultural, social, economic, and political dimensions. The ideas and skills taught in this course will set a foundation for future coursework in game design, animation, video art, digital fabrication, and media studies.
-
----
 
 ## Learning Outcomes
 
@@ -147,6 +147,25 @@ The objective of this course is to introduce foundational technical skills in 3D
 |10|Participation|
 |20|Reading Responses|
 |10|Exercises|
+
+### Letter Grading
+
+|Number|Letter|
+|:---:|:---:|
+|93-100|A|
+|90-92|A-|
+|87-89|B+|
+|83-86|B|
+|80-82|B-|
+|77-79|C+|
+|73-76|C|
+|70-72|C-|
+|67-69|D+|
+|63-66|D|
+|60-62|D-|
+|0-59|F|
+
+---
 
 ### **Evaluation Criteria**
 #### Projects & Exercises
@@ -203,9 +222,9 @@ I will respond to Discord messages and email within 24 hrs of receipt. I will re
 
 ---
 
-### Box Submissions
+### Class Server
 
-Submissions for the class will be made through Box links. Links to Box submissions will be on the class website.
+Submissions for the class will be made through the class server. Instructions for accessing the server will be provided during the first class session.
 
 ---
 
