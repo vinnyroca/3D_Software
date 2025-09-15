@@ -213,6 +213,11 @@ For all exercises, late work will not be accepted. Completing exercises on time 
 Late projects not ready by their assigned crit day will automatically lose one letter grade. Each day the project is late, it will lose one more letter grade. After three days, the project will not be accepted.
 
 ---
+### Class Website
+
+The class website will be source of class notes as well as project, exercise and response descriptions.
+
+---
 
 ### Discord and Email
 
