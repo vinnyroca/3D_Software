@@ -8,22 +8,28 @@
       
       
       
+        <link rel="canonical" href="https://3dsoftware.vinnyroca.info/05_UVUnwrapping/">
       
       
+        <link rel="prev" href="../04_AdvancedModeling/">
       
-      <link rel="icon" href="/3D.png">
+      
+        <link rel="next" href="../Exercises/exerciseindex/">
+      
+      
+      <link rel="icon" href="../3D.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>🫖 Introduction to 3D Software</title>
+        <title>5. UV Mapping - 🫖 Introduction to 3D Software</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -42,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="/extra.css">
+      <link rel="stylesheet" href="../extra.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -67,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#uv-mapping" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -79,7 +90,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="🫖 Introduction to 3D Software" class="md-header__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
+    <a href=".." title="🫖 Introduction to 3D Software" class="md-header__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg>
@@ -99,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              5. UV Mapping
             
           </span>
         </div>
@@ -166,7 +177,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -185,7 +196,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/schedule/" class="md-tabs__link">
+      <a href="../schedule/" class="md-tabs__link">
         
   
   
@@ -202,11 +213,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/Notes/notes/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Notes/notes/" class="md-tabs__link">
           
   
   
@@ -226,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/Exercises/exerciseindex/" class="md-tabs__link">
+        <a href="../Exercises/exerciseindex/" class="md-tabs__link">
           
   
   
@@ -246,7 +259,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/dreamobject/" class="md-tabs__link">
+        <a href="../dreamobject/" class="md-tabs__link">
           
   
   
@@ -266,7 +279,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/responses/SoftwareStudies/" class="md-tabs__link">
+        <a href="../responses/SoftwareStudies/" class="md-tabs__link">
           
   
   
@@ -286,7 +299,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/Artists/allen/" class="md-tabs__link">
+        <a href="../Artists/allen/" class="md-tabs__link">
           
   
   
@@ -326,7 +339,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="🫖 Introduction to 3D Software" class="md-nav__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
+    <a href=".." title="🫖 Introduction to 3D Software" class="md-nav__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg>
@@ -344,7 +357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -366,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/schedule/" class="md-nav__link">
+      <a href="../schedule/" class="md-nav__link">
         
   
   
@@ -385,24 +398,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -415,7 +433,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             💻Notes
@@ -429,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Notes/notes/" class="md-nav__link">
+      <a href="../Notes/notes/" class="md-nav__link">
         
   
   
@@ -452,7 +470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/1_MayaInterface/" class="md-nav__link">
+      <a href="../1_MayaInterface/" class="md-nav__link">
         
   
   
@@ -475,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/2_ModellingEssentials/" class="md-nav__link">
+      <a href="../2_ModellingEssentials/" class="md-nav__link">
         
   
   
@@ -498,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/3_SubdivisionModeling/" class="md-nav__link">
+      <a href="../3_SubdivisionModeling/" class="md-nav__link">
         
   
   
@@ -521,7 +539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/04_AdvancedModeling/" class="md-nav__link">
+      <a href="../04_AdvancedModeling/" class="md-nav__link">
         
   
   
@@ -541,10 +559,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/05_UVUnwrapping/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    5. UV Mapping
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -555,6 +595,100 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-uvs" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are UVs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uvs-and-maya" class="md-nav__link">
+    <span class="md-ellipsis">
+      UVs and Maya
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Materials
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uv-editor-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      UV Editor Workspace
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clear-existing-uvs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clear Existing UVs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identify-and-cut-seams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identify and Cut Seams
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unfold-and-and-clean-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unfold and and Clean-up
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checker-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checker Map
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -615,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Exercises/exerciseindex/" class="md-nav__link">
+      <a href="../Exercises/exerciseindex/" class="md-nav__link">
         
   
   
@@ -679,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Exercises/01_simplechair/" class="md-nav__link">
+      <a href="../Exercises/01_simplechair/" class="md-nav__link">
         
   
   
@@ -702,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Exercises/01_snappingchair/" class="md-nav__link">
+      <a href="../Exercises/01_snappingchair/" class="md-nav__link">
         
   
   
@@ -725,7 +859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Exercises/02_completeacube/" class="md-nav__link">
+      <a href="../Exercises/02_completeacube/" class="md-nav__link">
         
   
   
@@ -748,7 +882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Exercises/02_archway/" class="md-nav__link">
+      <a href="../Exercises/02_archway/" class="md-nav__link">
         
   
   
@@ -771,7 +905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Exercises/03_dice/" class="md-nav__link">
+      <a href="../Exercises/03_dice/" class="md-nav__link">
         
   
   
@@ -794,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Exercises/03_teapot/" class="md-nav__link">
+      <a href="../Exercises/03_teapot/" class="md-nav__link">
         
   
   
@@ -817,7 +951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Exercises/04_polaroidboolean/" class="md-nav__link">
+      <a href="../Exercises/04_polaroidboolean/" class="md-nav__link">
         
   
   
@@ -840,7 +974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Exercises/04_polaroidcylinder/" class="md-nav__link">
+      <a href="../Exercises/04_polaroidcylinder/" class="md-nav__link">
         
   
   
@@ -912,7 +1046,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Exercises/00_computerdreams/" class="md-nav__link">
+      <a href="../Exercises/00_computerdreams/" class="md-nav__link">
         
   
   
@@ -935,7 +1069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Exercises/01_creature/" class="md-nav__link">
+      <a href="../Exercises/01_creature/" class="md-nav__link">
         
   
   
@@ -958,7 +1092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Exercises/02_tree/" class="md-nav__link">
+      <a href="../Exercises/02_tree/" class="md-nav__link">
         
   
   
@@ -981,7 +1115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Exercises/03_handleandobject/" class="md-nav__link">
+      <a href="../Exercises/03_handleandobject/" class="md-nav__link">
         
   
   
@@ -1060,7 +1194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dreamobject/" class="md-nav__link">
+      <a href="../dreamobject/" class="md-nav__link">
         
   
   
@@ -1083,7 +1217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/memorypalace/" class="md-nav__link">
+      <a href="../memorypalace/" class="md-nav__link">
         
   
   
@@ -1154,7 +1288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/responses/SoftwareStudies/" class="md-nav__link">
+      <a href="../responses/SoftwareStudies/" class="md-nav__link">
         
   
   
@@ -1177,7 +1311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/responses/MediaArchaeology1/" class="md-nav__link">
+      <a href="../responses/MediaArchaeology1/" class="md-nav__link">
         
   
   
@@ -1200,7 +1334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/responses/MediaArchaeology2/" class="md-nav__link">
+      <a href="../responses/MediaArchaeology2/" class="md-nav__link">
         
   
   
@@ -1223,7 +1357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/responses/MediaArchaeology3/" class="md-nav__link">
+      <a href="../responses/MediaArchaeology3/" class="md-nav__link">
         
   
   
@@ -1246,7 +1380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/responses/CulturalStudies/" class="md-nav__link">
+      <a href="../responses/CulturalStudies/" class="md-nav__link">
         
   
   
@@ -1317,7 +1451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Artists/allen/" class="md-nav__link">
+      <a href="../Artists/allen/" class="md-nav__link">
         
   
   
@@ -1340,7 +1474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Artists/sims/" class="md-nav__link">
+      <a href="../Artists/sims/" class="md-nav__link">
         
   
   
@@ -1363,7 +1497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Artists/davies/" class="md-nav__link">
+      <a href="../Artists/davies/" class="md-nav__link">
         
   
   
@@ -1386,7 +1520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Artists/steinkamp/" class="md-nav__link">
+      <a href="../Artists/steinkamp/" class="md-nav__link">
         
   
   
@@ -1409,7 +1543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Artists/thiel/" class="md-nav__link">
+      <a href="../Artists/thiel/" class="md-nav__link">
         
   
   
@@ -1432,7 +1566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Artists/totalrefusal/" class="md-nav__link">
+      <a href="../Artists/totalrefusal/" class="md-nav__link">
         
   
   
@@ -1474,6 +1608,88 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-uvs" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are UVs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uvs-and-maya" class="md-nav__link">
+    <span class="md-ellipsis">
+      UVs and Maya
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Materials
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uv-editor-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      UV Editor Workspace
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clear-existing-uvs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clear Existing UVs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identify-and-cut-seams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identify and Cut Seams
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unfold-and-and-clean-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unfold and and Clean-up
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checker-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checker Map
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1485,8 +1701,133 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="uv-mapping">UV Mapping</h1>
+<p><code>Recap:</code></p>
+<ul>
+<li>The 3D Process Large Scale, Indie and Individual</li>
+<li>Boolean Modeling</li>
+<li>Topology Reduction</li>
+<li>Flow of Topology</li>
+<li>Importing Images</li>
+<li>Modeling complex models from Images</li>
+</ul>
+<p><code>Plan:</code></p>
+<ul>
+<li>What are UVs and what is UV unwrapping</li>
+<li>How to unwrap and clean up UVs in Maya</li>
+</ul>
+<h2 id="what-are-uvs">What are UVs</h2>
+<p>For a brief explanation of what UVs are, and why we need to use them when producing 3D models for renders, animations, and games, check out this video:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Yx2JNbv8Kpg?si=4xexsHra9x6HDAsg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<hr />
+<p>UV mapping, in short, is a way to transfer a 3D model into a 2D space so that we might be able to apply textures to that model.</p>
+<h2 id="uvs-and-maya">UVs and Maya</h2>
+<p>In Maya, we can create UVs using the UV Editor and a variety of tools associated with it.</p>
+<p>There are many complex ways to produce UVs in Maya.</p>
+<p>We will be using an extremely simple workflow that allows for easy UV creation.</p>
+<p>This workflow uses the following steps:</p>
+<ol>
+<li>Separate objects by material.</li>
+<li>Clear all existing UVs</li>
+<li>Identify seam edges and cut.</li>
+<li>Unfold UVs using Unfold</li>
+<li>Use Layout, Straighten, Rotate, Move and Scale as necessary to create UV layout</li>
+</ol>
+<h2 id="creating-materials">Creating Materials</h2>
+<p>The best first step to unwrapping our model is deciding which material our model will be made out of. This will help in guiding where the seams of our model will go. If our model only has one material, we can just apply a single material to the whole model.</p>
+<p>To apply separate materials to different parts of our model:</p>
+<ol>
+<li>Select the faces where we want our material to be applied. <img alt="gif" src="../assets/images/5/05_Materials_01.gif" /></li>
+<li>Right Click on the faces &gt; Assign Favorite Material &gt; Lambert <img alt="gif" src="../assets/images/5/05_Materials_02.gif" /></li>
+<li>In the Attribute Editor, select the tab of the newly created material. <img alt="gif" src="../assets/images/5/05_Materials_03.gif" /></li>
+<li>Change Type to Ai Standard Surface <img alt="gif" src="../assets/images/5/05_Materials_04.gif" /></li>
+<li>Name your material. <img alt="gif" src="../assets/images/5/05_Materials_05.gif" /></li>
+<li>Change the color value to a unique color to distinguish it from other materials <img alt="gif" src="../assets/images/5/05_Materials_06.gif" /></li>
+</ol>
+<p>If you need to apply that same material to other parts of your model:</p>
+<ol>
+<li>Select the faces where we want our material to be applied. <img alt="gif" src="../assets/images/5/05_SameMaterial_01.gif" /></li>
+<li>Right Click on the faces &gt; Assign Existing Material&gt; Name of your material <img alt="gif" src="../assets/images/5/05_SameMaterial_03.gif" /></li>
+</ol>
+<p>Make sure to assign materials to all parts of your model.
+<img alt="gif" src="../assets/images/5/05_SameMaterial_04.gif" />
+<img alt="gif" src="../assets/images/5/05_SameMaterial_05.gif" /></p>
+<p>The main reason we are assigning materials as our first step, is that we will be using a program called Substance Painter to create our textures and materials. Substance Painter identifies different parts of our model by the different materials they contain. It will also help us see more clearly where we can place seam lines on our model.</p>
+<h2 id="uv-editor-workspace">UV Editor Workspace</h2>
+<p>To enter the UV Editing workspace within Maya:</p>
+<ol>
+<li>Navigate to the Workspace drop down in the upper right corner of the UI </li>
+<li>From the dropdown, select UV Editing</li>
+</ol>
+<p><img alt="gif" src="../assets/images/5/05_Workspace_05.gif" /></p>
+<p>The UV Editing workspace will bring up the UV Editor and the UV Toolkit.</p>
+<h2 id="clear-existing-uvs">Clear Existing UVs</h2>
+<p>The easiest way to clear existing UVs is to apply a Planar UV to our model. A Planar UV will use a plane to project onto our model, creating a flat set of UVs.</p>
+<ol>
+<li>Select your object</li>
+<li>Navigate to UV &gt; Planar</li>
+</ol>
+<p><img alt="gif" src="../assets/images/5/05_Clear_01.gif" /></p>
+<h2 id="identify-and-cut-seams">Identify and Cut Seams</h2>
+<p>The best place to cut seams is where they might exist naturally on our model. This might be the seam lines of clothes, where two metal panels meet, or along the edge where two bits of plastic are attached together. This will vary greatly depending on the type of model that you are building.</p>
+<p>As an example:</p>
+<p>Using this Jack as my model, I would first cut seams along the separating edge between the two materials.</p>
+<p>To cut a seam:</p>
+<ol>
+<li>Select all the edges I want to cut.</li>
+<li>Navigate to UV &gt;  Cut UV Edges (If I need to un-cut an edge, I can use UV &gt; Sew UV edges)</li>
+</ol>
+<p><img alt="gif" src="../assets/images/5/05_UV_01.gif" /></p>
+<p>Next, I would cut along the bottom of my Jack tip to allow the UV object to unfold.</p>
+<p><img alt="gif" src="../assets/images/5/05_UV_02.gif" /></p>
+<p>For the body of the Jack, I can begin by cutting all the center edges.</p>
+<p><img alt="gif" src="../assets/images/5/05_UV_03.gif" /></p>
+<p>Then, along the right and left side, I can cut from the end of one protruding part to the other. This will add in an edge that will allow each segment to open and unfold.</p>
+<p><img alt="gif" src="../assets/images/5/05_UV_04.gif" /></p>
+<h2 id="unfold-and-and-clean-up">Unfold and and Clean-up</h2>
+<p>Now that I have cut my UV seams, I need to unfold my UVs.</p>
+<ol>
+<li>With our object selected, navigate to the Unfold dropdown in the UV Toolkit window</li>
+<li>Select Unfold</li>
+</ol>
+<p><img alt="gif" src="../assets/images/5/05_Unfold_01.gif" /></p>
+<p>With our object unfolded, we can then layout all the UV Shells in our UV Editor.</p>
+<p>To layout our UVs</p>
+<ol>
+<li>With our object selected, navigate to the Arrange and Layout dropdown in the UV Toolkit window</li>
+<li>Select Layout</li>
+</ol>
+<p><img alt="gif" src="../assets/images/5/05_Unfold_02.gif" /></p>
+<p>If we want to Move, Rotate and Scale our UV Shells:</p>
+<ol>
+<li>Use Right Click in our UV Editor and navigate to UV Shell</li>
+<li>Use Move, Rotate and Scale Tool to Change the layout of our UVs.</li>
+</ol>
+<h2 id="checker-map">Checker Map</h2>
+<p>When editing our UVs, sometimes it is beneficial to a have a default texture on our model so that we can see the changes that the UV map is making.</p>
+<p>To turn on a checker map:</p>
+<ol>
+<li>In your UV Editor window, navigate to Textures &gt; Checker Map</li>
+</ol>
+<p><img alt="gif" src="../assets/images/5/05_Unfold_03.gif" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1522,10 +1863,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.tabs.sticky", {"navigation.instant": false}], "search": "/assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", {"navigation.instant": false}], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
