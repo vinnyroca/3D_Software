@@ -32,21 +32,21 @@
 |THUR<br>9/18|**- Tutorial:** [UV Unwrapping]|**Due:**<br>- [Completed Dream Object Model]|
 |TUES<br>9/23|**- Tutorial:** [Substance Painter]|**Due:**<br>- [Unwrapped Dream Object Model]|
 |THUR<br>9/25|**- Tutorial:** [Texturing, Lighting, Rendering, Cameras]|**Due:**<br>- [Textured Dream Object Model]|
-|TUES<br>9/30|<span style = "background-color: lightskyblue;">**- Discussion 📖**</span><br>**- Studio Time:** Dream Object|**Due Monday by 5pm:**<br> - Reading Response: [Media Archaeology 1]|
+|TUES<br>9/30|<span style = "background-color: lightskyblue;">**- Discussion 📖**</span><br>**- Studio Time:** Dream Object|**Due Monday by 5pm:**<br> - Reading Response: [Media Archaeology]|
 |THUR<br>10/2|<p style="background-color: lightgreen;">CRIT 🌞: Dream Object</p>|**Due:**<br>- [Dream Object Project]|
 |TUES<br>10/7|**- Tutorial:** [ZBrush Essentials]|**Due:**<br> - Watch ZBrush Tutorial|
 |THUR<br>10/9|**- Tutorial:** [ZBrush Continued] <br>**- Assign:** Memory Chambre|**Due:**<br> - Exercise<br>- Read Memory Chambre Project Description|
 |TUES<br>10/14|<p style="background-color: pink;">No Class 🌝: Break </p>|<p style="background-color: pink;">Break </p>|
-|THUR<br>10/16|<span style = "background-color: lightskyblue;">**- Discussion 📖**</span><br>**- Studio Time:** Memory Chambre|**Due Monday by 5pm:**<br> - Reading Response: [Media Archaeology 2]|
+|THUR<br>10/16|<span style = "background-color: lightskyblue;">**- Discussion 📖**</span><br>**- Studio Time:** Memory Chambre|**Due Monday by 5pm:**<br> - Reading Response: [Computer Space]|
 |TUES<br>10/21|**- Tutorial:** [Retopology]|**Due:**<br> - Familiar Model with Secondary Details|
 |THUR<br>10/23|**- Tutorial:** [Projection and Details]|**Due:**<br> - Retopologized Familiar Model|
 |TUES<br>10/28|**- Tutorial:** [ZBrush and Painter]<br>**- Studio Time:** Memory Chambre|**Due:**<br> - Finalized Familiar Model in ZBrush|
 |THUR<br>10/30|**- Tutorial:** [3D Scanning]|**Due:**<br> - Textured and Rendered Familiar Model|
-|TUES<br>11/4|<span style = "background-color: lightskyblue;">**- Discussion 📖**</span><br>**- Tutorial:** [3D Scanning]|**Due:**<br> - 3D Scanning Exercise <br> **Due Monday by 5pm:**<br>- Reading Response: [Media Archaeology 3]|
+|TUES<br>11/4|<span style = "background-color: lightskyblue;">**- Discussion 📖**</span><br>**- Tutorial:** [3D Scanning]|**Due:**<br> - 3D Scanning Exercise <br> **Due Monday by 5pm:**<br>- Reading Response: [Model Objects]|
 |THUR<br>11/6|**- Tutorial:** [3D Scanning]|**Due:**<br> - 3D Scanning Exercise|
 |TUES<br>11/11|**- Tutorial:** [Camera Animation]|**Due:**<br> - Block out of Memory Chambre|
 |THUR<br>11/13|**- Tutorial:** [Basic Animation]**<br>- Studio Time:** Memory Chambre|**Due:**<br> - Memory Chambre Objects|
-|TUES<br>11/18|<span style = "background-color: lightskyblue;">**- Guest Lecture**</span><br>**- Studio Time:** Memory Chambre|**Due Monday by 5pm:**<br>- Reading Response: [Cultural Studies]|
+|TUES<br>11/18|<span style = "background-color: lightskyblue;">**- Guest Lecture**</span><br>**- Studio Time:** Memory Chambre|**Due Monday by 5pm:**<br>- Reading Response: [3D World]|
 |THUR<br>11/20|**- Studio Time:** Memory Chambre|**Due:**<br> - Continue Progress on Memory Chambre|
 |TUES<br>11/25|**- Studio Time:** Memory Chambre|**Due:**<br>- Continue Progress on Memory Chambre|
 |THUR<br>11/27|<p style="background-color: pink;">No Class 🌝: Break</p>|<p style="background-color: pink;">Break </p>|
