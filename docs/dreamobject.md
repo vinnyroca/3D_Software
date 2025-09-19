@@ -98,12 +98,18 @@ Following a brief Discussion, you will have one in-class of studio time to work 
 
 The following are to be submitted before our class crit:
 
-Within the Dream Objects folder on the class server:
+**Within the Dream Objects folder on the class server:**
 
 1. Create a folder with your name
 2. Please your final PDF in that folder
 3. Place images of each your renders
 4. Place images of any additional renders
+   
+**To Discord:**
+
+1. Name of Your Project
+2. A short paragraph description of your project.
+3. The final PDF of your project.
 
 ## Some Dreams of Others
 
