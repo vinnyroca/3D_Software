@@ -1,0 +1,2241 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://3dsoftware.vinnyroca.info/06_Substance3DPainter/">
+      
+      
+        <link rel="prev" href="../05_UVUnwrapping/">
+      
+      
+        <link rel="next" href="../Exercises/exerciseindex/">
+      
+      
+      <link rel="icon" href="../3D.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>6. Substance Painter - 🫖 Introduction to 3D Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Funnel+Sans:300,300i,400,400i,700,700i%7CInconsolata+monospace:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Funnel Sans";--md-code-font:"Inconsolata monospace"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#substance-3d-painter" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="🫖 Introduction to 3D Software" class="md-header__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            🫖 Introduction to 3D Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              6. Substance Painter
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  📋Syllabus
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../schedule/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📆Schedule
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Notes/notes/" class="md-tabs__link">
+          
+  
+  
+  💻Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Exercises/exerciseindex/" class="md-tabs__link">
+          
+  
+  
+  📚Exercises
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../dreamobject/" class="md-tabs__link">
+          
+  
+  
+  🌞Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../responses/SoftwareStudies/" class="md-tabs__link">
+          
+  
+  
+  📖Responses
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Artists/allen/" class="md-tabs__link">
+          
+  
+  
+  🖍️Artists
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="🫖 Introduction to 3D Software" class="md-nav__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg>
+
+    </a>
+    🫖 Introduction to 3D Software
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📋Syllabus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📆Schedule
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    💻Notes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            💻Notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Notes/notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notes Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_MayaInterface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1. Maya Interface and Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_ModellingEssentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2. Polygonal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_SubdivisionModeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3. Subdivision Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_AdvancedModeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Advanced Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_UVUnwrapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. UV Mapping
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    6. Substance Painter
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. Substance Painter
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exporting-our-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exporting our Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-new-file-in-substance-painter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a New File in Substance Painter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Navigation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigating-the-3d-viewport" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigating the 3D Viewport
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baking-mesh-maps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baking Mesh Maps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texture-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texture Sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-environment-lighting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing Environment Lighting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#masks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Masks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layer-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layer Stack
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-brushes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing Brushes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materials-and-smart-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Materials and Smart Materials
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saving
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export Textures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-substance-materials-into-maya" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing Substance Materials into Maya
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-to-see-our-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rendering to See our Material
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📚Exercises
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            📚Exercises
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/exerciseindex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Exercise Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    In-class
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            In-class
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/01_simplechair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1a.Simple Chair
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/01_snappingchair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1b.Snapping Chair
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_completeacube/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2a.Complete a Cube
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_archway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2b.Archway
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_dice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3a.Dice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_teapot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3b.Teapot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/04_polaroidboolean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4a. Polaroid Boolean
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/04_polaroidcylinder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4b. Polaroid Cylinder
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Independent
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Independent
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/00_computerdreams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    0. Computer Dreams
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/01_creature/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.Creature
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.Tree
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_handleandobject/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.Getting a Handle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    🌞Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            🌞Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dreamobject/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dream Object
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memorypalace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Memory Chambre
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📖Responses
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            📖Responses
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responses/SoftwareStudies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responses/MediaArchaeology1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Media Archaeology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responses/MediaArchaeology2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Computer Space
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responses/MediaArchaeology3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Model Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responses/CulturalStudies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3D World
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    🖍️Artists
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            🖍️Artists
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/allen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rebecca Allen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/sims/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Karl Sims
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/davies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Char Davies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/steinkamp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Jennifer Steinkamp
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/thiel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tamiko Thiel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/totalrefusal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Total Refusal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exporting-our-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exporting our Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-new-file-in-substance-painter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a New File in Substance Painter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Navigation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigating-the-3d-viewport" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigating the 3D Viewport
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baking-mesh-maps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baking Mesh Maps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texture-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texture Sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-environment-lighting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing Environment Lighting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#masks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Masks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layer-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layer Stack
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-brushes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing Brushes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materials-and-smart-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Materials and Smart Materials
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saving
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export Textures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-substance-materials-into-maya" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing Substance Materials into Maya
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-to-see-our-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rendering to See our Material
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="substance-3d-painter">Substance 3D Painter</h1>
+<p>Adobe Substance 3D Painter is a piece of 3D software that we can use to paint textures onto 3D models. For a complete beginners overview on how to use Substance Painter, you can check out this video by <a href="https://www.youtube.com/watch?v=RQ-hRk0WHJ8&amp;t=307s">Flipped Normals</a></p>
+<h2 id="exporting-our-model">Exporting our Model</h2>
+<p>In order to load our model into Painter, we need to first export our model from Maya as an FBX file. An FBX file is a model format developed by Autodesk that can hold a variety of information about our 3D object including material and animation data.</p>
+<p><strong>The export our model as an FBX:</strong></p>
+<ol>
+<li>Select all parts of the model you want to export in object mode.</li>
+<li>Navigate to File &gt; Export Selection (I typically save my model for texturing in my Source Images folder in my Maya project)</li>
+<li>Change the file type to FBX</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Export_00.gif" /></p>
+<h2 id="creating-a-new-file-in-substance-painter">Creating a New File in Substance Painter</h2>
+<p><strong>To create a new file in substance painter:</strong></p>
+<ol>
+<li>Navigate to File &gt; New</li>
+<li>For Template, choose ASM-PBR Metallic Roughness.</li>
+<li>For file, press Select… and choose your FBX file.</li>
+<li>For Document Resolution you can choose 2048 or 4096 (this is how large your texture files will be).</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_New_00.gif" /></p>
+<h2 id="ui-navigation">UI Navigation</h2>
+<p>The UI of Substance Painter is separated into 4 parts.</p>
+<ol>
+<li>Assets - this is where we choose materials and brushes.</li>
+<li>3D viewport - this is where we can view our model in 3D and edit our textures</li>
+<li>2D viewport - this is where we can view our UVs and edit our textures</li>
+<li>Texture Set List and Layers - this where we can change the material we are working on as well as edit our material properties.</li>
+</ol>
+<h2 id="navigating-the-3d-viewport">Navigating the 3D Viewport</h2>
+<p>Navigation within the 3D Viewport within Substance Painter is controlled by the same hotkeys we use in Maya:</p>
+<ul>
+<li>Zoom: Alt+Right Mouse Button <img alt="gif" src="../assets/images/6/06_Viewport_00.gif" /></li>
+<li>Pan: Alt+Middle Mouse Button <img alt="gif" src="../assets/images/6/06_Viewport_01.gif" /></li>
+<li>Rotate: Alt+Left Mouse Button <img alt="gif" src="../assets/images/6/06_Viewport_02.gif" /></li>
+<li>Change Rotation of Lighting: Shift+Right Mouse Button</li>
+</ul>
+<h2 id="baking-mesh-maps">Baking Mesh Maps</h2>
+<p>Substance Painter has many interesting features, such as checking for indented spots in or model, or adding textures based on the direction that components are facing. Many of these features, however, only work if we bake mesh maps.</p>
+<p>Mesh maps are extra information about our model that Substance Painter uses to create procedural textures such as dirt in crevices.</p>
+<p>It is important when using Substance Painter to bake your mesh maps before you begin working on your textures. </p>
+<p><strong>To Bake Mesh Maps:</strong></p>
+<ol>
+<li>Navigate to your Texture Set List</li>
+<li>Next to the Layer tab, click on the Texture Set Settings tab.</li>
+<li>Scroll down and select Bake Mesh Maps under the Mesh Maps section</li>
+<li>When the bake window opens, change your Output Size to match your document size (2048, 4906, etc.)</li>
+<li>Press Bake selected textures.</li>
+<li>When the process completes, press Return to painting mode</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_MeshMaps_00.gif" /></p>
+<h2 id="texture-sets">Texture Sets</h2>
+<p>Within Substance Painter, I can change which material I am effecting by selecting different texture sets.</p>
+<p><img alt="gif" src="../assets/images/6/06_TextureSets_00.gif" /></p>
+<h2 id="changing-environment-lighting">Changing Environment Lighting</h2>
+<p>By default, Substance uses and HDRI, a high definition render image, to create the background. This image is called "Panorama" and is an image of an outdoor environment.</p>
+<p>This image is no ideal for creating textures because the light it provides our model contains a variety of colors.</p>
+<p>When texturing painting in Substance Painter, it is best to use a neutral gray lighting environment.</p>
+<p><strong>To change the lighting environment:</strong></p>
+<ol>
+<li>Navigate to Display Settings on the right side of the UI</li>
+<li>Select the Environment map setting</li>
+<li>Change the map to "Studio White Umbrella" or similar.</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Background_00.gif" /></p>
+<h2 id="layers">Layers</h2>
+<p>Similar to Photoshop, in Substance Painter, we use layers to create complex materials.</p>
+<p>Since we are using layers, it is typically best in Substance Painter to work with a combination of Fill Layers and Masks to create intended results.</p>
+<h3 id="fill-layer">Fill Layer</h3>
+<p><strong>To create a fill layer:</strong></p>
+<ol>
+<li>Navigate to your Layers tab.</li>
+<li>Press the Fill Layer button (paint can)</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Fill_00.gif" /></p>
+<h3 id="material-properties-of-fill-layer">Material Properties of Fill Layer</h3>
+<p>Within the properties panel of our Fill, in the section labeled filled, we can notice five different options for adjusting the properties of our material. You can activate different properties by pressing their buttons.</p>
+<p>Thinking back to when we created our Substance Painter file, we chose the template “ASM-PBR Metallic Roughness”. What does this actually mean? We can ignore ASM, this stands for Adobe Standard Material (Adobe is the company that makes Substance Painter).</p>
+<p>What is important here is to understand the terms PBR, Metallic and Roughness. For much of the history of 3D graphics, there were a variety of different ways in which you could create materials. You might adjust how specular a material is or how glossy it appears. Every company, product and researcher had a different way of making a material in 3D mimic real world material properties.</p>
+<p>While hopes for creating a standardized way of creating materials was around from the beginning of computer graphic materials in the 1960s, it wasn’t until the mid-2010’s that displaying and creating materials became more standardized across a variety of software.</p>
+<p>This standardization is called PBR, or Physically Based Rendering.</p>
+<p>The goal of Physically Based Rendering is to use the properties of real world materials, such as how rough an object is or how metallic an object is, to describe its properties within the world of 3D. In essence, all these material properties describe how light interacts with materials. A rough object will absorb more light than a gloss object. A metallic object will stop light from being absorbed and will bounce it back directly, creating a reflective surface. All of these properties deal with how light is either reflected or absorbed on different materials.</p>
+<p><img alt="gif" src="../assets/images/6/06_pbr.png" /></p>
+<p>Adobe has some great <a href="https://www.adobe.com/learn/substance-3d-designer/web/the-pbr-guide-part-1?learnIn=1&amp;locale=en">resources</a> with more information about PBR. Most of this material is pulled from work done by Allegorithmic, the original designers of Substance Painter.</p>
+<p>For more detailed video explanation on PBR rendering, check out this video by <a href="https://www.youtube.com/watch?v=a4dURVZEi3E&amp;t=87s">Flipped Normals</a>.</p>
+<p>So what are the properties we are dealing with in Substance Painter?</p>
+<h3 id="color">Color</h3>
+<p>This will change the base color of our model. This changes what color our material reflects back into the world.</p>
+<p><img alt="gif" src="../assets/images/6/06_Color_00.gif" /></p>
+<h3 id="height">Height</h3>
+<p>This will control how much height can be added to our model. This property will not be relevant at the moment with our current project.</p>
+<h3 id="roughness">Roughness</h3>
+<p>This will change how rough our material is. A value of 1 or white is perfectly rough while a value of 0 or black is perfectly smooth and reflective. This property changes how much light our material reflects versus absorbs.</p>
+<p><img alt="gif" src="../assets/images/6/06_Rough_00.gif" /></p>
+<h3 id="metallic">Metallic</h3>
+<p>This will change how metallic our object is. A value of 1 or white is a perfectly metallic material while a value of 0 or black, is a non-metallic material.</p>
+<p><img alt="gif" src="../assets/images/6/06_Metallic_00.gif" /></p>
+<h3 id="normal">Normal</h3>
+<p>Normal is a slightly more complicated material property. Unlike the properties above, the Normal material property allows us as artists to change the surface appearance of the geometry of our model.</p>
+<p>Normals and normal maps are essentially an optical illusion. They allow us to take an image texture and apply it to our model to create the appearance of a more complex surface.</p>
+<p>Taking a look at the <a href="https://cpetry.github.io/NormalMap-Online/">website</a>, we can get a better sense of how this process works.</p>
+<p>Within the website we can see this strange image in the center. Oftentimes normal maps will have this purple-ish appearance. This is not an image that we might think of as a photograph, instead this is a utility image, often called utility maps. Utility maps don’t store image data in the conventional sense, instead they store data that can be interpreted by a piece of software to create a variety of effects.</p>
+<p><img alt="gif" src="../assets/images/6/06_normal.png" /></p>
+<p>The reason normal maps have these strange colors is because they use the property of images containing RGB (or Red, Green, and Blue) data, to store XYZ data. In a normal map, the color Red is equal to the X direction, Green equals Y direction, and Blue equals Z direction.</p>
+<p>The normal map, as a utility map containing XYZ data, gives information to our material on how to create the surface of our object. In other words, when light hits the surface our our material, our normal map is consulted to see which direction the light should bounce back, or if that part of our material is in shadow.</p>
+<p><img alt="gif" src="../assets/images/6/06_normalCube.png" /></p>
+<p>In essence, the normal map is a powerful “hack” within computer graphics which allows us to create more complex geometry by storing surface details within an image texture. A normal map, however, can really only be used for fine details. We can notice on the cube that although the surface appears to have these concentric circles, when we look at a face of the cube from the side, the actual geometry of our surface is not deformed at all. </p>
+<p><strong>As an example within in Substance Painter:</strong></p>
+<ol>
+<li>Navigate to Textures within the Asset browser.</li>
+<li>Click and drag the texture named “flakes” into the normal slot of your Fill layer
+We can notice that we are only dragging a texture onto our model, however this texture creates the appearance of new details on the surface of our model.</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Normal_00.gif" /></p>
+<h3 id="image-textures">Image Textures</h3>
+<p>This process of images storing data is also true from our Roughness and Metallic channels. Instead of data being stored in RGB, for Roughness and Metallic, image data is stored in black and white values.</p>
+<p><img alt="gif" src="../assets/images/6/06_ImageTexture.png" /></p>
+<p><strong>As an example:</strong></p>
+<ol>
+<li>Navigate to Textures within the Asset browser.</li>
+<li>Click and drag the texture named “Grunge Plaster Faded” into the roughness slot of your Fill layer</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_ImageTexture_00.gif" /></p>
+<p>We can notice that different parts of our material are rough or reflective based on the black and white values with our texture map.</p>
+<h2 id="masks">Masks</h2>
+<p>To create complex material in substance painter, it is best to use a variety of layers with black or white masks.</p>
+<p><strong>To add a Black mask to your layer:</strong></p>
+<ol>
+<li>Click on the a layer you want to add a mask to</li>
+<li>Press the mask button and select “add black mask”</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Mask_00.gif" /></p>
+<p>A mask is a technique in layer based software to hide or reveal different parts of a layer. If a part of the mask has a value of black, that part of the layer will be hidden. If a part of the mask is white, that part of the layer will be revealed.</p>
+<h2 id="layer-stack">Layer Stack</h2>
+<p>The layer stack button will allow us to create more complex layers by creating essentially micro layers within a layer that can be stacked on top of each other.</p>
+<h3 id="layer-stack-paint">Layer Stack - Paint</h3>
+<p><strong>As an example:</strong></p>
+<ol>
+<li>Click on your black mask</li>
+<li>Click on your layer stack button</li>
+<li>Press “add Paint”</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Paint_00.gif" /></p>
+<p>This will add a paint layer that I can use to paint both black and white on my model to hide or reveal parts of my mask</p>
+<h2 id="changing-brushes">Changing Brushes</h2>
+<p>If I want to change to a different brush:</p>
+<ol>
+<li>Navigate to the brush section of the Assets browser</li>
+<li>Select a new brush such as Dirt 1</li>
+<li>Click on your model to paint with new brush</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Brush_00.gif" /></p>
+<h2 id="generators">Generators</h2>
+<p>Generators are a powerful tool within Substance Painter that allow us to create procedural material effects. Procedural here means that instead of creating masks or materials based on painting them manually, that are created by looking at the shape of our model through an algorithmic process.</p>
+<p>A very common generator is the dirt generator.</p>
+<p><strong>To add a dirt generator:</strong></p>
+<ol>
+<li>Click on your mask and navigate to the Layer Stack button</li>
+<li>Press “Add generator”</li>
+<li>Press the Generator slot in the Properties section.</li>
+<li>Select “dirt”</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Generator_00.gif" /></p>
+<p>The dirt generator will create a procedural texture that finds crevices or other edges of our model and makes the texture mask of those areas more white to create a greater build up of dirt in those areas.</p>
+<p><strong>We can adjust a variety of parameters for our dirt including:</strong></p>
+<ul>
+<li>Dirt Level (how much dirt)</li>
+<li>Dirt Contrast (how diffuse is the dirt across the material)</li>
+<li>Grunge Amount (how much general smudginess)</li>
+<li>and others!</li>
+</ul>
+<h2 id="materials-and-smart-materials">Materials and Smart Materials</h2>
+<p>The amazing part about substance painter is that it has a variety of prebuilt material bases that you mix and edit to easily create complex materials.</p>
+<p>These are separated into two types of materials: Material and Smart Materials</p>
+<h3 id="materials">Materials</h3>
+<p>With the Materials section of the Assets browser, we have a variety of basic materials we can use on our model. These materials will consist of a single layer with baked or procedural textures that can be changed and adapted.</p>
+<p><strong>Example:</strong></p>
+<ol>
+<li>Click and drag the “Ground Sand” material onto your model.</li>
+<li>Click on the “Ground Sand” layer.</li>
+<li>Within the parameters of this layer you can affect the “Sand Color”, “Pebbles Density”, and a variety of other parameters. Notice also you can change where the layer affects the color, height, rough, and metal of your material.</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Material_00.gif" /></p>
+<h3 id="smart-materials">Smart Materials</h3>
+<p>Unlike basic Materials with substance painter, Smart Materials use the mesh maps that we baked earlier to create procedural materials across your model.</p>
+<p><strong>Example:</strong></p>
+<ol>
+<li>Navigate to the Smart Material section of your Assets browser.</li>
+<li>Click and drag the “Machinery” smart material onto your model</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Smart_00.gif" /></p>
+<p>We can see in our layer editor that this smart material only consists of a folder with a variety of materials within the folder that we can edit and adjust.</p>
+<p><strong>For example, if I wanted to change the color of my machinery metal:</strong></p>
+<ol>
+<li>Navigate to the layer named “Metal Base” within the “Machinery” folder</li>
+<li>In the Properties - Fill section, change the Base color of the material.</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Smart_01.gif" /></p>
+<p><strong>As another example, I can begin to create these materials more complex by using the layer stack:</strong></p>
+<ol>
+<li>Navigate to the layer named “Rust” within the “Machinery” folder</li>
+<li>Click on the black mask</li>
+<li>Click on the layer stack button</li>
+<li>Press “add Paint”</li>
+<li>Use the “Dirt 1” brush or another using either black or white to add or remove rust to your model</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Smart_02.gif" /></p>
+<h2 id="saving">Saving</h2>
+<p>You can save your Substance Painter file by either navigating to file save, or by pressing ctrl+s.</p>
+<p>It is often a good idea to save your Substance Painter file within your Maya project folder for easy access.</p>
+<h2 id="export-textures">Export Textures</h2>
+<p>When you finish painting in Substance Painter, we need a way to export these textures from Substance Painter and bring them into Maya.</p>
+<p><strong>To export textures:</strong></p>
+<ol>
+<li>Navigate to File &gt; Export textures</li>
+<li>In the Output directory dropdown, select your Maya project Source Image folder.</li>
+<li>In the Output template drop down, select “Arnold (AiStandard)”</li>
+<li>Press Export</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_ExportTextures_00.gif" /></p>
+<h2 id="importing-substance-materials-into-maya">Importing Substance Materials into Maya</h2>
+<p>Importing Substance materials into Maya used to be a long and tedious process. With updates to the Substance plug-in within Maya, this has become much easier.</p>
+<p>Importing materials into Maya does contain a number of steps:</p>
+<ol>
+<li>Make sure Substance Plugins are activated</li>
+<li>Import texture maps</li>
+<li>Rename material in Hypershade</li>
+<li>Select object or faces</li>
+<li>Assign new material</li>
+</ol>
+<h3 id="1-substance-plugin">1. Substance Plugin</h3>
+<p>In order to import textures from Substance Painter, we need to make sure the Substance Plugin is active:</p>
+<ol>
+<li>Navigate to Windows &gt; Setting/Preferences &gt; Plug-in Manager</li>
+<li>Search for “Substance”</li>
+<li>Check the both boxes for Substance.mll, substanceconnector.mll, substancemaya.mll, substanceworkflow.py.</li>
+<li>Press “Close”</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_SubstancePlugin_00.gif" /></p>
+<h3 id="2-import-substance-texture-maps">2. Import Substance Texture Maps</h3>
+<p>The next step is to import our texture maps we exported from Substance Painter.</p>
+<ol>
+<li>In your top menu bar, navigate to Substance &gt; Apply Workflow to Maps</li>
+<li>Press “Select Multiple Maps”</li>
+<li>Navigate to where your maps are saved</li>
+<li>Ctrl-click your baseColor, normal, roughness, metallic, height, and emissive maps for a single material.</li>
+<li>Press “Apply”</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_SubstancePlugin_01.gif" /></p>
+<h3 id="3-hypershade">3. Hypershade</h3>
+<p>Hypershade in a window in Maya that allows us to manage a variety of parts of our scene including our materials. Within Hypershade, we can rename materials and assign materials to our models.</p>
+<p><strong>Rename materials in Hypershade:</strong></p>
+<ol>
+<li>Open Hybershade by click on the green shader ball button at the top of your Maya UI</li>
+<li>Click on your material within the top material section, you should be able to identify your material by its appearance or by a name similar to aiStandardSurface1.</li>
+<li>In the property editor on the right side of your screen, change the name of your material. Oftentimes it is good to name your material, nameOfMaterial_Substance.</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Hypershade_00.gif" /></p>
+<p>Now that we have renamed our material, we need to assign it in Maya.</p>
+<p>If our model is separated by preexisting materials, we can select the faces or objects associated with that material to easily swap to our new substance material.</p>
+<p><strong>To select faces that have old material:</strong></p>
+<ol>
+<li>In Hypershade, navigate to your old material</li>
+<li>Hold right click on the material on open the marking menu and select: Select Objects with Material.</li>
+<li>In your viewport, you should see the faces that have that material selected.</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Hypershade_01.gif" /></p>
+<p><strong>To assign new material:</strong></p>
+<ol>
+<li>With the faces or objects selected</li>
+<li>Hold right click on your new Substance Painter material, select “Assign Material to Selection”</li>
+<li>You should now see in your viewport your objects have your new material.</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Hypershade_02.gif" /></p>
+<h2 id="rendering-to-see-our-material">Rendering to See our Material</h2>
+<p>Although we will be learning more about rendering in the next section of this course, it is good to preview our material using a basic rendering set up.</p>
+<p>Rendering is the process of using lights, materials and cameras to calculate an image of our Maya Scene.</p>
+<p>To begin, we need to bring a light into our scene.</p>
+<p>Let’s bring in a basic Physical Sky light. This will mimic the light of the sun and sky.</p>
+<p>To create a Physical Sky light:</p>
+<ol>
+<li>In your top menu bar, navigate to Arnold&gt;Lights&gt;Physical Sky</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Render_01.gif" /></p>
+<p>Now that we have a Physical Sky in our scene, we need to preview what our image looks like. To do this, we can create a basic render.</p>
+<p>To create a basic render in Maya:</p>
+<ol>
+<li>Position your camera in the scene to have a clear view of your object.</li>
+<li>Press the Arnold RenderView button (it looks like a Clapper Board with an Eye)</li>
+<li>Press the Play button in the upper right corner of the RenderView to render an image.</li>
+</ol>
+<p><img alt="gif" src="../assets/images/6/06_Render_02.gif" /></p>
+<p>You can use the Elevation and Azimuth within your aiPhysicalSky settings to change the rotation and elevation of your Sun.</p>
+<p><img alt="gif" src="../assets/images/6/06_Render_03.gif" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", {"navigation.instant": false}], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
