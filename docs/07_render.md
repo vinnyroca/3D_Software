@@ -1,5 +1,7 @@
 # Lights, Camera, Render
 
+Note: Model of cat statue used throughout these notes was made by Riley Queen with guidance from Rico Cilliers. Accessed through CC0 License on Poly Haven: [Link](https://polyhaven.com/a/concrete_cat_statue)
+
 ## Cameras
 
 When setting up our scene for rendering and image, the first thing we want to do is to create a camera that we will use to render. It is often best to use a “Camera and Aim” object. This will create a camera that we can use to produce a render as well as an aim box that we move to control where the camera is aiming.
