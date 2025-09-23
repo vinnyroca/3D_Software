@@ -88,7 +88,7 @@ Although not a settings within the attribute editor, scale is one of the most po
   
 **Scale = .5**
 
-<img src = "../assets/images/7/07_scalepoint5.jpg" width = "400px"><img>
+<img src = "../assets/images/7/07_s5.png" width = "400px"><img>
 
 **Scale = 5**
 
