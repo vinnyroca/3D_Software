@@ -338,12 +338,12 @@ Importing materials into Maya does contain a number of steps:
 
 In order to import textures from Substance Painter, we need to make sure the Substance Plugin is active:
 
-1. Navigate to Windows > Setting/Preferences > Plug-in Manager
+1. Navigate to Windows > Setting/Preferences > Plug-in Manager ![gif](../assets/images/6/06_plugin.png)
 2. Search for “Substance”
-3. Check the both boxes for Substance.mll, substanceconnector.mll, substancemaya.mll, substanceworkflow.py.
+3. Check the both boxes for Substance.mll, substanceconnector.mll, substancemaya.mll, substanceworkflow.py. ![gif](../assets/images/6/06_substance.png)
 4. Press “Close”
 
-![gif](/assets/images/6/06_SubstancePlugin_00.gif)
+
 
 ### 2. Import Substance Texture Maps
 
@@ -355,7 +355,7 @@ The next step is to import our texture maps we exported from Substance Painter.
 4. Ctrl-click your baseColor, normal, roughness, metallic, height, and emissive maps for a single material.
 5. Press “Apply”
 
-![gif](/assets/images/6/06_SubstancePlugin_01.gif)
+![gif](../assets/images/6/06_sPlug.gif)
 
 ### 3. Hypershade
 
