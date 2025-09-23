@@ -343,7 +343,7 @@ In order to import textures from Substance Painter, we need to make sure the Sub
 3. Check the both boxes for Substance.mll, substanceconnector.mll, substancemaya.mll, substanceworkflow.py.
 4. Press “Close”
 
-![gif](../assets/images/6/06_SubstancePlugin_00.gif)
+![gif](/assets/images/6/06_SubstancePlugin_00.gif)
 
 ### 2. Import Substance Texture Maps
 
@@ -355,7 +355,7 @@ The next step is to import our texture maps we exported from Substance Painter.
 4. Ctrl-click your baseColor, normal, roughness, metallic, height, and emissive maps for a single material.
 5. Press “Apply”
 
-![gif](../assets/images/6/06_SubstancePlugin_01.gif)
+![gif](/assets/images/6/06_SubstancePlugin_01.gif)
 
 ### 3. Hypershade
 

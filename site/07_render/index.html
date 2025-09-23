@@ -1,0 +1,2038 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://3dsoftware.vinnyroca.info/07_render/">
+      
+      
+        <link rel="prev" href="../06_Substance3DPainter/">
+      
+      
+        <link rel="next" href="../Exercises/exerciseindex/">
+      
+      
+      <link rel="icon" href="../3D.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>7. Lights, Camera, Render - 🫖 Introduction to 3D Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Funnel+Sans:300,300i,400,400i,700,700i%7CInconsolata+monospace:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Funnel Sans";--md-code-font:"Inconsolata monospace"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lights-camera-render" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="🫖 Introduction to 3D Software" class="md-header__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            🫖 Introduction to 3D Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7. Lights, Camera, Render
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  📋Syllabus
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../schedule/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📆Schedule
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Notes/notes/" class="md-tabs__link">
+          
+  
+  
+  💻Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Exercises/exerciseindex/" class="md-tabs__link">
+          
+  
+  
+  📚Exercises
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../dreamobject/" class="md-tabs__link">
+          
+  
+  
+  🌞Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../responses/SoftwareStudies/" class="md-tabs__link">
+          
+  
+  
+  📖Responses
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Artists/allen/" class="md-tabs__link">
+          
+  
+  
+  🖍️Artists
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="🫖 Introduction to 3D Software" class="md-nav__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg>
+
+    </a>
+    🫖 Introduction to 3D Software
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📋Syllabus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📆Schedule
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    💻Notes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            💻Notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Notes/notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notes Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_MayaInterface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1. Maya Interface and Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_ModellingEssentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2. Polygonal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_SubdivisionModeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3. Subdivision Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_AdvancedModeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Advanced Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_UVUnwrapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. UV Mapping
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_Substance3DPainter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. Substance Painter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    7. Lights, Camera, Render
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    7. Lights, Camera, Render
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cameras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cameras
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#area-light" class="md-nav__link">
+    <span class="md-ellipsis">
+      Area Light
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-point-lighting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Three Point Lighting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physical-sky" class="md-nav__link">
+    <span class="md-ellipsis">
+      Physical Sky
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#render-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Render Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rendering Images
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#depth-of-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depth of Field
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Textures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing Textures
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📚Exercises
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            📚Exercises
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/exerciseindex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Exercise Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    In-class
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            In-class
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/01_simplechair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1a.Simple Chair
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/01_snappingchair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1b.Snapping Chair
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_completeacube/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2a.Complete a Cube
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_archway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2b.Archway
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_dice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3a.Dice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_teapot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3b.Teapot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/04_polaroidboolean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4a. Polaroid Boolean
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/04_polaroidcylinder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4b. Polaroid Cylinder
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Independent
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Independent
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/00_computerdreams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    0. Computer Dreams
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/01_creature/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.Creature
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.Tree
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_handleandobject/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.Getting a Handle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    🌞Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            🌞Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dreamobject/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dream Object
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memorypalace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Memory Chambre
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📖Responses
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            📖Responses
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responses/SoftwareStudies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responses/MediaArchaeology1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Media Archaeology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responses/MediaArchaeology2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Computer Space
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responses/MediaArchaeology3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Model Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responses/CulturalStudies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3D World
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    🖍️Artists
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            🖍️Artists
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/allen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rebecca Allen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/sims/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Karl Sims
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/davies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Char Davies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/steinkamp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Jennifer Steinkamp
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/thiel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tamiko Thiel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/totalrefusal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Total Refusal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cameras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cameras
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#area-light" class="md-nav__link">
+    <span class="md-ellipsis">
+      Area Light
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-point-lighting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Three Point Lighting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physical-sky" class="md-nav__link">
+    <span class="md-ellipsis">
+      Physical Sky
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#render-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Render Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rendering Images
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#depth-of-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depth of Field
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Textures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing Textures
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="lights-camera-render">Lights, Camera, Render</h1>
+<h2 id="cameras">Cameras</h2>
+<p>When setting up our scene for rendering and image, the first thing we want to do is to create a camera that we will use to render. It is often best to use a “Camera and Aim” object. This will create a camera that we can use to produce a render as well as an aim box that we move to control where the camera is aiming.</p>
+<p><strong>To create camera:</strong></p>
+<ul>
+<li>Navigate to Create &gt; Cameras &gt; Camera and Aim. <img alt="Image" src="../assets/images/7/07_gif_00.gif" /></li>
+</ul>
+<p><strong>To display camera:</strong></p>
+<ol>
+<li>Navigate to Panels (in Viewport) &gt; Layouts &gt; Two Panes Side by Side <img alt="Image" src="../assets/images/7/07_gif_01.gif" /></li>
+<li>In one of the viewports: navigate to Panels &gt; Perspective &gt; Camera1 <img alt="Image" src="../assets/images/7/07_gif_02.gif" /></li>
+<li>In the same viewport navigate to View &gt; Camera Settings &gt; Resolution Gate <img alt="Image" src="../assets/images/7/07_gif_03.gif" /></li>
+<li>In the same viewport navigate to View &gt; Camera Settings &gt; Overscan <img alt="Image" src="../assets/images/7/07_gif_04.gif" /></li>
+</ol>
+<p><strong>To position camera:</strong></p>
+<ol>
+<li>In your Outliner, press the plus button next to your newly created camera group </li>
+<li>Select your camera_aim object and move it to where you want your camera to aim</li>
+<li>Select your camera object and position the camera</li>
+</ol>
+<p><img alt="Image" src="../assets/images/7/07_moveCamera_00.gif" /></p>
+<p>Just like a real world camera, our virtual camera within maya has various settings that we can adjust to get different visual results. The most common setting to adjust is the Focal Length of your camera. The focal length will change the field of view of your image. A smaller focal length will create a larger field of view, while a large focal length will create a small field of view. Some common focal lengths that are used in film and photographs include 17, 35, 50, and 85.</p>
+<p><strong>To change your focal length of your camera:</strong></p>
+<ol>
+<li>Navigate to your camera object</li>
+<li>In the cameraShape tab of the Attribute editor, locate the Focal Length slider under Camera Attributes.</li>
+</ol>
+<p><img alt="Image" src="../assets/images/7/07_cameraFOV.gif" /></p>
+<h2 id="area-light">Area Light</h2>
+<p>Within Arnold, we have a variety of different lights we can use to light our object.</p>
+<p>The most common lights are Area Light and Physical Sky Light</p>
+<p>An area light in Arnold is a generic light that can take the form of a plane, disc or cylinder. This is an all around studio light that can be used to create a variety of different lighting effects. The light works similarly to a light you might see on a movie set or in a photography studio.</p>
+<p>**To create an area light: **</p>
+<ol>
+<li>In the top tool bar, navigate to Arnold &gt; Lights &gt; Area Lights</li>
+<li>Move and rotate your light to point at your object (the small line represents the direction the light is facing.)</li>
+</ol>
+<p><img alt="Image" src="../assets/images/7/07_createAreaLight.gif" /></p>
+<p>To create a test render:</p>
+<ol>
+<li>Press the Arnold RenderView button in your tool bar</li>
+<li>Press play</li>
+</ol>
+<p>You may notice that your render is far too dark. To adjust the brightness of our light, we need to change its attributes.</p>
+<p><img alt="Image" src="../assets/images/7/07_areaLightRender.gif" /></p>
+<h3 id="exposure">Exposure</h3>
+<p>To access exposure: Attribute Editor&gt; aiAreaLightShape &gt; Exposure</p>
+<p>This is the main control for the brightness of the Area light. The exposure parameter works like an f-stop parameter on a physical camera. Each whole number represents a on stop increase in the exposure of the light.</p>
+<p><strong>Exposure = 6:</strong></p>
+<p><img src = "../assets/images/7/07_exposure6.jpg" width = "400px"><img></p>
+<p><strong>Exposure = 12:</strong></p>
+<p><img src = "../assets/images/7/07_exposure10.jpg" width = "400px"><img></p>
+<h3 id="scale">Scale</h3>
+<p>Although not a settings within the attribute editor, scale is one of the most powerful attributes of the area light:</p>
+<ul>
+<li>Small area light = harder shadows</li>
+<li>Large area light = soft shadows</li>
+</ul>
+<p><strong>Scale = .5</strong></p>
+<p><img src = "../assets/images/7/07_scalepoint5.jpg" width = "400px"><img></p>
+<p><strong>Scale = 5</strong></p>
+<p><img src = "../assets/images/7/07_scale5.jpg" width = "400px"><img></p>
+<h3 id="color">Color</h3>
+<p>To access color: Attribute Editor&gt; aiAreaLightShape &gt; Color</p>
+<p>This alters the color of the light. This attribute works like colored gels on a real world light source.</p>
+<p><strong>Image with blue and orange colored lights:</strong></p>
+<p><img src = "../assets/images/7/07_color.jpg" width = "400px"><img></p>
+<h3 id="samples">Samples</h3>
+<p>To access samples: Attribute Editor&gt; aiAreaLightShape &gt; Samples</p>
+<p>This setting alters how many samples the light is taking to produce a rendered image. Typically, a good sample amount is 2-4.</p>
+<h2 id="three-point-lighting">Three Point Lighting</h2>
+<p>When lighting objects in Maya, or in real life, it is common to use a three point light set up. This lighting set up uses three lights to light an subject:</p>
+<ul>
+<li><strong>A key light:</strong> the main light on the subject</li>
+<li><strong>A fill light</strong>: a light to fill in the shadows opposite the key light</li>
+<li><strong>A rim light or edge light: </strong>positioned behind the object to light the edges of the object</li>
+</ul>
+<p><strong>Example three point lighting set up in Maya:</strong></p>
+<p><img src = "../assets/images/7/07_catSetUp.png" width = "400px"><img></p>
+<p><strong>Key, fill and edge light:</strong></p>
+<p><img src = "../assets/images/7/07_catComplete.jpg" width = "400px"><img></p>
+<p><strong>Only key light:</strong></p>
+<p><img src = "../assets/images/7/07_catKey.jpg" width = "400px"><img></p>
+<p><strong>Only fill light:</strong></p>
+<p><img src = "../assets/images/7/07_catFill.jpg" width = "400px"><img></p>
+<p><strong>Only edge light:</strong></p>
+<p><img src = "../assets/images/7/07_catEdge.jpg" width = "400px"><img></p>
+<h2 id="physical-sky">Physical Sky</h2>
+<p>The Arnold Physical Sky light mimics a real sun and sky environment. </p>
+<p>To create a Physical Sky light:</p>
+<p>Navigate to Arnold &gt; Lights &gt; Physical Sky</p>
+<h3 id="physical-sky-settings">Physical Sky settings</h3>
+<p><img src = "../assets/images/7/07_skySettings.png" width = "400px"><img></p>
+<p><strong>In Attribute Editor &gt; aiSkyDomeLightShape:</strong></p>
+<p>Exposure: Adjust the brightness of Sun and Sky
+Samples: Adjust the resolution of light (generally set to 2)</p>
+<p>In Attribe Editor &gt; aiPhysicalSky:</p>
+<ul>
+<li><strong>Azimuth:</strong> Rotation of the Sun</li>
+<li><strong>Elevation:</strong> Height of the Sun</li>
+</ul>
+<p><strong>Elevation at 2.5, Golden Hour:</strong></p>
+<p><img src = "../assets/images/7/07_sunGoldeHour.jpg" width = "400px"><img></p>
+<p><strong>Elevation at 60, Mid-day:</strong></p>
+<p><img src = "../assets/images/7/07_sunMidDay.jpg" width = "400px"><img></p>
+<h2 id="render-settings">Render Settings</h2>
+<p>Compared to other render engines, Arnold has a very simple set of settings that are easy to use.</p>
+<p><strong>To open the render settings:</strong></p>
+<ol>
+<li>In your tool bar, click on the Render Setting icon (clapper board with gear)</li>
+<li>Navigate to the Common tab</li>
+</ol>
+<p><img src = "../assets/images/7/07_renderSettings.png" width = "400px"><img></p>
+<h3 id="file-name-and-format">File Name and Format</h3>
+<p>To change the name of your render, change the name under “File name prefix:”</p>
+<p>To change your image output format, change the “Image format:” setting.</p>
+<p>If you have experience editing .exr files in Photoshop you can use that format as it stores the most data. If you do not have .exr editing experience, use png format.</p>
+<p><img src = "../assets/images/7/07_renderSettings_name.png" width = "400px"><img></p>
+<h3 id="frameanimation">Frame/Animation</h3>
+<p>For our current project, we are only rendering single frames. Under “Frame/Animation ext:” make sure the value is set to “name.ext (Single Frame)”. The “Frame Range” section should be grayed out.</p>
+<p><img src = "../assets/images/7/07_renderSettings_frame.png" width = "400px"><img></p>
+<h3 id="renderable-cameras">Renderable Cameras</h3>
+<p>Make sure the Renderable Camera is set to the camera you are using in your scene (i.e. camera1).</p>
+<p><img src = "../assets/images/7/07_renderSettings_camera.png" width = "400px"><img></p>
+<h3 id="image-size">Image Size</h3>
+<p>Image size allows us to set the resolution of our images. By default, there are a variety of presets for stills and animation. Oftentimes, however, you will set a custom resolution by changing the width and height parameters.</p>
+<p>Best resolution varies greatly depending on the output:</p>
+<ul>
+<li>For print you typically want 300 pixels per inch of your print. For example, an 8 in by 10 in print would need an image resolution of 2400 pixels by 3000 pixels.</li>
+<li>For Animation, aspect ratios and resolutions vary widely depending on your intended results. A 16:9 aspect ratio is standard with full High Definition having 1920 by 1080 pixels and 4k resolution having 3840 by 2160 pixels.</li>
+<li>For the web, resolution varies greatly. Typically you want to stay in with a HD or 2K resolution.</li>
+</ul>
+<p><img src = "../assets/images/7/07_renderSettings_size.png" width = "400px"><img></p>
+<p><strong>1920 by 1080 image:</strong></p>
+<p><img alt="Image" src="../assets/images/7/07_HD.png" /></p>
+<p><strong>3840 by 2160 image:</strong> (Open in new tab to see full resolution)</p>
+<p><img alt="Image" src="../assets/images/7/07_4k.png" /></p>
+<h3 id="cpu-vs-gpu">CPU vs GPU</h3>
+<p>Navigate to the System Tab.</p>
+<p>By default, Maya will use your CPU or Central Processing Unit to render images. For a long time, this was the fastest way to render images. Recently, advancements in GPU or Graphics Processing Unit technology have become much faster at rendering.</p>
+<p>To switch to GPU rendering:</p>
+<ol>
+<li>Navigate to Render Device under Device Selection</li>
+<li>Change from CPU to GPU</li>
+</ol>
+<p><img src = "../assets/images/7/07_renderSettings_gpu.png" width = "400px"><img></p>
+<h3 id="arnold-render-settings">Arnold Render Settings</h3>
+<p>With GPU rendering activated, there is only one setting we need to change to increase the quality of our renders, Camera AA. A good value for Camera AA for all renders is 6. A high number of Camera AA samples will produce a less noisy image.</p>
+<p><img src = "../assets/images/7/07_renderSettings_cameraAA.png" width = "400px"><img></p>
+<p><strong>Samples = 1:</strong></p>
+<p><img src = "../assets/images/7/07_samples1_1.png" width = "400px"><img></p>
+<p><strong>Samples = 6:</strong></p>
+<p><img src = "../assets/images/7/07_samples6_1.png" width = "400px"><img></p>
+<p><strong>Samples = 10:</strong></p>
+<p><img src = "../assets/images/7/07_samples10_1.png" width = "400px"><img></p>
+<h2 id="rendering-images">Rendering Images</h2>
+<p>We can preview our renders by using the Arnold RenderView. This will show an IPR render, or in progress render, which is great for placing lights in our scene.</p>
+<p>To render a full and final image:</p>
+<ol>
+<li>Navigate to your tool bar at the top of your UI</li>
+<li>Navigate to Render &gt; Render Sequence</li>
+</ol>
+<p><img src = "../assets/images/7/07_renderSequence.png" width = "400px"><img></p>
+<p>This will render your full sequence which, in our case, is only one image. This image will save to your image folder within your Maya project folder.</p>
+<h2 id="depth-of-field">Depth of Field</h2>
+<p>Depth of Field creates the effect in which some parts of our image appear in focus while other parts appear out of focus.</p>
+<p>To turn on depth of field:</p>
+<ol>
+<li>Navigate to your render camera</li>
+<li>Navigate to Attribute Editor &gt; cameraShape&gt; Arnold</li>
+<li>Check Enable DOF</li>
+</ol>
+<p><img src = "../assets/images/7/07_dof.png" width = "400px"><img></p>
+<p>In order to use depth of field properly, we need to know have far the object we want to focus on is from our camera.</p>
+<p>To see the distance between an object and our camera:</p>
+<ol>
+<li>Navigate to display&gt;heads up display&gt; object details </li>
+<li>In your render camera view port click on the object you want to find the distance from</li>
+<li>Make note of the number “Distance From Camera” in the upper right corner of your viewport. </li>
+<li>Replace the Focus Distance parameter of your render camera’s depth of field settings with this number.</li>
+</ol>
+<p><img src = "../assets/images/7/07_dofObjectDetails.png" width = "400px"><img> </p>
+<p><img src = "../assets/images/7/07_catDistance.png" width = "400px"><img></p>
+<p>You can adjust the focus effect of your depth of field by changing the Aperture Size setting. A size between .1 to .5 often works well.</p>
+<p><img src = "../assets/images/7/07_dofApertureSize.png" width = "400px"><img></p>
+<p><strong>Aperture Size = .5:</strong></p>
+<p><img src = "../assets/images/7/07_dofpoint5.jpg" width = "400px"><img></p>
+<p><strong>Aperture Size = .3:</strong></p>
+<p><img src = "../assets/images/7/07_dofpoint3.jpg" width = "400px"><img></p>
+<h2 id="textures">Textures</h2>
+<p>When creating rendered images in Maya, not all of our textures need to come from Substance Painter. Particularly when objects are made out of basic materials such as wood or stone, it is often better to use textures from a texture library.</p>
+<p>There are many free libraries online that you can access. Polyhaven, in particular, is an amazing resource for textures, models, as well as HDRIs.</p>
+<p>So have 3D artists always been using premade textures? While many games and films use hand painted textures, throughout the history of 3D software, artists have been using image collections to make textures. Before the ability to easily purchase and share these textures online, collections of images on physical media such as CDs would be purchased by studios and artists for texturing.</p>
+<p>Looking at a texture ripped from the game Silent Hill, we can see that this texture was hand painted by an artist. This texture was downloaded from Texture Resource https://textures.spriters-resource.com/, a community dedicated to sharing and preserving textures from new and old video games.</p>
+<p>Looking, instead, at this example captured from Super Mario 64, we can see that the artist modified a preexisting image to create the texture for the flower field. This research was done by Roovahlees, who has been researching where many of the textures in video games from the 1990’s originate from.</p>
+<p><img src = "../assets/images/7/07_mario.jpg" width = "400px"><img></p>
+<p>In addition to this research, they have also been cataloging many original texture CDs on <a href="https://archive.org/details/@roovahlees">archive.org</a>. The <a href="https://github.com/Render96/Render96Wiki/wiki">Render96</a> Wiki is another great resource in which community members are tracking down the original textures used in Super Mario 64 and related games.</p>
+<p><img src = "../assets/images/7/07_superSmash.jpg" width = "400px"><img></p>
+<p>(Texture from Super Smash Bros. - Render96 X account)</p>
+<h2 id="importing-textures">Importing Textures</h2>
+<p>To import textures into Maya, we first need to download textures from an online resource. We can download a basic Wood Planks texture from <a href="https://polyhaven.com/a/wood_planks">Poly Haven</a>. </p>
+<p>Using the download menu on the right, I can download a Diffuse (color Map), a roughness map, and a normal (gl) map. We will discuss displacement maps in our next section on ZBrush.</p>
+<p><img src = "../assets/images/7/07_polyHaven.png" width = "400px"><img> </p>
+<p>Download the images as a zip file, unzip the folder, and move the images to the Source Images folder of your Maya project.</p>
+<p>To create a material from these images, we can use the Substance Plugin:</p>
+<ol>
+<li>In your top menu bar, navigate to Substance &gt; Apply Workflow to Maps</li>
+<li>Individually select the baseColor (diffuse), normal, and roughness maps.</li>
+<li>Press “Apply”</li>
+<li>Rename the material in Hypershade and apply it to your object.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", {"navigation.instant": false}], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
