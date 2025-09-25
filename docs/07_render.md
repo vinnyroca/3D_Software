@@ -349,3 +349,29 @@ To create a material from these images, we can use the Substance Plugin:
 2. Individually select the baseColor (diffuse), normal, and roughness maps.
 3. Press “Apply”
 4. Rename the material in Hypershade and apply it to your object.
+
+## Importing Model
+
+Poly Haven is also a great resource for creative commons models.
+
+To download a model:
+
+1. Change download type to fbx
+2. Download zip file
+3. Unzip file
+4. Import the model in your scene using File > Import
+
+To make a proper pbr texture, use the substance plugin:
+
+1. In your top menu bar, navigate to Substance > Apply Workflow to Maps
+2. Individually select the baseColor (diffuse), normal, and roughness maps.
+3. Press “Apply”
+4. Rename the material in Hypershade and apply it to your imported model.
+
+Other great resources for creative commons models include:
+
+[Sketchfab.com](https://sketchfab.com/feed)
+
+[Turbosquid.com](https://www.turbosquid.com/)
+
+Be sure to check the licensing agreement for the model before using it in your scene.
