@@ -1,0 +1,2211 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://3dsoftware.vinnyroca.info/08_ZbrushFundamentals/">
+      
+      
+        <link rel="prev" href="../07_render/">
+      
+      
+        <link rel="next" href="../Exercises/exerciseindex/">
+      
+      
+      <link rel="icon" href="../3D.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>8. ZBrush Basics - 🫖 Introduction to 3D Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Funnel+Sans:300,300i,400,400i,700,700i%7CInconsolata+monospace:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Funnel Sans";--md-code-font:"Inconsolata monospace"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#abcs-of-zbrush" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="🫖 Introduction to 3D Software" class="md-header__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            🫖 Introduction to 3D Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              8. ZBrush Basics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  📋Syllabus
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../schedule/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📆Schedule
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Notes/notes/" class="md-tabs__link">
+          
+  
+  
+  💻Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Exercises/exerciseindex/" class="md-tabs__link">
+          
+  
+  
+  📚Exercises
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../dreamobject/" class="md-tabs__link">
+          
+  
+  
+  🌞Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../responses/SoftwareStudies/" class="md-tabs__link">
+          
+  
+  
+  📖Responses
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Artists/allen/" class="md-tabs__link">
+          
+  
+  
+  🖍️Artists
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="🫖 Introduction to 3D Software" class="md-nav__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg>
+
+    </a>
+    🫖 Introduction to 3D Software
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📋Syllabus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📆Schedule
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    💻Notes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            💻Notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Notes/notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notes Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_MayaInterface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1. Maya Interface and Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_ModellingEssentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2. Polygonal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_SubdivisionModeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3. Subdivision Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_AdvancedModeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Advanced Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_UVUnwrapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. UV Mapping
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_Substance3DPainter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. Substance Painter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_render/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7. Lights, Camera, Render
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    8. ZBrush Basics
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    8. ZBrush Basics
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-zbrush" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is ZBrush
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Interface
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#turn-off-right-click-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Turn Off Right Click Menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sculpting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sculpting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brushes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brushes:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transpose-w-e-or-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transpose (W , E, or R)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#symmetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symmetry
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#masking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Masking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wireframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wireframe
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamesh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamesh
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subdivisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subdivisions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#history" class="md-nav__link">
+    <span class="md-ellipsis">
+      History
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saving
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sculpting-technique-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sculpting Technique Basics
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📚Exercises
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            📚Exercises
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/exerciseindex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Exercise Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    In-class
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            In-class
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/01_simplechair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1a.Simple Chair
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/01_snappingchair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1b.Snapping Chair
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_completeacube/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2a.Complete a Cube
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_archway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2b.Archway
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_dice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3a.Dice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_teapot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3b.Teapot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/04_polaroidboolean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4a. Polaroid Boolean
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/04_polaroidcylinder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4b. Polaroid Cylinder
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Independent
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Independent
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/00_computerdreams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    0. Computer Dreams
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/01_creature/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.Creature
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.Tree
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_handleandobject/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.Getting a Handle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/05_rocksandobservation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Rocks and Observation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    🌞Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            🌞Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dreamobject/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dream Object
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memorypalace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Memory Chambre
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📖Responses
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            📖Responses
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responses/SoftwareStudies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responses/MediaArchaeology1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Media Archaeology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responses/MediaArchaeology2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Computer Space
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responses/MediaArchaeology3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Model Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responses/CulturalStudies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3D World
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    🖍️Artists
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            🖍️Artists
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/allen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rebecca Allen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/sims/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Karl Sims
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/davies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Char Davies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/steinkamp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Jennifer Steinkamp
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/thiel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tamiko Thiel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/totalrefusal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Total Refusal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-zbrush" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is ZBrush
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Interface
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#turn-off-right-click-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Turn Off Right Click Menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sculpting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sculpting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brushes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brushes:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transpose-w-e-or-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transpose (W , E, or R)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#symmetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symmetry
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#masking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Masking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wireframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wireframe
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamesh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamesh
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subdivisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subdivisions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#history" class="md-nav__link">
+    <span class="md-ellipsis">
+      History
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saving
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sculpting-technique-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sculpting Technique Basics
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="abcs-of-zbrush">ABC's of ZBrush</h1>
+<h2 id="what-is-zbrush">What is ZBrush</h2>
+<p>ZBrush is a 3D sculpting software that is used to make high-resolution models for animation, films, games, and fabrication. While many software such as Blender or Autodesk Mudbox can be used to produce digital sculptures, ZBrush has become the tool of choice for many artists due to its artist friendly features such as Dynamesh and ZRemesher, as well as for the clay-like feeling of its sculpting tools.</p>
+<p>ZBrush allows artists to create highly complex 3D models with 10 of millions of polygons. In production pipelines, ZBrush is commonly used to sculpt characters, creatures, and other organic objects.</p>
+<p><img src = "/assets/images/8/08_mikenash.jpg"></img></p>
+<p>Creature sculpted with ZBrush from the video game <em>Horizon Zero Dawn</em> (Guerrilla Games, 2017), <a href="https://www.artstation.com/artwork/ELavv2">Mark Nash</a></p>
+<h2 id="getting-started">Getting Started</h2>
+<p>When creating a new file in ZBrush, it is typically best to start with a preexisting ZBrush project. These projects can be found in the <strong>LightBox</strong>. The <strong>LightBox</strong> contains a variety of base meshes and projects we can start from as well as many other assets including brushes and alphas.</p>
+<p>To start a new project:</p>
+<ol>
+<li>Navigate to the <strong>Lightbox</strong></li>
+<li>Navigate to the Projects Tab</li>
+<li>Double-click on <strong>DynaMesh_Sphere.128.ZPR</strong></li>
+</ol>
+<p>This will open a basic sphere set to Dynamesh resolution of 128.</p>
+<p><img src = "/assets/images/8/08_z_00.gif"></img></p>
+<h2 id="user-interface">User Interface</h2>
+<p>By default, the ZBrush UI can be roughly Divided into six sections.</p>
+<p><img src = "/assets/images/8/08_ui.jpg"></img></p>
+<ol>
+<li><strong>The Title Bar</strong>: This is where we can access of variety of settings related to all parts of ZBrush</li>
+<li><strong>The Top Shelf</strong>: Contains shortcuts for editing brushes as well as access to Move, Scale, Rotate and Draw tool.</li>
+<li><strong>The Left Shelf</strong>: Contains tools for painting, sculpting and materials.</li>
+<li><strong>The ZBrush canvas</strong>: Main view port for editing Zbrush tools</li>
+<li><strong>The Right Shelf</strong>: Contains tools for changing camera and view settings</li>
+<li><strong>The Right Tray</strong>: By default, the Right Tray contains the tool settings. These settings control all aspects of tools (Zbrush’s word for models).</li>
+</ol>
+<h2 id="navigation">Navigation</h2>
+<p>Unlike Maya, it is best to use ZBrush with a pen and tablet.</p>
+<p>When using a pen and tablet with ZBrush, it is conventional to set the following parameters:</p>
+<ul>
+<li>Tap Screen: Left-Click</li>
+<li>Bottom Button: Right-Click</li>
+<li>Top Button: Middle-Click</li>
+</ul>
+<p><strong>To Navigate:</strong></p>
+<ul>
+<li><strong>Rotate</strong>: Bottom Pen Button (Right-Click) and Drag while Hovering over tablet <img src = "/assets/images/8/08_z_01.gif"></img></li>
+<li><strong>Pan</strong>: Alt + Bottom Pen Button (Right-Click) and Drag while Hovering over tablet <img src = "/assets/images/8/08_z_02.gif"></img></li>
+<li><strong>Zoom</strong>: Ctrl+ Bottom Pen Button (Right-Click) and Drag while Hovering over tablet OR Alt &gt; Hold Bottom Pen Button (Right-Click) &gt; release Alt &gt;  Keep holding Bottom Pen Button (Right-Click) and Drag while Hovering over tablet <img src = "/assets/images/8/08_z_03.gif"></img></li>
+<li><strong>Rotate by 90 Degree Angle</strong>: Shift + Bottom Pen Button (Right-Click) and Drag while Hovering over tablet</li>
+</ul>
+<h2 id="turn-off-right-click-menu">Turn Off Right Click Menu</h2>
+<p>By default, ZBrush will bring up a menu when right-click is pressed. This default setting does not work well with a tablet as it causes our right click menu to accidentally appear.</p>
+<p><strong>To disable the pop-up menu:</strong></p>
+<ol>
+<li>Navigate to Preferences in the Title Bar</li>
+<li>Interface &gt; Navigation&gt; Deselect Enable Rightclick Pop Up</li>
+<li>Navigate to Preferences &gt; Config &gt; Save UI &gt; Save (This will save this change when you open up ZBrush later)</li>
+</ol>
+<p><img src = "/assets/images/8/08_z_04.gif"></img></p>
+<h2 id="sculpting">Sculpting</h2>
+<p>To sculpt using a sculpting brush, click and drag on your model. ZBrush defaults to the <strong>Standard Brush</strong> which will generically pull out faces of the model:</p>
+<p>Hold <strong>Alt</strong> while dragging to create the opposite effect of your brush. For the Standard Brush, this will cut into our model:</p>
+<p>Hold <strong>Shift</strong> while dragging to smooth your model:</p>
+<p>To Change Brush size: Hold <strong>S  + Click and Drag</strong></p>
+<p>You can also hold the <strong>Space</strong> key to bring up more brush options.</p>
+<p><img src = "/assets/images/8/08_z_05.gif"></img></p>
+<h2 id="brushes">Brushes:</h2>
+<p>The main three brushes I use with ZBrush:</p>
+<ul>
+<li><strong>Clay Buildup</strong>: Add clay-like geometry to your model</li>
+<li><strong>Move</strong>: Pull and push on your model to change geometry</li>
+<li><strong>DamStandard</strong>: Cut sharp lines into your model</li>
+</ul>
+<h3 id="accessing-brushes">Accessing Brushes</h3>
+<p>Brushes are accessed through a series of three sequential hotkeys. The first key is always <strong>B</strong>, followed by two keys that represent the brush.</p>
+<p><strong>Hot keys for common brushes:</strong></p>
+<ul>
+<li>Clay Buildup: B &gt; C &gt; B</li>
+<li>Move: B &gt; M &gt; V</li>
+<li>DamStandard: B &gt; D &gt; S</li>
+<li>Standard: B &gt; S &gt; T</li>
+<li>Trim Dynamic: B &gt; T &gt; D</li>
+<li>hPolish: B &gt; H &gt; P</li>
+</ul>
+<h3 id="clay-buildup-b-c-b">Clay Buildup (B &gt; C &gt; B)</h3>
+<p>The Clay Buildup is best for adding or subtracting large amounts of volume to your sculpt. This brush can both be used to rough in major forms, as well as to create fine details. Overall, it is an amazing all-around brush and the one I use most of the time when sculpting within ZBrush.</p>
+<p>By default, the Clay Buildup has a square brush alpha applied that produces hard edges when sculpting. Many artists like this hard alpha as it feels similar to building up clay and adds texture to your sculpt. However, many artists also replace this harsh alpha with either the softer circular alpha of <strong>Alpha06</strong> or using no alpha.</p>
+<p><strong>To change the brush Alpha:</strong></p>
+<ol>
+<li>Navigate to the Alpha selector in your Left Shelf</li>
+<li>Select either Alpha06 or Alpha Off</li>
+</ol>
+<p><img src = "/assets/images/8/08_z_06.gif"></img></p>
+<h3 id="damstandard-b-d-s">DamStandard (B &gt; D &gt; S)</h3>
+<p>The DamStandard brush is great for adding hard creases into your model to define features of your sculpt. By default, the Dam Standard has a high Z Intensity which can make the brush a bit uncontrollable. It is recommended to use a <strong>Z Intensity</strong> of <strong>10-15</strong> when using the DamStandard brush.</p>
+<p><img src = "/assets/images/8/08_z_07.gif"></img></p>
+<h3 id="trim-dynamic-and-hpolish-b-t-d-b-h-p">Trim Dynamic and hPolish (B &gt; T &gt; D) (B &gt; H &gt; P)</h3>
+<p>Trim Dynamic and hPolish are commonly thought of as “hard-surface” brushes within ZBrush. While these brushes are similar in that they both flatten the geometry of your model to create plans, they have slightly different effects. hPolish will respect any existing edges when you use the brush on the model. The brush will attempt to “polish” a flat plane on your model wherever you draw with the brush. </p>
+<p>Trim Dynamic, instead, with trim you model down to whatever height you have selected when you begin drawing without respecting edges. The Trim Dynamic brush is great for adding new planes to your model as you sculpt.</p>
+<p><img src = "/assets/images/8/08_z_08.gif"></img></p>
+<h3 id="move-b-m-v">Move (B &gt; M  &gt; V)</h3>
+<p>The move brush is best for pushing in and pulling parts of your model to create new shapes. The move brush is great for making large changes to the shape of your model.</p>
+<p><img src = "/assets/images/8/08_z_15.gif"></img></p>
+<h2 id="transpose-w-e-or-r">Transpose (W , E, or R)</h2>
+<p>The transpose tools of Move, Scale and Rotate can be accessed in ZBrush by pressing the W, E, or R key. This will activate the Transpose gizmo. Unlike in Maya, the Transpose gizmo does not move an “object”, it is instead moving the geometry. Therefore, if you have symmetry turned on, it will attempt to move, scale, or rotate both parts of the geometry symmetrically.</p>
+<p><img src = "/assets/images/8/08_z_09.gif"></img></p>
+<h3 id="important-transpose-gizmo-buttons">Important Transpose Gizmo Buttons:</h3>
+<ul>
+<li><strong>Lock Icon</strong> - This will unlock or lock the movement of your gizmo to your mesh. Unlock the gizmo to move, rotate, scale, center or realign your gizmo.</li>
+<li><strong>Map Icon</strong> - This will center your gizmo is the unmasked area of your mesh</li>
+<li><strong>Home Icon</strong> - This will recenter your mesh or gizmo to the world origin point.</li>
+<li><strong>Circular Arrow Icon</strong> - This will realign your mesh or gizmo to the world X, Y, and Z axes.</li>
+</ul>
+<h2 id="symmetry">Symmetry</h2>
+<p>Symmetry can be toggled on an off by using the <strong>X</strong> key.</p>
+<p>Symmetry settings can be found in the Transform menu in the Title Bar.</p>
+<p><img src = "/assets/images/8/08_z_10.gif"></img></p>
+<h2 id="masking">Masking</h2>
+<p>Masking in ZBrush restricts the effects of brushes or modifiers to only unmasked areas of your mesh. Masks are great for both details sculpting as well as for creating new volumes on your mesh.</p>
+<ul>
+<li><strong>To mask part of your model:</strong> Paint with the Ctrl key held down.</li>
+<li><strong>To invert your mask:</strong> Tap in an empty area with the Ctrl key held down.</li>
+<li><strong>To clear a mask:</strong> Click and drag in an open area with the Ctrl key held down.</li>
+<li><strong>To soften a mask:</strong> With a mask already drawn, tap on your mesh with the Ctrl key held down.</li>
+<li><strong>To change your mask brush:</strong> Tap the brush palette with the Ctrl key held down, and choose a new mask brush.</li>
+<li><strong>To paint a white mask:</strong> Paint with Ctrl+Alt key held down.</li>
+</ul>
+<p><img src = "/assets/images/8/08_z_17.gif"></img></p>
+<h2 id="wireframe">Wireframe</h2>
+<p>To display the wireframe of your model, press <strong>Shift+F</strong> (think "f" for "frame").</p>
+<p><img src = "/assets/images/8/08_z_11.gif"></img></p>
+<h2 id="dynamesh">Dynamesh</h2>
+<p>Dynamesh is an extremely important setting within ZBrush that allows us to dynamically re-mesh our model as we add more volume and detail. Dynamesh is on by default when opening a DynaSphere project. DynaMesh is activated by pressing the DynaMesh button in the DynaMesh settings.</p>
+<p>To access the DynaMesh settings:</p>
+<ol>
+<li>Navigate to your Tool panel</li>
+<li>Navigate to Geometry &gt; Dynamesh</li>
+</ol>
+<p><img src = "/assets/images/8/08_z_12.gif"></img></p>
+<p>The main DynaMesh setting is <strong>Resolution</strong>. 128 is a fairly standard resolution when using DynaMesh as it allows you to draw most primary, secondary, and some tertiary details without getting overwhelmed by too much geometry. However, there are many different approaches to using ZBrush, and many artists prefer using a lower DynaMesh setting such as a value of 16 or 32 to work on lower resolution meshes.</p>
+<ul>
+<li>To DynaMesh your model while working: With no mask active, Click and drag in an open area with Ctrl held down.</li>
+</ul>
+<p><img src = "/assets/images/8/08_z_13.gif"></img></p>
+<h2 id="subdivisions">Subdivisions</h2>
+<p>When modeling within ZBrush you can dynamically move through multiple levels of subdivision to work on both low-poly and high-poly versions of your model. The typical ZBrush workflow is to create all major volumes and details with DynaMesh activated and then, when those details are mostly complete, switch over to working with a Subdivision workflow. There is no hard rule as to when to switch over to subdivision workflow, however, a good rule of thumb is to begin subdividing at the point when the 128 resolution of the DynaMesh model is no longer enough to sculpt the details you are trying to make.</p>
+<p>Subdivision levels can be found in the Geometry section of your Tool Shelf.</p>
+<ul>
+<li><strong>To subdivide your model:</strong> Press Ctrl D</li>
+<li><strong>To move up a SDiv level:</strong> Press D</li>
+<li><strong>To move down a SDiv level:</strong> Press Shift+D</li>
+</ul>
+<p><img src = "/assets/images/8/08_z_14.gif"></img></p>
+<h2 id="history">History</h2>
+<p>You can scroll through the history bar in ZBrush to go back to a particular point in your sculpts history:</p>
+<p><img src = "/assets/images/8/08_z_16.gif"></img></p>
+<h2 id="saving">Saving</h2>
+<p>Save ZBrush project using Ctrl+S or navigating to File &gt; Save.</p>
+<h2 id="sculpting-technique-basics">Sculpting Technique Basics</h2>
+<p>The basic technique behind sculpting with ZBrush is to slowly move up in geometry resolution as you slowly move up in the level of detail you are sculpting: <strong>In other words: large forms = low resolution mess, detailed forms = high resolution mesh.</strong></p>
+<p>There are many theories for the best approaches to sculpting. It is up to you to explore both ZBrush and available resources to find the technique that works best for you. While all these techniques differ slightly, they often overlap and all use the technique of increasing detail and resolution over time. </p>
+<p>Some prominent approaches to sculpting (these are not official titles, but instead names I am giving to widely grouped  schools of thought):</p>
+<ul>
+<li>Anatomical</li>
+<li>Planes</li>
+<li>Massing Volumes</li>
+</ul>
+<h3 id="anatomical">Anatomical</h3>
+<p>The Anatomical approach to sculpting begins outside our ZBrush with deep study of physical anatomy. This applies not only to humans and creatures, but a deep study of how objects are formed, made and move. The anatomical approach is not, “sculpt what you see, not what you know.” Instead, it involves applying knowledge of anatomy including bone or muscle structure to interpret reference images.</p>
+<p>When taking the anatomical approach to sculpting within ZBrush, you typically begin by sculpting a complete or rough skeleton and then begin massing in the muscular forms, adding in finer and finer detail. In this video by Finn GB, you can see the artist begin with a skull and then slowly as muscle, fat and tissue detail.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BQKlQkdz-c0?si=nPXWFuBUi4bx8F7v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Allows for the creation of photorealistic creatures, humans and humanoid sculptures based on real-life anatomy</li>
+<li>By starting with skeleton, you have a roadmap of where the sculpt will continue</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Often limited to photorealistic creatures</li>
+<li>Takes a long time to study anatomy properly</li>
+<li>When embraced as best approach, can become wrapped up in notions of scientific dominance</li>
+<li>Often relies on problematic notions of standardized anatomy</li>
+</ul>
+<p>Resources:</p>
+<ul>
+<li>Anatomy Exercises (<a href="https://www.youtube.com/watch?v=IBnasNIqC7Y&amp;t=830s">VIDEO</a>)</li>
+<li>Anatomy for Sculptors (<a href="https://anatomy4sculptors.com">PURCHASABLE BOOK</a>)</li>
+<li>Atlas of Animal Anatomy for Artists (<a href="wp-content/uploads/2014/09/ellenberger-atlas-animal-anatomy-for-artists.pdf">PDF</a>)</li>
+<li>RISD Nature Lab Sketchfab (<a href="https://sketchfab.com/RISDNaturelab">3D Collection of skeletons and taxidermy</a>)</li>
+</ul>
+<h3 id="planes">Planes</h3>
+<p>Planes is a common sculpting process of using planes to create more and more complex sculptures. This technique involves defining planes of sculpture and slowly refining those planes to add more and more detail. This is an observational and geometric approach in which a reference is simplified down into its simplest planes with more complex planes slowly added to the sculpt. In general, this technique involves creating simplified geometric forms that slowly morph into organic shapes. In the following video by Follygon, you can see the plane approach in action:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j8Qx_MDwkpw?si=nCpmHdc1hDYn5QB1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Can be very clear and geometric</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Can be a bit too analytically for many artists</li>
+</ul>
+<h3 id="massing-volumes">Massing Volumes</h3>
+<p>Massing Volumes is a technique of slowly adding volume to your mesh based on simplifying details. The technique involves moving through primary, secondary, and tertiary volumes to slowly create more complex sculptures. This technique is somewhat of a blend between the anatomical and plane approach as you are often simplifying a model into geometric volumes based on anatomical knowledge. Unlike the anatomical approach, the massing volumes approach can be used more widely to create everything from stylized to realistic models. You can see the massing volume technique in action in the below timelapse video by Flipped Normals of a Thanos sculpt. The artist slowly blocks in major volumes. They then add in smaller volumes and increase the resolution of the sculpt as necessary.  (Muting the video recommended) (Something important to consider is how closely ZBrush and digital sculpting is tied to industry: hence some of the best artists often occupy themselves with recreating popular culture icons either for view count or for their own enjoyment. Although much of this content is based around popular culture, it is good practice to imagine other alternatives for this software besides block-buster super hero cinema):</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cT3LNee9CzU?si=V203GRuvCEHhdgib" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>You can see more information on the massing volume technique as well as primary, secondary and tertiary forms in the below video:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U3pMjzwe1vA?si=hrPmw0qO2t4RQ7Bo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Easy to use within ZBrush </li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Difficult to jump into: improves over time with knowledge of form and anatomy</li>
+</ul>
+<h3 id="summary">Summary</h3>
+<p>Learning sculpting takes time! No one technique is a fit-all solution. Instead you will find which blending on techniques work best for you and your approach to sculpting. In general the most important skills for sculpting are good observation skills and knowledge of simplification/form. Improving observation involves examining reference images closely and knowing how to pull from those references to create a sculpt. Knowledge of simplification improves with time. The more you sculpt, the more you will understand which details to focus on for each level of resolution.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", {"navigation.instant": false}], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
