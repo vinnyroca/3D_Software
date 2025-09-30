@@ -13,6 +13,7 @@ nav:
     - 5. UV Mapping: 05_UVUnwrapping.md
     - 6. Substance Painter: 06_Substance3DPainter.md
     - 7. Lights, Camera, Render: 07_render.md
+    - 8. ZBrush Basics: 08_ZbrushFundamentals.md
   - 📚Exercises:
     - Exercise Index: Exercises/exerciseindex.md
     - In-class:
@@ -29,6 +30,7 @@ nav:
       - 1.Creature: Exercises/01_creature.md
       - 2.Tree: Exercises/02_tree.md
       - 3.Getting a Handle: Exercises/03_handleandobject.md
+      - 4. Rocks and Observation: Exercises/05_rocksandobservation.md
   - 🌞Projects :
     - Dream Object: dreamobject.md
     - Memory Chambre: memorypalace.md

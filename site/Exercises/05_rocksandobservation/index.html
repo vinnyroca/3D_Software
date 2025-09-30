@@ -1,0 +1,1817 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://3dsoftware.vinnyroca.info/Exercises/05_rocksandobservation/">
+      
+      
+        <link rel="prev" href="../03_handleandobject/">
+      
+      
+        <link rel="next" href="../../dreamobject/">
+      
+      
+      <link rel="icon" href="../../3D.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>4. Rocks and Observation - 🫖 Introduction to 3D Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Funnel+Sans:300,300i,400,400i,700,700i%7CInconsolata+monospace:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Funnel Sans";--md-code-font:"Inconsolata monospace"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#rocks-and-observation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="🫖 Introduction to 3D Software" class="md-header__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            🫖 Introduction to 3D Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              4. Rocks and Observation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  📋Syllabus
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../schedule/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📆Schedule
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Notes/notes/" class="md-tabs__link">
+          
+  
+  
+  💻Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../exerciseindex/" class="md-tabs__link">
+          
+  
+  
+  📚Exercises
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../dreamobject/" class="md-tabs__link">
+          
+  
+  
+  🌞Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../responses/SoftwareStudies/" class="md-tabs__link">
+          
+  
+  
+  📖Responses
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Artists/allen/" class="md-tabs__link">
+          
+  
+  
+  🖍️Artists
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="🫖 Introduction to 3D Software" class="md-nav__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg>
+
+    </a>
+    🫖 Introduction to 3D Software
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📋Syllabus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📆Schedule
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    💻Notes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            💻Notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notes Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_MayaInterface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1. Maya Interface and Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_ModellingEssentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2. Polygonal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3_SubdivisionModeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3. Subdivision Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_AdvancedModeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Advanced Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_UVUnwrapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. UV Mapping
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_Substance3DPainter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. Substance Painter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_render/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7. Lights, Camera, Render
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_ZbrushFundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8. ZBrush Basics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    📚Exercises
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            📚Exercises
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exerciseindex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Exercise Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    In-class
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            In-class
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_simplechair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1a.Simple Chair
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_snappingchair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1b.Snapping Chair
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_completeacube/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2a.Complete a Cube
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_archway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2b.Archway
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_dice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3a.Dice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_teapot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3b.Teapot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_polaroidboolean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4a. Polaroid Boolean
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_polaroidcylinder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4b. Polaroid Cylinder
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Independent
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Independent
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_computerdreams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    0. Computer Dreams
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_creature/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.Creature
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.Tree
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_handleandobject/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.Getting a Handle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    4. Rocks and Observation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Rocks and Observation
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sculpting-rock-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sculpting Rock Process:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#submit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Submit
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    🌞Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            🌞Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dreamobject/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dream Object
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../memorypalace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Memory Chambre
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📖Responses
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            📖Responses
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../responses/SoftwareStudies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../responses/MediaArchaeology1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Media Archaeology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../responses/MediaArchaeology2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Computer Space
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../responses/MediaArchaeology3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Model Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../responses/CulturalStudies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3D World
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    🖍️Artists
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            🖍️Artists
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Artists/allen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rebecca Allen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Artists/sims/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Karl Sims
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Artists/davies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Char Davies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Artists/steinkamp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Jennifer Steinkamp
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Artists/thiel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tamiko Thiel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Artists/totalrefusal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Total Refusal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sculpting-rock-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sculpting Rock Process:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#submit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Submit
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="rocks-and-observation">Rocks and Observation:</h1>
+<h2 id="description">Description:</h2>
+<p>For this exercise, you will be practicing your observation skills by sculpting a variety of rocks. Additionally, you will begin preparing for our next project: Memory Chambre.</p>
+<p>For this exercise, complete the following (est. time 6 Hours):</p>
+<ol>
+<li>Follow rock tutorial below</li>
+<li>Sculpt two rocks with a 30 minute time limit</li>
+<li>Sculpt one rock with a 2 hour time limit</li>
+<li>Read the project description for Memory Chambre</li>
+<li>Watch this <a href="https://www.youtube.com/watch?v=qpd1AKwJLUg">video</a> on Observation by Flipped Normals (please note that 30:00 - 35:00 contains a discussion of firearms) (as is a continue conversation within this course, many good resources for 3D modeling come from industry professionals who often take a less politically informed approach to content. I encourage you to take the advice in this tutorial with a grain of salt, but to also know that there is still valuable information in their approach.)</li>
+<li>Collect at least 15 reference images for your Familiar</li>
+<li>Watch this <a href="https://www.youtube.com/watch?v=rGFBd6YmJ7c&amp;t=1778s">video</a> on making your first sculpt by Flipped Normals. (I make the same note here as above, take this tutorial with a grain of salt. I would be remiss not to mention that the depictions in orcs and other "races" within <em>Lord of the Rings</em> have always been tied to notions of racial essentialism. For more information see: <em>Tolkien, Race, and Cultural History: From Fairies to Hobbits</em> by Dimitra Fimi, available at the Honnold/Mudd Library) (With this in mind, we must ask why so many tutorials or portfolios depict monstrous creatures, especially as inherited from Tolkien and his racist ideologies? One possible answer is the influence of the film and game industry. The films, games, and animations being produced often contain and center depictions of the monstrous that have their origins in racist ideologies. In turn, many 3D modeling training programs and prospective employees tailor their curriculum to produce artists who can create these models that are prospective employers are assumed to be looking for. Here, as in other areas of the course, the use and education of 3D Software is not neutral and separate from politics, but enmeshed in important social, economic and cultural issues).</li>
+</ol>
+<h2 id="sculpting-rock-process">Sculpting Rock Process:</h2>
+<h3 id="gather-references">Gather References</h3>
+<p>When collecting reference images, it is often best to look beyond Google Images to find more interesting and detailed images. Sketchfab is a great resource for looking for reference as many 3D artists will upload 3D scans of objects that they gather in the world. These references not only make for great images as screenshots, but are also great references for form and structure. Other great resources include photo catalogs in the library, as well as online photo sites such as Flickr. You can even take your own photos for resources! Rocks are particular, examine where the rock you are observing is found. This collection by the artist <a href="https://sketchfab.com/kanistra/collections/stones-2_0-cf9602c97eb248c78ef34f4b3682c0f6">Kanistra</a> is a great place to start.</p>
+<p>When collecting references, you should focus on the particulars. Pick one type of rock, examine how that rock forms under various conditions. What are the primary, secondary and tertiary shapes it takes. A sedimentary rock breaks down much differently than an igneous rock.</p>
+<p>Primary, Secondary, forms of a rock:</p>
+<p><img src = "/assets/images/8/08_rock.jpg" width = "400px"></img></p>
+<p>Rock from Kanistra's Sketchfab page</p>
+<p><img src = "/assets/images/8/08_rock_primary.jpg" width = "400px"></img></p>
+<p>Primary forms of rock</p>
+<p><img src = "/assets/images/8/08_rock_secondary.jpg" width = "400px"></img></p>
+<p>Secondary  forms of rock</p>
+<p>Compile your references in whatever software you like. I highly recommend using PureRef as it is free and also can stay on top of your ZBrush interface as you sculpt. The pen tool and note tool are also helpful in PureRef for recording notes of marking form.</p>
+<p>Here is an example of a part of reference board that I used when sculpting a character for one of my games:</p>
+<p><img src = "/assets/images/8/08_game_pureRef.png" ></img></p>
+<p>Here is the reference that I will be using to sculpt my rock:</p>
+<p><img src = "/assets/images/8/08_rock_pureRef.png" ></img></p>
+<h3 id="primary-forms">Primary Forms:</h3>
+<ol>
+<li>In Zbrush, open up a DynaSphere_128 Project</li>
+<li>Since most rocks are asymmetrical, turn off symmetry by pressing the X key.</li>
+<li>You can begin sculpting primary forms by using a trim tool</li>
+<li>Hold Ctrl+Shift and choose ClipCurve in your Brush Palette</li>
+<li>While holding Ctrl+Shift, drag over your model to cut away large areas. The area below the grey side of your clip will be removed</li>
+<li>Make sure to DynaMesh often</li>
+</ol>
+<p><img src = "/assets/images/8/08_primarydetails.gif" ></img></p>
+<h3 id="secondary-forms">Secondary Forms</h3>
+<p>Using a mix of the Trim Dynamic brush, Move Brush, and ClipCurve, add in some secondary forms, observing the shape these forms take in your reference images.</p>
+<p><img src = "/assets/images/8/08_rock_secondarydetails.png" ></img></p>
+<h3 id="tertiary-forms-and-details">Tertiary Forms and Details</h3>
+<p>Using a mix of Trim Dynamic, Clay Buildup, Move, and Masking begin to add in larger tertiary forms and smaller details. Resist the urge to subdivide, and add in all the details you can with the 128 Dynamesh Resolution. Look at the divots and edges of your rock references. Puzzle over what physical forces made those divots. Tertiary forms and detail add story - what events led for your rock to look this way? Did a child take a hammer and smash the rock in half? Has this rock been kicked around a city for decades? Look at your references closely and use your imagination to conjure a story with your rock through sculpting.</p>
+<p><img src = "/assets/images/8/08_tertiary.gif"></img></p>
+<h2 id="submit">Submit</h2>
+<p>To Discord:</p>
+<ul>
+<li>A screen shot of your three rocks.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", {"navigation.instant": false}], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
