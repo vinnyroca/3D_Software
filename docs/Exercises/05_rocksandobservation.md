@@ -65,6 +65,10 @@ Using a mix of the Trim Dynamic brush, Move Brush, and ClipCurve, add in some se
 
 <img src = "/assets/images/8/08_rock_secondarydetails.png" ></img>
 
+Video of Primary and Secondary forms:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p8pxlHesXoE?si=Fow88BjsNLBbiKcL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### Tertiary Forms and Details
 
 Using a mix of Trim Dynamic, Clay Buildup, Move, and Masking begin to add in larger tertiary forms and smaller details. Resist the urge to subdivide, and add in all the details you can with the 128 Dynamesh Resolution. Look at the divots and edges of your rock references. Puzzle over what physical forces made those divots. Tertiary forms and detail add story - what events led for your rock to look this way? Did a child take a hammer and smash the rock in half? Has this rock been kicked around a city for decades? Look at your references closely and use your imagination to conjure a story with your rock through sculpting.
