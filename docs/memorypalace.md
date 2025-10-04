@@ -59,6 +59,8 @@ Collect your reference images in pureRef and submit a screen shot of your refere
 
 ### Memory Chambre Project Proposal (3 points)
 
+After reading the full project description and watching Chantel Akerman's *La Chambre*, write a project proposal for Memory Chambre.
+
 Your Memory Chambre project proposal should include a one page write up describing your project, a description of how your project will meet the above 7 requirements, a tentative timeline of how you will complete this project from 10/31 to 12/2, at least two sketches of the space, as well as a sketch story board of your planned camera animations.
 
 Submit all of the above to the class Discord.
@@ -83,7 +85,7 @@ Submit a rendered image of a textured and lit 3D modeled object to Discord. Your
 
 ### Block out of Place (3 Points)
 
-Submit a screenshot of the block of your place to Discord.
+Submit three screen screenshots of the block of your place to Discord.
 
 For more information on blockouts - [The Level Design Book](https://book.leveldesignbook.com/process/blockout)
 

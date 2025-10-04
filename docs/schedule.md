@@ -47,7 +47,7 @@
 |TUES<br>11/11|**- Tutorial:** [Camera Animation]|**Due:**<br> - 3D Scanned Object |
 |THUR<br>11/13|**- Tutorial:**  [After Effects and Rendering Animations]**<br>- Studio Time:** Memory Chambre|**Due:**<br> - Block out of Place|
 |TUES<br>11/18|<span style = "background-color: lightskyblue;">**- Guest Lecture**</span><br>**- Studio Time:** Memory Chambre|**Due:** Continue work on Memory Chambre**Due Monday by 5pm:**<br>- Reading Response: [3D World]|
-|THUR<br>11/20||**- Studio Time:** Memory Chambre|**Due:**<br> - Continue Progress on Memory Chambre|
+|THUR<br>11/20|**- Studio Time:** Memory Chambre|**Due:**<br> - Continue Progress on Memory Chambre|
 |TUES<br>11/25|**- Studio Time:** Memory Chambre|**Due:**<br>- Continue Progress on Memory Chambre|
 |THUR<br>11/27|<p style="background-color: pink;">No Class 🌝: Break</p>|<p style="background-color: pink;">Break </p>|
 |TUES<br>12/2|<p style="background-color: lightgreen;">CRIT 🌞: Memory Chambre</p>|**Due:**<br>- Memory Chambre|
