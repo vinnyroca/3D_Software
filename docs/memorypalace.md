@@ -40,7 +40,7 @@ Finally, we will learn about camera animation and editing animations in Adobe Ph
 1. At least one 3D scanned object.
 2. At least one sculpted object besides your familiar.
 3. At least one 3D modeled object using poly model techniques.
-4. At least 5 hand-made objects in total, not including your familiar.
+4. At least 3 additional hand-made objects, not including your familiar.
 5. A full environment, whether interior or exterior.
 6. At least one type of camera move (pan, zoom, tilt, dolly, etc.)
 7. All models will be textures and thoughtfully lit.
@@ -51,43 +51,41 @@ To produce a 3 minute animation with a frame rate of 24 frames per second, you w
 
 ## Project Pieces
 
-### Memory Chambre Proposal with Familiar (5 Points)
+### Familiar Reference Images (2 points)
 
-A one page written proposal for your project with a variety of completed sketches.
+Collect at least 15 images that you will use as reference to sculpt your familiar. For more general information about familiars, check out this [page](https://en.wikipedia.org/wiki/Familiar). A familiar is a small creature or a friend. The purpose of sculpting a familiar for this assignment is to create a guardian for your memory chambre. This familiar should take the form of an animal. This animal may be complex or hybrid, a combination of many animal features.
 
-Submit to class Discord
+Collect your reference images in pureRef and submit a screen shot of your reference board to Discord.
 
-### Familiar Zbrush Model Progress (2 Points)
+### Memory Chambre Project Proposal (3 points)
 
-In-progress screenshot of your Zbrush Model 
+Your Memory Chambre project proposal should include a one page write up describing your project, a description of how your project will meet the above 7 requirements, a tentative timeline of how you will complete this project from 10/31 to 12/2, at least two sketches of the space, as well as a sketch story board of your planned camera animations.
 
-Submit screenshot  to Discord
+Submit all of the above to the class Discord.
 
-### Familiar Retopology (2 Points)
+### Familiar ZBrush Progress (3 points)
 
-Full retopology of your familiar model.
+Submit three in-progress screenshots of your familiar ZBrush model to the class Discord. Your model should be completely blocked in and have primary, secondary, and tertiary details. By this submission date, no major changes should be made to your model. Have your model ready in class by the due date to prepare for retopology.
 
-Submit screenshot  to Discord
+### Final Familiar ZBrush Model (3 points)
 
-###  Familiar Textured Model (2 Points)
+Your final familiar ZBrush model should be retopologized and have finalized tertiary and surface details.
 
-Submit rendered image of textured familiar model to Discord
+Submit three screenshots of your finalized ZBrush model to Discord.
 
-### Familiar Final Model (3 Points)
+### Familiar Textured Model (3 points)
 
-Submit rendered image of textured and lit familiar model to Discord
+Using Maya, submit a render of your textured familiar model to Discord. The finalized familiar model will have a texture created in substance painter as well as will be rendered with displacement maps.
 
-### 3D Scanned Object (2 Points)
+### 3D Scanned Object (3 Points)
 
-Submit a rendered image of a textured and lit 3D modeled object to Discord
+Submit a rendered image of a textured and lit 3D modeled object to Discord. Your 3D scanned object should be retopologized and make use of displacement maps.
 
 ### Block out of Place (3 Points)
 
 Submit a screenshot of the block of your place to Discord.
 
-### 3 Memory Objects (3 Points)
-
-Submit Renders of 3 memory objects to Discord
+For more information on blockouts - [The Level Design Book](https://book.leveldesignbook.com/process/blockout)
 
 ### Final Project (80 Points)
 
