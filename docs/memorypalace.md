@@ -2,13 +2,13 @@
 
 ## Summary
 
-For this project, as a way to introduce the potential of meaning making through camera animation, you will be creating a short 3 to 5 minute animation using camera movement to describe a place. The title of this project is a portmanteau of the mnemonic technique, Memory Place and the title of Chantel Akerman’s short film, *La Chambre*.
+For this project, as a way to introduce the potential of meaning making through camera animation, you will be creating a short 3 to 5 minute animation using camera movement to describe a place. The title of this project is a portmanteau of the mnemonic technique, Memory Place and the title of Chantel Akerman’s short film, *La Chambre*
 
 ## Memory Palace
 
-A memory palace is a mnemonic device that can be used to recall a variety of information. Using the device, you transform what you want to remember into a physical object within a familiar environment. For example, if I wanted to remember, as your professor, to teach about creating class materials, I might create the mental image of a giant glass horse in the center of my living room. If I also wanted to teach studio lighting, I might create the mental image of a variety of small frogs in my kitchen setting up studio lights. The more surreal or strange the image is, the easier it is to recall!
+A memory palace is a mnemonic device that can be used to recall a variety of information. Using the device, you transform what you want to remember into a physical object within a familiar environment. For example, if I wanted to remember, as your professor, to teach about creating glass materials, I might create the mental image of a giant glass horse in the center of my living room. If I also wanted to teach studio lighting, I might create the mental image of a variety of small frogs in my kitchen setting up studio lights. The more surreal or strange the image is, the easier it is to recall!
 
-When teaching, then, I can go back to my memory palace mentally, see the horse and the frogs, and remember I have to teach about class and lighting. For this project we look to the idea of the memory palace to begin thinking about the place our animation will depict. Our place will exist as a memory palace.
+When teaching, then, I can go back to my memory palace mentally, see the horse and the frogs, and remember I have to teach about glass and lighting. For this project we look to the idea of the memory palace to begin thinking about the place our animation will depict. Our place will exist as a memory palace.
 
 ## La Chambre
 
