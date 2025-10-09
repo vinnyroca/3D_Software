@@ -37,7 +37,7 @@
 |TUES<br>10/7|**- Tutorial:** [ZBrush Essentials]|**Due:**<br> - Watch ZBrush Tutorial|
 |THUR<br>10/9|**- Tutorial:** [ZBrush Continued] <br>**- Assign:** Memory Chambre|**Due:**<br> - [Rocks and Observation Exercise] <br> - Familiar Reference Images
 |TUES<br>10/14|<p style="background-color: pink;">No Class 🌝: Break </p>|<p style="background-color: pink;">Break </p>|
-|THUR<br>10/16|<span style = "background-color: lightskyblue;">**- Discussion 📖**</span><br>**- Studio Time:** Memory Chambre|**Due:**<br>Memory Chambre Project Proposal <br> **Due Monday by 5pm:**<br> - Reading Response: [Computer Space]|
+|THUR<br>10/16|<span style = "background-color: lightskyblue;">**- Discussion 📖**</span><br>**- Studio Time:** Memory Chambre|**Due:**<br>Memory Chambre Project Proposal <br> **Due Wednesday by 5pm:**<br> - Reading Response: [Computer Space]|
 |TUES<br>10/21|**- Tutorial:** [Retopology and Projection]|**Due:**<br> - Familiar ZBrush Progress|
 |THUR<br>10/23|**- Tutorial:** [Details and UVs]|**Due:**<br>
 |TUES<br>10/28|**- Tutorial:** [ZBrush, Textures, and Painter]<br>**- Studio Time:** Memory Chambre|**Due:**<br>  - Final Familiar ZBrush Model||
