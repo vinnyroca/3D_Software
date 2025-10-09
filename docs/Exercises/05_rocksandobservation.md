@@ -7,7 +7,7 @@ For this exercise, you will be practicing your observation skills by sculpting a
 For this exercise, complete the following (est. time 6 Hours):
 
 1. Follow rock tutorial below
-2. Sculpt two rocks with a 30 minute time limit
+2. Sculpt two rocks with a 30 minute time limit each
 3. Sculpt one rock with a 2 hour time limit
 4. Read the project description for Memory Chambre
 5. Watch this [video](https://www.youtube.com/watch?v=qpd1AKwJLUg) on Observation by Flipped Normals (please note that 30:00 - 35:00 contains a discussion of firearms) (as is a continue conversation within this course, many good resources for 3D modeling come from industry professionals who often take a less politically informed approach to content. I encourage you to take the advice in this tutorial with a grain of salt, but to also know that there is still valuable information in their approach.)

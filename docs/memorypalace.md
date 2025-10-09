@@ -53,11 +53,15 @@ To produce a 3 minute animation with a frame rate of 24 frames per second, you w
 
 ### Familiar Reference Images (2 points)
 
+Est. Time 2 hrs.
+
 Collect at least 15 images that you will use as reference to sculpt your familiar. For more general information about familiars, check out this [page](https://en.wikipedia.org/wiki/Familiar). A familiar is a small creature or a friend. The purpose of sculpting a familiar for this assignment is to create a guardian for your memory chambre. This familiar should take the form of an animal. This animal may be complex or hybrid, a combination of many animal features.
 
 Collect your reference images in pureRef and submit a screen shot of your reference board to Discord.
 
 ### Memory Chambre Project Proposal (3 points)
+
+Est. Time 2 hrs.
 
 After reading the full project description and watching Chantel Akerman's *La Chambre*, write a project proposal for Memory Chambre.
 
@@ -67,15 +71,26 @@ Submit all of the above to the class Discord.
 
 ### Familiar ZBrush Progress (3 points)
 
+Est. Time 6-10 hrs
+
 Submit three in-progress screenshots of your familiar ZBrush model to the class Discord. Your model should be completely blocked in and have primary, secondary, and tertiary details. By this submission date, no major changes should be made to your model. Have your model ready in class by the due date to prepare for retopology.
 
+Video example of level of detail required for the ZBrush Progress Model:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PRrNxjpCTq8?si=4FXQzWznMqRblzew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### Final Familiar ZBrush Model (3 points)
+
+Est. Time 4-6 hrs.
 
 Your final familiar ZBrush model should be retopologized and have finalized tertiary and surface details.
 
 Submit three screenshots of your finalized ZBrush model to Discord.
 
+
 ### Familiar Textured Model (3 points)
+
+Est. Time 3-5 hrs.
 
 Using Maya, submit a render of your textured familiar model to Discord. The finalized familiar model will have a texture created in substance painter as well as will be rendered with displacement maps.
 

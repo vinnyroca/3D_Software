@@ -13,9 +13,11 @@
 
 ![Total Refusal collective portrait](/assets/images/trefusal_00.jpg)
 
-Media: Machinima, Installation
+
 
 ## *Hardly Working*
+
+Media: Machinima, Installation
 
 Film, 2022
 
