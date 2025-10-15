@@ -37,11 +37,11 @@ nav:
     - Dream Object: dreamobject.md
     - Memory Chambre: memorypalace.md
   - 📖Responses :
-    - Software: responses/SoftwareStudies.md
-    - Media Archaeology: responses/MediaArchaeology1.md
-    - Computer Space: responses/MediaArchaeology2.md
-    - Model Objects: responses/MediaArchaeology3.md
-    - 3D World: responses/CulturalStudies.md
+    - Software: SoftwareStudies.md
+    - Media Archaeology: MediaArchaeology1.md
+    - Computer Space: MediaArchaeology2.md
+    - Model Objects: MediaArchaeology3.md
+    - 3D World: CulturalStudies.md
   - 🖍️Artists : 
     - Rebecca Allen: Artists/allen.md
     - Karl Sims: Artists/sims.md
