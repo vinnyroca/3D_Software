@@ -14,4 +14,4 @@
 
 ## Submit
 
-In the Discord channel for this response, post either a 500 word or 3 min video response. Responses should not be a summary of the readings/watchings and instead should connect the readings to your experience of programming and other experiences, academic or otherwise.
+In the Discord channel for this response, post either a 500 word or 3 min video response. Responses should not be a summary of the readings/watchings and instead should connect the readings to your experience of 3D and other experiences, academic or otherwise.
