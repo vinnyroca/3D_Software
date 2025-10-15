@@ -1,4 +1,4 @@
-# Response: Media Archaeology
+# Media Archaeology
 
 For this response:
 
