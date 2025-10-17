@@ -208,7 +208,7 @@ As reading responses are essential to the discussion section of the course, late
 
 ### Late Work and Extensions
 
-For all exercises, late work will not be accepted. Completing exercises on time is essential to the progression of the course. Not completing exercises will result in a student falling behind. In the situation that extra time is needed to complete exercises and project pieces, students must reach out to the instructor as soon as possible.
+For all exercises, late work will not be accepted. Completing exercises on time is essential to the progression of the course. Not completing exercises will result in a student falling behind. In the situation that extra time is needed to complete exercises and project pieces, students must reach out to the instructor as soon as possible. All work labeled due on a given day is due before class unless noted otherwise.
 
 Late projects not ready by their assigned crit day will automatically lose one letter grade. Each day the project is late, it will lose one more letter grade. After three days, the project will not be accepted.
 
