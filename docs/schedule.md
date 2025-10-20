@@ -41,8 +41,8 @@
 |TUES<br>10/21|**- Tutorial:** [Retopology and Projection]|**Due:**<br> - Familiar ZBrush Progress|
 |THUR<br>10/23|**- Tutorial:** [Details and UVs]|**Due:**<br>
 |TUES<br>10/28|**- Tutorial:** [ZBrush, Textures, and Painter]<br>**- Studio Time:** Memory Chambre|**Due:**<br>  - Final Familiar ZBrush Model||
-|THUR<br>10/30|**- Tutorial:** [3D Scanning]|**Due:**<br> Familiar Textured Model|
-|TUES<br>11/4|<span style = "background-color: lightskyblue;">**- Discussion 📖**</span><br>**- Tutorial:** [3D Scanning]|**Due:**<br> - Bring in 3D Object for Scanning <br> **Due Monday by 5pm:**<br>- Reading Response: [Model Objects]|
+|THUR<br>10/30|**- Tutorial:** [3D Scanning]||
+|TUES<br>11/4|<span style = "background-color: lightskyblue;">**- Discussion 📖**</span><br>**- Tutorial:** [3D Scanning]|**Due:**<br> - Bring in 3D Object for Scanning <br>**Due:** <br> Familiar Textured Model <br> **Due Monday by 5pm:**<br>- Reading Response: [Model Objects]|
 |THUR<br>11/6|**- Tutorial:** [3D Scanning]|**Due:**<br> - Screen shot of 3D scanned object in ZBrush|
 |TUES<br>11/11|**- Tutorial:** [Camera Animation]|**Due:**<br> - 3D Scanned Object |
 |THUR<br>11/13|**- Tutorial:**  [After Effects and Rendering Animations]**<br>- Studio Time:** Memory Chambre|**Due:**<br> - Block out of Place|

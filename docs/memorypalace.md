@@ -87,6 +87,12 @@ Your final familiar ZBrush model should be retopologized and have finalized tert
 
 Submit three screenshots of your finalized ZBrush model to Discord.
 
+Final Familar ZBrush Model Example Images:
+
+![](../assets/images/11/SurfaceDetails_01.png)
+
+![](../assets/images/11/SurfaceDetails_02.png)
+
 
 ### Familiar Textured Model (3 points)
 
