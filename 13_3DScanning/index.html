@@ -1,0 +1,2304 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://3dsoftware.vinnyroca.info/13_3DScanning/">
+      
+      
+        <link rel="prev" href="../12_UV/">
+      
+      
+        <link rel="next" href="../Exercises/exerciseindex/">
+      
+      
+      <link rel="icon" href="../3D.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>13. 3D Scanning - 🫖 Introduction to 3D Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2a3383ac.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Funnel+Sans:300,300i,400,400i,700,700i%7CInconsolata+monospace:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Funnel Sans";--md-code-font:"Inconsolata monospace"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3d-scanning" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="🫖 Introduction to 3D Software" class="md-header__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            🫖 Introduction to 3D Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              13. 3D Scanning
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  📋Syllabus
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../schedule/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📆Schedule
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Notes/notes/" class="md-tabs__link">
+          
+  
+  
+  💻Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Exercises/exerciseindex/" class="md-tabs__link">
+          
+  
+  
+  📚Exercises
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../dreamobject/" class="md-tabs__link">
+          
+  
+  
+  🌞Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../SoftwareStudies/" class="md-tabs__link">
+          
+  
+  
+  📖Responses
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Artists/allen/" class="md-tabs__link">
+          
+  
+  
+  🖍️Artists
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="🫖 Introduction to 3D Software" class="md-nav__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg>
+
+    </a>
+    🫖 Introduction to 3D Software
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📋Syllabus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📆Schedule
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    💻Notes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            💻Notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Notes/notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notes Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_MayaInterface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1. Maya Interface and Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_ModellingEssentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2. Polygonal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_SubdivisionModeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3. Subdivision Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_AdvancedModeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Advanced Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_UVUnwrapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. UV Mapping
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_Substance3DPainter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. Substance Painter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_render/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7. Lights, Camera, Render
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_ZbrushFundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8. ZBrush Basics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_zbrushcontinued/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9. ZBrush Continued
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_zbrushprojection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10. Retopology and Projection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_details/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11. Surface Details
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_UV/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12. UVs, Displacement and Substance Painter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    13. 3D Scanning
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    13. 3D Scanning
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-an-object-to-scan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing an Object to Scan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lighting-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lighting Conditions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miraco-scanner-making-a-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      MIRACO Scanner - Making a Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scanning-ui-and-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scanning UI and Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#near-or-far" class="md-nav__link">
+    <span class="md-ellipsis">
+      Near or Far
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scanning-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scanning Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#turing-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Turing object
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-a-scan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deleting a Scan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checking-your-scan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking your scan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processing-scan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processing Scan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meshing-point-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Meshing Point Cloud
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-your-3d-scan-into-zbrush" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing your 3D Scan into ZBrush
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📚Exercises
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            📚Exercises
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/exerciseindex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Exercise Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    In-class
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            In-class
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/01_simplechair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1a.Simple Chair
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/01_snappingchair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1b.Snapping Chair
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_completeacube/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2a.Complete a Cube
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_archway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2b.Archway
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_dice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3a.Dice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_teapot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3b.Teapot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/04_polaroidboolean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4a. Polaroid Boolean
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/04_polaroidcylinder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4b. Polaroid Cylinder
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Independent
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Independent
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/00_computerdreams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    0. Computer Dreams
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/01_creature/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.Creature
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.Tree
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_handleandobject/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.Getting a Handle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/05_rocksandobservation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Rocks and Observation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    🌞Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            🌞Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dreamobject/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dream Object
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memorypalace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Memory Chambre
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📖Responses
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            📖Responses
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SoftwareStudies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MediaArchaeology1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Media Archaeology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MediaArchaeology2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Computer Space
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MediaArchaeology3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Model Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CulturalStudies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3D World
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    🖍️Artists
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            🖍️Artists
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/allen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rebecca Allen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/sims/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Karl Sims
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/davies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Char Davies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/steinkamp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Jennifer Steinkamp
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/thiel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tamiko Thiel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/totalrefusal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Total Refusal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-an-object-to-scan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing an Object to Scan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lighting-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lighting Conditions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miraco-scanner-making-a-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      MIRACO Scanner - Making a Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scanning-ui-and-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scanning UI and Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#near-or-far" class="md-nav__link">
+    <span class="md-ellipsis">
+      Near or Far
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scanning-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scanning Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#turing-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Turing object
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-a-scan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deleting a Scan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checking-your-scan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking your scan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processing-scan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processing Scan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meshing-point-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Meshing Point Cloud
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-your-3d-scan-into-zbrush" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing your 3D Scan into ZBrush
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<style>
+ img{
+    width:600px;
+}
+
+
+</style>
+
+<h1 id="3d-scanning">3D Scanning</h1>
+<p><img alt="" src="../assets/images/13/13_01.png" /></p>
+<h2 id="introduction">Introduction</h2>
+<p>3D Scanning is the process of capturing the form and appearance of a real-world object or larger environment to create a 3D model. There are many methods and approaches for creating 3d scans. For example, many of us interact with a 3D scanner everyday when we unlock our digital devices with our face. On an iphone, for example, the TrueDepth camera on the front of a phone, projects many tiny light dots onto your face and scans those dots using an infrared camera. This allows the camera to capture a 3D form of your face that it can use to compare to whenever you try to unlock your phone.</p>
+<p><img src = " ../assets/images/13/13_01a.png" width = "400px"></img></p>
+<p><small>From the video Using An Infrared Camera To Show How Face ID Works by Insider Tech</small></p>
+<p>Infrared cameras are only one way of many to create 3D scans. Another common method is called Photogrammetry. In photogrammetry, a collection of photos from an object are gathered from all sides. In the simplest terms, those photos are then compared to each other to find key features, from that comparison, approximate camera positions are found - a photogrammetry program can then calculate millions of points in space, defining the shape of the object.</p>
+<p><img alt="" src="../assets/images/13/12_1b.jpg" /></p>
+<p><small>Example of photogrammetry courtesy of bitfab.io</small></p>
+<p>In this class, we will be using a type of 3D Scanner similar to the iphone TrueDepth camera. Our 3D Scanner, the MIRACO by Revopoint, uses a combination of infrared cameras to capture the form of an object and a color camera to capture the texture of an object.</p>
+<p><img alt="" src="../assets/images/13/13_00.png" /></p>
+<h2 id="choosing-an-object-to-scan">Choosing an Object to Scan</h2>
+<p>3D scanners, and our MIRACO scanner in particular, have the ability to scan a wide variety of objects. The MIRACO can scan objects of all sizes: using the scanner's two modes of near and far, we can scan any object from a small figurine to a car. However, since 3D scanners use camera technologies that are looking for key features some objects are difficult to impossible to scan:</p>
+<p>Objects that are difficult to scan and must be treated:</p>
+<ul>
+<li><strong>Shiny</strong> or <strong>Reflective</strong> objects: these objects bounce light back that camera distorting their shape. Reflective objects need to be painted with a matte paint or treated with a 3D scanning spray to be detected. Reflective objects include hair.</li>
+<li><strong>Transparent</strong> object: For the same reason that reflective objects are difficult to scan, transparent and translucent objects are not able to be accurately captured by the cameras on a 3D scanner and must be treated with a matter coating.</li>
+<li><strong>Dark</strong> objects, such as dark rubber. These objects absorb light and cannot be detected by the scanner.</li>
+<li><strong>Patterned</strong> Objects: objects with many patterns on them such as patterned clothing are difficult to scan as the key features can be lost in the patterning.</li>
+<li><strong>Thin</strong> objects such as wires: Very thin objects cannot be detected by most 3D scanners.</li>
+</ul>
+<p>In his tutorial, we will be using this small statue of Guanyin which is approximately 7 inches tall:</p>
+<p><img alt="" src="../assets/images/13/13_02.jpg" /></p>
+<h2 id="lighting-conditions">Lighting Conditions</h2>
+<p>It is best to 3D scan your object in a well and evenly lit environment. This will vary depending on how much control you have on your environment. If using a turntable, you can light your object from one direction as shown below as the scanner will typically only be capturing from a single direction. A turn table allows us to slowly rotate our model and hold our scanner still while the object itself rotates.</p>
+<p><img alt="" src="../assets/images/13/13_03.jpg" /></p>
+<h2 id="miraco-scanner-making-a-project">MIRACO Scanner - Making a Project</h2>
+<p>When starting a new project with the MIRACO scanner it is best to make a new project to store your scans.</p>
+<p>To make a new project:</p>
+<ol>
+<li>Navigate to Model <br><br><img alt="" src="../assets/images/13/13_04.png" /></li>
+<li>Press the plus button to add a new project<br><br> <img alt="" src="../assets/images/13/13_05.png" /></li>
+<li>Name your project and press okay. <br><br><img alt="" src="../assets/images/13/13_06.png" /></li>
+</ol>
+<h2 id="scanning-ui-and-settings">Scanning UI and Settings</h2>
+<p>After making a new project, this will bring you into the scanning UI. The Scanning UI shows the infrared camera on the top left, the color camera on the bottom left and a live view of your scan in the center.</p>
+<p>It is best to check your setting before beginning:</p>
+<ol>
+<li>Press the settings button <br><br><img alt="" src="../assets/images/13/13_06a.png" /></li>
+<li>Check that: Accuracy = high, Alignment = feature, and, if you want to capture a texture, color is toggled on.<br><br> <img alt="" src="../assets/images/13/13_07.png" /></li>
+</ol>
+<h2 id="near-or-far">Near or Far</h2>
+<p>There are two size settings with the MIRACO, near or far.</p>
+<ul>
+<li><strong>Near</strong>: for objects larger than a coin and ideally less than a can of soda. However, it can go up to the size of a human head, a medium size object, if you want to capture more fine details.</li>
+<li><strong>Far</strong>: for objects larger than the size of a human head and up to around a large car. Captures will have less detail than near mode.</li>
+</ul>
+<p>For this example of the statute, we will be using near mode:</p>
+<p><img alt="" src="../assets/images/13/13_08.png" /></p>
+<h2 id="scanning-process">Scanning Process</h2>
+<p>To begin scanning, press the red button with continuous mode set. As seen in the video below, the green parts of the scan indicate parts of the model that MIRACO is accurately scanning. If the MIRACO cannot find recorded features of the model the scan will turn red-orange and it will lose tracking, being unable to capture the object. If the scanner loses tracking, move the scanner until the major features of the model are found again and the 3D scan turns green. It best to keep the scanner at the same distance from your model making sure that the scanner detects the distance as Excellent as indicated at the top of the UI:</p>
+<p><img alt="" src="../assets/images/13/13_10.png" /></p>
+<p><img alt="" src="../assets/images/13/13_09.png" /></p>
+<p>To scan, either slowly rotate your model using the turntable, or slowly move the scanner around your model, making sure that it never loses tracking. If you need to pause scanning, you can press the pause button and resume the scan at anytime after the scanner finds the features of your object.</p>
+<p>When scanning your object, it is important to capture the model from all angles to ensure that you are scanning every part of your model.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/q88912ngsA4?si=aonrgZ8kIUIWetwy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h2 id="turing-object">Turing object</h2>
+<p>Since the MIRACO tracks key features, after large parts of your model are scanned, you can rotate your object to another angle and continue scanning after the key features are found. In the video example below, the object is rotated on its back to capture the bottom and underside of the model. </p>
+<p><img alt="" src="../assets/images/13/13_12.jpg" /></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LwrY8h9t_Gw?si=r6QHL5xKi9QAqyCy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h2 id="deleting-a-scan">Deleting a Scan</h2>
+<p>If you accidentally create errors within your scan such as misaligning the tracking of your model, you can pause your model and press the x button to delete your scan.</p>
+<p><img alt="" src="../assets/images/13/13_11.png" /></p>
+<h2 id="checking-your-scan">Checking your scan</h2>
+<p>After you complete your scan, you can quickly check your scan by either rotating around the point cloud to see if there are any large missing areas, or you can create a <strong>One-tap edit</strong>. The one-tap edit will quickly mesh your model allowing you to see if there are any major errors. Errors such as small holes or extra geometry can be removed later. This one-tap edit is mostly to see if you missed parts of your model or if you misaligned your model.</p>
+<p>To one-tap edit:</p>
+<ol>
+<li>Press One-tap edit <br><br><img alt="" src="../assets/images/13/13_13.png" /></li>
+<li>Make sure Fast is selected and Press apply <br><br><img alt="" src="../assets/images/13/13_14.png" />  </li>
+<li>Rotate around the completed model using your fingers to see if there are any errors </li>
+</ol>
+<h3 id="resume-scan">Resume Scan</h3>
+<p>If there are any errors within your scan, you can use the Resume Scan button to continue scanning to fill in any major gaps:</p>
+<p><img alt="" src="../assets/images/13/13_15.png" />  </p>
+<h2 id="processing-scan">Processing Scan</h2>
+<p>While the MIRACO is an all-in-one 3D scanning, meaning it can both scan and process models, it is often best to process models on your computer using the software <strong>Revo Scan 5</strong></p>
+<h3 id="connecting-miraco-to-pc">Connecting Miraco to PC</h3>
+<ol>
+<li>Open Revo Scan 5</li>
+<li>Plug the MIRACO into your computer using the white USBC cable</li>
+<li>On your MIRACO, select Data Transfer and press OK <br><br><img alt="" src="../assets/images/13/13_15a.png" />  </li>
+</ol>
+<h3 id="in-revo-scan-5">In Revo Scan 5</h3>
+<ol>
+<li>Make sure the scanner is being detected and your project is present <br><br><img alt="" src="../assets/images/13/13_16.png" /></li>
+<li>Press the check on your project and press import<br><br> <img alt="" src="../assets/images/13/13_17.png" /></li>
+<li>Press the three dots on your project and press Open a Project <br><br><img alt="" src="../assets/images/13/13_18.png" /></li>
+</ol>
+<p>Processing Model</p>
+<p>In Revo Scan 5, we can process our model using the step by step process as listed at the top of the UI. This begins with <strong>Fusion</strong> and ends at <strong>Export</strong>.</p>
+<p><img alt="" src="../assets/images/13/13_19.png" /></p>
+<h3 id="fusion">Fusion</h3>
+<p>Fusion with fuse point cloud points together. To fuse a point cloud:</p>
+<ol>
+<li>Press Fusion</li>
+<li>Set point distance between .1mm and .2 and press Apply <br><br><img alt="" src="../assets/images/13/13_20.png" /></li>
+<li>This will create a fused point cloud model <br><br><img alt="" src="../assets/images/13/13_21.png" /></li>
+</ol>
+<h3 id="isolation">Isolation</h3>
+<p>Isolation will detect any hanging objects around our main model. This is used to clean up any excess information that might have been captured while scanning. To isolate an object:</p>
+<ol>
+<li>Press Isolation and Detect <br><br><img alt="" src="../assets/images/13/13_22.png" /></li>
+<li>After isolated objects are selected, press Apply <br><br><img alt="" src="../assets/images/13/13_23.png" /></li>
+</ol>
+<h3 id="overlap-detection-smooth-and-simplify">Overlap Detection, Smooth and Simplify</h3>
+<p>All three of these options are optional:</p>
+<ul>
+<li><strong>Overlap</strong>: This is used if you have parts of your model that are overlapping and you want to fuse them together. <br><br><img alt="" src="../assets/images/13/13_24.png" /></li>
+<li><strong>Smooth</strong>: This is used if you have any unusually sharp areas on your model that you want to remove by smoothing. <br><br><img alt="" src="../assets/images/13/13_25.png" /></li>
+<li><strong>Simplify</strong>: This is used if your mesh has too much detail causing visual errors. This will simplify the shape of your point cloud and cause you to lose detail. <br><br><img alt="" src="../assets/images/13/13_26.png" /></li>
+</ul>
+<h2 id="meshing-point-cloud">Meshing Point Cloud</h2>
+<p>Meshing our point cloud converts our collection of points into a 3D mesh that can be used into other pieces of software. To mesh your scan:</p>
+<h3 id="creating-mesh">Creating Mesh</h3>
+<ol>
+<li>Press Mesh</li>
+<li>Set Quality to between 6 and 8 &gt; Press Apply <br><br><img alt="" src="../assets/images/13/13_27.png" /></li>
+<li>Check the meshed result by checking on No Color in the top right corner of the viewport <br><br><img alt="" src="../assets/images/13/13_28.png" /></li>
+</ol>
+<h3 id="mesh-isolation">Mesh Isolation</h3>
+<p>If there are small objects that still exist after the mesh step, you can use mesh isolation to remove them. </p>
+<p><img alt="" src="../assets/images/13/13_29.png" /></p>
+<h3 id="deleting-objects-with-selection-tools">Deleting objects with Selection tools</h3>
+<p>On the right side of the UI there are a variety of selection tools that we can use to edit our model. For example, if I wanted to delete the large piece of floor that was captured when I turned my model on its side:</p>
+<ol>
+<li>Select the lasso tool <br><br><img src = " ../assets/images/13/13_30.png" width = "50" ></img></li>
+<li>Select the part to delete <br><br><img alt="" src="../assets/images/13/13_31.png" /></li>
+<li>Press the delete key <br><br><img alt="" src="../assets/images/13/13_32.png" /></li>
+</ol>
+<h3 id="filling-holes">Filling Holes</h3>
+<p>Often when making a mesh for our point cloud there will be holes in our model. We can fill-in these holes using the fill hole tool. To fill holes:</p>
+<ol>
+<li>Select Fill Holes and press Detect<br><br> <img alt="" src="../assets/images/13/13_33.png" /></li>
+<li>This will display holes within the model<br><br> <img alt="" src="../assets/images/13/13_34.png" /></li>
+<li>Select each hole individually or select all holes. <br><br><img alt="" src="../assets/images/13/13_35.png" /></li>
+<li>Decide if the hole should be filled in with a curved mesh or a flat mesh</li>
+<li>Press apply.<br><br> <img alt="" src="../assets/images/13/13_36.png" /></li>
+</ol>
+<h3 id="cleaning-up-geometry">Cleaning up Geometry</h3>
+<p>If you notice small irregularities in your geometry, you can use the selection tools and the delete keys to remove parts of your model. If you create new holes within your model, you will need to repeat the Fill Hole operation.</p>
+<p><img alt="" src="../assets/images/13/13_37.png" /></p>
+<h3 id="smooth">Smooth</h3>
+<p>Smooth will smooth out jagged parts of your mesh. To smooth your model:</p>
+<ol>
+<li>Select Smooth and Apply <br><br><img alt="" src="../assets/images/13/13_38.png" /></li>
+</ol>
+<h3 id="simplify">Simplify</h3>
+<p>Simplify will reduce the topology of your model. It is good practice to reduce the topology of your model by around 20 percent depending on the density of your mesh. </p>
+<p>To view the density of your mesh:</p>
+<ol>
+<li>Navigate to Display &gt; Mesh Model Display &gt; Wireframe Overlay <br><br><img alt="" src="../assets/images/13/13_40.png" /></li>
+</ol>
+<p>To simplify mesh:</p>
+<ol>
+<li>Select Simplify</li>
+<li>Set ratio to between 20 and 40 percent and press Apply <br><br> <img alt="" src="../assets/images/13/13_39.png" /></li>
+</ol>
+<h2 id="texture">Texture</h2>
+<p>We can create a texture from our image data by using the texture tool. To create a texture:</p>
+<ol>
+<li>Press the texture tool</li>
+<li>Select Color Image and press Apply</li>
+</ol>
+<p><img alt="" src="../assets/images/13/13_41.png" /></p>
+<h2 id="export">Export</h2>
+<p>To Export your model:</p>
+<ol>
+<li>Press Export &gt; Texture Mesh <br><br><img alt="" src="../assets/images/13/13_42.png" /></li>
+<li>Save your model as a .obj file <br><br><img alt="" src="../assets/images/13/13_43.png" /></li>
+</ol>
+<h2 id="importing-your-3d-scan-into-zbrush">Importing your 3D Scan into ZBrush</h2>
+<ol>
+<li>Press Import in the Tool menu and select your .obj file <br><br> <img alt="" src="../assets/images/13/13_44.png" /></li>
+<li>Click and drag in your viewpoint to import your model</li>
+<li>Press Edit</li>
+</ol>
+<p><img alt="" src="../assets/images/13/13_z_01.gif" /></p>
+<h3 id="add-texture-to-model">Add Texture to Model</h3>
+<ol>
+<li>Set material to SkinShade4</li>
+<li>Navigate to Texture &gt; Import in the Top Shelf</li>
+<li>Select your Texture</li>
+</ol>
+<p><img alt="" src="../assets/images/13/13_z_02.gif" /></p>
+<h3 id="applying-texture-to-model">Applying Texture to Model</h3>
+<ol>
+<li>In your tool menu, Select Texture Map</li>
+<li>Select NewTexr &gt; Select your texture in the Image Section</li>
+</ol>
+<p><img alt="" src="../assets/images/13/13_z_03.gif" /></p>
+<h3 id="fix-texture">Fix Texture</h3>
+<p>ZBrush, by default, flips UV vertically. To fix this error we need to flip our texture.</p>
+<ol>
+<li>Navigate to Texture</li>
+<li>Select your texture and press FlipY</li>
+<li>Reselect your texture in the Tool panel</li>
+</ol>
+<p><img alt="" src="../assets/images/13/13_z_04.gif" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", {"navigation.instant": false}], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
