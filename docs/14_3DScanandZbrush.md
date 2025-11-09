@@ -112,7 +112,7 @@ When you finish sculpting, you can export your color map data as well as a displ
 
 ![](../assets/images/14/14_16.gif)
 
-## 3D Scan and Substance Painter
+## 3D Scan and Substance Painters
 
 Bringing a 3D Scan into substance painter is the exact process of bringing any other high poly ZBrush model into painter (see ZBrush and Substance Painter tutorial):
 
