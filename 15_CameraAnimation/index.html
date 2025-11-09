@@ -1,0 +1,2078 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://3dsoftware.vinnyroca.info/15_CameraAnimation/">
+      
+      
+        <link rel="prev" href="../14_3DScanandZbrush/">
+      
+      
+        <link rel="next" href="../Exercises/exerciseindex/">
+      
+      
+      <link rel="icon" href="../3D.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>15. Camera Animation - 🫖 Introduction to 3D Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2a3383ac.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Funnel+Sans:300,300i,400,400i,700,700i%7CInconsolata+monospace:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Funnel Sans";--md-code-font:"Inconsolata monospace"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#camera-animation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="🫖 Introduction to 3D Software" class="md-header__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            🫖 Introduction to 3D Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              15. Camera Animation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  📋Syllabus
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../schedule/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📆Schedule
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Notes/notes/" class="md-tabs__link">
+          
+  
+  
+  💻Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Exercises/exerciseindex/" class="md-tabs__link">
+          
+  
+  
+  📚Exercises
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../dreamobject/" class="md-tabs__link">
+          
+  
+  
+  🌞Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../SoftwareStudies/" class="md-tabs__link">
+          
+  
+  
+  📖Responses
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Artists/allen/" class="md-tabs__link">
+          
+  
+  
+  🖍️Artists
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="🫖 Introduction to 3D Software" class="md-nav__button md-logo" aria-label="🫖 Introduction to 3D Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg>
+
+    </a>
+    🫖 Introduction to 3D Software
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📋Syllabus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📆Schedule
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    💻Notes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            💻Notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Notes/notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notes Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_MayaInterface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1. Maya Interface and Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_ModellingEssentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2. Polygonal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_SubdivisionModeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3. Subdivision Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_AdvancedModeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Advanced Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_UVUnwrapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. UV Mapping
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_Substance3DPainter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. Substance Painter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_render/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7. Lights, Camera, Render
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_ZbrushFundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8. ZBrush Basics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_zbrushcontinued/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9. ZBrush Continued
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_zbrushprojection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10. Retopology and Projection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_details/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11. Surface Details
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_UV/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12. UVs, Displacement and Substance Painter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_3DScanning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13. 3D Scanning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14_3DScanandZbrush/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14. 3D Scans & ZBrush
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    15. Camera Animation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    15. Camera Animation
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basics-of-animation-controls-in-maya" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basics of Animation Controls in Maya
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-key-frames" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Key Frames
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playback-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Playback Speed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-animation-curves" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing Animation Curves
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-playblast" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Playblast
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camera Motion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#focal-zoom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Focal Zoom
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📚Exercises
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            📚Exercises
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/exerciseindex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Exercise Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    In-class
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            In-class
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/01_simplechair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1a.Simple Chair
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/01_snappingchair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1b.Snapping Chair
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_completeacube/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2a.Complete a Cube
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_archway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2b.Archway
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_dice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3a.Dice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_teapot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3b.Teapot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/04_polaroidboolean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4a. Polaroid Boolean
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/04_polaroidcylinder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4b. Polaroid Cylinder
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Independent
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Independent
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/00_computerdreams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    0. Computer Dreams
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/01_creature/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.Creature
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/02_tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.Tree
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/03_handleandobject/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.Getting a Handle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises/05_rocksandobservation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Rocks and Observation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    🌞Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            🌞Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dreamobject/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dream Object
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memorypalace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Memory Chambre
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📖Responses
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            📖Responses
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SoftwareStudies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MediaArchaeology1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Media Archaeology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MediaArchaeology2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Computer Space
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MediaArchaeology3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Model Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CulturalStudies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3D World
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    🖍️Artists
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            🖍️Artists
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/allen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rebecca Allen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/sims/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Karl Sims
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/davies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Char Davies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/steinkamp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Jennifer Steinkamp
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/thiel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tamiko Thiel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artists/totalrefusal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Total Refusal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basics-of-animation-controls-in-maya" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basics of Animation Controls in Maya
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-key-frames" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Key Frames
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playback-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Playback Speed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-animation-curves" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing Animation Curves
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-playblast" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Playblast
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camera Motion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#focal-zoom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Focal Zoom
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="camera-animation">Camera Animation</h1>
+<h2 id="basics-of-animation-controls-in-maya">Basics of Animation Controls in Maya</h2>
+<p>To create basic camera animations within Maya, we first need to understand the system of key frames and inbetweens. Animations in Maya are created by setting key frames. Key frames are poses or positions that are stored within a certain frame marker in the timeline. For example, if I want my camera to move into my chair over five seconds, I’ll set one key frame at frame 1 with my camera far away as well as set an additional key at frame 120 with my camera close to my object.</p>
+<p><img alt="" src="../assets/images/15/15_DT_A_1.gif" /></p>
+<p>The reason I set my close camera at frame 120 is because I need to consider the frame rate of my animation. Most animation is created with a frame rate of 24 frames per second. We can see the frame rate of our Maya project below our timeline. This means that for every second of animation, 24 frames or images will play in rapid succession. This rapid playing of images creates the illusion of motion, allowing us to create movement within our renders.</p>
+<p><img alt="" src="../assets/images/15/15_fps.png" /></p>
+<p>By setting a key frame at frame 1 and frame 120, Maya will figure out how to move my camera so that it starts relatively far away from my object before moving closer to my object over five seconds. The frames between our keyframes are called inbetweens. In traditional hand drawn animation, all inbetweens must be drawn. In 3D computer animation, the 3D software handles the creation of inbetween based on keypoints and our graph editor.</p>
+<p>If I look at this motion of the zoom closely, I notice that it starts off slow, gets to a steady rate, and then ends slowly. This motion path is called an ease-in/ease-out. My animation eases into the main motion and then eases out of the motion towards the end. If we look at the graph editor for the animation, we can see this ease-in/ease-out motion represented in the grapheditor. We can notice that instead of a straight line between the two points, there is an s shaped line. What this s shaped line indicates is that the change in distance of the camera is much smaller towards the beginning and end of my animation. This smaller distance creates the effect of my camera easing in and easing out of the animation.</p>
+<p><img alt="" src="../assets/images/15/15_ge.png" /></p>
+<h2 id="creating-key-frames">Creating Key Frames</h2>
+<p>Key Frames are created in Maya using a variety of methods. The most common method of creating a key frame is selecting a property for which you want to create a key frame, picking a point on the timeline, setting a key frame for that property, and then repeating this step for other points in the time line. For example, if I wanted to create an animation to push my camera into my object:</p>
+<ol>
+<li>Create a <strong>Camera and Aim</strong> object <p><img alt="" src="../assets/images/15/15_01.gif" /> </p></li>
+<li>Set the <strong>Aim</strong> on the object and move the Camera a certain distance from my object <p><img alt="" src="../assets/images/15/15_02.gif" /> </p></li>
+<li>Set my frame count to <strong>120</strong> for a five second animation <p><img alt="" src="../assets/images/15/15_03.gif" /> </p></li>
+<li>Click on <strong>frame 1</strong> &gt; Select <strong>TranslateZ</strong> and <strong>TranslateY</strong> in <strong>Channel Box</strong> on camera &gt; <strong>Right Click</strong> and press <strong>Key Selected</strong> <p><img alt="" src="../assets/images/15/15_04.gif" /> </p></li>
+<li>Click on frame <strong>120</strong> &gt; Move in Camera on Local Z Axis&gt; Select <strong>TranslateZ</strong> and <strong>TranslateY</strong>  in Channel Box on camera &gt; <strong>Right Click</strong> and press <strong>Key Selected</strong> <p><img alt="" src="../assets/images/15/15_05.gif" /> </p></li>
+<li>Test Animation by pressing play <p><img alt="" src="../assets/images/15/15_06.gif" /> </p></li>
+</ol>
+<h2 id="playback-speed">Playback Speed</h2>
+<p>If animation is playing too fast:</p>
+<p><strong>Right-click</strong> on timeline&gt; Select <strong>Playback speed</strong> &gt; set Real Time:</p>
+<p><img alt="" src="../assets/images/15/15_07.gif" /></p>
+<h2 id="changing-animation-curves">Changing Animation Curves</h2>
+<p>To open animation curves in the Graph Editor, navigate to the Animation workspace in the upper right corner of Maya’s UI.</p>
+<h3 id="making-curves-linear">Making curves linear:</h3>
+<p>To make an animation curve linear, select the key points and press the linear button in the UI:</p>
+<p><img alt="" src="../assets/images/15/15_08.gif" /></p>
+<h3 id="alter-curve-using-handles">Alter curve using Handles</h3>
+<p>To alter a curve using a Bezier handle: Select a key frame point and move the Bezier handle to effect the easing of the animation curve:</p>
+<p><img alt="" src="../assets/images/15/15_09.gif" /></p>
+<h2 id="creating-playblast">Creating Playblast</h2>
+<p>You can preview an animation using a playblast. A playblast will create an animation of your view port. Playblasts are helpful for creating rough cuts of your animation and to properly test timing.</p>
+<p>To create a playblast:</p>
+<ol>
+<li>Click on viewport you want to make a playblast from</li>
+<li>Right click on timeline and choose the playblast settings</li>
+<li>Make sure mode is set to AVI and Display Size is from render settings</li>
+<li>Press playblast to view the animation</li>
+</ol>
+<p><img alt="" src="../assets/images/15/15_playblast.gif" /></p>
+<h2 id="camera-motion">Camera Motion</h2>
+<h3 id="dolly-and-tracking">Dolly and Tracking</h3>
+<p>Dolly or Tracking camera movements refer to the camera physically moving location. This can be achieved in Maya by keying the Camera and Aim group on one of the three movement axes.</p>
+<p><strong>X Axis on Camera and Aim group keyed:</strong></p>
+<p><img alt="" src="../assets/images/15/15_DS_G_1.gif" />
+<img alt="" src="../assets/images/15/15_DS_A_1.gif" /></p>
+<p><strong>Y and Z Axis on Camera keyed:</strong></p>
+<p><img alt="" src="../assets/images/15/15_DT_G_1.gif" />
+<img alt="" src="../assets/images/15/15_DT_A_1.gif" /></p>
+<h3 id="pan-and-tilt">Pan and Tilt</h3>
+<p>Pan and Tilt camera movements refer to the camera rotating either horizontally (pan) or vertically (tilt). Pan and tilt can be achieved in Maya by animating the movement of the Aim target to rotate the camera.</p>
+<p><strong>Tilt: Aim object keyed on Y Axis</strong></p>
+<p><img alt="" src="../assets/images/15/15_T_G_1.gif" />
+<img alt="" src="../assets/images/15/15_T_A_1.gif" /></p>
+<p><strong>Pan: Aim object keyed on X Axis</strong></p>
+<p><img alt="" src="../assets/images/15/15_P_G_1.gif" />
+<img alt="" src="../assets/images/15/15_P_A_1.gif" /></p>
+<h2 id="focal-zoom">Focal Zoom</h2>
+<p>Focal Zoom is a non-movement camera change that creates the illusion of the camera zooming in on a subject. A focal zoom is achieved by increasing or decreasing the focal length of a camera in Maya.</p>
+<p><strong>Increasing focal length from 17mm to 120mm over 5 seconds:</strong></p>
+<p><img alt="" src="../assets/images/15/15_FZ_G_1.gif" />
+<img alt="" src="../assets/images/15/15_FZ_A_1.gif" /></p>
+<h3 id="camera-path">Camera Path</h3>
+<p><img alt="" src="../assets/images/15/15_CP_G_1.gif" />
+<img alt="" src="../assets/images/15/15_CP_A_1.gif" /></p>
+<p>Camera paths are used to create more complex camera movements. Camera paths are a two part process:</p>
+<ol>
+<li>Create a NURBS spline for the camera path</li>
+<li>Group a Camera and attach the camera group to the spline</li>
+</ol>
+<p>A curve can be created using multiple tools. One commonly used tool is the EP curve tool. To create a curve and attach the camera to the path:</p>
+<ol>
+<li>Navigate to Create &gt; Curve Tool &gt; EP Curve tool &gt; Draw a curve on grid for camera path&gt; Press enter to end curve <p><img alt="" src="../assets/images/15/15_10.gif" /></p></li>
+<li>Create a Camera with Create &gt;Cameras &gt; Camera <p><img alt="" src="../assets/images/15/15_11.gif" /></p></li>
+<li>Shift Select the Camera and Curve &gt; Navigate to Constrain &gt; Motion Paths &gt; Attach to Motion Path (Notice: if you do not see constrain navigate to the Animation workspace.) <p><img alt="" src="../assets/images/15/15_12.gif" /></p></li>
+<li>To make sure your Camera is aligned to the curve in the direction you want it to move: Navigate to Camera &gt; Attribute Editor &gt; motionPath tab &gt; Change Front Axis and/or Inverse Front to get correct motion <p><img alt="" src="../assets/images/15/15_13.gif" /></p></li>
+<li>Change animation to linear if you want to remove easing <p><img alt="" src="../assets/images/15/15_14.gif" /></p></li>
+<li>After attaching camera to curve, the curve can be adjusted using move, rotate scale as well as by navigating to and changing the control vertices of the curve: To select the control vertices: Navigate using Right-click on the curve &gt; Select Control Vertex &gt; Move the control vertices to change the shape of the curve <p><img alt="" src="../assets/images/15/15_15.gif" /></p></li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", {"navigation.instant": false}], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
