@@ -13,7 +13,7 @@ Video (Digital Animation), 1974
 
 <figure> <img src = "/assets/images/02_maya_rebeccaallen_GirlLiftSkirt.jpg"><figcaption>Preparatory drawing for Girl Lifts Skirt, Rebecca Allen</figcaption></figure>
 
-<figure> <img src = "/assets/images/02_maya_rebeccaallen_GirlLiftSkirt_1.jpg"><figcaption>Stills from Girl Lifts Skirt, Rebecca Allen</figcaption></figure>
+<figure> <img src = "/assets/images/02_maya_rebeccaallen_GirlLiftSkirt_1.jpg"><figcaption>Girl Lifts Skirt, Rebecca Allen <br> Images from reconstruction by <a href = "https://wileywiggins.com/">Wiley Wiggins</a> </figcaption></figure>
 
 > "A series of drawings were used to create one of the earliest computer animated artworks. In 1974, Allen used a computer and punch cards to create her first digital artworks. With an interest in inserting sensuality into the computer, this short animation of a woman seductively lifting her skirt served as a comment on the absence of the female perspective in the development of digital technology."
 
